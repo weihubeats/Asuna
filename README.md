@@ -5,7 +5,7 @@
 
 * [Java](##Java)
     * [spring-framework](###spring-framework)
-    * [log-record](#log-record)
+    * [log-record](#log-record(记录业务log sdk))
 
 ## Java
 
@@ -45,7 +45,7 @@ layering-cache是一个支持分布式环境的多级缓存框架，使用方式
 
 
 ---
-### log-record 记录业务log sdk
+### log-record(记录业务log sdk)
 
 使用注解优雅的记录系统日志，操作日志等，支持SpEL表达式，自定义上下文，自定义函数，并支持将日志消息传递至消息队列。
 
