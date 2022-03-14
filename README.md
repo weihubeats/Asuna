@@ -17,11 +17,13 @@
 
 ### [redisson](https://github.com/redisson/redisson) 主流的Redis java sdk
 
+### [arthas](https://github.com/alibaba/arthas) Java诊断利器
+
 ## 其他
 
 ### [easy-yapi](https://github.com/tangcent/easy-yapi) Yapi idea接口自动同步
 
-
+### [proxy_pool](https://github.com/jhao104/proxy_pool) 爬虫代理IP池
 
 ### [HowToCook](https://github.com/Anduin2017/HowToCook) 程序员做饭笔记
 
