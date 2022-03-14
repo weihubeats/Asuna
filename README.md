@@ -17,6 +17,8 @@
 
 ## 其他
 
+### [easy-yapi](https://github.com/tangcent/easy-yapi) Yapi idea接口自动同步
+
 ### [HowToCook](https://github.com/Anduin2017/HowToCook) 程序员做饭笔记
 
 ### [GitHub markdown 语法教程](https://github.com/guodongxiaren/README)
