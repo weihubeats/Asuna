@@ -19,6 +19,31 @@
 
 ### [arthas](https://github.com/alibaba/arthas) Java诊断利器
 
+### [netty](https://github.com/netty/netty)
+
+### [COLA](https://github.com/alibaba/COLA) 阿里开源的COLA架构
+
+### [transmittable-thread-local](https://github.com/alibaba/transmittable-thread-local) 阿里开源解决线程池上下文丢失sdk
+
+### [TLog](https://github.com/dromara/TLog) dromara 社区开源的轻量级分布式链路追踪
+
+### [guava](https://github.com/google/guava) google开源的一些java工具
+
+### [wh-mq-Idempotent](https://github.com/weihubeats/wh-mq-Idempotent) 通用MQ幂等框架
+
+
+## 消息中间件
+
+### [rocketmq](https://github.com/apache/rocketmq) apache开源的消息中间件
+
+## 数据库
+
+### [ClickHouse](https://github.com/ClickHouse/ClickHouse) 开源列式数据库
+
+## 自建博客
+
+### [halo](https://github.com/halo-dev/halo) 一款现代化的开源博客
+
 ## 其他
 
 ### [kubernetes](https://github.com/kubernetes/kubernetes) k8s不会有人不认识吧
