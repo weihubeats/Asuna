@@ -11,9 +11,14 @@
 
 
 ### [layering-cache](https://github.com/xiaolyuh/layering-cache)
-layering-cache是一个支持分布式环境的多级缓存框架，使用方式和spring-cache类似。它使用Caffeine作为一级本地缓存，redis作为二级集中式缓存。一级缓存和二级缓存的数据一致性是通过推和拉两种模式相结合的方式来保证。推主要是基于redis的pub/sub机制，拉主要是基于消息队列和记录消费消息的偏移量来实现的
+
+![img.png](images/layering-cache.png)
+
 
 
 ## 其他
 
 ### [HowToCook](https://github.com/Anduin2017/HowToCook)
+
+![img.png](images/HowToCook.png)
+
