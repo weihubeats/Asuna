@@ -38,7 +38,17 @@
 
 ## 数据库
 
-### [ClickHouse](https://github.com/ClickHouse/ClickHouse) 开源列式数据库
+### [mysql-server](https://github.com/mysql/mysql-server) mysql
+### [postgres](https://github.com/postgres/postgres) pg
+### [TiDB](https://github.com/pingcap/tidb) 分布式OLTP数据库
+### [MongoDB](https://github.com/mongodb/mongo) 文档数据库
+### [Elasticsearch](https://github.com/elastic/elasticsearch) es 文档数据库,主要用于搜索
+### [ClickHouse](https://github.com/ClickHouse/ClickHouse) 开源列式数据库OLAP
+
+
+## 学习
+### [flink-learning](https://github.com/zhisheng17/flink-learning) Flink 学习
+
 
 ## 自建博客
 
