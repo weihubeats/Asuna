@@ -17,7 +17,10 @@
 
 ---
 
-### [layering-cache](https://github.com/xiaolyuh/layering-cache) 多级缓存框架
+### layering-cache 多级缓存框架
+
+
+[地址](https://github.com/xiaolyuh/layering-cache)
 
 #### 简介
 layering-cache是一个支持分布式环境的多级缓存框架，使用方式和spring-cache类似。它使用Caffeine作为一级本地缓存，redis作为二级集中式缓存。一级缓存和二级缓存的数据一致性是通过推和拉两种模式相结合的方式来保证。推主要是基于redis的pub/sub机制，拉主要是基于消息队列和记录消费消息的偏移量来实现的。
@@ -42,7 +45,7 @@ layering-cache是一个支持分布式环境的多级缓存框架，使用方式
 
 
 ---
-### [log-record](https://github.com/qqxx6661/logRecord) 记录业务log sdk
+### log-record 记录业务log sdk
 
 使用注解优雅的记录系统日志，操作日志等，支持SpEL表达式，自定义上下文，自定义函数，并支持将日志消息传递至消息队列。
 
