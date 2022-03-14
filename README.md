@@ -3,9 +3,9 @@
 
 # 目录
 
-## [Java](##Java)
-### [spring-framework](###spring-framework)
-### [log-record](###log-record)
+* [Java](##Java)
+    * [spring-framework](###spring-framework)
+    * [log-record](#log-record)
 
 ## Java
 
