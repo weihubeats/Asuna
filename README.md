@@ -35,6 +35,9 @@
 ## 消息中间件
 
 ### [rocketmq](https://github.com/apache/rocketmq) apache开源的消息中间件
+### [Apache Kafka](https://github.com/apache/kafka) apache开源的消息中间件
+### [rabbitmq-server](https://github.com/rabbitmq/rabbitmq-server) rabbitmq
+### [Pulsar](https://github.com/apache/pulsar) Apache Pulsar
 
 ## 数据库
 
