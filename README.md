@@ -19,13 +19,6 @@
 
 ### [arthas](https://github.com/alibaba/arthas) Java诊断利器
 
-### [dynamic-threadpool](https://github.com/acmenlt/dynamic-threadpool) 动态线程池框架
-
-### [mybatis-3](https://github.com/mybatis/mybatis-3) ORM框架
-
-### [mybatis-plus](https://github.com/baomidou/mybatis-plus) mybatis单表无线写sql
-
-### [mybatis-pro](https://github.com/Dreamroute/mybatis-pro) 类似mybatis-plus
 
 ### [netty](https://github.com/netty/netty) 网络应用程序框架
 
@@ -37,8 +30,27 @@
 
 ### [guava](https://github.com/google/guava) google开源的一些java工具
 
+### [easyexcel](https://github.com/alibaba/easyexcel) 阿里开源excel导出 sdk
+
 ### [wh-mq-Idempotent](https://github.com/weihubeats/wh-mq-Idempotent) 通用MQ幂等框架
 
+### 数据库连接池
+#### [druid](https://github.com/alibaba/druid) 阿里开源数据库连接池框架
+#### [HikariCP](https://github.com/brettwooldridge/HikariCP) Spring Boot 默认数据库连接池
+
+
+### ORM框架
+#### [dynamic-threadpool](https://github.com/acmenlt/dynamic-threadpool) 动态线程池框架
+
+#### [mybatis-3](https://github.com/mybatis/mybatis-3) ORM框架
+
+#### [mybatis-plus](https://github.com/baomidou/mybatis-plus) mybatis单表无线写sql
+
+#### [mybatis-pro](https://github.com/Dreamroute/mybatis-pro) 类似mybatis-plus
+
+#### [jOOQ](https://github.com/jOOQ/jOOQ)
+
+#### [spring-data-jpa](https://github.com/spring-projects/spring-data-jpa)
 
 ## 消息中间件
 
@@ -58,15 +70,22 @@
 
 
 ## 学习
+
+### [spring-analysis](https://github.com/seaswalker/spring-analysis) Spring相关组件阅读笔记
+
 ### [flink-learning](https://github.com/zhisheng17/flink-learning) Flink 学习
 
 ### [A-Programmers-Guide-to-English](https://github.com/yujiangshui/A-Programmers-Guide-to-English) 专为程序员编写的英语学习指南。
 
+### [100-Days-Of-ML-Code](https://github.com/Avik-Jain/100-Days-Of-ML-Code) 机械学习
 
+### [spring-boot-demo](https://github.com/xkcoding/spring-boot-demo) spring boot 相关demo学习
 
 ## 自建博客
 
 ### [halo](https://github.com/halo-dev/halo) 一款现代化的开源博客
+
+### [solo](https://github.com/88250/solo) 小而美的开源博客系统
 
 ## 其他
 
