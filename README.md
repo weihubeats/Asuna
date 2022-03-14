@@ -32,7 +32,13 @@
 
 ### [easyexcel](https://github.com/alibaba/easyexcel) 阿里开源excel导出 sdk
 
+### [dynamic-threadpool](https://github.com/acmenlt/dynamic-threadpool) 动态线程池框架
+
 ### [wh-mq-Idempotent](https://github.com/weihubeats/wh-mq-Idempotent) 通用MQ幂等框架
+
+### [zookeeper](https://github.com/apache/zookeeper) Apache 分布式协调框架
+
+### [nacos](https://github.com/alibaba/nacos) 阿里开源注册中心、配置中心框架
 
 ### 数据库连接池
 #### [druid](https://github.com/alibaba/druid) 阿里开源数据库连接池框架
@@ -40,7 +46,6 @@
 
 
 ### ORM框架
-#### [dynamic-threadpool](https://github.com/acmenlt/dynamic-threadpool) 动态线程池框架
 
 #### [mybatis-3](https://github.com/mybatis/mybatis-3) ORM框架
 
@@ -51,6 +56,8 @@
 #### [jOOQ](https://github.com/jOOQ/jOOQ)
 
 #### [spring-data-jpa](https://github.com/spring-projects/spring-data-jpa)
+
+
 
 ## 消息中间件
 
