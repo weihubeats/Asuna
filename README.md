@@ -19,7 +19,15 @@
 
 ### [arthas](https://github.com/alibaba/arthas) Java诊断利器
 
-### [netty](https://github.com/netty/netty)
+### [dynamic-threadpool](https://github.com/acmenlt/dynamic-threadpool) 动态线程池框架
+
+### [mybatis-3](https://github.com/mybatis/mybatis-3) ORM框架
+
+### [mybatis-plus](https://github.com/baomidou/mybatis-plus) mybatis单表无线写sql
+
+### [mybatis-pro](https://github.com/Dreamroute/mybatis-pro) 类似mybatis-plus
+
+### [netty](https://github.com/netty/netty) 网络应用程序框架
 
 ### [COLA](https://github.com/alibaba/COLA) 阿里开源的COLA架构
 
@@ -51,6 +59,9 @@
 
 ## 学习
 ### [flink-learning](https://github.com/zhisheng17/flink-learning) Flink 学习
+
+### [A-Programmers-Guide-to-English](https://github.com/yujiangshui/A-Programmers-Guide-to-English) 专为程序员编写的英语学习指南。
+
 
 
 ## 自建博客
