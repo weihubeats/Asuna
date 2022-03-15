@@ -40,6 +40,9 @@
 
 ### [nacos](https://github.com/alibaba/nacos) 阿里开源注册中心、配置中心框架
 
+### [checkstyle](https://github.com/checkstyle/checkstyle) java代码规范插件
+
+
 ### 数据库连接池
 #### [druid](https://github.com/alibaba/druid) 阿里开源数据库连接池框架
 #### [HikariCP](https://github.com/brettwooldridge/HikariCP) Spring Boot 默认数据库连接池
@@ -55,8 +58,22 @@
 
 #### [jOOQ](https://github.com/jOOQ/jOOQ)
 
-#### [spring-data-jpa](https://github.com/spring-projects/spring-data-jpa)
+#### [spring-data-jpa](https://github.com/spring-projects/spring-data-jpa) 通过方法名方式映射sql
+### [querydsl](https://github.com/querydsl/querydsl) 给jap插上翅膀,让复杂sql也简单
 
+### RPC框架
+#### [dubbo](https://github.com/apache/dubbo) 阿里开源tpc协议RPC框架
+#### [spring-cloud-openfeign](https://github.com/spring-cloud/spring-cloud-openfeign) Netflix Http协议RPC框架
+#### [grpc](https://github.com/grpc/grpc) Google 开源的跨语言RPC框架
+
+
+### 分库分表
+#### [shardingsphere](https://github.com/apache/shardingsphere) 客户端级别分库分表
+
+
+### 实战项目
+
+#### [mall](https://github.com/macrozheng/mall) 前后端微服务项目
 
 
 ## 消息中间件
@@ -80,6 +97,8 @@
 
 ### [spring-analysis](https://github.com/seaswalker/spring-analysis) Spring相关组件阅读笔记
 
+### [itstack-demo-bytecode](https://github.com/fuzhengwei/itstack-demo-bytecode) java字节码编程相关学习
+
 ### [flink-learning](https://github.com/zhisheng17/flink-learning) Flink 学习
 
 ### [A-Programmers-Guide-to-English](https://github.com/yujiangshui/A-Programmers-Guide-to-English) 专为程序员编写的英语学习指南。
@@ -87,6 +106,8 @@
 ### [100-Days-Of-ML-Code](https://github.com/Avik-Jain/100-Days-Of-ML-Code) 机械学习
 
 ### [spring-boot-demo](https://github.com/xkcoding/spring-boot-demo) spring boot 相关demo学习
+
+### [blog](https://github.com/digoal/blog) 国内postgresql大神的一些pg分享
 
 ## 自建博客
 
@@ -105,6 +126,7 @@
 ### [HowToCook](https://github.com/Anduin2017/HowToCook) 程序员做饭笔记
 
 ### [README](https://github.com/guodongxiaren/README) GitHub markdown 语法教程
+
 
 ---
 
