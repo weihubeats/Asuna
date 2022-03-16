@@ -85,6 +85,9 @@
 ### [rabbitmq-server](https://github.com/rabbitmq/rabbitmq-server) rabbitmq
 ### [Pulsar](https://github.com/apache/pulsar) Apache Pulsar
 
+### [rocketmq-spring](https://github.com/apache/rocketmq-spring) rocketmq 客户端使用sdk
+
+
 ## 数据库
 
 ### [mysql-server](https://github.com/mysql/mysql-server) mysql
