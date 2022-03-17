@@ -135,6 +135,7 @@
 
 ### [README](https://github.com/guodongxiaren/README) GitHub markdown 语法教程
 
+### [free](https://github.com/freefq/free) 翻墙、免费翻墙、免费科学上网、免费节点、免费梯子
 
 ---
 
