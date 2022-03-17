@@ -44,6 +44,7 @@
 
 ### [checkstyle](https://github.com/checkstyle/checkstyle) java代码规范插件
 
+### [Kubernetes Java Client](https://github.com/kubernetes-client/java) k8s java client
 
 ### 数据库连接池
 #### [druid](https://github.com/alibaba/druid) 阿里开源数据库连接池框架
@@ -116,6 +117,9 @@
 
 ### [Python-100-Days](https://github.com/jackfrued/Python-100-Days) Python - 100天从新手到大师
 
+### [30-Days-Of-JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript) 30天学js
+
+### [90DaysOfDevOps](https://github.com/MichaelCade/90DaysOfDevOps) 90天学DevOps
 
 ## 自建博客
 
