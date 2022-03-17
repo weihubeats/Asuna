@@ -114,6 +114,9 @@
 
 ### [blog](https://github.com/digoal/blog) 国内postgresql大神的一些pg分享
 
+### [Python-100-Days](https://github.com/jackfrued/Python-100-Days) Python - 100天从新手到大师
+
+
 ## 自建博客
 
 ### [halo](https://github.com/halo-dev/halo) 一款现代化的开源博客
