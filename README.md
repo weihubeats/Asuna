@@ -20,6 +20,7 @@
 ### [arthas](https://github.com/alibaba/arthas) Java诊断利器
 
 
+
 ### [netty](https://github.com/netty/netty) 网络应用程序框架
 
 ### [COLA](https://github.com/alibaba/COLA) 阿里开源的COLA架构
@@ -103,6 +104,8 @@
 
 ### [spring-analysis](https://github.com/seaswalker/spring-analysis) Spring相关组件阅读笔记
 
+### [mini-spring](https://github.com/DerekYRC/mini-spring) 简化版的spring框架,供我们学习
+
 ### [itstack-demo-bytecode](https://github.com/fuzhengwei/itstack-demo-bytecode) java字节码编程相关学习
 
 ### [flink-learning](https://github.com/zhisheng17/flink-learning) Flink 学习
@@ -128,6 +131,9 @@
 ### [solo](https://github.com/88250/solo) 小而美的开源博客系统
 
 ## 其他
+
+
+### [slidev](https://github.com/slidevjs/slidev) markdown语法写PPT
 
 ### [kubernetes](https://github.com/kubernetes/kubernetes) k8s不会有人不认识吧
 
