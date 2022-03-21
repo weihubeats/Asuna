@@ -35,7 +35,7 @@
 
 ### [dynamic-threadpool](https://github.com/acmenlt/dynamic-threadpool) 动态线程池框架
 
-### [https://github.com/lyh200/dynamic-tp](https://github.com/lyh200/dynamic-tp) 动态线程池框架
+### [dynamic-tp](https://github.com/lyh200/dynamic-tp) 动态线程池框架
 
 ### [wh-mq-Idempotent](https://github.com/weihubeats/wh-mq-Idempotent) 通用MQ幂等框架
 
