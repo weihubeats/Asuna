@@ -74,6 +74,8 @@
 ### 分库分表
 #### [shardingsphere](https://github.com/apache/shardingsphere) 客户端级别分库分表
 
+### 字节码框架
+#### [javassist](https://github.com/jboss-javassist/javassist)
 
 ### 实战项目
 
@@ -124,6 +126,10 @@
 
 ### [90DaysOfDevOps](https://github.com/MichaelCade/90DaysOfDevOps) 90天学DevOps
 
+### [mybatis](https://github.com/tuguangquan/mybatis) mybatis源码中文注释
+
+
+
 ## 自建博客
 
 ### [halo](https://github.com/halo-dev/halo) 一款现代化的开源博客
@@ -154,3 +160,7 @@
 ## 面试
 
 ### [reverse-interview-zh](https://github.com/yifeikong/reverse-interview-zh) 技术面试最后反问面试官的话
+### [leetcode](https://github.com/doocs/leetcode) 多种编程语言实现 LeetCode
+### [JavaGuide](https://github.com/Snailclimb/JavaGuide) java八股文
+### [interviews](https://github.com/kdn251/interviews) Everything you need to know to get the job.
+
