@@ -70,6 +70,10 @@
 #### [spring-cloud-openfeign](https://github.com/spring-cloud/spring-cloud-openfeign) Netflix Http协议RPC框架
 #### [grpc](https://github.com/grpc/grpc) Google 开源的跨语言RPC框架
 
+### 任务调度
+#### [xxl-job](https://github.com/xuxueli/xxl-job) 分布式任务调度框架
+#### [quartz](https://github.com/quartz-scheduler/quartz) 轻量任务调度框架
+#### [shardingsphere-elasticjob](https://github.com/apache/shardingsphere-elasticjob)
 
 ### 分库分表
 #### [shardingsphere](https://github.com/apache/shardingsphere) 客户端级别分库分表
