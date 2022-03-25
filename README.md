@@ -19,7 +19,7 @@
 
 #### [arthas](https://github.com/alibaba/arthas) Java诊断利器
 
-
+#### [incubator-eventmesh](https://github.com/apache/incubator-eventmesh) Apache 动态的云原生事件驱动架构基础设施
 
 #### [netty](https://github.com/netty/netty) 网络应用程序框架
 
@@ -49,6 +49,21 @@
 #### [hotkey](https://gitee.com/jd-platform-opensource/hotkey) 京东热点key缓存
 #### [WxJava](https://github.com/Wechat-Group/WxJava) 微信开发 Java SDK
 
+### 权限认证框架
+
+#### [Sa-Token](https://github.com/dromara/Sa-Token) 轻量级 Java 权限认证框架，让鉴权变得简单、优雅
+
+### 分布式事务框架
+
+#### [Seata](https://github.com/seata/seata) 阿里开源分布式事务框架
+#### [tcc-transaction](https://github.com/changmingxie/tcc-transaction) TCC型事务
+#### [dtf](https://github.com/dtm-labs/dtf) Distributed Transactions Manager
+#### [hmily](https://github.com/dromara/hmily) 柔性分布式事务框架
+#### [raincat](https://github.com/dromara/raincat) 强一致分布式事务框架
+
+
+
+
 ### 数据库连接池
 #### [druid](https://github.com/alibaba/druid) 阿里开源数据库连接池框架
 #### [HikariCP](https://github.com/brettwooldridge/HikariCP) Spring Boot 默认数据库连接池
@@ -67,6 +82,7 @@
 #### [spring-data-jpa](https://github.com/spring-projects/spring-data-jpa) 通过方法名方式映射sql
 #### [querydsl](https://github.com/querydsl/querydsl) 给jap插上翅膀,让复杂sql也简单
 #### [diboot](https://github.com/dibo-software/diboot) 告别常规SQL和CRUD，写的更少，性能更好
+
 ### RPC框架
 #### [dubbo](https://github.com/apache/dubbo) 阿里开源tpc协议RPC框架
 #### [spring-cloud-openfeign](https://github.com/spring-cloud/spring-cloud-openfeign) Netflix Http协议RPC框架
@@ -75,7 +91,7 @@
 ### 任务调度
 #### [xxl-job](https://github.com/xuxueli/xxl-job) 分布式任务调度框架
 #### [quartz](https://github.com/quartz-scheduler/quartz) 轻量任务调度框架
-#### [shardingsphere-elasticjob](https://github.com/apache/shardingsphere-elasticjob)
+#### [shardingsphere-elasticjob](https://github.com/apache/shardingsphere-elasticjob) apache开源的分布式调度框架
 
 ### 分库分表
 #### [shardingsphere](https://github.com/apache/shardingsphere) 客户端级别分库分表
@@ -89,6 +105,8 @@
 #### [eladmin](https://github.com/elunez/eladmin) EL-ADMIN 后台管理系统
 #### [miaosha](https://github.com/qiurunze123/miaosha) 互联网秒杀系统架构设计
 #### [ruoyi-vue-pro](https://github.com/YunaiV/ruoyi-vue-pro)
+#### [goodsKill](https://github.com/techa03/goodsKill) springcloud +dubbo构建的模拟秒杀微服务项目
+
 ## 消息中间件
 
 #### [rocketmq](https://github.com/apache/rocketmq) apache开源的消息中间件
@@ -165,6 +183,8 @@
 #### [feedback](https://github.com/github/feedback) github官方产品讨论项目
 
 #### [dev-sidecar](https://github.com/docmirror/dev-sidecar) github访问加速
+
+#### [996.ICU](https://github.com/996icu/996.ICU) 996公司名单
 
 ---
 
