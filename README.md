@@ -2,6 +2,11 @@
 觉得比较有意思或者有用的开源项目整理(Open source projects that you find interesting or useful)
 供大家扩展知识面,技术选型,代码借鉴.
 
+## update log
+[update log](update.md)
+
+## 贡献指南
+[贡献指南](contribution-Asuna.md)
 
 ## Java
 
@@ -49,6 +54,11 @@
 #### [hotkey](https://gitee.com/jd-platform-opensource/hotkey) 京东热点key缓存
 #### [WxJava](https://github.com/Wechat-Group/WxJava) 微信开发 Java SDK
 #### [mica](https://github.com/lets-mica/mica) Spring Cloud 微服务开发核心包
+
+### 搜索引擎
+#### [lucene](https://github.com/apache/lucene) apache lucene
+#### [elasticsearch](https://github.com/elastic/elasticsearch) 目前最流行的搜索引擎
+#### [solr](https://github.com/apache/solr) apache 开源的搜索引擎
 
 ### 工具类
 #### [hutool](https://github.com/dromara/hutool) 小而全的Java工具类库
@@ -170,6 +180,8 @@
 #### [mybatis](https://github.com/tuguangquan/mybatis) mybatis源码中文注释
 
 #### [awesome-java-books](https://github.com/sorenduan/awesome-java-books) Java 技术书籍大全
+
+#### [flash-linux0.11-talk](https://github.com/sunym1993/flash-linux0.11-talk) 像小说一样品读 Linux 0.11 核心代码
 
 ## 自建博客
 
