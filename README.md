@@ -108,6 +108,9 @@
 ### 字节码框架
 #### [javassist](https://github.com/jboss-javassist/javassist)
 
+### 代码质量检测
+#### [sonarqube](https://github.com/SonarSource/sonarqube) 代码检测
+
 ### 实战项目
 
 #### [mall](https://github.com/macrozheng/mall) 前后端微服务项目
@@ -119,6 +122,8 @@
 ## 消息中间件
 
 #### [rocketmq](https://github.com/apache/rocketmq) apache开源的消息中间件
+#### [mqcloud](https://github.com/sohutv/mqcloud) RocketMQ 企业级一站式服务平台
+
 #### [Apache Kafka](https://github.com/apache/kafka) apache开源的消息中间件
 #### [rabbitmq-server](https://github.com/rabbitmq/rabbitmq-server) rabbitmq
 #### [Pulsar](https://github.com/apache/pulsar) Apache Pulsar
@@ -139,7 +144,7 @@
 
 
 ## 学习
-
+#### [java-design-patterns](https://github.com/iluwatar/java-design-patterns)
 #### [spring-analysis](https://github.com/seaswalker/spring-analysis) Spring相关组件阅读笔记
 
 #### [mini-spring](https://github.com/DerekYRC/mini-spring) 简化版的spring框架,供我们学习
