@@ -35,12 +35,9 @@
 
 #### [TLog](https://github.com/dromara/TLog) dromara 社区开源的轻量级分布式链路追踪
 
+#### [APIJSON](https://github.com/Tencent/APIJSON) 腾讯开源的零代码、全自动、强安全 ORM 库
 
 #### [easyexcel](https://github.com/alibaba/easyexcel) 阿里开源excel导出 sdk
-
-#### [dynamic-threadpool](https://github.com/acmenlt/dynamic-threadpool) 动态线程池框架
-
-#### [dynamic-tp](https://github.com/lyh200/dynamic-tp) 动态线程池框架
 
 #### [wh-mq-Idempotent](https://github.com/weihubeats/wh-mq-Idempotent) 通用MQ幂等框架
 
@@ -54,6 +51,11 @@
 #### [hotkey](https://gitee.com/jd-platform-opensource/hotkey) 京东热点key缓存
 #### [WxJava](https://github.com/Wechat-Group/WxJava) 微信开发 Java SDK
 #### [mica](https://github.com/lets-mica/mica) Spring Cloud 微服务开发核心包
+
+### 多线程
+#### [dynamic-tp](https://github.com/lyh200/dynamic-tp) 动态线程池框架
+#### [dynamic-threadpool](https://github.com/acmenlt/dynamic-threadpool) 动态线程池框架
+#### [gobrs-async](https://github.com/Memorydoc/gobrs-async) 多线程异步编排
 
 ### 搜索引擎
 #### [lucene](https://github.com/apache/lucene) apache lucene
