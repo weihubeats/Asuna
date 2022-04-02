@@ -11,3 +11,7 @@
 1. 新增 APIJSON
 2. 新增 gobrs-async
 3. 新增多线程分类
+
+- 2022.4.2
+1. 新增监控系统 HertzBeat
+2. 新增 955.WLB 公司白名单
