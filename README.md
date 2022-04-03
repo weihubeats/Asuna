@@ -82,7 +82,9 @@
 #### [hmily](https://github.com/dromara/hmily) 柔性分布式事务框架
 #### [raincat](https://github.com/dromara/raincat) 强一致分布式事务框架
 
-
+### json序列化
+#### [fastjson](https://github.com/alibaba/fastjson) 阿里开源fastjson
+#### [jackson](https://github.com/FasterXML/jackson) 目前spring boot 默认json序列化框架
 
 
 ### 数据库连接池
@@ -134,6 +136,8 @@
 #### [miaosha](https://github.com/qiurunze123/miaosha) 互联网秒杀系统架构设计
 #### [ruoyi-vue-pro](https://github.com/YunaiV/ruoyi-vue-pro)
 #### [goodsKill](https://github.com/techa03/goodsKill) springcloud +dubbo构建的模拟秒杀微服务项目
+#### [ruoyi-vue-pro](https://github.com/YunaiV/ruoyi-vue-pro)
+
 
 ## 消息中间件
 
@@ -189,11 +193,15 @@
 
 #### [flash-linux0.11-talk](https://github.com/sunym1993/flash-linux0.11-talk) 像小说一样品读 Linux 0.11 核心代码
 
+#### [system-design-primer](https://github.com/donnemartin/system-design-primer) 学习如何实际大型系统 
+
+#### [ddia](https://github.com/Vonng/ddia) 《Designing Data-Intensive Application》DDIA中文翻译
 ## 自建博客
 
 #### [halo](https://github.com/halo-dev/halo) 一款现代化的开源博客
 
 #### [solo](https://github.com/88250/solo) 小而美的开源博客系统
+
 
 ## 其他
 
