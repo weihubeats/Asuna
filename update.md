@@ -18,4 +18,4 @@
 
 - 2022.4.3
 1. 新增 序列化框架推荐
-2. 新增实战项目 ruoyi-vue-pro
+2. 新增学习项目`ddia`、`system-design-primer`

@@ -136,7 +136,6 @@
 #### [miaosha](https://github.com/qiurunze123/miaosha) 互联网秒杀系统架构设计
 #### [ruoyi-vue-pro](https://github.com/YunaiV/ruoyi-vue-pro)
 #### [goodsKill](https://github.com/techa03/goodsKill) springcloud +dubbo构建的模拟秒杀微服务项目
-#### [ruoyi-vue-pro](https://github.com/YunaiV/ruoyi-vue-pro)
 
 
 ## 消息中间件
