@@ -147,7 +147,7 @@
 
 #### [rocketmq](https://github.com/apache/rocketmq) apache开源的消息中间件
 #### [mqcloud](https://github.com/sohutv/mqcloud) RocketMQ 企业级一站式服务平台
-
+#### [qmq](https://github.com/qunarcorp/qmq) 去哪儿网内部广泛使用的消息中间件
 #### [Apache Kafka](https://github.com/apache/kafka) apache开源的消息中间件
 #### [rabbitmq-server](https://github.com/rabbitmq/rabbitmq-server) rabbitmq
 #### [Pulsar](https://github.com/apache/pulsar) Apache Pulsar
