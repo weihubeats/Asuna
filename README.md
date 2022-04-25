@@ -29,7 +29,7 @@
 
 #### [nutzboot](https://github.com/nutzam/nutzboot) 企业级微服务框架，对各种三方框架整合
 #### [guice](https://github.com/google/guice) google开源的轻量级依赖注入框架
-#### [solon](https://github.com/noear/solon) 更现代感的应用开发框架。更快、更小、更自由！主框架0.1M
+#### [solon](https://github.com/noear/solon) 国人开源的更现代感的应用开发框架。更快、更小、更自由！主框架0.1M
 #### [Quarkus](https://github.com/quarkusio/quarkus) 轻量级云原生框架
 
 #### [layering-cache](https://github.com/xiaolyuh/layering-cache) 多级缓存框架
@@ -92,6 +92,7 @@
 ### 权限认证框架
 
 #### [Sa-Token](https://github.com/dromara/Sa-Token) 轻量级 Java 权限认证框架，让鉴权变得简单、优雅
+#### [spring-security](https://github.com/spring-projects/spring-security)
 
 ### 分布式事务框架
 
@@ -262,4 +263,6 @@
 
 ### [murphysec](https://github.com/murphysecurity/murphysec) 软件供应链安全，具备专业的软件成分分析（SCA）、漏洞检测、专业漏洞库
 
+## 推荐相关
 
+#### [HelloGitHub](https://github.com/521xueweihan/HelloGitHub) 分享 GitHub 上有趣、入门级的开源项目
