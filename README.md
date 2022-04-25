@@ -21,11 +21,16 @@
 
 ## Java
 
+### 开发框架
+
 #### [spring-framework](https://github.com/spring-projects/spring-framework) Spring 一统天下
 
 #### [spring-boot](https://github.com/spring-projects/spring-boot) Srping Boot 一统天下
 
 #### [nutzboot](https://github.com/nutzam/nutzboot) 企业级微服务框架，对各种三方框架整合
+#### [guice](https://github.com/google/guice) google开源的轻量级依赖注入框架
+#### [solon](https://github.com/noear/solon) 更现代感的应用开发框架。更快、更小、更自由！主框架0.1M
+#### [Quarkus](https://github.com/quarkusio/quarkus) 轻量级云原生框架
 
 #### [layering-cache](https://github.com/xiaolyuh/layering-cache) 多级缓存框架
 
