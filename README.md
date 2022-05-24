@@ -220,6 +220,10 @@
 
 #### [small-spring](https://github.com/fuzhengwei/small-spring) Spring 手撸专栏
 
+#### [Go 语言学习资料索引](https://github.com/Unknwon/go-study-index) Go 语言学习资料索引
+
+
+
 ## 自建博客
 
 #### [halo](https://github.com/halo-dev/halo) 一款现代化的开源博客
