@@ -159,6 +159,10 @@
 #### [ruoyi-vue-pro](https://github.com/YunaiV/ruoyi-vue-pro)
 #### [goodsKill](https://github.com/techa03/goodsKill) springcloud +dubbo构建的模拟秒杀微服务项目
 
+### 流程引擎
+#### [bulbasaur](https://github.com/alibaba/bulbasaur) 阿里开源可插拔的精简流程引擎
+#### [Activiti](https://github.com/Activiti/Activiti)
+#### [jbpm](https://github.com/kiegroup/jbpm)
 
 ## 消息中间件
 
