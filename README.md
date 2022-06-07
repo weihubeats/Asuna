@@ -189,7 +189,7 @@
 
 
 ## 学习
-#### [java-design-patterns](https://github.com/iluwatar/java-design-patterns)
+#### [java-design-patterns](https://github.com/iluwatar/java-design-patterns) 设计模式
 #### [spring-analysis](https://github.com/seaswalker/spring-analysis) Spring相关组件阅读笔记
 
 #### [mini-spring](https://github.com/DerekYRC/mini-spring) 简化版的spring框架,供我们学习
@@ -197,8 +197,6 @@
 #### [itstack-demo-bytecode](https://github.com/fuzhengwei/itstack-demo-bytecode) java字节码编程相关学习
 
 #### [flink-learning](https://github.com/zhisheng17/flink-learning) Flink 学习
-
-#### [A-Programmers-Guide-to-English](https://github.com/yujiangshui/A-Programmers-Guide-to-English) 专为程序员编写的英语学习指南。
 
 #### [100-Days-Of-ML-Code](https://github.com/Avik-Jain/100-Days-Of-ML-Code) 机器学习
 
@@ -226,6 +224,9 @@
 
 #### [Go 语言学习资料索引](https://github.com/Unknwon/go-study-index) Go 语言学习资料索引
 
+### 英语学习
+#### [qwerty-learner](https://github.com/Kaiyiwing/qwerty-learner) 为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件
+#### [A-Programmers-Guide-to-English](https://github.com/yujiangshui/A-Programmers-Guide-to-English) 专为程序员编写的英语学习指南。
 
 
 ## 自建博客
