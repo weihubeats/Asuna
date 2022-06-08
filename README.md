@@ -16,7 +16,7 @@
 #### [JavaGuide](https://github.com/Snailclimb/JavaGuide) java八股文
 #### [interviews](https://github.com/kdn251/interviews) Everything you need to know to get the job.
 #### [advanced-java](https://github.com/doocs/advanced-java) 互联网 Java 工程师进阶知识完全扫盲
-
+#### [source-code-hunter](https://github.com/doocs/source-code-hunter) 从源码层面，剖析挖掘互联网行业主流技术的底层实现原理
 ---
 
 ## Java
@@ -70,6 +70,7 @@
 #### [hotkey](https://gitee.com/jd-platform-opensource/hotkey) 京东热点key缓存
 #### [WxJava](https://github.com/Wechat-Group/WxJava) 微信开发 Java SDK
 #### [mica](https://github.com/lets-mica/mica) Spring Cloud 微服务开发核心包
+#### [spring-cloud-tencent](https://github.com/Tencent/spring-cloud-tencent) 腾讯开源spring cloud 全家桶
 
 ### 多线程
 #### [dynamic-tp](https://github.com/lyh200/dynamic-tp) 动态线程池框架
@@ -89,6 +90,7 @@
 #### [incubator-shenyu](https://github.com/apache/incubator-shenyu) 国人开源捐赠给apache的网关
 #### [zuul](https://github.com/Netflix/zuul) Netflix开源的网关
 #### [spring-cloud-gateway](https://github.com/spring-cloud/spring-cloud-gateway)
+#### [polaris](https://github.com/polarismesh/polaris) 腾讯百万级服务治理中心的开源版本，沉淀了腾讯多年的分布式服务治理经验
 ### 权限认证框架
 
 #### [Sa-Token](https://github.com/dromara/Sa-Token) 轻量级 Java 权限认证框架，让鉴权变得简单、优雅
