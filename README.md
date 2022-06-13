@@ -277,3 +277,7 @@
 ## 推荐相关
 
 #### [HelloGitHub](https://github.com/521xueweihan/HelloGitHub) 分享 GitHub 上有趣、入门级的开源项目
+
+## 设计
+
+#### [logoly](https://github.com/bestony/logoly) 在线logo生成器
