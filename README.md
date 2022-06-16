@@ -113,6 +113,9 @@
 #### [druid](https://github.com/alibaba/druid) 阿里开源数据库连接池框架
 #### [HikariCP](https://github.com/brettwooldridge/HikariCP) Spring Boot 默认数据库连接池
 
+### json解析
+#### [xjsonkit](https://github.com/ejlchina/xjsonkit) 超轻量级 JSON 门面框架
+#### [easyjson](https://github.com/fangjinuo/easyjson) 提供了一个JSON门面库
 
 ### ORM框架
 
