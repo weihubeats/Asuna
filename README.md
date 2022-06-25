@@ -72,6 +72,13 @@
 #### [mica](https://github.com/lets-mica/mica) Spring Cloud 微服务开发核心包
 #### [spring-cloud-tencent](https://github.com/Tencent/spring-cloud-tencent) 腾讯开源spring cloud 全家桶
 
+### 基础工具类
+#### [vjtools](https://github.com/vipshop/vjtools) 唯品会java工具类
+#### [hutool](https://github.com/dromara/hutool) Hutool是一个小而全的Java工具类库
+#### [guava](https://github.com/google/guava) google开源的工具类
+#### [commons-lang](https://github.com/apache/commons-lang) apache开源的工具类
+#### [jodd-util](https://github.com/oblac/jodd-util)
+
 ### 多线程
 #### [dynamic-tp](https://github.com/lyh200/dynamic-tp) 动态线程池框架
 #### [dynamic-threadpool](https://github.com/acmenlt/dynamic-threadpool) 动态线程池框架
@@ -82,9 +89,6 @@
 #### [elasticsearch](https://github.com/elastic/elasticsearch) 目前最流行的搜索引擎
 #### [solr](https://github.com/apache/solr) apache 开源的搜索引擎
 
-### 工具类
-#### [hutool](https://github.com/dromara/hutool) 小而全的Java工具类库
-#### [guava](https://github.com/google/guava) google开源的一些java工具
 
 ### 网关
 #### [incubator-shenyu](https://github.com/apache/incubator-shenyu) 国人开源捐赠给apache的网关
