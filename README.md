@@ -8,16 +8,30 @@
 ## 贡献指南
 [贡献指南](contribution-Asuna.md)
 
+## 工作
 
-## 面试
+### 面试
 
-#### [reverse-interview-zh](https://github.com/yifeikong/reverse-interview-zh) 技术面试最后反问面试官的话
-#### [leetcode](https://github.com/doocs/leetcode) 多种编程语言实现 LeetCode
-#### [JavaGuide](https://github.com/Snailclimb/JavaGuide) java八股文
-#### [interviews](https://github.com/kdn251/interviews) Everything you need to know to get the job.
-#### [advanced-java](https://github.com/doocs/advanced-java) 互联网 Java 工程师进阶知识完全扫盲
-#### [source-code-hunter](https://github.com/doocs/source-code-hunter) 从源码层面，剖析挖掘互联网行业主流技术的底层实现原理
----
+| 序号  | repositories | 简介  |
+|:----| :------------ |:---:|
+| 1   | [`yifeikong/reverse-interview-zh` ![](https://img.shields.io/github/stars/yifeikong/reverse-interview-zh.svg?style=social&label=Star)](https://github.com/yifeikong/reverse-interview-zh) | 技术面试最后反问面试官的话  |
+| 2   |[`Snailclimb/JavaGuide` ![](https://img.shields.io/github/stars/Snailclimb/JavaGuide.svg?style=social&label=Star)](https://github.com/Snailclimb/JavaGuide)|java八股文,比较全的Java学习资料
+| 3   |[`kdn251/interviews` ![](https://img.shields.io/github/stars/kdn251/interviews.svg?style=social&label=Star)](https://github.com/kdn251/interviews)|Everything you need to know to get the job.
+| 4   |[`doocs/advanced-java` ![](https://img.shields.io/github/stars/doocs/advanced-java.svg?style=social&label=Star)](https://github.com/doocs/advanced-java)|互联网 Java 工程师进阶知识完全扫盲
+| 5   |[`doocs/source-code-hunter` ![](https://img.shields.io/github/stars/doocs/source-code-hunter.svg?style=social&label=Star)](https://github.com/doocs/source-code-hunter)|从源码层面，剖析挖掘互联网行业主流技术的底层实现原理
+| 6   ||
+
+### 算法
+| 序号  | repositories | 简介  |
+|:----| :------------ |:---:|
+| 1   |[`doocs/leetcode` ![](https://img.shields.io/github/stars/doocs/leetcode.svg?style=social&label=Star)](https://github.com/doocs/leetcode)|多种编程语言实现 LeetCode
+| 3   ||
+| 2   ||
+| 2   ||
+| 2   ||
+| 2   ||
+
+
 
 ### 开发框架
 
