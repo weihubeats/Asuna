@@ -2,11 +2,8 @@
 觉得比较有意思或者有用的开源项目整理(Open source projects that you find interesting or useful)
 供大家扩展知识面,技术选型,代码借鉴.
 
-## update log
-[update log](update.md)
 
-## 贡献指南
-[贡献指南](contribution-Asuna.md)
+
 
 ## 工作
 
@@ -371,3 +368,7 @@
 ## 设计
 
 #### [logoly](https://github.com/bestony/logoly) 在线logo生成器
+
+
+## 贡献指南
+[贡献指南](contribution-Asuna.md)
