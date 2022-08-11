@@ -78,10 +78,45 @@
 | 序号  | repositories | 简介  |
 |:----| :------------ |:---:|
 | 1   |[`apache/commons-lang` ![](https://img.shields.io/github/stars/apache/commons-lang.svg?style=social&label=Star)](https://github.com/apache/commons-lang)|apache开源的工具类
-| 2   ||
+| 2   |[`vipshop/vjtools` ![](https://img.shields.io/github/stars/vipshop/vjtools.svg?style=social&label=Star)](https://github.com/vipshop/vjtools)|唯品会java工具类
+| 3   |[`dromara/hutool` ![](https://img.shields.io/github/stars/dromara/hutool.svg?style=social&label=Star)](https://github.com/dromara/hutool)|Hutool是一个小而全的Java工具类库
+| 4   |[`google/guava` ![](https://img.shields.io/github/stars/google/guava.svg?style=social&label=Star)](https://github.com/google/guava)|google开源的工具类
+| 5   |[`oblac/jodd-util` ![](https://img.shields.io/github/stars/oblac/jodd-util.svg?style=social&label=Star)](https://github.com/oblac/jodd-util)|
+| 6   ||
+| 7   ||
+
+### ORM框架
+| 序号  | repositories | 简介  |
+|:----| :------------ |:---:|
+| 1   |[`mybatis/mybatis-3` ![](https://img.shields.io/github/stars/mybatis/mybatis-3.svg?style=social&label=Star)](https://github.com/mybatis/mybatis-3)|
+| 2   |[`baomidou/mybatis-plus` ![](https://img.shields.io/github/stars/baomidou/mybatis-plus.svg?style=social&label=Star)](https://github.com/baomidou/mybatis-plus)|mybatis单表无需写sql
+| 3   |[`Dreamroute/mybatis-pro` ![](https://img.shields.io/github/stars/Dreamroute/mybatis-pro.svg?style=social&label=Star)](https://github.com/Dreamroute/mybatis-pro)|类似mybatis-plus
+| 4   |[`jOOQ/jOOQ` ![](https://img.shields.io/github/stars/jOOQ/jOOQ.svg?style=social&label=Star)](https://github.com/jOOQ/jOOQ)|
+| 5   |[`spring-projects/spring-data-jpa` ![](https://img.shields.io/github/stars/spring-projects/spring-data-jpa.svg?style=social&label=Star)](https://github.com/spring-projects/spring-data-jpa)|通过方法名方式映射sql
+| 6   |[`querydsl/querydsl` ![](https://img.shields.io/github/stars/querydsl/querydsl.svg?style=social&label=Star)](https://github.com/querydsl/querydsl)|给jap插上翅膀,让复杂sql也简单
+| 7   |[`querydsl/querydsl` ![](https://img.shields.io/github/stars/querydsl/querydsl.svg?style=social&label=Star)](https://github.com/querydsl/querydsl)|告别常规SQL和CRUD，写的更少，性能更好
+| 8   |[`hibernate/hibernate-orm` ![](https://img.shields.io/github/stars/hibernate/hibernate-orm.svg?style=social&label=Star)](https://github.com/hibernate/hibernate-orm)|对象与数据库直接映射ORM框架
+
+### 权限框架
+| 序号  | repositories | 简介  |
+|:----| :------------ |:---:|
+| 1   |[`dromara/Sa-Token` ![](https://img.shields.io/github/stars/dromara/Sa-Token.svg?style=social&label=Star)](https://github.com/dromara/Sa-Token)|轻量级 Java 权限认证框架，让鉴权变得简单、优雅
+| 2   |[`spring-projects/spring-security` ![](https://img.shields.io/github/stars/spring-projects/spring-security.svg?style=social&label=Star)](https://github.com/spring-projects/spring-security)|
 | 3   ||
 | 4   ||
 | 5   ||
+| 6   ||
+| 7   ||
+
+### 实战项目
+
+| 序号  | repositories | 简介  |
+|:----| :------------ |:---:|
+| 1   |[`macrozheng/mall` ![](https://img.shields.io/github/stars/macrozheng/mall.svg?style=social&label=Star)](https://github.com/macrozheng/mall)|前后端微服务项目
+| 2   |[`elunez/eladmin` ![](https://img.shields.io/github/stars/elunez/eladmin.svg?style=social&label=Star)](https://github.com/elunez/eladmin)|EL-ADMIN 后台管理系统
+| 3   |[`qiurunze123/miaosha` ![](https://img.shields.io/github/stars/qiurunze123/miaosha.svg?style=social&label=Star)](https://github.com/qiurunze123/miaosha)|互联网秒杀系统架构设计
+| 4   |[`YunaiV/ruoyi-vue-pro` ![](https://img.shields.io/github/stars/YunaiV/ruoyi-vue-pro.svg?style=social&label=Star)](https://github.com/YunaiV/ruoyi-vue-pro)|
+| 5   |[`techa03/goodsKill` ![](https://img.shields.io/github/stars/techa03/goodsKill.svg?style=social&label=Star)](https://github.com/techa03/goodsKill)|springcloud +dubbo构建的模拟秒杀微服务项目
 | 6   ||
 | 7   ||
 
@@ -107,6 +142,53 @@
 | 5   |[`dromara/TLog` ![](https://img.shields.io/github/stars/dromara/TLog.svg?style=social&label=Star)](https://github.com/dromara/TLog)|dromara 社区开源的轻量级分布式链路追踪|
 | 6   |||
 | 7   |||
+
+
+## 消息中间件
+| 序号  | repositories | 简介               |开发语言 |
+|:----|:---------------------------------------------------------------------------------------------------------------------------------------|:-----------------|:----:|
+| 1   |[`apache/rocketmq` ![](https://img.shields.io/github/stars/apache/rocketmq.svg?style=social&label=Star)](https://github.com/apache/rocketmq)| 阿里开源消息中间件|Java        
+| 2   |[`qunarcorp/qmq` ![](https://img.shields.io/github/stars/qunarcorp/qmq.svg?style=social&label=Star)](https://github.com/qunarcorp/qmq)| 去哪儿网内部广泛使用的消息中间件 |Java
+| 3   |[`apache/kafka` ![](https://img.shields.io/github/stars/apache/kafka.svg?style=social&label=Star)](https://github.com/apache/kafka)| apache开源高吞吐消息中间件 |Java
+| 4   |[`rabbitmq/rabbitmq-server` ![](https://img.shields.io/github/stars/rabbitmq/rabbitmq-server.svg?style=social&label=Star)](https://github.com/rabbitmq/rabbitmq-server)|
+| 5   |[`apache/pulsar` ![](https://img.shields.io/github/stars/apache/pulsar.svg?style=social&label=Star)](https://github.com/apache/pulsar)| apach开源云原生网关     |Java
+| 6   |[`apache/rocketmq-spring` ![](https://img.shields.io/github/stars/apache/rocketmq-spring.svg?style=social&label=Star)](https://github.com/apache/rocketmq-spring)|rocketmq 客户端使用sdk|Java
+| 7   ||
+
+## 搜索引擎
+
+| 序号  | repositories |       简介        |开发语言|
+|:----| :------------ |:---------------:|:---:|
+| 1   |[`apache/lucene` ![](https://img.shields.io/github/stars/apache/lucene.svg?style=social&label=Star)](https://github.com/apache/lucene)|                | Java           
+| 2   |[`elastic/elasticsearch` ![](https://img.shields.io/github/stars/elastic/elasticsearch.svg?style=social&label=Star)](https://github.com/elastic/elasticsearch)| 基于lucene开源的搜索引擎 |Java
+| 3   |[`apache/solr` ![](https://img.shields.io/github/stars/apache/solr.svg?style=social&label=Star)](https://github.com/apache/solr)||      Java       
+| 4   |||
+| 5   |||
+| 6   |||
+| 7   |||
+
+
+## 自建博客
+
+| 序号  | repositories | 简介  |开发语言|
+|:----| :------------ |:---:|:---:|
+| 1   |[`halo-dev/halo` ![](https://img.shields.io/github/stars/halo-dev/halo.svg?style=social&label=Star)](https://github.com/halo-dev/halo)|一款现代化的开源博客|Java
+| 2   |[`88250/solo` ![](https://img.shields.io/github/stars/88250/solo.svg?style=social&label=Star)](https://github.com/88250/solo)|小而美的开源博客系统|Java
+
+## 数据库
+
+| 序号  | repositories |                       简介                       |开发语言|
+|:----| :------------ |:----------------------------------------------:|:---:|
+| 1   |[`mysql/mysql-server` ![](https://img.shields.io/github/stars/mysql/mysql-server.svg?style=social&label=Star)](https://github.com/mysql/mysql-server)|           MySQLServer 是世界上最流行的开源数据库            |C++
+| 2   |[`postgres/postgres` ![](https://img.shields.io/github/stars/postgres/postgres.svg?style=social&label=Star)](https://github.com/postgres/postgres)|                                                |C
+| 3   |[`pingcap/tidb` ![](https://img.shields.io/github/stars/pingcap/tidb.svg?style=social&label=Star)](https://github.com/pingcap/tidb)|     TiDB 是一个开源的、原生于云的、分布式的、与 MySQL 兼容的数据库      |Go
+| 4   |[`mongodb/mongo` ![](https://img.shields.io/github/stars/mongodb/mongo.svg?style=social&label=Star)](https://github.com/mongodb/mongo)|                     文档数据库                      |C++
+| 5   |[`ClickHouse/ClickHouse` ![](https://img.shields.io/github/stars/ClickHouse/ClickHouse.svg?style=social&label=Star)](https://github.com/ClickHouse/ClickHouse)|                 俄罗斯开源列式数据库OLAP                 |C++
+| 6   |||
+| 7   |||
+
+
+
 
 #### [layering-cache](https://github.com/xiaolyuh/layering-cache) 多级缓存框架
 
@@ -138,33 +220,13 @@
 #### [mica](https://github.com/lets-mica/mica) Spring Cloud 微服务开发核心包
 #### [spring-cloud-tencent](https://github.com/Tencent/spring-cloud-tencent) 腾讯开源spring cloud 全家桶
 
-### 基础工具类
-#### [vjtools](https://github.com/vipshop/vjtools) 唯品会java工具类
-#### [hutool](https://github.com/dromara/hutool) Hutool是一个小而全的Java工具类库
-#### [guava](https://github.com/google/guava) google开源的工具类
-#### [commons-lang](https://github.com/apache/commons-lang) apache开源的工具类
-#### [jodd-util](https://github.com/oblac/jodd-util)
 
 
 
-### 搜索引擎
-#### [lucene](https://github.com/apache/lucene) apache lucene
-#### [elasticsearch](https://github.com/elastic/elasticsearch) 目前最流行的搜索引擎
-#### [solr](https://github.com/apache/solr) apache 开源的搜索引擎
 
 
-### 权限认证框架
 
-#### [Sa-Token](https://github.com/dromara/Sa-Token) 轻量级 Java 权限认证框架，让鉴权变得简单、优雅
-#### [spring-security](https://github.com/spring-projects/spring-security)
 
-### 分布式事务框架
-
-#### [Seata](https://github.com/seata/seata) 阿里开源分布式事务框架
-#### [tcc-transaction](https://github.com/changmingxie/tcc-transaction) TCC型事务
-#### [dtf](https://github.com/dtm-labs/dtf) Distributed Transactions Manager
-#### [hmily](https://github.com/dromara/hmily) 柔性分布式事务框架
-#### [raincat](https://github.com/dromara/raincat) 强一致分布式事务框架
 
 ### json序列化
 #### [fastjson](https://github.com/alibaba/fastjson) 阿里开源fastjson
@@ -179,19 +241,7 @@
 #### [xjsonkit](https://github.com/ejlchina/xjsonkit) 超轻量级 JSON 门面框架
 #### [easyjson](https://github.com/fangjinuo/easyjson) 提供了一个JSON门面库
 
-### ORM框架
 
-#### [mybatis-3](https://github.com/mybatis/mybatis-3) ORM框架
-
-#### [mybatis-plus](https://github.com/baomidou/mybatis-plus) mybatis单表无线写sql
-
-#### [mybatis-pro](https://github.com/Dreamroute/mybatis-pro) 类似mybatis-plus
-
-#### [jOOQ](https://github.com/jOOQ/jOOQ)
-
-#### [spring-data-jpa](https://github.com/spring-projects/spring-data-jpa) 通过方法名方式映射sql
-#### [querydsl](https://github.com/querydsl/querydsl) 给jap插上翅膀,让复杂sql也简单
-#### [diboot](https://github.com/dibo-software/diboot) 告别常规SQL和CRUD，写的更少，性能更好
 
 ### RPC框架
 #### [dubbo](https://github.com/apache/dubbo) 阿里开源tpc协议RPC框架
@@ -219,39 +269,17 @@
 #### [cat](https://github.com/dianping/cat) 美团开源监控框架
 #### [prometheus](https://github.com/prometheus/prometheus) 普罗米修斯
 
-### 实战项目
 
-#### [mall](https://github.com/macrozheng/mall) 前后端微服务项目
-#### [eladmin](https://github.com/elunez/eladmin) EL-ADMIN 后台管理系统
-#### [miaosha](https://github.com/qiurunze123/miaosha) 互联网秒杀系统架构设计
-#### [ruoyi-vue-pro](https://github.com/YunaiV/ruoyi-vue-pro)
-#### [goodsKill](https://github.com/techa03/goodsKill) springcloud +dubbo构建的模拟秒杀微服务项目
 
 ### 流程引擎
 #### [bulbasaur](https://github.com/alibaba/bulbasaur) 阿里开源可插拔的精简流程引擎
 #### [Activiti](https://github.com/Activiti/Activiti)
 #### [jbpm](https://github.com/kiegroup/jbpm)
 
-## 消息中间件
-
-#### [rocketmq](https://github.com/apache/rocketmq) apache开源的消息中间件
-#### [mqcloud](https://github.com/sohutv/mqcloud) RocketMQ 企业级一站式服务平台
-#### [qmq](https://github.com/qunarcorp/qmq) 去哪儿网内部广泛使用的消息中间件
-#### [Apache Kafka](https://github.com/apache/kafka) apache开源的消息中间件
-#### [rabbitmq-server](https://github.com/rabbitmq/rabbitmq-server) rabbitmq
-#### [Pulsar](https://github.com/apache/pulsar) Apache Pulsar
-
-### [rocketmq-spring](https://github.com/apache/rocketmq-spring) rocketmq 客户端使用sdk
 
 
-## 数据库
 
-### [mysql-server](https://github.com/mysql/mysql-server) mysql
-### [postgres](https://github.com/postgres/postgres) pg
-### [TiDB](https://github.com/pingcap/tidb) 分布式OLTP数据库
-### [MongoDB](https://github.com/mongodb/mongo) 文档数据库
-### [Elasticsearch](https://github.com/elastic/elasticsearch) es 文档数据库,主要用于搜索
-### [ClickHouse](https://github.com/ClickHouse/ClickHouse) 开源列式数据库OLAP
+
 
 ## 前端
 
@@ -297,11 +325,7 @@
 #### [A-Programmers-Guide-to-English](https://github.com/yujiangshui/A-Programmers-Guide-to-English) 专为程序员编写的英语学习指南。
 
 
-## 自建博客
 
-#### [halo](https://github.com/halo-dev/halo) 一款现代化的开源博客
-
-#### [solo](https://github.com/88250/solo) 小而美的开源博客系统
 
 
 ## 其他
