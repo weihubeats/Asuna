@@ -117,6 +117,17 @@
 | 6   ||
 | 7   ||
 
+### 序列化
+| 序号  | repositories | 简介  |
+|:----| :------------ |:---:|
+| 1   |[`alibaba/fastjson` ![](https://img.shields.io/github/stars/alibaba/fastjson.svg?style=social&label=Star)](https://github.com/alibaba/fastjson)|阿里开源序列化框架
+| 2   |[`alibaba/fastjson2` ![](https://img.shields.io/github/stars/alibaba/fastjson2.svg?style=social&label=Star)](https://github.com/alibaba/fastjson2)|FASTJSON2是FASTJSON项目的重要升级，目标是为下一个十年提供一个高性能的JSON库
+| 3   |[`FasterXML/jackson` ![](https://img.shields.io/github/stars/FasterXML/jackson.svg?style=social&label=Star)](https://github.com/FasterXML/jackson)|目前spring boot 默认json序列化框架
+| 4   |[`ejlchina/xjsonkit` ![](https://img.shields.io/github/stars/ejlchina/xjsonkit.svg?style=social&label=Star)](https://github.com/ejlchina/xjsonkit)|超轻量级 JSON / JSONB / XML / YAML 解析门面 API，用法简单，使业务代码不依赖具体实现
+| 5   |[`fangjinuo/easyjson` ![](https://img.shields.io/github/stars/fangjinuo/easyjson.svg?style=social&label=Star)](https://github.com/fangjinuo/easyjson)|提供了一个JSON门面库，就像slf4j一样。easyjson本身不做json的操作，完全依赖于底层实现库
+| 6   ||
+| 7   ||
+
 ## 网关
 | 序号  | repositories                                                                                                                           | 简介                                           | 开发语言 |
 |:----|:---------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------|:----:|
@@ -150,7 +161,7 @@
 | 4   |[`rabbitmq/rabbitmq-server` ![](https://img.shields.io/github/stars/rabbitmq/rabbitmq-server.svg?style=social&label=Star)](https://github.com/rabbitmq/rabbitmq-server)|
 | 5   |[`apache/pulsar` ![](https://img.shields.io/github/stars/apache/pulsar.svg?style=social&label=Star)](https://github.com/apache/pulsar)| apach开源云原生网关     |Java
 | 6   |[`apache/rocketmq-spring` ![](https://img.shields.io/github/stars/apache/rocketmq-spring.svg?style=social&label=Star)](https://github.com/apache/rocketmq-spring)|rocketmq 客户端使用sdk|Java
-| 7   ||
+| 7   |[`weihubeats/wh-mq-Idempotent` ![](https://img.shields.io/github/stars/weihubeats/wh-mq-Idempotent.svg?style=social&label=Star)](https://github.com/weihubeats/wh-mq-Idempotent)|通用MQ幂等框架
 
 ## 搜索引擎
 
@@ -203,8 +214,6 @@
 
 #### [easyexcel](https://github.com/alibaba/easyexcel) 阿里开源excel导出 sdk
 
-#### [wh-mq-Idempotent](https://github.com/weihubeats/wh-mq-Idempotent) 通用MQ幂等框架
-
 #### [zookeeper](https://github.com/apache/zookeeper) Apache 分布式协调框架
 
 #### [nacos](https://github.com/alibaba/nacos) 阿里开源注册中心、配置中心框架
@@ -220,23 +229,10 @@
 
 
 
-
-
-
-
-
-### json序列化
-#### [fastjson](https://github.com/alibaba/fastjson) 阿里开源fastjson
-#### [jackson](https://github.com/FasterXML/jackson) 目前spring boot 默认json序列化框架
-
-
 ### 数据库连接池
 #### [druid](https://github.com/alibaba/druid) 阿里开源数据库连接池框架
 #### [HikariCP](https://github.com/brettwooldridge/HikariCP) Spring Boot 默认数据库连接池
 
-### json解析
-#### [xjsonkit](https://github.com/ejlchina/xjsonkit) 超轻量级 JSON 门面框架
-#### [easyjson](https://github.com/fangjinuo/easyjson) 提供了一个JSON门面库
 
 
 
