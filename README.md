@@ -16,7 +16,7 @@
 | 3   |[`kdn251/interviews` ![](https://img.shields.io/github/stars/kdn251/interviews.svg?style=social&label=Star)](https://github.com/kdn251/interviews)|Everything you need to know to get the job.
 | 4   |[`doocs/advanced-java` ![](https://img.shields.io/github/stars/doocs/advanced-java.svg?style=social&label=Star)](https://github.com/doocs/advanced-java)|互联网 Java 工程师进阶知识完全扫盲
 | 5   |[`doocs/source-code-hunter` ![](https://img.shields.io/github/stars/doocs/source-code-hunter.svg?style=social&label=Star)](https://github.com/doocs/source-code-hunter)|从源码层面，剖析挖掘互联网行业主流技术的底层实现原理
-| 6   ||
+| 6   |[`doocs/leetcode` ![](https://img.shields.io/github/stars/doocs/leetcode.svg?style=social&label=Star)](https://github.com/doocs/leetcode)|多种编程语言实现 LeetCode
 
 ### 算法
 | 序号  | repositories | 简介  |
@@ -170,10 +170,7 @@
 | 1   |[`apache/lucene` ![](https://img.shields.io/github/stars/apache/lucene.svg?style=social&label=Star)](https://github.com/apache/lucene)|                | Java           
 | 2   |[`elastic/elasticsearch` ![](https://img.shields.io/github/stars/elastic/elasticsearch.svg?style=social&label=Star)](https://github.com/elastic/elasticsearch)| 基于lucene开源的搜索引擎 |Java
 | 3   |[`apache/solr` ![](https://img.shields.io/github/stars/apache/solr.svg?style=social&label=Star)](https://github.com/apache/solr)||      Java       
-| 4   |||
-| 5   |||
-| 6   |||
-| 7   |||
+
 
 
 ## 自建博客
@@ -192,10 +189,25 @@
 | 3   |[`pingcap/tidb` ![](https://img.shields.io/github/stars/pingcap/tidb.svg?style=social&label=Star)](https://github.com/pingcap/tidb)|     TiDB 是一个开源的、原生于云的、分布式的、与 MySQL 兼容的数据库      |Go
 | 4   |[`mongodb/mongo` ![](https://img.shields.io/github/stars/mongodb/mongo.svg?style=social&label=Star)](https://github.com/mongodb/mongo)|                     文档数据库                      |C++
 | 5   |[`ClickHouse/ClickHouse` ![](https://img.shields.io/github/stars/ClickHouse/ClickHouse.svg?style=social&label=Star)](https://github.com/ClickHouse/ClickHouse)|                 俄罗斯开源列式数据库OLAP                 |C++
-| 6   |||
-| 7   |||
 
 
+## RPC框架
+
+| 序号  | repositories | 简介  |开发语言|
+|:----| :------------ |:---:|:---:|
+| 1   |[`apache/dubbo` ![](https://img.shields.io/github/stars/apache/dubbo.svg?style=social&label=Star)](https://github.com/apache/dubbo)|阿里开源tpc协议RPC框架|
+| 2   |[`OpenFeign/feign` ![](https://img.shields.io/github/stars/OpenFeign/feign.svg?style=social&label=Star)](https://github.com/OpenFeign/feign)|Netflix Http协议RPC框架|Java
+| 3   |[`grpc/grpc` ![](https://img.shields.io/github/stars/grpc/grpc.svg?style=social&label=Star)](https://github.com/grpc/grpc)|Google 开源的跨语言RPC框架|多语言
+| 4   |[`TarsCloud/Tars` ![](https://img.shields.io/github/stars/TarsCloud/Tars.svg?style=social&label=Star)](https://github.com/TarsCloud/Tars)|腾讯开源的rpc框架|
+
+
+## 定时任务调度
+
+| 序号  | repositories | 简介  |开发语言|
+|:----| :------------ |:---:|:---:|
+| 1   |[`xuxueli/xxl-job` ![](https://img.shields.io/github/stars/xuxueli/xxl-job.svg?style=social&label=Star)](https://github.com/xuxueli/xxl-job)|分布式任务调度框架|Java
+| 2   |[`quartz-scheduler/quartz` ![](https://img.shields.io/github/stars/quartz-scheduler/quartz.svg?style=social&label=Star)](https://github.com/quartz-scheduler/quartz)|轻量任务调度框架|Java
+| 3   |[`apache/shardingsphere-elasticjob` ![](https://img.shields.io/github/stars/apache/shardingsphere-elasticjob.svg?style=social&label=Star)](https://github.com/apache/shardingsphere-elasticjob)|apache开源的分布式调度框架|Java
 
 
 #### [layering-cache](https://github.com/xiaolyuh/layering-cache) 多级缓存框架
@@ -234,19 +246,6 @@
 #### [HikariCP](https://github.com/brettwooldridge/HikariCP) Spring Boot 默认数据库连接池
 
 
-
-
-### RPC框架
-#### [dubbo](https://github.com/apache/dubbo) 阿里开源tpc协议RPC框架
-#### [spring-cloud-openfeign](https://github.com/spring-cloud/spring-cloud-openfeign) Netflix Http协议RPC框架
-#### [grpc](https://github.com/grpc/grpc) Google 开源的跨语言RPC框架
-#### [Tars](https://github.com/TarsCloud/Tars) 腾讯开源的rpc框架
-
-### 任务调度
-#### [xxl-job](https://github.com/xuxueli/xxl-job) 分布式任务调度框架
-#### [quartz](https://github.com/quartz-scheduler/quartz) 轻量任务调度框架
-#### [shardingsphere-elasticjob](https://github.com/apache/shardingsphere-elasticjob) apache开源的分布式调度框架
-
 ### 分库分表
 #### [shardingsphere](https://github.com/apache/shardingsphere) 客户端级别分库分表
 
@@ -268,9 +267,6 @@
 #### [bulbasaur](https://github.com/alibaba/bulbasaur) 阿里开源可插拔的精简流程引擎
 #### [Activiti](https://github.com/Activiti/Activiti)
 #### [jbpm](https://github.com/kiegroup/jbpm)
-
-
-
 
 
 
@@ -316,8 +312,6 @@
 ### 英语学习
 #### [qwerty-learner](https://github.com/Kaiyiwing/qwerty-learner) 为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件
 #### [A-Programmers-Guide-to-English](https://github.com/yujiangshui/A-Programmers-Guide-to-English) 专为程序员编写的英语学习指南。
-
-
 
 
 
