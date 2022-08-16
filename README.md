@@ -16,13 +16,13 @@
 | 3   |[`kdn251/interviews` ![](https://img.shields.io/github/stars/kdn251/interviews.svg?style=social&label=Star)](https://github.com/kdn251/interviews)|Everything you need to know to get the job.
 | 4   |[`doocs/advanced-java` ![](https://img.shields.io/github/stars/doocs/advanced-java.svg?style=social&label=Star)](https://github.com/doocs/advanced-java)|互联网 Java 工程师进阶知识完全扫盲
 | 5   |[`doocs/source-code-hunter` ![](https://img.shields.io/github/stars/doocs/source-code-hunter.svg?style=social&label=Star)](https://github.com/doocs/source-code-hunter)|从源码层面，剖析挖掘互联网行业主流技术的底层实现原理
-| 6   |[`doocs/leetcode` ![](https://img.shields.io/github/stars/doocs/leetcode.svg?style=social&label=Star)](https://github.com/doocs/leetcode)|多种编程语言实现 LeetCode
 
 ### 算法
 | 序号  | repositories | 简介  |
 |:----| :------------ |:---:|
 | 1   |[`doocs/leetcode` ![](https://img.shields.io/github/stars/doocs/leetcode.svg?style=social&label=Star)](https://github.com/doocs/leetcode)|多种编程语言实现 LeetCode
-| 3   ||
+| 3   |[`trekhleb/javascript-algorithms` ![](https://img.shields.io/github/stars/trekhleb/javascript-algorithms.svg?style=social&label=Star)](https://github.com/trekhleb/javascript-algorithms)|JavaScript 算法与数据结构
+
 | 2   ||
 | 2   ||
 | 2   ||
@@ -209,6 +209,17 @@
 | 2   |[`quartz-scheduler/quartz` ![](https://img.shields.io/github/stars/quartz-scheduler/quartz.svg?style=social&label=Star)](https://github.com/quartz-scheduler/quartz)|轻量任务调度框架|Java
 | 3   |[`apache/shardingsphere-elasticjob` ![](https://img.shields.io/github/stars/apache/shardingsphere-elasticjob.svg?style=social&label=Star)](https://github.com/apache/shardingsphere-elasticjob)|apache开源的分布式调度框架|Java
 
+## 英语学习
+
+| 序号  | repositories | 简介  |
+|:----| :------------ |:---:|
+| 1   |[`Kaiyiwing/qwerty-learner` ![](https://img.shields.io/github/stars/Kaiyiwing/qwerty-learner.svg?style=social&label=Star)](https://github.com/Kaiyiwing/qwerty-learner)|为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件
+| 2   |[`yujiangshui/A-Programmers-Guide-to-English` ![](https://img.shields.io/github/stars/yujiangshui/A-Programmers-Guide-to-English.svg?style=social&label=Star)](https://github.com/yujiangshui/A-Programmers-Guide-to-English)|专为程序员编写的英语学习指南
+| 3   ||
+| 4   ||
+| 5   ||
+| 6   ||
+| 7   ||
 
 #### [layering-cache](https://github.com/xiaolyuh/layering-cache) 多级缓存框架
 
@@ -309,9 +320,7 @@
 
 #### [Go 语言学习资料索引](https://github.com/Unknwon/go-study-index) Go 语言学习资料索引
 
-### 英语学习
-#### [qwerty-learner](https://github.com/Kaiyiwing/qwerty-learner) 为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件
-#### [A-Programmers-Guide-to-English](https://github.com/yujiangshui/A-Programmers-Guide-to-English) 专为程序员编写的英语学习指南。
+
 
 
 
