@@ -3,6 +3,8 @@
 供大家扩展知识面,技术选型,代码借鉴.
 
 
+# 目录
+- [工作](#工作)
 
 
 ## 工作
@@ -22,7 +24,6 @@
 |:----| :------------ |:---:|
 | 1   |[`doocs/leetcode` ![](https://img.shields.io/github/stars/doocs/leetcode.svg?style=social&label=Star)](https://github.com/doocs/leetcode)|多种编程语言实现 LeetCode
 | 3   |[`trekhleb/javascript-algorithms` ![](https://img.shields.io/github/stars/trekhleb/javascript-algorithms.svg?style=social&label=Star)](https://github.com/trekhleb/javascript-algorithms)|JavaScript 算法与数据结构
-
 | 2   ||
 | 2   ||
 | 2   ||
@@ -222,15 +223,33 @@
 | 2   |[`quartz-scheduler/quartz` ![](https://img.shields.io/github/stars/quartz-scheduler/quartz.svg?style=social&label=Star)](https://github.com/quartz-scheduler/quartz)|轻量任务调度框架|Java
 | 3   |[`apache/shardingsphere-elasticjob` ![](https://img.shields.io/github/stars/apache/shardingsphere-elasticjob.svg?style=social&label=Star)](https://github.com/apache/shardingsphere-elasticjob)|apache开源的分布式调度框架|Java
 
-## 英语学习
+## 学习
+
+### 英语学习
 
 | 序号  | repositories | 简介  |
 |:----| :------------ |:---:|
 | 1   |[`Kaiyiwing/qwerty-learner` ![](https://img.shields.io/github/stars/Kaiyiwing/qwerty-learner.svg?style=social&label=Star)](https://github.com/Kaiyiwing/qwerty-learner)|为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件
 | 2   |[`yujiangshui/A-Programmers-Guide-to-English` ![](https://img.shields.io/github/stars/yujiangshui/A-Programmers-Guide-to-English.svg?style=social&label=Star)](https://github.com/yujiangshui/A-Programmers-Guide-to-English)|专为程序员编写的英语学习指南
 
+### 语言学习
 
 
+| 序号  | repositories |        简介        |    开发语言    |
+|:----| :------------ |:----------------:|:----------:|
+| 1   |[`zhisheng17/flink-learning` ![](https://img.shields.io/github/stars/zhisheng17/flink-learning.svg?style=social&label=Star)](https://github.com/zhisheng17/flink-learning)|       Java       |  Flink 学习  
+| 2   |[`Avik-Jain/100-Days-Of-ML-Code` ![](https://img.shields.io/github/stars/Avik-Jain/100-Days-Of-ML-Code.svg?style=social&label=Star)](https://github.com/Avik-Jain/100-Days-Of-ML-Code)|       机器学习       |
+| 3   |[`iluwatar/java-design-patterns` ![](https://img.shields.io/github/stars/iluwatar/java-design-patterns.svg?style=social&label=Star)](https://github.com/iluwatar/java-design-patterns)|       设计模式       |    Java    
+| 4   |[`seaswalker/spring-analysis` ![](https://img.shields.io/github/stars/seaswalker/spring-analysis.svg?style=social&label=Star)](https://github.com/seaswalker/spring-analysis)|    Spring源码阅读    |    Java    
+| 5   |[`DerekYRC/mini-spring` ![](https://img.shields.io/github/stars/DerekYRC/mini-spring.svg?style=social&label=Star)](https://github.com/DerekYRC/mini-spring)|简化版的spring框架,供我们学习|    Java    
+| 6   |[`fuzhengwei/itstack-demo-bytecode` ![](https://img.shields.io/github/stars/fuzhengwei/itstack-demo-bytecode.svg?style=social&label=Star)](https://github.com/fuzhengwei/itstack-demo-bytecode)|  java字节码编程相关学习   |    Java    
+| 7   |[`tuguangquan/mybatis` ![](https://img.shields.io/github/stars/tuguangquan/mybatis.svg?style=social&label=Star)](https://github.com/tuguangquan/mybatis)|  mybatis源码中文注释   |    Java    
+| 8   |[`xkcoding/spring-boot-demo` ![](https://img.shields.io/github/stars/xkcoding/spring-boot-demo.svg?style=social&label=Star)](https://github.com/xkcoding/spring-boot-demo)|spring boot 相关demo学习|    Java    
+| 9   |[`digoal/blog` ![](https://img.shields.io/github/stars/digoal/blog.svg?style=social&label=Star)](https://github.com/digoal/blog)|国内postgresql大神的一些pg分享|    SQL     
+| 10  |[`jackfrued/Python-100-Days` ![](https://img.shields.io/github/stars/jackfrued/Python-100-Days.svg?style=social&label=Star)](https://github.com/jackfrued/Python-100-Days)|Python - 100天从新手到大师|   python   
+| 11  |[`Asabeneh/30-Days-Of-JavaScript` ![](https://img.shields.io/github/stars/Asabeneh/30-Days-Of-JavaScript.svg?style=social&label=Star)](https://github.com/Asabeneh/30-Days-Of-JavaScript)|30天学js| javaScript 
+| 12  |[`MichaelCade/90DaysOfDevOps` ![](https://img.shields.io/github/stars/MichaelCade/90DaysOfDevOps.svg?style=social&label=Star)](https://github.com/MichaelCade/90DaysOfDevOps)|90天学DevOps|
+| 13  |[`awesome-java-books` ![](https://img.shields.io/github/stars/awesome-java-books.svg?style=social&label=Star)](https://github.com/awesome-java-books)|Java 技术书籍大全|    Java    |
 
 #### [layering-cache](https://github.com/xiaolyuh/layering-cache) 多级缓存框架
 
@@ -293,30 +312,8 @@
 
 
 ## 学习
-#### [java-design-patterns](https://github.com/iluwatar/java-design-patterns) 设计模式
-#### [spring-analysis](https://github.com/seaswalker/spring-analysis) Spring相关组件阅读笔记
 
-#### [mini-spring](https://github.com/DerekYRC/mini-spring) 简化版的spring框架,供我们学习
 
-#### [itstack-demo-bytecode](https://github.com/fuzhengwei/itstack-demo-bytecode) java字节码编程相关学习
-
-#### [flink-learning](https://github.com/zhisheng17/flink-learning) Flink 学习
-
-#### [100-Days-Of-ML-Code](https://github.com/Avik-Jain/100-Days-Of-ML-Code) 机器学习
-
-#### [spring-boot-demo](https://github.com/xkcoding/spring-boot-demo) spring boot 相关demo学习
-
-#### [blog](https://github.com/digoal/blog) 国内postgresql大神的一些pg分享
-
-#### [Python-100-Days](https://github.com/jackfrued/Python-100-Days) Python - 100天从新手到大师
-
-#### [30-Days-Of-JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript) 30天学js
-
-#### [90DaysOfDevOps](https://github.com/MichaelCade/90DaysOfDevOps) 90天学DevOps
-
-#### [mybatis](https://github.com/tuguangquan/mybatis) mybatis源码中文注释
-
-#### [awesome-java-books](https://github.com/sorenduan/awesome-java-books) Java 技术书籍大全
 
 #### [flash-linux0.11-talk](https://github.com/sunym1993/flash-linux0.11-talk) 像小说一样品读 Linux 0.11 核心代码
 
