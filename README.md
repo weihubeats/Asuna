@@ -110,10 +110,9 @@
 | 3   |[`Dreamroute/mybatis-pro` ![](https://img.shields.io/github/stars/Dreamroute/mybatis-pro.svg?style=social&label=Star)](https://github.com/Dreamroute/mybatis-pro)|类似mybatis-plus
 | 4   |[`jOOQ/jOOQ` ![](https://img.shields.io/github/stars/jOOQ/jOOQ.svg?style=social&label=Star)](https://github.com/jOOQ/jOOQ)|
 | 5   |[`spring-projects/spring-data-jpa` ![](https://img.shields.io/github/stars/spring-projects/spring-data-jpa.svg?style=social&label=Star)](https://github.com/spring-projects/spring-data-jpa)|通过方法名方式映射sql
-| 6   |[`querydsl/querydsl` ![](https://img.shields.io/github/stars/querydsl/querydsl.svg?style=social&label=Star)](https://github.com/querydsl/querydsl)|给jap插上翅膀,让复杂sql也简单
 | 7   |[`querydsl/querydsl` ![](https://img.shields.io/github/stars/querydsl/querydsl.svg?style=social&label=Star)](https://github.com/querydsl/querydsl)|告别常规SQL和CRUD，写的更少，性能更好
 | 8   |[`hibernate/hibernate-orm` ![](https://img.shields.io/github/stars/hibernate/hibernate-orm.svg?style=social&label=Star)](https://github.com/hibernate/hibernate-orm)|对象与数据库直接映射ORM框架
-
+|9|[`troyzhxu/bean-searcher` ![](https://img.shields.io/github/stars/troyzhxu/bean-searcher.svg?style=social&label=Star)](https://github.com/troyzhxu/bean-searcher)|专注于高级查询的只读 ORM，自然支持联接表，避免了 DTO/VO 转换
 ### 权限框架
 | 序号  | repositories | 简介  |
 |:----| :------------ |:---:|
