@@ -16,6 +16,7 @@
     - [ORM框架](#ORM框架)
     - [权限框架](#权限框架)
     - [序列化](#序列化)
+    - [excel](#excel)
 - [网关](#网关)
 - [分布式事务](#分布式事务)
 - [消息中间件](#消息中间件)
@@ -119,6 +120,13 @@
 | 1   |[`dromara/Sa-Token` ![](https://img.shields.io/github/stars/dromara/Sa-Token.svg?style=social&label=Star)](https://github.com/dromara/Sa-Token)|轻量级 Java 权限认证框架，让鉴权变得简单、优雅
 | 2   |[`spring-projects/spring-security` ![](https://img.shields.io/github/stars/spring-projects/spring-security.svg?style=social&label=Star)](https://github.com/spring-projects/spring-security)|
 
+### excel
+| 序号  | repositories | 简介  |
+|:----| :------------ |:---:|
+| 1   |[`alibaba/easyexcel` ![](https://img.shields.io/github/stars/alibaba/easyexcel.svg?style=social&label=Star)](https://github.com/alibaba/easyexcel)|阿里开源快速、简洁、解决大文件内存溢出的java处理Excel工具
+| 2   |[`apache/poi` ![](https://img.shields.io/github/stars/apache/poi.svg?style=social&label=Star)](https://github.com/apache/poi)|
+| 3   |[`liaochong/myexcel` ![](https://img.shields.io/github/stars/liaochong/myexcel.svg?style=social&label=Star)](https://github.com/liaochong/myexcel)|集导入、导出、加密Excel等多项功能的工具包
+
 
 ### 实战项目
 
@@ -133,13 +141,13 @@
 | 7   ||
 
 ### 序列化
-| 序号  | repositories                                                                                                                                          | 简介  |
-|:----|:------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------:|
-| 1   | [`alibaba/fastjson` ![](https://img.shields.io/github/stars/alibaba/fastjson.svg?style=social&label=Star)](https://github.com/alibaba/fastjson)       |阿里开源序列化框架
-| 2   | [`alibaba/fastjson2` ![](https://img.shields.io/github/stars/alibaba/fastjson2.svg?style=social&label=Star)](https://github.com/alibaba/fastjson2)    |FASTJSON2是FASTJSON项目的重要升级，目标是为下一个十年提供一个高性能的JSON库
-| 3   | [`FasterXML/jackson` ![](https://img.shields.io/github/stars/FasterXML/jackson.svg?style=social&label=Star)](https://github.com/FasterXML/jackson)    |目前spring boot 默认json序列化框架
-| 4   | [`ejlchina/xjsonkit` ![](https://img.shields.io/github/stars/ejlchina/xjsonkit.svg?style=social&label=Star)](https://github.com/ejlchina/xjsonkit)    |超轻量级 JSON / JSONB / XML / YAML 解析门面 API，用法简单，使业务代码不依赖具体实现
-| 5   | [`fangjinuo/easyjson` ![](https://img.shields.io/github/stars/fangjinuo/easyjson.svg?style=social&label=Star)](https://github.com/fangjinuo/easyjson) |提供了一个JSON门面库，就像slf4j一样。easyjson本身不做json的操作，完全依赖于底层实现库
+| 序号  | repositories                                                                                                                                                          | 简介  |
+|:----|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------:|
+| 1   | [`alibaba/fastjson` ![](https://img.shields.io/github/stars/alibaba/fastjson.svg?style=social&label=Star)](https://github.com/alibaba/fastjson)                       |阿里开源序列化框架           
+| 2   | [`alibaba/fastjson2` ![](https://img.shields.io/github/stars/alibaba/fastjson2.svg?style=social&label=Star)](https://github.com/alibaba/fastjson2)                    |FASTJSON2是FASTJSON项目的重要升级，目标是为下一个十年提供一个高性能的JSON库
+| 3   | [`FasterXML/jackson` ![](https://img.shields.io/github/stars/FasterXML/jackson.svg?style=social&label=Star)](https://github.com/FasterXML/jackson)                    |目前spring boot 默认json序列化框架
+| 4   | [`ejlchina/xjsonkit` ![](https://img.shields.io/github/stars/ejlchina/xjsonkit.svg?style=social&label=Star)](https://github.com/ejlchina/xjsonkit)                    |超轻量级 JSON / JSONB / XML / YAML 解析门面 API，用法简单，使业务代码不依赖具体实现
+| 5   | [`fangjinuo/easyjson` ![](https://img.shields.io/github/stars/fangjinuo/easyjson.svg?style=social&label=Star)](https://github.com/fangjinuo/easyjson)                 |提供了一个JSON门面库，就像slf4j一样。easyjson本身不做json的操作，完全依赖于底层实现库
 | 6   ||
 | 7   ||
 
@@ -279,7 +287,6 @@
 
 #### [APIJSON](https://github.com/Tencent/APIJSON) 腾讯开源的零代码、全自动、强安全 ORM 库
 
-#### [easyexcel](https://github.com/alibaba/easyexcel) 阿里开源excel导出 sdk
 
 #### [zookeeper](https://github.com/apache/zookeeper) Apache 分布式协调框架
 
