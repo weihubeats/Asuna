@@ -395,5 +395,15 @@
 #### [logoly](https://github.com/bestony/logoly) 在线logo生成器
 
 
+| 序号  | repositories | 简介  |
+|:----| :------------ |:---:|
+| 1   |[`apache/superset` ![](https://img.shields.io/github/stars/apache/superset.svg?style=social&label=Star)](https://github.com/apache/superset)|数据可视化和数据探索平台
+| 2   ||
+| 3   ||
+| 4   ||
+| 5   ||
+| 6   ||
+| 7   ||
+
 ## 贡献指南
 [贡献指南](contribution-Asuna.md)
