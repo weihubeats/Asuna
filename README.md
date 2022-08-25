@@ -76,7 +76,7 @@
 | 1   |[`apache/logging-log4j1` ![](https://img.shields.io/github/stars/apache/logging-log4j1.svg?style=social&label=Star)](https://github.com/apache/logging-log4j1)|
 | 2   |[`apache/logging-log4j2` ![](https://img.shields.io/github/stars/apache/logging-log4j2.svg?style=social&label=Star)](https://github.com/apache/logging-log4j2)|
 | 3   |[`qos-ch/logback` ![](https://img.shields.io/github/stars/qos-ch/logback.svg?style=social&label=Star)](https://github.com/qos-ch/logback)|
-| 4   ||
+| 4   |[`alibaba/ilogtail` ![](https://img.shields.io/github/stars/alibaba/ilogtail.svg?style=social&label=Star)](https://github.com/alibaba/ilogtail)|快速、轻量级的可观察性数据收集器
 | 5   ||
 | 6   ||
 | 7   ||
@@ -253,6 +253,9 @@
 |:----| :------------ |:---:|
 | 1   |[`Kaiyiwing/qwerty-learner` ![](https://img.shields.io/github/stars/Kaiyiwing/qwerty-learner.svg?style=social&label=Star)](https://github.com/Kaiyiwing/qwerty-learner)|为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件
 | 2   |[`yujiangshui/A-Programmers-Guide-to-English` ![](https://img.shields.io/github/stars/yujiangshui/A-Programmers-Guide-to-English.svg?style=social&label=Star)](https://github.com/yujiangshui/A-Programmers-Guide-to-English)|专为程序员编写的英语学习指南
+|3|[`chinese-programmer-wrong-pronunciation` ![](https://img.shields.io/github/stars/chinese-programmer-wrong-pronunciation.svg?style=social&label=Star)](https://github.com/chinese-programmer-wrong-pronunciation)|中国程序员容易发音错误的单词
+
+
 
 ### 语言学习
 
