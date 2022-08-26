@@ -16,6 +16,7 @@
     - [ORM框架](#ORM框架)
     - [权限框架](#权限框架)
     - [序列化](#序列化)
+    - [限流](#限流)
     - [excel](#excel)
 - [网关](#网关)
 - [分布式事务](#分布式事务)
@@ -150,6 +151,19 @@
 | 5   | [`fangjinuo/easyjson` ![](https://img.shields.io/github/stars/fangjinuo/easyjson.svg?style=social&label=Star)](https://github.com/fangjinuo/easyjson)                 |提供了一个JSON门面库，就像slf4j一样。easyjson本身不做json的操作，完全依赖于底层实现库
 | 6   ||
 | 7   ||
+
+
+### 限流
+| 序号  | repositories | 简介  |
+|:----| :------------ |:---:|
+| 1   |[`didi/sds` ![](https://img.shields.io/github/stars/didi/sds.svg?style=social&label=Star)](https://github.com/didi/sds)|简单、易用、高性能的服务降级系统，支持限流、熔断和降级等功能
+| 2   |[`taptap/ratelimiter-spring-boot-starter` ![](https://img.shields.io/github/stars/taptap/ratelimiter-spring-boot-starter.svg?style=social&label=Star)](https://github.com/taptap/ratelimiter-spring-boot-starter)|基于 redis 的偏业务应用的分布式限流组件，使得项目拥有分布式限流能力变得很简单
+| 3   |[`alibaba/Sentinel` ![](https://img.shields.io/github/stars/alibaba/Sentinel.svg?style=social&label=Star)](https://github.com/alibaba/Sentinel)|面向云原生微服务的高可用流控防护组件
+| 4   |[`Netflix/Hystrix` ![](https://img.shields.io/github/stars/Netflix/Hystrix.svg?style=social&label=Star)](https://github.com/Netflix/Hystrix)|
+| 5   ||
+| 6   ||
+| 7   ||
+
 
 ## 网关
 | 序号  | repositories                                                                                                                           | 简介                                           | 开发语言 |
