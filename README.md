@@ -17,6 +17,7 @@
     - [权限框架](#权限框架)
     - [序列化](#序列化)
     - [限流](#限流)
+    - [iead插件](#iead插件)
     - [excel](#excel)
 - [网关](#网关)
 - [分布式事务](#分布式事务)
@@ -163,6 +164,17 @@
 | 5   ||
 | 6   ||
 | 7   ||
+
+### iead插件
+repositories | 简介  |
+| :------------ |:---:|
+|[`starcwang/easy_javadoc` ![](https://img.shields.io/github/stars/starcwang/easy_javadoc.svg?style=social&label=Star)](https://github.com/starcwang/easy_javadoc)|自动生成javadoc文档注释
+|[`gejun123456/intellij-generateAllSetMethod` ![](https://img.shields.io/github/stars/gejun123456/intellij-generateAllSetMethod.svg?style=social&label=Star)](https://github.com/gejun123456/intellij-generateAllSetMethod)|自动生成set方法
+||
+||
+||
+||
+||
 
 
 ## 网关
