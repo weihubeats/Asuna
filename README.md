@@ -20,6 +20,7 @@
     - [iead插件](#iead插件)
     - [excel](#excel)
 - [网关](#网关)
+- [数据同步](#数据同步)
 - [分布式事务](#分布式事务)
 - [消息中间件](#消息中间件)
 - [搜索引擎](#搜索引擎)
@@ -187,6 +188,18 @@ repositories | 简介  |
 | 5   |[`apache/apisix` ![](https://img.shields.io/github/stars/apache/apisix.svg?style=social&label=Star)](https://github.com/apache/apisix)| 云原生网关                                        |go
 | 6   |[`Kong/kong` ![](https://img.shields.io/github/stars/Kong/kong.svg?style=social&label=Star)](https://github.com/Kong/kong)| 高性能云原生网关|Lua
 | 7   |||
+
+
+## 数据同步
+repositories |                            简介                            |
+| :------------ |:--------------------------------------------------------:|
+[`alibaba/canal` ![](https://img.shields.io/github/stars/alibaba/canal.svg?style=social&label=Star)](https://github.com/alibaba/canal)|               阿里巴巴 MySQL binlog 增量订阅&消费组件                |
+[`alibaba/otter` ![](https://img.shields.io/github/stars/alibaba/otter.svg?style=social&label=Star)](https://github.com/alibaba/otter)| 基于数据库增量日志解析，准实时同步到本机房或异地机房的mysql/oracle数据库. 一个分布式数据库同步系统 |
+[`alibaba/DataX` ![](https://img.shields.io/github/stars/alibaba/DataX.svg?style=social&label=Star)](https://github.com/alibaba/DataX)|               DataX是阿里云DataWorks数据集成的开源版本。               |
+[`pentaho/pentaho-kettle` ![](https://img.shields.io/github/stars/pentaho/pentaho-kettle.svg?style=social&label=Star)](https://github.com/pentaho/pentaho-kettle)|                       通过图形化窗口同步数据                        |
+[`DTStack/chunjun` ![](https://img.shields.io/github/stars/DTStack/chunjun.svg?style=social&label=Star)](https://github.com/DTStack/chunjun)|基于实时计算引擎Flink实现多种异构数据源之间的数据同步与计算|
+[`apache/inlong` ![](https://img.shields.io/github/stars/apache/inlong.svg?style=social&label=Star)](https://github.com/apache/inlong)|一站式海量数据集成框架，提供自动、安全、可靠和高性能的数据传输能力，同时支持批和流，方便业务构建基于流式的数据分析、建模和应用|
+[`apache/incubator-seatunnel` ![](https://img.shields.io/github/stars/apache/incubator-seatunnel.svg?style=social&label=Star)](https://github.com/apache/incubator-seatunnel)|一个分布式、高性能的数据集成平台，用于同步和转换海量数据(离线和实时)|
 
 
 ## 分布式事务
