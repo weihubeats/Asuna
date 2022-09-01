@@ -38,7 +38,7 @@
  repositories | 简介  |
  :------------ |:---:|
  [`yifeikong/reverse-interview-zh` ![](https://img.shields.io/github/stars/yifeikong/reverse-interview-zh.svg?style=social&label=Star)](https://github.com/yifeikong/reverse-interview-zh)| 技术面试最后反问面试官的话  |
-[`Snailclimb/JavaGuide` ![](https://img.shields.io/github/stars/Snailclimb/JavaGuide.svg?style=social&label=Star)](https://github.com/Snailclimb/JavaGuide)|java八股文,比较全的Java学习资料
+[`Snailclimb/JavaGuide` ![](https://img.shields.io/github/stars/Snailclimb/JavaGuide.svg?style=social&label=Star)](https://github.com/Snailclimb/JavaGuide)|一份涵盖大部分 Java 程序员所需要掌握的核心知识。准备 Java 面试
 [`kdn251/interviews` ![](https://img.shields.io/github/stars/kdn251/interviews.svg?style=social&label=Star)](https://github.com/kdn251/interviews)|Everything you need to know to get the job.
 [`doocs/advanced-java` ![](https://img.shields.io/github/stars/doocs/advanced-java.svg?style=social&label=Star)](https://github.com/doocs/advanced-java)|互联网 Java 工程师进阶知识完全扫盲
 [`doocs/source-code-hunter` ![](https://img.shields.io/github/stars/doocs/source-code-hunter.svg?style=social&label=Star)](https://github.com/doocs/source-code-hunter)|从源码层面，剖析挖掘互联网行业主流技术的底层实现原理
