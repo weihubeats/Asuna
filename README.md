@@ -131,15 +131,14 @@
 
 ### 实战项目
 
-| 序号  | repositories | 简介  |
-|:----| :------------ |:---:|
-| 1   |[`macrozheng/mall` ![](https://img.shields.io/github/stars/macrozheng/mall.svg?style=social&label=Star)](https://github.com/macrozheng/mall)|前后端微服务项目
-| 2   |[`elunez/eladmin` ![](https://img.shields.io/github/stars/elunez/eladmin.svg?style=social&label=Star)](https://github.com/elunez/eladmin)|EL-ADMIN 后台管理系统
-| 3   |[`qiurunze123/miaosha` ![](https://img.shields.io/github/stars/qiurunze123/miaosha.svg?style=social&label=Star)](https://github.com/qiurunze123/miaosha)|互联网秒杀系统架构设计
-| 4   |[`YunaiV/ruoyi-vue-pro` ![](https://img.shields.io/github/stars/YunaiV/ruoyi-vue-pro.svg?style=social&label=Star)](https://github.com/YunaiV/ruoyi-vue-pro)|
-| 5   |[`techa03/goodsKill` ![](https://img.shields.io/github/stars/techa03/goodsKill.svg?style=social&label=Star)](https://github.com/techa03/goodsKill)|springcloud +dubbo构建的模拟秒杀微服务项目
-| 6   ||
-| 7   ||
+ repositories | 简介  |
+ :------------ |:---:|
+[`macrozheng/mall` ![](https://img.shields.io/github/stars/macrozheng/mall.svg?style=social&label=Star)](https://github.com/macrozheng/mall)|前后端微服务项目
+[`elunez/eladmin` ![](https://img.shields.io/github/stars/elunez/eladmin.svg?style=social&label=Star)](https://github.com/elunez/eladmin)|EL-ADMIN 后台管理系统
+[`qiurunze123/miaosha` ![](https://img.shields.io/github/stars/qiurunze123/miaosha.svg?style=social&label=Star)](https://github.com/qiurunze123/miaosha)|互联网秒杀系统架构设计
+[`YunaiV/ruoyi-vue-pro` ![](https://img.shields.io/github/stars/YunaiV/ruoyi-vue-pro.svg?style=social&label=Star)](https://github.com/YunaiV/ruoyi-vue-pro)|
+[`techa03/goodsKill` ![](https://img.shields.io/github/stars/techa03/goodsKill.svg?style=social&label=Star)](https://github.com/techa03/goodsKill)|springcloud +dubbo构建的模拟秒杀微服务项目
+
 
 ### 序列化
 repositories                                                                                                                                                          | 简介  |
@@ -199,7 +198,6 @@ repositories |                            简介                            |
 [`changmingxie/tcc-transaction` ![](https://img.shields.io/github/stars/changmingxie/tcc-transaction.svg?style=social&label=Star)](https://github.com/changmingxie/tcc-transaction)|TCC型事务|Java
 [`dtm-labs/dtf` ![](https://img.shields.io/github/stars/dtm-labs/dtf.svg?style=social&label=Star)](https://github.com/dtm-labs/dtf)|柔性分布式事务框架|Java
 [`dromara/raincat` ![](https://img.shields.io/github/stars/dromara/raincat.svg?style=social&label=Star)](https://github.com/dromara/raincat)|强一致分布式事务框架|Java
-[`dromara/TLog` ![](https://img.shields.io/github/stars/dromara/TLog.svg?style=social&label=Star)](https://github.com/dromara/TLog)|dromara 社区开源的轻量级分布式链路追踪|
 
 
 ## 消息中间件
