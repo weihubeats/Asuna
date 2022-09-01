@@ -35,14 +35,15 @@
 
 ### 面试
 
-| 序号  | repositories | 简介  |
-|:----| :------------ |:---:|
-| 1   | [`yifeikong/reverse-interview-zh` ![](https://img.shields.io/github/stars/yifeikong/reverse-interview-zh.svg?style=social&label=Star)](https://github.com/yifeikong/reverse-interview-zh)| 技术面试最后反问面试官的话  |
-| 2   |[`Snailclimb/JavaGuide` ![](https://img.shields.io/github/stars/Snailclimb/JavaGuide.svg?style=social&label=Star)](https://github.com/Snailclimb/JavaGuide)|java八股文,比较全的Java学习资料
-| 3   |[`kdn251/interviews` ![](https://img.shields.io/github/stars/kdn251/interviews.svg?style=social&label=Star)](https://github.com/kdn251/interviews)|Everything you need to know to get the job.
-| 4   |[`doocs/advanced-java` ![](https://img.shields.io/github/stars/doocs/advanced-java.svg?style=social&label=Star)](https://github.com/doocs/advanced-java)|互联网 Java 工程师进阶知识完全扫盲
-| 5   |[`doocs/source-code-hunter` ![](https://img.shields.io/github/stars/doocs/source-code-hunter.svg?style=social&label=Star)](https://github.com/doocs/source-code-hunter)|从源码层面，剖析挖掘互联网行业主流技术的底层实现原理
-
+ repositories | 简介  |
+ :------------ |:---:|
+ [`yifeikong/reverse-interview-zh` ![](https://img.shields.io/github/stars/yifeikong/reverse-interview-zh.svg?style=social&label=Star)](https://github.com/yifeikong/reverse-interview-zh)| 技术面试最后反问面试官的话  |
+[`Snailclimb/JavaGuide` ![](https://img.shields.io/github/stars/Snailclimb/JavaGuide.svg?style=social&label=Star)](https://github.com/Snailclimb/JavaGuide)|java八股文,比较全的Java学习资料
+[`kdn251/interviews` ![](https://img.shields.io/github/stars/kdn251/interviews.svg?style=social&label=Star)](https://github.com/kdn251/interviews)|Everything you need to know to get the job.
+[`doocs/advanced-java` ![](https://img.shields.io/github/stars/doocs/advanced-java.svg?style=social&label=Star)](https://github.com/doocs/advanced-java)|互联网 Java 工程师进阶知识完全扫盲
+[`doocs/source-code-hunter` ![](https://img.shields.io/github/stars/doocs/source-code-hunter.svg?style=social&label=Star)](https://github.com/doocs/source-code-hunter)|从源码层面，剖析挖掘互联网行业主流技术的底层实现原理
+[`996icu/996.ICU` ![](https://img.shields.io/github/stars/996icu/996.ICU.svg?style=social&label=Star)](https://github.com/996icu/996.ICU)|996公司名单
+[`formulahendry/955.WLB` ![](https://img.shields.io/github/stars/formulahendry/955.WLB.svg?style=social&label=Star)](https://github.com/formulahendry/955.WLB)|955公司白名单
 ### 算法
 | 序号  | repositories | 简介  |
 |:----| :------------ |:---:|
@@ -421,9 +422,7 @@ repositories |    简介     |
 
 #### [dev-sidecar](https://github.com/docmirror/dev-sidecar) github访问加速
 
-#### [996.ICU](https://github.com/996icu/996.ICU) 996公司名单
 
-#### [955.WLB](https://github.com/formulahendry/955.WLB) 955公司白名单
 
 ---
 
