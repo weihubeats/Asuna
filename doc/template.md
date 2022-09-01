@@ -32,3 +32,4 @@
 
 
 [`1` ![](https://img.shields.io/github/stars/1.svg?style=social&label=Star)](https://github.com/1)
+(https://gitee.com/1/badge/star.svg?theme=gray)](https://gitee.com/1)
