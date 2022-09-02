@@ -26,6 +26,7 @@
 - [搜索引擎](#搜索引擎)
 - [自建博客](#自建博客)
 - [数据库](#数据库)
+- [内存数据库](#内存数据库)
 - [RPC框架](#RPC框架)
 - [流程引擎](#流程引擎)
 - [定时任务调度](#定时任务调度)
@@ -230,13 +231,20 @@ repositories |                            简介                            |
 
 ## 数据库
 
-| 序号  | repositories |                       简介                       |开发语言|
-|:----| :------------ |:----------------------------------------------:|:---:|
-| 1   |[`mysql/mysql-server` ![](https://img.shields.io/github/stars/mysql/mysql-server.svg?style=social&label=Star)](https://github.com/mysql/mysql-server)|           MySQLServer 是世界上最流行的开源数据库            |C++
-| 2   |[`postgres/postgres` ![](https://img.shields.io/github/stars/postgres/postgres.svg?style=social&label=Star)](https://github.com/postgres/postgres)|                                                |C
-| 3   |[`pingcap/tidb` ![](https://img.shields.io/github/stars/pingcap/tidb.svg?style=social&label=Star)](https://github.com/pingcap/tidb)|     TiDB 是一个开源的、原生于云的、分布式的、与 MySQL 兼容的数据库      |Go
-| 4   |[`mongodb/mongo` ![](https://img.shields.io/github/stars/mongodb/mongo.svg?style=social&label=Star)](https://github.com/mongodb/mongo)|                     文档数据库                      |C++
-| 5   |[`ClickHouse/ClickHouse` ![](https://img.shields.io/github/stars/ClickHouse/ClickHouse.svg?style=social&label=Star)](https://github.com/ClickHouse/ClickHouse)|                 俄罗斯开源列式数据库OLAP                 |C++
+ repositories |                       简介                       |开发语言|
+ :------------ |:----------------------------------------------:|:---:|
+[`mysql/mysql-server` ![](https://img.shields.io/github/stars/mysql/mysql-server.svg?style=social&label=Star)](https://github.com/mysql/mysql-server)|           MySQLServer 是世界上最流行的开源数据库            |C++
+[`postgres/postgres` ![](https://img.shields.io/github/stars/postgres/postgres.svg?style=social&label=Star)](https://github.com/postgres/postgres)|                                                |C
+[`pingcap/tidb` ![](https://img.shields.io/github/stars/pingcap/tidb.svg?style=social&label=Star)](https://github.com/pingcap/tidb)|     TiDB 是一个开源的、原生于云的、分布式的、与 MySQL 兼容的数据库      |Go
+[`ClickHouse/ClickHouse` ![](https://img.shields.io/github/stars/ClickHouse/ClickHouse.svg?style=social&label=Star)](https://github.com/ClickHouse/ClickHouse)|                 俄罗斯开源列式数据库OLAP                 |C++
+
+
+## 内存数据库
+repositories |  简介   |开发语言|
+ :------------ |:-----:|:---:|
+[`mongodb/mongo` ![](https://img.shields.io/github/stars/mongodb/mongo.svg?style=social&label=Star)](https://github.com/mongodb/mongo)| 文档数据库 |C++
+[`redis/redis` ![](https://img.shields.io/github/stars/redis/redis.svg?style=social&label=Star)](https://github.com/redis/redis)| reids |C
+[`dragonflydb/dragonfly` ![](https://img.shields.io/github/stars/dragonflydb/dragonfly.svg?style=social&label=Star)](https://github.com/dragonflydb/dragonfly)|Redis 和 Memcached 的现代替代品|C++
 
 
 ## RPC框架
