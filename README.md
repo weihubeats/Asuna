@@ -30,6 +30,7 @@
 - [RPC框架](#RPC框架)
 - [流程引擎](#流程引擎)
 - [定时任务调度](#定时任务调度)
+- [监控](#监控)
 - [文档](#文档)
 - [学习](#学习)
 ## 工作
@@ -46,13 +47,13 @@
 [`996icu/996.ICU` ![](https://img.shields.io/github/stars/996icu/996.ICU.svg?style=social&label=Star)](https://github.com/996icu/996.ICU)|996公司名单
 [`formulahendry/955.WLB` ![](https://img.shields.io/github/stars/formulahendry/955.WLB.svg?style=social&label=Star)](https://github.com/formulahendry/955.WLB)|955公司白名单
 ### 算法
- repositories | 简介  | 语言  |
- :------------ |:---:|:---:|
-[`doocs/leetcode` ![](https://img.shields.io/github/stars/doocs/leetcode.svg?style=social&label=Star)](https://github.com/doocs/leetcode)|多种编程语言实现 LeetCode|多语言
-[`trekhleb/javascript-algorithms` ![](https://img.shields.io/github/stars/trekhleb/javascript-algorithms.svg?style=social&label=Star)](https://github.com/trekhleb/javascript-algorithms)|JavaScript 算法与数据结构|js
-|[`labuladong/fucking-algorithm` ![](https://img.shields.io/github/stars/labuladong/fucking-algorithm.svg?style=social&label=Star)](https://github.com/labuladong/fucking-algorithm)|刷算法全靠套路，认准 labuladong 就够了|java
-|[`SharingSource/LogicStack-LeetCode` ![](https://img.shields.io/github/stars/SharingSource/LogicStack-LeetCode.svg?style=social&label=Star)](https://github.com/SharingSource/LogicStack-LeetCode)|刷穿 LeetCode 系列文章源码|Java
-[`youngyangyang04/leetcode-master` ![](https://img.shields.io/github/stars/youngyangyang04/leetcode-master.svg?style=social&label=Star)](https://github.com/youngyangyang04/leetcode-master)|代码随想录》LeetCode 刷题攻略：200道经典题目刷题顺序，共60w字的详细图解，视频难点剖析，50余张思维导图，支持C++，Java，Python，Go，JavaScript等多语言版本，从此算法学习不再迷茫|多语言
+ repositories |                                                      简介                                                      | 语言  |
+ :------------ |:------------------------------------------------------------------------------------------------------------:|:---:|
+[`doocs/leetcode` ![](https://img.shields.io/github/stars/doocs/leetcode.svg?style=social&label=Star)](https://github.com/doocs/leetcode)|                                              多种编程语言实现 LeetCode                                               |多语言
+[`trekhleb/javascript-algorithms` ![](https://img.shields.io/github/stars/trekhleb/javascript-algorithms.svg?style=social&label=Star)](https://github.com/trekhleb/javascript-algorithms)|                                              JavaScript 算法与数据结构                                              |js
+|[`labuladong/fucking-algorithm` ![](https://img.shields.io/github/stars/labuladong/fucking-algorithm.svg?style=social&label=Star)](https://github.com/labuladong/fucking-algorithm)|                                          刷算法全靠套路，认准 labuladong 就够了                                           |java
+|[`SharingSource/LogicStack-LeetCode` ![](https://img.shields.io/github/stars/SharingSource/LogicStack-LeetCode.svg?style=social&label=Star)](https://github.com/SharingSource/LogicStack-LeetCode)|                                            宫叶三水刷穿 LeetCode 系列文章源码                                            |Java
+[`youngyangyang04/leetcode-master` ![](https://img.shields.io/github/stars/youngyangyang04/leetcode-master.svg?style=social&label=Star)](https://github.com/youngyangyang04/leetcode-master)| 代码随想录》LeetCode 刷题攻略：200道经典题目刷题顺序，共60w字的详细图解，视频难点剖析，50余张思维导图，支持C++，Java，Python，Go，JavaScript等多语言版本，从此算法学习不再迷茫 |多语言
 
 
 ## Java开发框架
@@ -207,10 +208,11 @@ repositories |                            简介                            |
 [`apache/rocketmq` ![](https://img.shields.io/github/stars/apache/rocketmq.svg?style=social&label=Star)](https://github.com/apache/rocketmq)| 阿里开源消息中间件|Java        
 [`qunarcorp/qmq` ![](https://img.shields.io/github/stars/qunarcorp/qmq.svg?style=social&label=Star)](https://github.com/qunarcorp/qmq)| 去哪儿网内部广泛使用的消息中间件 |Java
 [`apache/kafka` ![](https://img.shields.io/github/stars/apache/kafka.svg?style=social&label=Star)](https://github.com/apache/kafka)| apache开源高吞吐消息中间件 |Java
+[`didi/KnowStreaming` ![](https://img.shields.io/github/stars/didi/KnowStreaming.svg?style=social&label=Star)](https://github.com/didi/KnowStreaming)|一站式云原生Kafka管控平台|Java
 [`rabbitmq/rabbitmq-server` ![](https://img.shields.io/github/stars/rabbitmq/rabbitmq-server.svg?style=social&label=Star)](https://github.com/rabbitmq/rabbitmq-server)|
 [`apache/pulsar` ![](https://img.shields.io/github/stars/apache/pulsar.svg?style=social&label=Star)](https://github.com/apache/pulsar)| apach开源云原生网关     |Java
 [`apache/rocketmq-spring` ![](https://img.shields.io/github/stars/apache/rocketmq-spring.svg?style=social&label=Star)](https://github.com/apache/rocketmq-spring)|rocketmq 客户端使用sdk|Java
-[`weihubeats/wh-mq-Idempotent` ![](https://img.shields.io/github/stars/weihubeats/wh-mq-Idempotent.svg?style=social&label=Star)](https://github.com/weihubeats/wh-mq-Idempotent)|通用MQ幂等框架
+[`weihubeats/wh-mq-Idempotent` ![](https://img.shields.io/github/stars/weihubeats/wh-mq-Idempotent.svg?style=social&label=Star)](https://github.com/weihubeats/wh-mq-Idempotent)|通用MQ幂等框架|Java
 
 ## 搜索引擎
 
@@ -278,6 +280,15 @@ repositories |  简介   |开发语言|
 | 2   |[`quartz-scheduler/quartz` ![](https://img.shields.io/github/stars/quartz-scheduler/quartz.svg?style=social&label=Star)](https://github.com/quartz-scheduler/quartz)|轻量任务调度框架|Java
 | 3   |[`apache/shardingsphere-elasticjob` ![](https://img.shields.io/github/stars/apache/shardingsphere-elasticjob.svg?style=social&label=Star)](https://github.com/apache/shardingsphere-elasticjob)|apache开源的分布式调度框架|Java
 
+
+## 监控
+repositories |                                                                          简介                                                                          |开发语言|
+ :---------------- |:----------------------------------------------------------------------------------------------------------------------------------------------------:|:---:|
+[`dromara/hertzbeat` ![](https://img.shields.io/github/stars/dromara/hertzbeat.svg?style=social&label=Star)](https://github.com/dromara/hertzbeat)|                                一个拥有强大自定义监控能力，无需Agent的实时监控系统。网站监测，PING连通性，端口可用性，数据库，操作系统，中间件，API监控，阈值告警，告警通知(邮件微信钉钉飞书)                                |Java
+[`dianping/cat` ![](https://img.shields.io/github/stars/dianping/cat.svg?style=social&label=Star)](https://github.com/dianping/cat)|CAT 作为服务端项目基础组件，提供了 Java, C/C++, Node.js, Python, Go 等多语言客户端，已经在美团点评的基础架构中间件框架（MVC框架，RPC框架，数据库框架，缓存框架等，消息队列，配置系统等）深度集成，为美团点评各业务线提供系统丰富的性能指标、健康状况、实时告警等|Java
+[`prometheus/prometheus` ![](https://img.shields.io/github/stars/prometheus/prometheus.svg?style=social&label=Star)](https://github.com/prometheus/prometheus)|                                                                  普罗米修斯监测系统及时间序列数据库                                                                   |GO
+
+
 ## 文档
 repositories |    简介     |
 | :------------ |:---------:|
@@ -300,22 +311,21 @@ repositories |    简介     |
 
 ### 语言学习
 
-
-| 序号  | repositories |        简介        |    开发语言    |
-|:----| :------------ |:----------------:|:----------:|
-| 1   |[`zhisheng17/flink-learning` ![](https://img.shields.io/github/stars/zhisheng17/flink-learning.svg?style=social&label=Star)](https://github.com/zhisheng17/flink-learning)|       Java       |  Flink 学习  
-| 2   |[`Avik-Jain/100-Days-Of-ML-Code` ![](https://img.shields.io/github/stars/Avik-Jain/100-Days-Of-ML-Code.svg?style=social&label=Star)](https://github.com/Avik-Jain/100-Days-Of-ML-Code)|       机器学习       |
-| 3   |[`iluwatar/java-design-patterns` ![](https://img.shields.io/github/stars/iluwatar/java-design-patterns.svg?style=social&label=Star)](https://github.com/iluwatar/java-design-patterns)|       设计模式       |    Java    
-| 4   |[`seaswalker/spring-analysis` ![](https://img.shields.io/github/stars/seaswalker/spring-analysis.svg?style=social&label=Star)](https://github.com/seaswalker/spring-analysis)|    Spring源码阅读    |    Java    
-| 5   |[`DerekYRC/mini-spring` ![](https://img.shields.io/github/stars/DerekYRC/mini-spring.svg?style=social&label=Star)](https://github.com/DerekYRC/mini-spring)|简化版的spring框架,供我们学习|    Java    
-| 6   |[`fuzhengwei/itstack-demo-bytecode` ![](https://img.shields.io/github/stars/fuzhengwei/itstack-demo-bytecode.svg?style=social&label=Star)](https://github.com/fuzhengwei/itstack-demo-bytecode)|  java字节码编程相关学习   |    Java    
-| 7   |[`tuguangquan/mybatis` ![](https://img.shields.io/github/stars/tuguangquan/mybatis.svg?style=social&label=Star)](https://github.com/tuguangquan/mybatis)|  mybatis源码中文注释   |    Java    
-| 8   |[`xkcoding/spring-boot-demo` ![](https://img.shields.io/github/stars/xkcoding/spring-boot-demo.svg?style=social&label=Star)](https://github.com/xkcoding/spring-boot-demo)|spring boot 相关demo学习|    Java    
-| 9   |[`digoal/blog` ![](https://img.shields.io/github/stars/digoal/blog.svg?style=social&label=Star)](https://github.com/digoal/blog)|国内postgresql大神的一些pg分享|    SQL     
-| 10  |[`jackfrued/Python-100-Days` ![](https://img.shields.io/github/stars/jackfrued/Python-100-Days.svg?style=social&label=Star)](https://github.com/jackfrued/Python-100-Days)|Python - 100天从新手到大师|   python   
-| 11  |[`Asabeneh/30-Days-Of-JavaScript` ![](https://img.shields.io/github/stars/Asabeneh/30-Days-Of-JavaScript.svg?style=social&label=Star)](https://github.com/Asabeneh/30-Days-Of-JavaScript)|30天学js| javaScript 
-| 12  |[`MichaelCade/90DaysOfDevOps` ![](https://img.shields.io/github/stars/MichaelCade/90DaysOfDevOps.svg?style=social&label=Star)](https://github.com/MichaelCade/90DaysOfDevOps)|90天学DevOps|
-| 13  |[`awesome-java-books` ![](https://img.shields.io/github/stars/awesome-java-books.svg?style=social&label=Star)](https://github.com/awesome-java-books)|Java 技术书籍大全|    Java    |
+ repositories |        简介        |    开发语言    |
+ :------------ |:----------------:|:----------:|
+[`zhisheng17/flink-learning` ![](https://img.shields.io/github/stars/zhisheng17/flink-learning.svg?style=social&label=Star)](https://github.com/zhisheng17/flink-learning)|       Java       |  Flink 学习  
+[`Avik-Jain/100-Days-Of-ML-Code` ![](https://img.shields.io/github/stars/Avik-Jain/100-Days-Of-ML-Code.svg?style=social&label=Star)](https://github.com/Avik-Jain/100-Days-Of-ML-Code)|       机器学习       |
+[`iluwatar/java-design-patterns` ![](https://img.shields.io/github/stars/iluwatar/java-design-patterns.svg?style=social&label=Star)](https://github.com/iluwatar/java-design-patterns)|       设计模式       |    Java    
+[`seaswalker/spring-analysis` ![](https://img.shields.io/github/stars/seaswalker/spring-analysis.svg?style=social&label=Star)](https://github.com/seaswalker/spring-analysis)|    Spring源码阅读    |    Java    
+[`DerekYRC/mini-spring` ![](https://img.shields.io/github/stars/DerekYRC/mini-spring.svg?style=social&label=Star)](https://github.com/DerekYRC/mini-spring)|简化版的spring框架,供我们学习|    Java    
+[`fuzhengwei/itstack-demo-bytecode` ![](https://img.shields.io/github/stars/fuzhengwei/itstack-demo-bytecode.svg?style=social&label=Star)](https://github.com/fuzhengwei/itstack-demo-bytecode)|  java字节码编程相关学习   |    Java    
+[`tuguangquan/mybatis` ![](https://img.shields.io/github/stars/tuguangquan/mybatis.svg?style=social&label=Star)](https://github.com/tuguangquan/mybatis)|  mybatis源码中文注释   |    Java    
+[`xkcoding/spring-boot-demo` ![](https://img.shields.io/github/stars/xkcoding/spring-boot-demo.svg?style=social&label=Star)](https://github.com/xkcoding/spring-boot-demo)|spring boot 相关demo学习|    Java    
+[`digoal/blog` ![](https://img.shields.io/github/stars/digoal/blog.svg?style=social&label=Star)](https://github.com/digoal/blog)|国内postgresql大神的一些pg分享|    SQL     
+[`jackfrued/Python-100-Days` ![](https://img.shields.io/github/stars/jackfrued/Python-100-Days.svg?style=social&label=Star)](https://github.com/jackfrued/Python-100-Days)|Python - 100天从新手到大师|   python   
+[`Asabeneh/30-Days-Of-JavaScript` ![](https://img.shields.io/github/stars/Asabeneh/30-Days-Of-JavaScript.svg?style=social&label=Star)](https://github.com/Asabeneh/30-Days-Of-JavaScript)|30天学js| javaScript 
+[`MichaelCade/90DaysOfDevOps` ![](https://img.shields.io/github/stars/MichaelCade/90DaysOfDevOps.svg?style=social&label=Star)](https://github.com/MichaelCade/90DaysOfDevOps)|90天学DevOps|
+[`awesome-java-books` ![](https://img.shields.io/github/stars/awesome-java-books.svg?style=social&label=Star)](https://github.com/awesome-java-books)|Java 技术书籍大全|    Java    |
 
 #### [layering-cache](https://github.com/xiaolyuh/layering-cache) 多级缓存框架
 
@@ -362,10 +372,7 @@ repositories |    简介     |
 #### [sonarqube](https://github.com/SonarSource/sonarqube) 代码检测
 
 
-### 监控
-#### [HertzBeat](https://github.com/dromara/hertzbeat)
-#### [cat](https://github.com/dianping/cat) 美团开源监控框架
-#### [prometheus](https://github.com/prometheus/prometheus) 普罗米修斯
+
 
 
 
