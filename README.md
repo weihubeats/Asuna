@@ -33,6 +33,9 @@
 - [监控](#监控)
 - [文档](#文档)
 - [学习](#学习)
+    - [英语学习](#英语学习)
+- [常用工具](#常用工具)
+- [健康](#健康)
 ## 工作
 
 ### 面试
@@ -301,11 +304,11 @@ repositories |    简介     |
 
 ### 英语学习
 
-| 序号  | repositories | 简介  |
-|:----| :------------ |:---:|
-| 1   |[`Kaiyiwing/qwerty-learner` ![](https://img.shields.io/github/stars/Kaiyiwing/qwerty-learner.svg?style=social&label=Star)](https://github.com/Kaiyiwing/qwerty-learner)|为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件
-| 2   |[`yujiangshui/A-Programmers-Guide-to-English` ![](https://img.shields.io/github/stars/yujiangshui/A-Programmers-Guide-to-English.svg?style=social&label=Star)](https://github.com/yujiangshui/A-Programmers-Guide-to-English)|专为程序员编写的英语学习指南
-|3|[`chinese-programmer-wrong-pronunciation` ![](https://img.shields.io/github/stars/chinese-programmer-wrong-pronunciation.svg?style=social&label=Star)](https://github.com/chinese-programmer-wrong-pronunciation)|中国程序员容易发音错误的单词
+ repositories | 简介  |
+ :------------ |:---:|
+[`Kaiyiwing/qwerty-learner` ![](https://img.shields.io/github/stars/Kaiyiwing/qwerty-learner.svg?style=social&label=Star)](https://github.com/Kaiyiwing/qwerty-learner)|为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件
+[`yujiangshui/A-Programmers-Guide-to-English` ![](https://img.shields.io/github/stars/yujiangshui/A-Programmers-Guide-to-English.svg?style=social&label=Star)](https://github.com/yujiangshui/A-Programmers-Guide-to-English)|专为程序员编写的英语学习指南
+[`chinese-programmer-wrong-pronunciation` ![](https://img.shields.io/github/stars/chinese-programmer-wrong-pronunciation.svg?style=social&label=Star)](https://github.com/chinese-programmer-wrong-pronunciation)|中国程序员容易发音错误的单词
 
 
 
@@ -326,6 +329,23 @@ repositories |    简介     |
 [`Asabeneh/30-Days-Of-JavaScript` ![](https://img.shields.io/github/stars/Asabeneh/30-Days-Of-JavaScript.svg?style=social&label=Star)](https://github.com/Asabeneh/30-Days-Of-JavaScript)|30天学js| javaScript 
 [`MichaelCade/90DaysOfDevOps` ![](https://img.shields.io/github/stars/MichaelCade/90DaysOfDevOps.svg?style=social&label=Star)](https://github.com/MichaelCade/90DaysOfDevOps)|90天学DevOps|
 [`awesome-java-books` ![](https://img.shields.io/github/stars/awesome-java-books.svg?style=social&label=Star)](https://github.com/awesome-java-books)|Java 技术书籍大全|    Java    |
+
+
+
+## 常用工具
+repositories | 简介 |
+| :------------ |:--:|
+[`bestony/logoly` ![](https://img.shields.io/github/stars/bestony/logoly.svg?style=social&label=Star)](https://github.com/bestony/logoly)| 在线logo生成器  |
+[`TransparentLC/WechatMomentScreenshot` ![](https://img.shields.io/github/stars/TransparentLC/WechatMomentScreenshot.svg?style=social&label=Star)](https://github.com/TransparentLC/WechatMomentScreenshot)|朋友圈转发截图生成工具
+[`docmirror/dev-sidecar` ![](https://img.shields.io/github/stars/docmirror/dev-sidecar.svg?style=social&label=Star)](https://github.com/docmirror/dev-sidecar)|github加速|
+
+
+## 健康
+
+repositories |   简介    |
+| :------------ |:-------:|
+[`geekan/HowToLiveLonger` ![](https://img.shields.io/github/stars/geekan/HowToLiveLonger.svg?style=social&label=Star)](https://github.com/geekan/HowToLiveLonger)| 程序员延寿指南 |
+[`Anduin2017/HowToCook` ![](https://img.shields.io/github/stars/Anduin2017/HowToCook.svg?style=social&label=Star)](https://github.com/Anduin2017/HowToCook)| 程序员做饭笔记 |
 
 #### [layering-cache](https://github.com/xiaolyuh/layering-cache) 多级缓存框架
 
@@ -373,17 +393,8 @@ repositories |    简介     |
 
 
 
-
-
-
-
-
-
-
 ## 前端
 
-
-## 学习
 
 
 
@@ -400,9 +411,7 @@ repositories |    简介     |
 
 
 
-
 ## 其他
-
 
 
 #### [kubernetes](https://github.com/kubernetes/kubernetes) k8s不会有人不认识吧
@@ -417,14 +426,8 @@ repositories |    简介     |
 
 #### [feedback](https://github.com/github/feedback) github官方产品讨论项目
 
-#### [dev-sidecar](https://github.com/docmirror/dev-sidecar) github访问加速
 
 
-
----
-
-## 健康
-### [HowToLiveLonger](https://github.com/geekan/HowToLiveLonger) 程序员延寿指南
 
 
 ---
@@ -436,9 +439,6 @@ repositories |    简介     |
 
 #### [HelloGitHub](https://github.com/521xueweihan/HelloGitHub) 分享 GitHub 上有趣、入门级的开源项目
 
-## 设计
-
-#### [logoly](https://github.com/bestony/logoly) 在线logo生成器
 
 
  repositories | 简介  |
