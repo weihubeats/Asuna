@@ -20,7 +20,7 @@
     - [iead插件](#iead插件)
     - [excel](#excel)
     - [数据库连接池](#数据库连接池)
-    - [Spring Boot Cloud学习](#Spring Boot Cloud学习)
+    - [Spring Boot Cloud 学习](#Spring Boot Cloud 学习)
 - [网关](#网关)
 - [数据同步](#数据同步)
 - [分布式事务](#分布式事务)
