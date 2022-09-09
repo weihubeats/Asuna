@@ -20,7 +20,7 @@
     - [iead插件](#iead插件)
     - [excel](#excel)
     - [数据库连接池](#数据库连接池)
-    - [Spring学习](#Spring学习)
+    - [Spring、SpringBoot、SpringCloud学习](#Spring、SpringBoot、SpringCloud学习)
 - [网关](#网关)
 - [数据同步](#数据同步)
 - [分布式事务](#分布式事务)
@@ -143,7 +143,7 @@ repositories |       简介        |
 [`alibaba/druid` ![](https://img.shields.io/github/stars/alibaba/druid.svg?style=social&label=Star)](https://github.com/alibaba/druid)|  为监控而生的数据库连接池   |
 [`brettwooldridge/HikariCP` ![](https://img.shields.io/github/stars/brettwooldridge/HikariCP.svg?style=social&label=Star)](https://github.com/brettwooldridge/HikariCP)| Spring Boot 默认的高性能的 JDBC 连接池 |
 
-### Spring学习
+### Spring、SpringBoot、SpringCloud学习
 repositories | 简介  |
 | :------------ |:---:|
 [`smart-cloud/smart-cloud` ![](https://img.shields.io/github/stars/smart-cloud/smart-cloud.svg?style=social&label=Star)](https://github.com/smart-cloud/smart-cloud)   |基于springboot && springcloud的脚手架，支持服务合并部署与拆分部署、接口加解密签名、日志数据 脱敏、接口数据mock、接口文档自动生成、请求幂等校验、接口日志&&sql日志切面打印、分表分库分布式事务、国际化语言等|
