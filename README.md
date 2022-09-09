@@ -19,6 +19,8 @@
     - [限流](#限流)
     - [iead插件](#iead插件)
     - [excel](#excel)
+    - [数据库连接池](#数据库连接池)
+    - [Spring、Spring Boot、Spring Cloud学习](#Spring、Spring Boot、Spring Cloud学习)
 - [网关](#网关)
 - [数据同步](#数据同步)
 - [分布式事务](#分布式事务)
@@ -36,6 +38,7 @@
     - [英语学习](#英语学习)
 - [常用工具](#常用工具)
 - [健康](#健康)
+- [项目推荐、科技周刊](#项目推荐、科技周刊)
 ## 工作
 
 ### 面试
@@ -134,6 +137,19 @@
 [`liaochong/myexcel` ![](https://img.shields.io/github/stars/liaochong/myexcel.svg?style=social&label=Star)](https://github.com/liaochong/myexcel)|集导入、导出、加密Excel等多项功能的工具包
 [`pig-mesh/excel-spring-boot-starter` ![](https://img.shields.io/github/stars/pig-mesh/excel-spring-boot-starter.svg?style=social&label=Star)](https://github.com/pig-mesh/excel-spring-boot-starter)|alibaba easyexcel spring boot starter
 
+### 数据库连接池
+repositories |       简介        |
+| :------------ |:---------------:|
+[`alibaba/druid` ![](https://img.shields.io/github/stars/alibaba/druid.svg?style=social&label=Star)](https://github.com/alibaba/druid)|  为监控而生的数据库连接池   |
+[`brettwooldridge/HikariCP` ![](https://img.shields.io/github/stars/brettwooldridge/HikariCP.svg?style=social&label=Star)](https://github.com/brettwooldridge/HikariCP)| Spring Boot 默认的高性能的 JDBC 连接池 |
+
+### Spring、Spring Boot、Spring Cloud学习
+repositories | 简介  |
+| :------------ |:---:|
+[`smart-cloud/smart-cloud` ![](https://img.shields.io/github/stars/smart-cloud/smart-cloud.svg?style=social&label=Star)](https://github.com/smart-cloud/smart-cloud)   |基于springboot && springcloud的脚手架，支持服务合并部署与拆分部署、接口加解密签名、日志数据 脱敏、接口数据mock、接口文档自动生成、请求幂等校验、接口日志&&sql日志切面打印、分表分库分布式事务、国际化语言等|
+[`DerekYRC/mini-spring-cloud` ![](https://img.shields.io/github/stars/DerekYRC/mini-spring-cloud.svg?style=social&label=Star)](https://github.com/DerekYRC/mini-spring-cloud)    |mini-spring-cloud是简化版的spring-cloud框架，能帮助你快速熟悉spring-cloud源码及掌握其核心原理。在保留spring cloud核心功能的的前提下尽量精简代码，核心功能包括服务注册、服务发现、负载均衡、集成Feign简化调用、流量控制、熔断降级、API网关等|
+[`DerekYRC/mini-spring` ![](https://img.shields.io/github/stars/DerekYRC/mini-spring.svg?style=social&label=Star)](https://github.com/DerekYRC/mini-spring)|mini-spring是简化版的spring框架，能帮助你快速熟悉spring源码和掌握spring的核心原理。抽取了spring的核心逻辑，代码极度简化，保留spring的核心功能，如IoC和AOP、资源加载器、事件监听器、类型转换、容器扩展点、bean生命周期和作用域、应用上下文等核心功能|
+[`xkcoding/spring-boot-demo` ![](https://img.shields.io/github/stars/xkcoding/spring-boot-demo.svg?style=social&label=Star)](https://github.com/xkcoding/spring-boot-demo)|该项目已成功集成 actuator(监控)、admin(可视化监控)、logback(日志)、aopLog(通过AOP记录web请求日志)、统一异常处理(json级别和页面级别)、freemarker(模板引擎)、thymeleaf(模板引擎)、Beetl(模板引擎)、Enjoy(模板引擎)、JdbcTemplate(通用JDBC操作数据库)、JPA(强大的ORM框架)、mybatis(强大的ORM框架)、通用Mapper(快速操作Mybatis)、PageHelper(通用的Mybatis分页插件)、mybatis-plus(快速操作Mybatis)、BeetlSQL(强大的ORM框架)、upload(本地文件上传和七牛云文件上传)、redis(缓存)、ehcache(缓存)、ema…|
 
 
 ### 实战项目
@@ -335,9 +351,9 @@ repositories |    简介     |
 
 
 ## 常用工具
-repositories | 简介 |
-| :------------ |:--:|
-[`bestony/logoly` ![](https://img.shields.io/github/stars/bestony/logoly.svg?style=social&label=Star)](https://github.com/bestony/logoly)| 在线logo生成器  |
+repositories |   简介    |
+| :------------ |:-------:|
+[`bestony/logoly` ![](https://img.shields.io/github/stars/bestony/logoly.svg?style=social&label=Star)](https://github.com/bestony/logoly)| 在线logo生成器 |
 [`TransparentLC/WechatMomentScreenshot` ![](https://img.shields.io/github/stars/TransparentLC/WechatMomentScreenshot.svg?style=social&label=Star)](https://github.com/TransparentLC/WechatMomentScreenshot)|朋友圈转发截图生成工具
 [`docmirror/dev-sidecar` ![](https://img.shields.io/github/stars/docmirror/dev-sidecar.svg?style=social&label=Star)](https://github.com/docmirror/dev-sidecar)|github加速|
 
@@ -348,6 +364,17 @@ repositories |   简介    |
 | :------------ |:-------:|
 [`geekan/HowToLiveLonger` ![](https://img.shields.io/github/stars/geekan/HowToLiveLonger.svg?style=social&label=Star)](https://github.com/geekan/HowToLiveLonger)| 程序员延寿指南 |
 [`Anduin2017/HowToCook` ![](https://img.shields.io/github/stars/Anduin2017/HowToCook.svg?style=social&label=Star)](https://github.com/Anduin2017/HowToCook)| 程序员做饭笔记 |
+
+
+## 项目推荐、科技周刊
+
+repositories |     简介      |
+| :------------ |:-----------:|
+[`ruanyf/weekly` ![](https://img.shields.io/github/stars/ruanyf/weekly.svg?style=social&label=Star)](https://github.com/ruanyf/weekly)|科技爱好者周刊，每周五发布|
+[`GrowingGit/GitHub-Chinese-Top-Charts` ![](https://img.shields.io/github/stars/GrowingGit/GitHub-Chinese-Top-Charts.svg?style=social&label=Star)](https://github.com/GrowingGit/GitHub-Chinese-Top-Charts)|GitHub中文排行榜，各语言分设「软件 | 资料」榜单，精准定位中文好项目。各取所需，高效学习|
+||
+||
+
 
 #### [layering-cache](https://github.com/xiaolyuh/layering-cache) 多级缓存框架
 
@@ -379,9 +406,7 @@ repositories |   简介    |
 
 
 
-### 数据库连接池
-#### [druid](https://github.com/alibaba/druid) 阿里开源数据库连接池框架
-#### [HikariCP](https://github.com/brettwooldridge/HikariCP) Spring Boot 默认数据库连接池
+
 
 
 ### 分库分表
@@ -406,7 +431,6 @@ repositories |   简介    |
 
 #### [ddia](https://github.com/Vonng/ddia) 《Designing Data-Intensive Application》DDIA中文翻译
 
-#### [small-spring](https://github.com/fuzhengwei/small-spring) Spring 手撸专栏
 
 #### [Go 语言学习资料索引](https://github.com/Unknwon/go-study-index) Go 语言学习资料索引
 
@@ -421,8 +445,6 @@ repositories |   简介    |
 #### [easy-yapi](https://github.com/tangcent/easy-yapi) Yapi idea接口自动同步
 
 #### [proxy_pool](https://github.com/jhao104/proxy_pool) 爬虫代理IP池
-
-#### [HowToCook](https://github.com/Anduin2017/HowToCook) 程序员做饭笔记
 
 #### [free](https://github.com/freefq/free) 翻墙、免费翻墙、免费科学上网、免费节点、免费梯子
 
