@@ -38,7 +38,7 @@
     - [英语学习](#英语学习)
 - [常用工具](#常用工具)
 - [健康](#健康)
-- [项目推荐、科技周刊](#项目推荐、科技周刊)
+- [项目推荐,科技周刊](#项目推荐,科技周刊)
 ## 工作
 
 ### 面试
@@ -366,7 +366,7 @@ repositories |   简介    |
 [`Anduin2017/HowToCook` ![](https://img.shields.io/github/stars/Anduin2017/HowToCook.svg?style=social&label=Star)](https://github.com/Anduin2017/HowToCook)| 程序员做饭笔记 |
 
 
-## 项目推荐、科技周刊
+## 项目推荐,科技周刊
 
 repositories |     简介      |
 | :------------ |:-----------:|
