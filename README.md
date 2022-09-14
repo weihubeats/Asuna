@@ -203,7 +203,7 @@ repositories | 简介  |
 [`polarismesh/polaris` ![](https://img.shields.io/github/stars/polarismesh/polaris.svg?style=social&label=Star)](https://github.com/polarismesh/polaris)| 腾讯百万级服务治理中心的开源版本，沉淀了腾讯多年的分布式服务治理经验.包含网关、配置中心 |go
 [`apache/apisix` ![](https://img.shields.io/github/stars/apache/apisix.svg?style=social&label=Star)](https://github.com/apache/apisix)| 云原生网关                                        |go
 [`Kong/kong` ![](https://img.shields.io/github/stars/Kong/kong.svg?style=social&label=Star)](https://github.com/Kong/kong)| 高性能云原生网关|Lua
-
+[`wehotel/fizz-gateway-community` ![](https://img.shields.io/github/stars/wehotel/fizz-gateway-community.svg?style=social&label=Star)](https://github.com/wehotel/fizz-gateway-community)|微服务API聚合网关|Java
 
 
 ## 数据同步
