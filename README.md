@@ -85,13 +85,13 @@
 | 2   |[`mouzt/mzt-biz-log` ![](https://img.shields.io/github/stars/mouzt/mzt-biz-log.svg?style=social&label=Star)](https://github.com/mouzt/mzt-biz-log)|美团个人开源的业务log记录框架
 
 ### log框架
-| 序号  | repositories | 简介  |
-|:----| :------------ |:---:|
-| 1   |[`apache/logging-log4j1` ![](https://img.shields.io/github/stars/apache/logging-log4j1.svg?style=social&label=Star)](https://github.com/apache/logging-log4j1)|
-| 2   |[`apache/logging-log4j2` ![](https://img.shields.io/github/stars/apache/logging-log4j2.svg?style=social&label=Star)](https://github.com/apache/logging-log4j2)|
-| 3   |[`qos-ch/logback` ![](https://img.shields.io/github/stars/qos-ch/logback.svg?style=social&label=Star)](https://github.com/qos-ch/logback)|
-| 4   |[`alibaba/ilogtail` ![](https://img.shields.io/github/stars/alibaba/ilogtail.svg?style=social&label=Star)](https://github.com/alibaba/ilogtail)|快速、轻量级的可观察性数据收集器
-
+ repositories | 简介  |
+ :------------ |:---:|
+[`apache/logging-log4j1` ![](https://img.shields.io/github/stars/apache/logging-log4j1.svg?style=social&label=Star)](https://github.com/apache/logging-log4j1)|
+[`apache/logging-log4j2` ![](https://img.shields.io/github/stars/apache/logging-log4j2.svg?style=social&label=Star)](https://github.com/apache/logging-log4j2)|
+[`qos-ch/logback` ![](https://img.shields.io/github/stars/qos-ch/logback.svg?style=social&label=Star)](https://github.com/qos-ch/logback)|
+[`alibaba/ilogtail` ![](https://img.shields.io/github/stars/alibaba/ilogtail.svg?style=social&label=Star)](https://github.com/alibaba/ilogtail)|快速、轻量级的可观察性数据收集器
+[`fayechenlong/plumelog` ![](https://img.shields.io/github/stars/fayechenlong/plumelog.svg?style=social&label=Star)](https://github.com/fayechenlong/plumelog)|一个java分布式日志组件，支持百亿级别，日志从搜集到查询，不用去文件中翻阅日志方便快捷，支持查询一个调用链的日志，支持链路追踪，查看调用链耗时情况，在分布式系统中也可以查询关联日志，能够帮助快速定位问题，简单易用，没有代码入侵，查询界面友好，高效，方便，只要你是java系统，不要做任何项目改造，接入直接使用，日志不落本地磁盘
 
 ### 多线程
  repositories | 简介  |
