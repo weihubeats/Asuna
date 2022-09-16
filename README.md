@@ -34,6 +34,8 @@
 - [流程引擎](#流程引擎)
 - [低代码](#低代码)
 - [定时任务调度](#定时任务调度)
+- [爬虫](#爬虫)
+- [注册中心](#注册中心)
 - [监控](#监控)
 - [文档](#文档)
 - [学习](#学习)
@@ -146,15 +148,15 @@ repositories |       简介        |
 [`brettwooldridge/HikariCP` ![](https://img.shields.io/github/stars/brettwooldridge/HikariCP.svg?style=social&label=Star)](https://github.com/brettwooldridge/HikariCP)| Spring Boot 默认的高性能的 JDBC 连接池 |
 
 ### SpringBootCloud学习
-repositories | 简介  |
-| :------------ |:---:|
-[`smart-cloud/smart-cloud` ![](https://img.shields.io/github/stars/smart-cloud/smart-cloud.svg?style=social&label=Star)](https://github.com/smart-cloud/smart-cloud)   |基于springboot && springcloud的脚手架，支持服务合并部署与拆分部署、接口加解密签名、日志数据 脱敏、接口数据mock、接口文档自动生成、请求幂等校验、接口日志&&sql日志切面打印、分表分库分布式事务、国际化语言等|
-[`DerekYRC/mini-spring-cloud` ![](https://img.shields.io/github/stars/DerekYRC/mini-spring-cloud.svg?style=social&label=Star)](https://github.com/DerekYRC/mini-spring-cloud)    |mini-spring-cloud是简化版的spring-cloud框架，能帮助你快速熟悉spring-cloud源码及掌握其核心原理。在保留spring cloud核心功能的的前提下尽量精简代码，核心功能包括服务注册、服务发现、负载均衡、集成Feign简化调用、流量控制、熔断降级、API网关等|
-[`DerekYRC/mini-spring` ![](https://img.shields.io/github/stars/DerekYRC/mini-spring.svg?style=social&label=Star)](https://github.com/DerekYRC/mini-spring)|mini-spring是简化版的spring框架，能帮助你快速熟悉spring源码和掌握spring的核心原理。抽取了spring的核心逻辑，代码极度简化，保留spring的核心功能，如IoC和AOP、资源加载器、事件监听器、类型转换、容器扩展点、bean生命周期和作用域、应用上下文等核心功能|
+repositories |                                                                                                                                                                             简介                                                                                                                                                                             |
+| :------------ |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+[`smart-cloud/smart-cloud` ![](https://img.shields.io/github/stars/smart-cloud/smart-cloud.svg?style=social&label=Star)](https://github.com/smart-cloud/smart-cloud)   |                                                                                                                  基于springboot && springcloud的脚手架，支持服务合并部署与拆分部署、接口加解密签名、日志数据 脱敏、接口数据mock、接口文档自动生成、请求幂等校验、接口日志&&sql日志切面打印、分表分库分布式事务、国际化语言等                                                                                                                   |
+[`DerekYRC/mini-spring-cloud` ![](https://img.shields.io/github/stars/DerekYRC/mini-spring-cloud.svg?style=social&label=Star)](https://github.com/DerekYRC/mini-spring-cloud)    |                                                                                                    mini-spring-cloud是简化版的spring-cloud框架，能帮助你快速熟悉spring-cloud源码及掌握其核心原理。在保留spring cloud核心功能的的前提下尽量精简代码，核心功能包括服务注册、服务发现、负载均衡、集成Feign简化调用、流量控制、熔断降级、API网关等                                                                                                    |
+[`DerekYRC/mini-spring` ![](https://img.shields.io/github/stars/DerekYRC/mini-spring.svg?style=social&label=Star)](https://github.com/DerekYRC/mini-spring)|                                                                                                    mini-spring是简化版的spring框架，能帮助你快速熟悉spring源码和掌握spring的核心原理。抽取了spring的核心逻辑，代码极度简化，保留spring的核心功能，如IoC和AOP、资源加载器、事件监听器、类型转换、容器扩展点、bean生命周期和作用域、应用上下文等核心功能                                                                                                     |
 [`xkcoding/spring-boot-demo` ![](https://img.shields.io/github/stars/xkcoding/spring-boot-demo.svg?style=social&label=Star)](https://github.com/xkcoding/spring-boot-demo)|该项目已成功集成 actuator(监控)、admin(可视化监控)、logback(日志)、aopLog(通过AOP记录web请求日志)、统一异常处理(json级别和页面级别)、freemarker(模板引擎)、thymeleaf(模板引擎)、Beetl(模板引擎)、Enjoy(模板引擎)、JdbcTemplate(通用JDBC操作数据库)、JPA(强大的ORM框架)、mybatis(强大的ORM框架)、通用Mapper(快速操作Mybatis)、PageHelper(通用的Mybatis分页插件)、mybatis-plus(快速操作Mybatis)、BeetlSQL(强大的ORM框架)、upload(本地文件上传和七牛云文件上传)、redis(缓存)、ehcache(缓存)、ema…|
-[`zuihou/lamp-util` ![](https://img.shields.io/github/stars/zuihou/lamp-util.svg?style=social&label=Star)](https://github.com/zuihou/lamp-util)|lamp-util 基于Jdk11 ，是 lamp-cloud 和 lamp-boot 项目的核心工具包，开发宗旨是打造一套兼顾 SpringBoot 和 SpringCloud 项目的公共工具类。
+[`zuihou/lamp-util` ![](https://img.shields.io/github/stars/zuihou/lamp-util.svg?style=social&label=Star)](https://github.com/zuihou/lamp-util)|                                                                                                                            lamp-util 基于Jdk11 ，是 lamp-cloud 和 lamp-boot 项目的核心工具包，开发宗旨是打造一套兼顾 SpringBoot 和 SpringCloud 项目的公共工具类。                                                                                                                             |
 
-|
+
 
 ### 实战项目
 
@@ -166,6 +168,8 @@ repositories | 简介  |
 [`YunaiV/ruoyi-vue-pro` ![](https://img.shields.io/github/stars/YunaiV/ruoyi-vue-pro.svg?style=social&label=Star)](https://github.com/YunaiV/ruoyi-vue-pro)|
 [`techa03/goodsKill` ![](https://img.shields.io/github/stars/techa03/goodsKill.svg?style=social&label=Star)](https://github.com/techa03/goodsKill)|springcloud +dubbo构建的模拟秒杀微服务项目
 [`pig-mesh/pig` ![](https://img.shields.io/github/stars/pig-mesh/pig.svg?style=social&label=Star)](https://github.com/pig-mesh/pig)|基于 Spring Cloud 2021 、Spring Boot 2.7、 OAuth2 的 RBAC 权限管理系统|
+[`youlaitech/youlai-mall` ![](https://img.shields.io/github/stars/youlaitech/youlai-mall.svg?style=social&label=Star)](https://github.com/youlaitech/youlai-mall)|youlai-mall是基于Spring Boot 2.7、Spring Cloud & Alibaba 、vue3、element-plus、uni-app 构建的开源全栈微服务商城项目。|
+[`qqxx6661/miaosha` ![](https://img.shields.io/github/stars/qqxx6661/miaosha.svg?style=social&label=Star)](https://github.com/qqxx6661/miaosha)」|从零开始搭建秒杀系统 由浅入深，配合博客入门教程文章食用，风味极佳。
 
 
 ### 序列化
