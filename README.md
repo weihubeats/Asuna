@@ -22,6 +22,7 @@
     - [数据库连接池](#数据库连接池)
     - [SpringBootCloud学习](#SpringBootCloud学习)
     - [实战项目](#实战项目)
+    - [源码学习](#源码学习)
 - [网关](#网关)
 - [数据同步](#数据同步)
 - [分布式事务](#分布式事务)
@@ -70,15 +71,16 @@
 
 ### 开发框架
 
- repositories | 简介  |
- :------------ |:---:|
-[`spring-projects/spring-framework` ![](https://img.shields.io/github/stars/spring-projects/spring-framework.svg?style=social&label=Star)](https://github.com/spring-projects/spring-framework)|Spring 一统天下
- [`spring-projects/spring-boot` ![](https://img.shields.io/github/stars/spring-projects/spring-boot.svg?style=social&label=Star)](https://github.com/spring-projects/spring-boot)              |Srping Boot 一统天下
- [`quarkusio/quarkus` ![](https://img.shields.io/github/stars/quarkusio/quarkus.svg?style=social&label=Star)](https://github.com/quarkusio/quarkus)                                            |谷歌开源的轻量云原生框架
- [`google/guice` ![](https://img.shields.io/github/stars/google/guice.svg?style=social&label=Star)](https://github.com/google/guice)                                                           |google开源的轻量级依赖注入框架
- [`noear/solon` ![](https://img.shields.io/github/stars/noear/solon.svg?style=social&label=Star)](https://github.com/noear/solon)                                                              |国人开源的更现代感的应用开发框架。更快、更小、更自由！主框架0.1M
- [`nutzam/nutzboot` ![](https://img.shields.io/github/stars/nutzam/nutzboot.svg?style=social&label=Star)](https://github.com/nutzam/nutzboot)                                                  |企业级微服务框架，对各种主流三方框架整合
-[`alibaba/COLA` ![](https://img.shields.io/github/stars/alibaba/COLA.svg?style=social&label=Star)](https://github.com/alibaba/COLA)                                                           |阿里开源的COLA架构
+ repositories |                                                                                     简介                                                                                      |
+ :------------ |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+[`spring-projects/spring-framework` ![](https://img.shields.io/github/stars/spring-projects/spring-framework.svg?style=social&label=Star)](https://github.com/spring-projects/spring-framework)|                                                                                 Spring 一统天下                                                                                 
+ [`spring-projects/spring-boot` ![](https://img.shields.io/github/stars/spring-projects/spring-boot.svg?style=social&label=Star)](https://github.com/spring-projects/spring-boot)              |                                                                              Srping Boot 一统天下                                                                               
+[`sofastack/sofa-boot` ![](https://img.shields.io/github/stars/sofastack/sofa-boot.svg?style=social&label=Star)](https://github.com/sofastack/sofa-boot)|SOFABoot 是蚂蚁集团开源的基于 Spring Boot 的研发框架，它在 Spring Boot 的基础上，提供了诸如 Readiness Check，上下文隔离，类隔离，日志空间隔离等等能力。在增强了 Spring Boot 的同时，SOFABoot 提供了让用户可以在 Spring Boot 中非常方便地使用 SOFA 中间件的能力|
+ [`quarkusio/quarkus` ![](https://img.shields.io/github/stars/quarkusio/quarkus.svg?style=social&label=Star)](https://github.com/quarkusio/quarkus)                                            |                                                                                谷歌开源的轻量云原生框架                                                                                 
+ [`google/guice` ![](https://img.shields.io/github/stars/google/guice.svg?style=social&label=Star)](https://github.com/google/guice)                                                           |                                                                             google开源的轻量级依赖注入框架                                                                              
+ [`noear/solon` ![](https://img.shields.io/github/stars/noear/solon.svg?style=social&label=Star)](https://github.com/noear/solon)                                                              |                                                                     国人开源的更现代感的应用开发框架。更快、更小、更自由！主框架0.1M                                                                      
+ [`nutzam/nutzboot` ![](https://img.shields.io/github/stars/nutzam/nutzboot.svg?style=social&label=Star)](https://github.com/nutzam/nutzboot)                                                  |                                                                            企业级微服务框架，对各种主流三方框架整合                                                                             
+[`alibaba/COLA` ![](https://img.shields.io/github/stars/alibaba/COLA.svg?style=social&label=Star)](https://github.com/alibaba/COLA)                                                           |                                                                                 阿里开源的COLA架构                                                                                 
 
 ### 操作业务log自动记录框架
 | 序号  | repositories | 简介  |
@@ -151,8 +153,6 @@ repositories |       简介        |
 repositories |                                                                                                                                                                             简介                                                                                                                                                                             |
 | :------------ |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 [`smart-cloud/smart-cloud` ![](https://img.shields.io/github/stars/smart-cloud/smart-cloud.svg?style=social&label=Star)](https://github.com/smart-cloud/smart-cloud)   |                                                                                                                  基于springboot && springcloud的脚手架，支持服务合并部署与拆分部署、接口加解密签名、日志数据 脱敏、接口数据mock、接口文档自动生成、请求幂等校验、接口日志&&sql日志切面打印、分表分库分布式事务、国际化语言等                                                                                                                   |
-[`DerekYRC/mini-spring-cloud` ![](https://img.shields.io/github/stars/DerekYRC/mini-spring-cloud.svg?style=social&label=Star)](https://github.com/DerekYRC/mini-spring-cloud)    |                                                                                                    mini-spring-cloud是简化版的spring-cloud框架，能帮助你快速熟悉spring-cloud源码及掌握其核心原理。在保留spring cloud核心功能的的前提下尽量精简代码，核心功能包括服务注册、服务发现、负载均衡、集成Feign简化调用、流量控制、熔断降级、API网关等                                                                                                    |
-[`DerekYRC/mini-spring` ![](https://img.shields.io/github/stars/DerekYRC/mini-spring.svg?style=social&label=Star)](https://github.com/DerekYRC/mini-spring)|                                                                                                    mini-spring是简化版的spring框架，能帮助你快速熟悉spring源码和掌握spring的核心原理。抽取了spring的核心逻辑，代码极度简化，保留spring的核心功能，如IoC和AOP、资源加载器、事件监听器、类型转换、容器扩展点、bean生命周期和作用域、应用上下文等核心功能                                                                                                     |
 [`xkcoding/spring-boot-demo` ![](https://img.shields.io/github/stars/xkcoding/spring-boot-demo.svg?style=social&label=Star)](https://github.com/xkcoding/spring-boot-demo)|该项目已成功集成 actuator(监控)、admin(可视化监控)、logback(日志)、aopLog(通过AOP记录web请求日志)、统一异常处理(json级别和页面级别)、freemarker(模板引擎)、thymeleaf(模板引擎)、Beetl(模板引擎)、Enjoy(模板引擎)、JdbcTemplate(通用JDBC操作数据库)、JPA(强大的ORM框架)、mybatis(强大的ORM框架)、通用Mapper(快速操作Mybatis)、PageHelper(通用的Mybatis分页插件)、mybatis-plus(快速操作Mybatis)、BeetlSQL(强大的ORM框架)、upload(本地文件上传和七牛云文件上传)、redis(缓存)、ehcache(缓存)、ema…|
 [`zuihou/lamp-util` ![](https://img.shields.io/github/stars/zuihou/lamp-util.svg?style=social&label=Star)](https://github.com/zuihou/lamp-util)|                                                                                                                            lamp-util 基于Jdk11 ，是 lamp-cloud 和 lamp-boot 项目的核心工具包，开发宗旨是打造一套兼顾 SpringBoot 和 SpringCloud 项目的公共工具类。                                                                                                                             |
 
@@ -171,6 +171,15 @@ repositories |                                                                  
 [`youlaitech/youlai-mall` ![](https://img.shields.io/github/stars/youlaitech/youlai-mall.svg?style=social&label=Star)](https://github.com/youlaitech/youlai-mall)|youlai-mall是基于Spring Boot 2.7、Spring Cloud & Alibaba 、vue3、element-plus、uni-app 构建的开源全栈微服务商城项目。|
 [`qqxx6661/miaosha` ![](https://img.shields.io/github/stars/qqxx6661/miaosha.svg?style=social&label=Star)](https://github.com/qqxx6661/miaosha)」|从零开始搭建秒杀系统 由浅入深，配合博客入门教程文章食用，风味极佳。
 
+### 源码学习
+repositories | 简介  |开发语言|
+ :------------ |:---:|:---:|
+[`DerekYRC/mini-spring-cloud` ![](https://img.shields.io/github/stars/DerekYRC/mini-spring-cloud.svg?style=social&label=Star)](https://github.com/DerekYRC/mini-spring-cloud)    |                                                                                                    mini-spring-cloud是简化版的spring-cloud框架，能帮助你快速熟悉spring-cloud源码及掌握其核心原理。在保留spring cloud核心功能的的前提下尽量精简代码，核心功能包括服务注册、服务发现、负载均衡、集成Feign简化调用、流量控制、熔断降级、API网关等                                                                                                    |
+[`DerekYRC/mini-spring` ![](https://img.shields.io/github/stars/DerekYRC/mini-spring.svg?style=social&label=Star)](https://github.com/DerekYRC/mini-spring)|                                                                                                    mini-spring是简化版的spring框架，能帮助你快速熟悉spring源码和掌握spring的核心原理。抽取了spring的核心逻辑，代码极度简化，保留spring的核心功能，如IoC和AOP、资源加载器、事件监听器、类型转换、容器扩展点、bean生命周期和作用域、应用上下文等核心功能                                                                                                     |
+[`tuguangquan/mybatis` ![](https://img.shields.io/github/stars/tuguangquan/mybatis.svg?style=social&label=Star)](https://github.com/tuguangquan/mybatis)|  mybatis源码中文注释   |
+[`seaswalker/spring-analysis` ![](https://img.shields.io/github/stars/seaswalker/spring-analysis.svg?style=social&label=Star)](https://github.com/seaswalker/spring-analysis)|    Spring源码阅读
+[`coderbruis/JavaSourceCodeLearning` ![](https://img.shields.io/github/stars/coderbruis/JavaSourceCodeLearning.svg?style=social&label=Star)](https://github.com/coderbruis/JavaSourceCodeLearning)|Java流行框架源码分析：Spring源码、SpringBoot源码、SpringAOP源码、SpringSecurity源码、SpringSecurity OAuth2源码、JDK源码、Netty源码|
+[`doocs/source-code-hunter` ![](https://img.shields.io/github/stars/doocs/source-code-hunter.svg?style=social&label=Star)](https://github.com/doocs/source-code-hunter)|从源码层面，剖析挖掘互联网行业主流技术的底层实现原理，为广大开发者 “提升技术深度” 提供便利。目前开放 Spring 全家桶，Mybatis、Netty、Dubbo 框架，及 Redis、Tomcat 中间件等|
 
 ### 序列化
 repositories                                                                                                                                                          | 简介  |
@@ -353,10 +362,7 @@ repositories |    简介     |
 [`zhisheng17/flink-learning` ![](https://img.shields.io/github/stars/zhisheng17/flink-learning.svg?style=social&label=Star)](https://github.com/zhisheng17/flink-learning)|       Java       |  Flink 学习  
 [`Avik-Jain/100-Days-Of-ML-Code` ![](https://img.shields.io/github/stars/Avik-Jain/100-Days-Of-ML-Code.svg?style=social&label=Star)](https://github.com/Avik-Jain/100-Days-Of-ML-Code)|       机器学习       |
 [`iluwatar/java-design-patterns` ![](https://img.shields.io/github/stars/iluwatar/java-design-patterns.svg?style=social&label=Star)](https://github.com/iluwatar/java-design-patterns)|       设计模式       |    Java    
-[`seaswalker/spring-analysis` ![](https://img.shields.io/github/stars/seaswalker/spring-analysis.svg?style=social&label=Star)](https://github.com/seaswalker/spring-analysis)|    Spring源码阅读    |    Java    
-[`DerekYRC/mini-spring` ![](https://img.shields.io/github/stars/DerekYRC/mini-spring.svg?style=social&label=Star)](https://github.com/DerekYRC/mini-spring)|简化版的spring框架,供我们学习|    Java    
 [`fuzhengwei/itstack-demo-bytecode` ![](https://img.shields.io/github/stars/fuzhengwei/itstack-demo-bytecode.svg?style=social&label=Star)](https://github.com/fuzhengwei/itstack-demo-bytecode)|  java字节码编程相关学习   |    Java    
-[`tuguangquan/mybatis` ![](https://img.shields.io/github/stars/tuguangquan/mybatis.svg?style=social&label=Star)](https://github.com/tuguangquan/mybatis)|  mybatis源码中文注释   |    Java    
 [`xkcoding/spring-boot-demo` ![](https://img.shields.io/github/stars/xkcoding/spring-boot-demo.svg?style=social&label=Star)](https://github.com/xkcoding/spring-boot-demo)|spring boot 相关demo学习|    Java    
 [`digoal/blog` ![](https://img.shields.io/github/stars/digoal/blog.svg?style=social&label=Star)](https://github.com/digoal/blog)|国内postgresql大神的一些pg分享|    SQL     
 [`jackfrued/Python-100-Days` ![](https://img.shields.io/github/stars/jackfrued/Python-100-Days.svg?style=social&label=Star)](https://github.com/jackfrued/Python-100-Days)|Python - 100天从新手到大师|   python   
