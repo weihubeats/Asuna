@@ -320,12 +320,26 @@ repositories | 简介  |开发语言|
 
 ## 定时任务调度
 
-| 序号  | repositories | 简介  |开发语言|
-|:----| :------------ |:---:|:---:|
-| 1   |[`xuxueli/xxl-job` ![](https://img.shields.io/github/stars/xuxueli/xxl-job.svg?style=social&label=Star)](https://github.com/xuxueli/xxl-job)|分布式任务调度框架|Java
-| 2   |[`quartz-scheduler/quartz` ![](https://img.shields.io/github/stars/quartz-scheduler/quartz.svg?style=social&label=Star)](https://github.com/quartz-scheduler/quartz)|轻量任务调度框架|Java
-| 3   |[`apache/shardingsphere-elasticjob` ![](https://img.shields.io/github/stars/apache/shardingsphere-elasticjob.svg?style=social&label=Star)](https://github.com/apache/shardingsphere-elasticjob)|apache开源的分布式调度框架|Java
+ repositories | 简介  |开发语言|
+ :------------ |:---:|:---:|
+[`xuxueli/xxl-job` ![](https://img.shields.io/github/stars/xuxueli/xxl-job.svg?style=social&label=Star)](https://github.com/xuxueli/xxl-job)|分布式任务调度框架|Java
+[`quartz-scheduler/quartz` ![](https://img.shields.io/github/stars/quartz-scheduler/quartz.svg?style=social&label=Star)](https://github.com/quartz-scheduler/quartz)|轻量任务调度框架|Java
+[`apache/shardingsphere-elasticjob` ![](https://img.shields.io/github/stars/apache/shardingsphere-elasticjob.svg?style=social&label=Star)](https://github.com/apache/shardingsphere-elasticjob)|apache开源的分布式调度框架|Java
+[`PowerJob/PowerJob` ![](https://img.shields.io/github/stars/PowerJob/PowerJob.svg?style=social&label=Star)](https://github.com/PowerJob/PowerJob)|PowerJob（原OhMyScheduler）是全新一代分布式调度与计算框架，能让您轻松完成作业的调度与繁杂任务的分布式计算|java
 
+## 爬虫
+repositories |              简介               |开发语言|
+ :------------ |:-----------------------------:|:---:|
+[`ssssssss-team/spider-flow` ![](https://img.shields.io/github/stars/ssssssss-team/spider-flow.svg?style=social&label=Star)](https://github.com/ssssssss-team/spider-flow)|新一代爬虫平台，以图形化方式定义爬虫流程，不写代码即可完成爬虫|Java
+[`jhao104/proxy_pool` ![](https://img.shields.io/github/stars/jhao104/proxy_pool.svg?style=social&label=Star)](https://github.com/jhao104/proxy_pool)|   Python爬虫代理IP池(proxy pool)   |Java
+
+## 注册中心
+repositories |                   简介                    |开发语言|
+ :------------ |:---------------------------------------:|:---:|
+[`Netflix/eureka` ![](https://img.shields.io/github/stars/Netflix/eureka.svg?style=social&label=Star)](https://github.com/Netflix/eureka)|        Netflix开源注册中心,目前已经低频或不再维护        |Java
+[`apache/zookeeper` ![](https://img.shields.io/github/stars/apache/zookeeper.svg?style=social&label=Star)](https://github.com/apache/zookeeper)||                  Java                   
+[`alibaba/nacos` ![](https://img.shields.io/github/stars/alibaba/nacos.svg?style=social&label=Star)](https://github.com/alibaba/nacos)| 阿里开源一个易于使用的动态服务发现、配置和服务管理平台，用于构建云本地应用程序 |Java
+[`etcd-io/etcd` ![](https://img.shields.io/github/stars/etcd-io/etcd.svg?style=social&label=Star)](https://github.com/etcd-io/etcd)||Java
 
 ## 监控
 repositories |                                                                          简介                                                                          |开发语言|
@@ -464,8 +478,6 @@ repositories |     简介      |
 #### [kubernetes](https://github.com/kubernetes/kubernetes) k8s不会有人不认识吧
 
 #### [easy-yapi](https://github.com/tangcent/easy-yapi) Yapi idea接口自动同步
-
-#### [proxy_pool](https://github.com/jhao104/proxy_pool) 爬虫代理IP池
 
 #### [free](https://github.com/freefq/free) 翻墙、免费翻墙、免费科学上网、免费节点、免费梯子
 
