@@ -25,6 +25,7 @@
     - [源码学习](#源码学习)
 - [网关](#网关)
 - [数据同步](#数据同步)
+- [一致性算法](#一致性算法)
 - [分布式事务](#分布式事务)
 - [消息中间件](#消息中间件)
 - [搜索引擎](#搜索引擎)
@@ -58,14 +59,14 @@
 [`996icu/996.ICU` ![](https://img.shields.io/github/stars/996icu/996.ICU.svg?style=social&label=Star)](https://github.com/996icu/996.ICU)|996公司名单
 [`formulahendry/955.WLB` ![](https://img.shields.io/github/stars/formulahendry/955.WLB.svg?style=social&label=Star)](https://github.com/formulahendry/955.WLB)|955公司白名单
 ### 算法
- repositories |                                                      简介                                                      | 语言  |
- :------------ |:------------------------------------------------------------------------------------------------------------:|:---:|
-[`doocs/leetcode` ![](https://img.shields.io/github/stars/doocs/leetcode.svg?style=social&label=Star)](https://github.com/doocs/leetcode)|                                              多种编程语言实现 LeetCode                                               |多语言
-[`trekhleb/javascript-algorithms` ![](https://img.shields.io/github/stars/trekhleb/javascript-algorithms.svg?style=social&label=Star)](https://github.com/trekhleb/javascript-algorithms)|                                              JavaScript 算法与数据结构                                              |js
-|[`labuladong/fucking-algorithm` ![](https://img.shields.io/github/stars/labuladong/fucking-algorithm.svg?style=social&label=Star)](https://github.com/labuladong/fucking-algorithm)|                                          刷算法全靠套路，认准 labuladong 就够了                                           |java
-|[`SharingSource/LogicStack-LeetCode` ![](https://img.shields.io/github/stars/SharingSource/LogicStack-LeetCode.svg?style=social&label=Star)](https://github.com/SharingSource/LogicStack-LeetCode)|                                            宫叶三水刷穿 LeetCode 系列文章源码                                            |Java
-[`youngyangyang04/leetcode-master` ![](https://img.shields.io/github/stars/youngyangyang04/leetcode-master.svg?style=social&label=Star)](https://github.com/youngyangyang04/leetcode-master)| 代码随想录》LeetCode 刷题攻略：200道经典题目刷题顺序，共60w字的详细图解，视频难点剖析，50余张思维导图，支持C++，Java，Python，Go，JavaScript等多语言版本，从此算法学习不再迷茫 |多语言
-[`halfrost/LeetCode-Go` ![](https://img.shields.io/github/stars/halfrost/LeetCode-Go.svg?style=social&label=Star)](https://github.com/halfrost/LeetCode-Go)|LeetCode 题解|go
+ repositories |                                                           简介                                                           | 语言  |
+ :------------ |:----------------------------------------------------------------------------------------------------------------------:|:---:|
+[`doocs/leetcode` ![](https://img.shields.io/github/stars/doocs/leetcode.svg?style=social&label=Star)](https://github.com/doocs/leetcode)|                                                   多种编程语言实现 LeetCode                                                    |多语言
+[`trekhleb/javascript-algorithms` ![](https://img.shields.io/github/stars/trekhleb/javascript-algorithms.svg?style=social&label=Star)](https://github.com/trekhleb/javascript-algorithms)|                                                   JavaScript 算法与数据结构                                                   |js
+|[`labuladong/fucking-algorithm` ![](https://img.shields.io/github/stars/labuladong/fucking-algorithm.svg?style=social&label=Star)](https://github.com/labuladong/fucking-algorithm)|                                               刷算法全靠套路，认准 labuladong 就够了                                                |java
+|[`SharingSource/LogicStack-LeetCode` ![](https://img.shields.io/github/stars/SharingSource/LogicStack-LeetCode.svg?style=social&label=Star)](https://github.com/SharingSource/LogicStack-LeetCode)|                                                 宫叶三水刷穿 LeetCode 系列文章源码                                                 |Java
+[`youngyangyang04/leetcode-master` ![](https://img.shields.io/github/stars/youngyangyang04/leetcode-master.svg?style=social&label=Star)](https://github.com/youngyangyang04/leetcode-master)| 代码随想录 LeetCode 刷题攻略：</br>200道经典题目刷题顺序，共60w字的详细图解，</br>视频难点剖析，50余张思维导图，</br>支持C++，Java，Python，Go，</br>JavaScript等多语言版本，</br>从此算法学习不再迷茫 |多语言
+[`halfrost/LeetCode-Go` ![](https://img.shields.io/github/stars/halfrost/LeetCode-Go.svg?style=social&label=Star)](https://github.com/halfrost/LeetCode-Go)|                                                      LeetCode 题解                                                       |go
 
 ## Java开发框架
 
@@ -75,7 +76,7 @@
  :------------ |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 [`spring-projects/spring-framework` ![](https://img.shields.io/github/stars/spring-projects/spring-framework.svg?style=social&label=Star)](https://github.com/spring-projects/spring-framework)|                                                                                 Spring 一统天下                                                                                 
  [`spring-projects/spring-boot` ![](https://img.shields.io/github/stars/spring-projects/spring-boot.svg?style=social&label=Star)](https://github.com/spring-projects/spring-boot)              |                                                                              Srping Boot 一统天下                                                                               
-[`sofastack/sofa-boot` ![](https://img.shields.io/github/stars/sofastack/sofa-boot.svg?style=social&label=Star)](https://github.com/sofastack/sofa-boot)|SOFABoot 是蚂蚁集团开源的基于 Spring Boot 的研发框架，它在 Spring Boot 的基础上，提供了诸如 Readiness Check，上下文隔离，类隔离，日志空间隔离等等能力。在增强了 Spring Boot 的同时，SOFABoot 提供了让用户可以在 Spring Boot 中非常方便地使用 SOFA 中间件的能力|
+[`sofastack/sofa-boot` ![](https://img.shields.io/github/stars/sofastack/sofa-boot.svg?style=social&label=Star)](https://github.com/sofastack/sofa-boot)|SOFABoot 是蚂蚁集团开源的基于 Spring Boot 的研发框架，</br>它在 Spring Boot 的基础上，提供了诸如</br> Readiness Check，上下文隔离，类隔离，日志空间隔离等等能力。</br>在增强了 Spring Boot 的同时，</br>SOFABoot 提供了让用户可以在 Spring Boot 中非常方便地使用 SOFA 中间件的能力|
  [`quarkusio/quarkus` ![](https://img.shields.io/github/stars/quarkusio/quarkus.svg?style=social&label=Star)](https://github.com/quarkusio/quarkus)                                            |                                                                                谷歌开源的轻量云原生框架                                                                                 
  [`google/guice` ![](https://img.shields.io/github/stars/google/guice.svg?style=social&label=Star)](https://github.com/google/guice)                                                           |                                                                             google开源的轻量级依赖注入框架                                                                              
  [`noear/solon` ![](https://img.shields.io/github/stars/noear/solon.svg?style=social&label=Star)](https://github.com/noear/solon)                                                              |                                                                     国人开源的更现代感的应用开发框架。更快、更小、更自由！主框架0.1M                                                                      
@@ -95,7 +96,7 @@
 [`apache/logging-log4j2` ![](https://img.shields.io/github/stars/apache/logging-log4j2.svg?style=social&label=Star)](https://github.com/apache/logging-log4j2)|
 [`qos-ch/logback` ![](https://img.shields.io/github/stars/qos-ch/logback.svg?style=social&label=Star)](https://github.com/qos-ch/logback)|
 [`alibaba/ilogtail` ![](https://img.shields.io/github/stars/alibaba/ilogtail.svg?style=social&label=Star)](https://github.com/alibaba/ilogtail)|快速、轻量级的可观察性数据收集器
-[`fayechenlong/plumelog` ![](https://img.shields.io/github/stars/fayechenlong/plumelog.svg?style=social&label=Star)](https://github.com/fayechenlong/plumelog)|一个java分布式日志组件，支持百亿级别，日志从搜集到查询，不用去文件中翻阅日志方便快捷，支持查询一个调用链的日志，支持链路追踪，查看调用链耗时情况，在分布式系统中也可以查询关联日志，能够帮助快速定位问题，简单易用，没有代码入侵，查询界面友好，高效，方便，只要你是java系统，不要做任何项目改造，接入直接使用，日志不落本地磁盘
+[`fayechenlong/plumelog` ![](https://img.shields.io/github/stars/fayechenlong/plumelog.svg?style=social&label=Star)](https://github.com/fayechenlong/plumelog)|一个java分布式日志组件，</br>支持百亿级别，日志从搜集到查询，不用去文件中翻阅日志方便快捷，</br>支持查询一个调用链的日志，支持链路追踪，查看调用链耗时情况，</br>在分布式系统中也可以查询关联日志，能够帮助快速定位问题，</br>简单易用，没有代码入侵，查询界面友好，高效，方便，</br>只要你是java系统，不要做任何项目改造，接入直接使用，日志不落本地磁盘
 
 ### 多线程
  repositories | 简介  |
@@ -126,8 +127,8 @@
 [`jOOQ/jOOQ` ![](https://img.shields.io/github/stars/jOOQ/jOOQ.svg?style=social&label=Star)](https://github.com/jOOQ/jOOQ)|
 [`querydsl/querydsl` ![](https://img.shields.io/github/stars/querydsl/querydsl.svg?style=social&label=Star)](https://github.com/querydsl/querydsl)|告别常规SQL和CRUD，写的更少，性能更好
 [`hibernate/hibernate-orm` ![](https://img.shields.io/github/stars/hibernate/hibernate-orm.svg?style=social&label=Star)](https://github.com/hibernate/hibernate-orm)|对象与数据库直接映射ORM框架
-[`troyzhxu/bean-searcher` ![](https://img.shields.io/github/stars/troyzhxu/bean-searcher.svg?style=social&label=Star)](https://github.com/troyzhxu/bean-searcher)|专注于高级查询的只读 ORM，自然支持联接表，避免了 DTO/VO 转换
-[`sagframe/sagacity-sqltoy` ![](https://img.shields.io/github/stars/sagframe/sagacity-sqltoy.svg?style=social&label=Star)](https://github.com/sagframe/sagacity-sqltoy)|ava真正智慧的ORM框架，支持mysql、oracle、postgresql、sqlserver、db2、dm、mongodb、elasticsearch、clickhouse、StarRocks、kudu、tidb、guassdb、kingbase、oceanbase、greenplum
+[`troyzhxu/bean-searcher` ![](https://img.shields.io/github/stars/troyzhxu/bean-searcher.svg?style=social&label=Star)](https://github.com/troyzhxu/bean-searcher)|专注于高级查询的只读 ORM，</br>自然支持联接表，避免了 DTO/VO 转换
+[`sagframe/sagacity-sqltoy` ![](https://img.shields.io/github/stars/sagframe/sagacity-sqltoy.svg?style=social&label=Star)](https://github.com/sagframe/sagacity-sqltoy)|ava真正智慧的ORM框架，</br>支持mysql、oracle、postgresql、sqlserver、db2、</br>dm、mongodb、elasticsearch、clickhouse、StarRocks、</br>kudu、tidb、guassdb、kingbase、oceanbase、greenplum
 
 ### 权限框架
 | 序号  | repositories | 简介  |
@@ -160,35 +161,35 @@ repositories |                                                                  
 
 ### 实战项目
 
- repositories | 简介  |
- :------------ |:---:|
-[`macrozheng/mall` ![](https://img.shields.io/github/stars/macrozheng/mall.svg?style=social&label=Star)](https://github.com/macrozheng/mall)|前后端微服务项目
-[`elunez/eladmin` ![](https://img.shields.io/github/stars/elunez/eladmin.svg?style=social&label=Star)](https://github.com/elunez/eladmin)|EL-ADMIN 后台管理系统
-[`qiurunze123/miaosha` ![](https://img.shields.io/github/stars/qiurunze123/miaosha.svg?style=social&label=Star)](https://github.com/qiurunze123/miaosha)|互联网秒杀系统架构设计
+ repositories |                                                   简介                                                   |
+ :------------ |:------------------------------------------------------------------------------------------------------:|
+[`macrozheng/mall` ![](https://img.shields.io/github/stars/macrozheng/mall.svg?style=social&label=Star)](https://github.com/macrozheng/mall)|                                                前后端微服务项目                                                
+[`elunez/eladmin` ![](https://img.shields.io/github/stars/elunez/eladmin.svg?style=social&label=Star)](https://github.com/elunez/eladmin)|                                            EL-ADMIN 后台管理系统                                             
+[`qiurunze123/miaosha` ![](https://img.shields.io/github/stars/qiurunze123/miaosha.svg?style=social&label=Star)](https://github.com/qiurunze123/miaosha)|                                              互联网秒杀系统架构设计                                               
 [`YunaiV/ruoyi-vue-pro` ![](https://img.shields.io/github/stars/YunaiV/ruoyi-vue-pro.svg?style=social&label=Star)](https://github.com/YunaiV/ruoyi-vue-pro)|
-[`techa03/goodsKill` ![](https://img.shields.io/github/stars/techa03/goodsKill.svg?style=social&label=Star)](https://github.com/techa03/goodsKill)|springcloud +dubbo构建的模拟秒杀微服务项目
-[`pig-mesh/pig` ![](https://img.shields.io/github/stars/pig-mesh/pig.svg?style=social&label=Star)](https://github.com/pig-mesh/pig)|基于 Spring Cloud 2021 、Spring Boot 2.7、 OAuth2 的 RBAC 权限管理系统|
-[`youlaitech/youlai-mall` ![](https://img.shields.io/github/stars/youlaitech/youlai-mall.svg?style=social&label=Star)](https://github.com/youlaitech/youlai-mall)|youlai-mall是基于Spring Boot 2.7、Spring Cloud & Alibaba 、vue3、element-plus、uni-app 构建的开源全栈微服务商城项目。|
-[`qqxx6661/miaosha` ![](https://img.shields.io/github/stars/qqxx6661/miaosha.svg?style=social&label=Star)](https://github.com/qqxx6661/miaosha)」|从零开始搭建秒杀系统 由浅入深，配合博客入门教程文章食用，风味极佳。
+[`techa03/goodsKill` ![](https://img.shields.io/github/stars/techa03/goodsKill.svg?style=social&label=Star)](https://github.com/techa03/goodsKill)|                                     springcloud +dubbo构建的模拟秒杀微服务项目                                     
+[`pig-mesh/pig` ![](https://img.shields.io/github/stars/pig-mesh/pig.svg?style=social&label=Star)](https://github.com/pig-mesh/pig)|                    基于 Spring Cloud 2021 、</br>Spring Boot 2.7、 OAuth2 的 RBAC 权限管理系统                    |
+[`youlaitech/youlai-mall` ![](https://img.shields.io/github/stars/youlaitech/youlai-mall.svg?style=social&label=Star)](https://github.com/youlaitech/youlai-mall)| youlai-mall是基于Spring Boot 2.7</br>Spring Cloud Alibaba </br>、vue3、element-plus、uni-app </br>构建的开源全栈微服务商城项目。 |
+[`qqxx6661/miaosha` ![](https://img.shields.io/github/stars/qqxx6661/miaosha.svg?style=social&label=Star)](https://github.com/qqxx6661/miaosha)|                                   从零开始搭建秒杀系统 由浅入深，</br>配合博客入门教程文章食用，风味极佳。                                   
 
 ### 源码学习
-repositories | 简介  |开发语言|
- :------------ |:---:|:---:|
-[`DerekYRC/mini-spring-cloud` ![](https://img.shields.io/github/stars/DerekYRC/mini-spring-cloud.svg?style=social&label=Star)](https://github.com/DerekYRC/mini-spring-cloud)    |                                                                                                    mini-spring-cloud是简化版的spring-cloud框架，能帮助你快速熟悉spring-cloud源码及掌握其核心原理。在保留spring cloud核心功能的的前提下尽量精简代码，核心功能包括服务注册、服务发现、负载均衡、集成Feign简化调用、流量控制、熔断降级、API网关等                                                                                                    |
-[`DerekYRC/mini-spring` ![](https://img.shields.io/github/stars/DerekYRC/mini-spring.svg?style=social&label=Star)](https://github.com/DerekYRC/mini-spring)|                                                                                                    mini-spring是简化版的spring框架，能帮助你快速熟悉spring源码和掌握spring的核心原理。抽取了spring的核心逻辑，代码极度简化，保留spring的核心功能，如IoC和AOP、资源加载器、事件监听器、类型转换、容器扩展点、bean生命周期和作用域、应用上下文等核心功能                                                                                                     |
-[`tuguangquan/mybatis` ![](https://img.shields.io/github/stars/tuguangquan/mybatis.svg?style=social&label=Star)](https://github.com/tuguangquan/mybatis)|  mybatis源码中文注释   |
-[`seaswalker/spring-analysis` ![](https://img.shields.io/github/stars/seaswalker/spring-analysis.svg?style=social&label=Star)](https://github.com/seaswalker/spring-analysis)|    Spring源码阅读
-[`coderbruis/JavaSourceCodeLearning` ![](https://img.shields.io/github/stars/coderbruis/JavaSourceCodeLearning.svg?style=social&label=Star)](https://github.com/coderbruis/JavaSourceCodeLearning)|Java流行框架源码分析：Spring源码、SpringBoot源码、SpringAOP源码、SpringSecurity源码、SpringSecurity OAuth2源码、JDK源码、Netty源码|
-[`doocs/source-code-hunter` ![](https://img.shields.io/github/stars/doocs/source-code-hunter.svg?style=social&label=Star)](https://github.com/doocs/source-code-hunter)|从源码层面，剖析挖掘互联网行业主流技术的底层实现原理，为广大开发者 “提升技术深度” 提供便利。目前开放 Spring 全家桶，Mybatis、Netty、Dubbo 框架，及 Redis、Tomcat 中间件等|
+repositories |                                                                                    简介                                                                                    |开发语言|
+ :------------ |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---:|
+[`DerekYRC/mini-spring-cloud` ![](https://img.shields.io/github/stars/DerekYRC/mini-spring-cloud.svg?style=social&label=Star)](https://github.com/DerekYRC/mini-spring-cloud)    | mini-spring-cloud是简化版的spring-cloud框架，</br>能帮助你快速熟悉spring-cloud源码及掌握其核心原理。</br>在保留spring cloud核心功能的的前提下尽量精简代码，</br>核心功能包括服务注册、服务发现、负载均衡、</br>集成Feign简化调用、流量控制、熔断降级、API网关等 |
+[`DerekYRC/mini-spring` ![](https://img.shields.io/github/stars/DerekYRC/mini-spring.svg?style=social&label=Star)](https://github.com/DerekYRC/mini-spring)|           mini-spring是简化版的spring框架，能帮助你快速熟悉spring源码和掌握spring的核心原理。抽取了spring的核心逻辑，代码极度简化，保留spring的核心功能，如IoC和AOP、资源加载器、事件监听器、类型转换、容器扩展点、bean生命周期和作用域、应用上下文等核心功能            |
+[`tuguangquan/mybatis` ![](https://img.shields.io/github/stars/tuguangquan/mybatis.svg?style=social&label=Star)](https://github.com/tuguangquan/mybatis)|                                                                              mybatis源码中文注释                                                                               |
+[`seaswalker/spring-analysis` ![](https://img.shields.io/github/stars/seaswalker/spring-analysis.svg?style=social&label=Star)](https://github.com/seaswalker/spring-analysis)|                                                                                Spring源码阅读                                                                                
+[`coderbruis/JavaSourceCodeLearning` ![](https://img.shields.io/github/stars/coderbruis/JavaSourceCodeLearning.svg?style=social&label=Star)](https://github.com/coderbruis/JavaSourceCodeLearning)|                            Java流行框架源码分析</br>Spring源码、SpringBoot源码</br>SpringAOP源码、SpringSecurity源码</br>SpringSecurity OAuth2源码、JDK源码、Netty源码                             |
+[`doocs/source-code-hunter` ![](https://img.shields.io/github/stars/doocs/source-code-hunter.svg?style=social&label=Star)](https://github.com/doocs/source-code-hunter)|                            从源码层面剖析挖掘</br>互联网行业主流技术的底层实现原理</br>为广大开发者 “提升技术深度” 提供便利。</br>目前开放 Spring 全家桶，Mybatis、Netty、Dubbo 框架，及 Redis、Tomcat 中间件等                            |
 
 ### 序列化
 repositories                                                                                                                                                          | 简介  |
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------:|
 [`alibaba/fastjson` ![](https://img.shields.io/github/stars/alibaba/fastjson.svg?style=social&label=Star)](https://github.com/alibaba/fastjson)                       |阿里开源序列化框架           
-[`alibaba/fastjson2` ![](https://img.shields.io/github/stars/alibaba/fastjson2.svg?style=social&label=Star)](https://github.com/alibaba/fastjson2)                    |FASTJSON2是FASTJSON项目的重要升级，目标是为下一个十年提供一个高性能的JSON库
+[`alibaba/fastjson2` ![](https://img.shields.io/github/stars/alibaba/fastjson2.svg?style=social&label=Star)](https://github.com/alibaba/fastjson2)                    |FASTJSON2是FASTJSON项目的重要升级，</br>目标是为下一个十年提供一个高性能的JSON库
 [`FasterXML/jackson` ![](https://img.shields.io/github/stars/FasterXML/jackson.svg?style=social&label=Star)](https://github.com/FasterXML/jackson)                    |目前spring boot 默认json序列化框架
-[`ejlchina/xjsonkit` ![](https://img.shields.io/github/stars/ejlchina/xjsonkit.svg?style=social&label=Star)](https://github.com/ejlchina/xjsonkit)                    |超轻量级 JSON / JSONB / XML / YAML 解析门面 API，用法简单，使业务代码不依赖具体实现
-[`fangjinuo/easyjson` ![](https://img.shields.io/github/stars/fangjinuo/easyjson.svg?style=social&label=Star)](https://github.com/fangjinuo/easyjson)                 |提供了一个JSON门面库，就像slf4j一样。easyjson本身不做json的操作，完全依赖于底层实现库
+[`ejlchina/xjsonkit` ![](https://img.shields.io/github/stars/ejlchina/xjsonkit.svg?style=social&label=Star)](https://github.com/ejlchina/xjsonkit)                    |超轻量级 JSON / JSONB / XML / YAML 解析门面 API，</br>用法简单，使业务代码不依赖具体实现
+[`fangjinuo/easyjson` ![](https://img.shields.io/github/stars/fangjinuo/easyjson.svg?style=social&label=Star)](https://github.com/fangjinuo/easyjson)                 |提供了一个JSON门面库，就像slf4j一样。</br>easyjson本身不做json的操作，完全依赖于底层实现库
 
 
 ### 限流
@@ -220,17 +221,27 @@ repositories | 简介  |
 
 
 ## 数据同步
-repositories |                            简介                            |
-| :------------ |:--------------------------------------------------------:|
-[`alibaba/canal` ![](https://img.shields.io/github/stars/alibaba/canal.svg?style=social&label=Star)](https://github.com/alibaba/canal)|               阿里巴巴 MySQL binlog 增量订阅&消费组件                |
-[`alibaba/otter` ![](https://img.shields.io/github/stars/alibaba/otter.svg?style=social&label=Star)](https://github.com/alibaba/otter)| 基于数据库增量日志解析，准实时同步到本机房或异地机房的mysql/oracle数据库. 一个分布式数据库同步系统 |
-[`alibaba/DataX` ![](https://img.shields.io/github/stars/alibaba/DataX.svg?style=social&label=Star)](https://github.com/alibaba/DataX)|               DataX是阿里云DataWorks数据集成的开源版本。               |
-[`pentaho/pentaho-kettle` ![](https://img.shields.io/github/stars/pentaho/pentaho-kettle.svg?style=social&label=Star)](https://github.com/pentaho/pentaho-kettle)|                       通过图形化窗口同步数据                        |
-[`DTStack/chunjun` ![](https://img.shields.io/github/stars/DTStack/chunjun.svg?style=social&label=Star)](https://github.com/DTStack/chunjun)|基于实时计算引擎Flink实现多种异构数据源之间的数据同步与计算|
-[`apache/inlong` ![](https://img.shields.io/github/stars/apache/inlong.svg?style=social&label=Star)](https://github.com/apache/inlong)|一站式海量数据集成框架，提供自动、安全、可靠和高性能的数据传输能力，同时支持批和流，方便业务构建基于流式的数据分析、建模和应用|
-[`apache/incubator-seatunnel` ![](https://img.shields.io/github/stars/apache/incubator-seatunnel.svg?style=social&label=Star)](https://github.com/apache/incubator-seatunnel)|一个分布式、高性能的数据集成平台，用于同步和转换海量数据(离线和实时)|
-[`ghi/dbsyncer` ![](https://gitee.com/ghi/dbsyncer/badge/star.svg?theme=gray)](https://gitee.com/ghi/dbsyncer)    |提供MySQL、Oracle、SqlServer、PostgreSQL、Elasticsearch(ES)、Kafka、File、SQL等同步场景。支持上传插件自定义同步转换业务，提供监控全量和增量数据统计图、应用性能预警等|
+repositories |                                                        简介                                                        |
+| :------------ |:----------------------------------------------------------------------------------------------------------------:|
+[`alibaba/canal` ![](https://img.shields.io/github/stars/alibaba/canal.svg?style=social&label=Star)](https://github.com/alibaba/canal)|                                           阿里巴巴 MySQL binlog 增量订阅&消费组件                                            |
+[`alibaba/otter` ![](https://img.shields.io/github/stars/alibaba/otter.svg?style=social&label=Star)](https://github.com/alibaba/otter)|                         基于数据库增量日志解析</br>准实时同步到本机房或异地机房的mysql/oracle数据库</br>一个分布式数据库同步系统                          |
+[`alibaba/DataX` ![](https://img.shields.io/github/stars/alibaba/DataX.svg?style=social&label=Star)](https://github.com/alibaba/DataX)|                                           DataX是阿里云DataWorks数据集成的开源版本。                                           |
+[`pentaho/pentaho-kettle` ![](https://img.shields.io/github/stars/pentaho/pentaho-kettle.svg?style=social&label=Star)](https://github.com/pentaho/pentaho-kettle)|                                                   通过图形化窗口同步数据                                                    |
+[`DTStack/chunjun` ![](https://img.shields.io/github/stars/DTStack/chunjun.svg?style=social&label=Star)](https://github.com/DTStack/chunjun)|                                         基于实时计算引擎Flink实现多种异构数据源之间的数据同步与计算                                         |
+[`apache/inlong` ![](https://img.shields.io/github/stars/apache/inlong.svg?style=social&label=Star)](https://github.com/apache/inlong)|                       一站式海量数据集成框架</br>提供自动、安全、可靠和高性能的数据传输能力，同时支持批和流，方便业务构建基于流式的数据分析、建模和应用                        |
+[`apache/incubator-seatunnel` ![](https://img.shields.io/github/stars/apache/incubator-seatunnel.svg?style=social&label=Star)](https://github.com/apache/incubator-seatunnel)|                                       一个分布式、高性能的数据集成平台，用于同步和转换海量数据(离线和实时)                                        |
+[`ghi/dbsyncer` ![](https://gitee.com/ghi/dbsyncer/badge/star.svg?theme=gray)](https://gitee.com/ghi/dbsyncer)    | 提供MySQL、Oracle、SqlServer、PostgreSQL、Elasticsearch(ES)、Kafka、File、SQL等同步场景。支持上传插件自定义同步转换业务，提供监控全量和增量数据统计图、应用性能预警等 |
 
+## 一致性算法
+repositories |                                                                                                 简介                                                                                                 |开发语言|
+ :------------ |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---:|
+[`sofastack/sofa-jraft` ![](https://img.shields.io/github/stars/sofastack/sofa-jraft.svg?style=social&label=Star)](https://github.com/sofastack/sofa-jraft)| SOFAJRaft是一个基于 RAFT一致性算法的</br>生产级高性能Java 实现<br/>支持 MULTI-RAFT-GROUP，适用于高负载低延迟的场景 <br/>使用 SOFAJRaft 你可以专注于自己的业务领域，<br/>由 SOFAJRaft 负责处理所有与 RAFT 相关的技术难题，<br/>并且 SOFAJRaft 非常易于使用<br/>你可以通过几个示例在很短的时间内掌握它 |Java
+[`maemual/raft-zh_cn` ![](https://img.shields.io/github/stars/maemual/raft-zh_cn.svg?style=social&label=Star)](https://github.com/maemual/raft-zh_cn)|                                                                                          Raft一致性算法论文的中文翻译                                                                                          |-
+[`wenweihu86/raft-java` ![](https://img.shields.io/github/stars/wenweihu86/raft-java.svg?style=social&label=Star)](https://github.com/wenweihu86/raft-java)|                                                                                            Raft java 实现                                                                                            |Java
+||
+||
+||
+||
 
 ## 分布式事务
  repositories | 简介  |开发语言 |
