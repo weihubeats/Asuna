@@ -252,6 +252,7 @@ repositories |                                                                  
  repositories | 简介               |开发语言 |
 :---------------------------------------------------------------------------------------------------------------------------------------|:-----------------|:----:|
 [`apache/rocketmq` ![](https://img.shields.io/github/stars/apache/rocketmq.svg?style=social&label=Star)](https://github.com/apache/rocketmq)| 阿里开源消息中间件|Java        
+[`sohutv/mqcloud` ![](https://img.shields.io/github/stars/sohutv/mqcloud.svg?style=social&label=Star)](https://github.com/sohutv/mqcloud)|RocketMQ企业级一站式服务平台|java
 [`qunarcorp/qmq` ![](https://img.shields.io/github/stars/qunarcorp/qmq.svg?style=social&label=Star)](https://github.com/qunarcorp/qmq)| 去哪儿网内部广泛使用的消息中间件 |Java
 [`apache/kafka` ![](https://img.shields.io/github/stars/apache/kafka.svg?style=social&label=Star)](https://github.com/apache/kafka)| apache开源高吞吐消息中间件 |Java
 [`didi/KnowStreaming` ![](https://img.shields.io/github/stars/didi/KnowStreaming.svg?style=social&label=Star)](https://github.com/didi/KnowStreaming)|一站式云原生Kafka管控平台|Java
@@ -339,7 +340,7 @@ repositories |              简介               |开发语言|
  :------------ |:-----------------------------:|:---:|
 [`ssssssss-team/spider-flow` ![](https://img.shields.io/github/stars/ssssssss-team/spider-flow.svg?style=social&label=Star)](https://github.com/ssssssss-team/spider-flow)|新一代爬虫平台，以图形化方式定义爬虫流程，不写代码即可完成爬虫|Java
 [`jhao104/proxy_pool` ![](https://img.shields.io/github/stars/jhao104/proxy_pool.svg?style=social&label=Star)](https://github.com/jhao104/proxy_pool)|   Python爬虫代理IP池(proxy pool)   |Java
-
+[`code4craft/webmagic` ![](https://img.shields.io/github/stars/code4craft/webmagic.svg?style=social&label=Star)](https://github.com/code4craft/webmagic)|      一个可伸缩的 Java 网络爬虫框架       |java
 ## 注册中心
 repositories |                   简介                    |开发语言|
  :------------ |:---------------------------------------:|:---:|
