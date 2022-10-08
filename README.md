@@ -306,7 +306,7 @@ repositories |  简介   |开发语言|
 [`TarsCloud/Tars` ![](https://img.shields.io/github/stars/TarsCloud/Tars.svg?style=social&label=Star)](https://github.com/TarsCloud/Tars)|腾讯开源的rpc框架|
 [`weibocom/motan` ![](https://img.shields.io/github/stars/weibocom/motan.svg?style=social&label=Star)](https://github.com/weibocom/motan)|微博开源rpc框架|多语言
 [`sofastack/sofa-rpc` ![](https://img.shields.io/github/stars/sofastack/sofa-rpc.svg?style=social&label=Star)](https://github.com/sofastack/sofa-rpc)|蚂蚁开源rpc框架
-
+[`baidu/starlight` ![](https://img.shields.io/github/stars/baidu/starlight.svg?style=social&label=Star)](https://github.com/baidu/starlight)|面向百度 RPC、多协议、高性能 RPC 的 Java 实现
 ## 流程引擎
 
  repositories |            简介             |开发语言|
