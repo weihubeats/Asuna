@@ -20,6 +20,7 @@
     - [iead插件](#iead插件)
     - [excel](#excel)
     - [数据库连接池](#数据库连接池)
+    - [agent](#agent)
     - [SpringBootCloud学习](#SpringBootCloud学习)
     - [实战项目](#实战项目)
     - [源码学习](#源码学习)
@@ -115,7 +116,7 @@
 [`dromara/hutool` ![](https://img.shields.io/github/stars/dromara/hutool.svg?style=social&label=Star)](https://github.com/dromara/hutool)|Hutool是一个小而全的Java工具类库
 [`google/guava` ![](https://img.shields.io/github/stars/google/guava.svg?style=social&label=Star)](https://github.com/google/guava)|google开源的工具类
 [`oblac/jodd-util` ![](https://img.shields.io/github/stars/oblac/jodd-util.svg?style=social&label=Star)](https://github.com/oblac/jodd-util)|
-
+[`chillzhuang/blade-tool` ![](https://img.shields.io/github/stars/chillzhuang/blade-tool.svg?style=social&label=Star)](https://github.com/chillzhuang/blade-tool)|spring boot 深度集成工具类
 
 ### ORM框架
  repositories | 简介  |
@@ -149,6 +150,11 @@ repositories |       简介        |
 | :------------ |:---------------:|
 [`alibaba/druid` ![](https://img.shields.io/github/stars/alibaba/druid.svg?style=social&label=Star)](https://github.com/alibaba/druid)|  为监控而生的数据库连接池   |
 [`brettwooldridge/HikariCP` ![](https://img.shields.io/github/stars/brettwooldridge/HikariCP.svg?style=social&label=Star)](https://github.com/brettwooldridge/HikariCP)| Spring Boot 默认的高性能的 JDBC 连接池 |
+
+### agent
+repositories | 简介  |
+| :------------ |:---:|
+[`HotswapProjects/HotswapAgent` ![](https://img.shields.io/github/stars/HotswapProjects/HotswapAgent.svg?style=social&label=Star)](https://github.com/HotswapProjects/HotswapAgent)|Java 在运行时无限制地重新定义类|
 
 ### SpringBootCloud学习
 repositories |                                                                                                                                                                             简介                                                                                                                                                                             |
