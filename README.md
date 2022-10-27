@@ -354,6 +354,7 @@ repositories |                   简介                    |开发语言|
 [`apache/zookeeper` ![](https://img.shields.io/github/stars/apache/zookeeper.svg?style=social&label=Star)](https://github.com/apache/zookeeper)||                  Java                   
 [`alibaba/nacos` ![](https://img.shields.io/github/stars/alibaba/nacos.svg?style=social&label=Star)](https://github.com/alibaba/nacos)| 阿里开源一个易于使用的动态服务发现、配置和服务管理平台，用于构建云本地应用程序 |Java
 [`etcd-io/etcd` ![](https://img.shields.io/github/stars/etcd-io/etcd.svg?style=social&label=Star)](https://github.com/etcd-io/etcd)||Java
+[`sofastack/sofa-registry` ![](https://img.shields.io/github/stars/sofastack/sofa-registry.svg?style=social&label=Star)](https://github.com/sofastack/sofa-registry)
 
 ## 监控
 repositories |                                                                          简介                                                                          |开发语言|
