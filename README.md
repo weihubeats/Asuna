@@ -215,6 +215,7 @@ repositories | 简介  |
 
 
 ### maven插件
+[`diffplug/spotless` ![](https://img.shields.io/github/stars/diffplug/spotless.svg?style=social&label=Star)](https://github.com/diffplug/spotless)|自己校验并格式化代码
 
 
 ## 网关
