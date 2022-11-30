@@ -84,6 +84,7 @@
  [`noear/solon` ![](https://img.shields.io/github/stars/noear/solon.svg?style=social&label=Star)](https://github.com/noear/solon)                                                              |                                                                     国人开源的更现代感的应用开发框架。更快、更小、更自由！主框架0.1M                                                                      
  [`nutzam/nutzboot` ![](https://img.shields.io/github/stars/nutzam/nutzboot.svg?style=social&label=Star)](https://github.com/nutzam/nutzboot)                                                  |                                                                            企业级微服务框架，对各种主流三方框架整合                                                                             
 [`alibaba/COLA` ![](https://img.shields.io/github/stars/alibaba/COLA.svg?style=social&label=Star)](https://github.com/alibaba/COLA)                                                           |                                                                                 阿里开源的COLA架构                                                                                 
+[`shiyindaxiaojie/eden-architect` ![](https://img.shields.io/github/stars/shiyindaxiaojie/eden-architect.svg?style=social&label=Star)](https://github.com/alibaba/COLAshiyindaxiaojie/eden-architect)                                                           |                                                                                 自研应用框架，开箱即用，零侵入性接入，完全遵循 Spring 官方的模块化管理，保证业务依赖可选项。
 
 ### 操作业务log自动记录框架
 | 序号  | repositories | 简介  |
