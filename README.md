@@ -20,6 +20,7 @@
     - [iead插件](#iead插件)
     - [maven插件](#maven插件)
     - [excel](#excel)
+    - [消息通知](#消息通知)
     - [数据库连接池](#数据库连接池)
     - [agent](#agent)
     - [SpringBootCloud学习](#SpringBootCloud学习)
@@ -146,6 +147,11 @@
 [`apache/poi` ![](https://img.shields.io/github/stars/apache/poi.svg?style=social&label=Star)](https://github.com/apache/poi)|
 [`liaochong/myexcel` ![](https://img.shields.io/github/stars/liaochong/myexcel.svg?style=social&label=Star)](https://github.com/liaochong/myexcel)|集导入、导出、加密Excel等多项功能的工具包
 [`pig-mesh/excel-spring-boot-starter` ![](https://img.shields.io/github/stars/pig-mesh/excel-spring-boot-starter.svg?style=social&label=Star)](https://github.com/pig-mesh/excel-spring-boot-starter)|alibaba easyexcel spring boot starter
+
+### 消息通知
+repositories | 简介  |
+ :------------ |:---:|
+[`https://github.com/AnswerAIL/dingtalk-spring-boot-starter` ![](https://img.shields.io/github/stars/https://github.com/AnswerAIL/dingtalk-spring-boot-starter.svg?style=social&label=Star)](https://github.com/https://github.com/AnswerAIL/dingtalk-spring-boot-starter)
 
 ### 数据库连接池
 repositories |       简介        |
