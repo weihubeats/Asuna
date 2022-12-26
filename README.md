@@ -18,7 +18,9 @@
     - [序列化](#序列化)
     - [限流](#限流)
     - [iead插件](#iead插件)
+    - [maven插件](#maven插件)
     - [excel](#excel)
+    - [消息通知](#消息通知)
     - [数据库连接池](#数据库连接池)
     - [agent](#agent)
     - [SpringBootCloud学习](#SpringBootCloud学习)
@@ -83,6 +85,7 @@
  [`noear/solon` ![](https://img.shields.io/github/stars/noear/solon.svg?style=social&label=Star)](https://github.com/noear/solon)                                                              |                                                                     国人开源的更现代感的应用开发框架。更快、更小、更自由！主框架0.1M                                                                      
  [`nutzam/nutzboot` ![](https://img.shields.io/github/stars/nutzam/nutzboot.svg?style=social&label=Star)](https://github.com/nutzam/nutzboot)                                                  |                                                                            企业级微服务框架，对各种主流三方框架整合                                                                             
 [`alibaba/COLA` ![](https://img.shields.io/github/stars/alibaba/COLA.svg?style=social&label=Star)](https://github.com/alibaba/COLA)                                                           |                                                                                 阿里开源的COLA架构                                                                                 
+[`shiyindaxiaojie/eden-architect` ![](https://img.shields.io/github/stars/shiyindaxiaojie/eden-architect.svg?style=social&label=Star)](https://github.com/alibaba/COLAshiyindaxiaojie/eden-architect)                                                           |                                                                                 自研应用框架，开箱即用，零侵入性接入，完全遵循 Spring 官方的模块化管理，保证业务依赖可选项。
 
 ### 操作业务log自动记录框架
 | 序号  | repositories | 简介  |
@@ -144,6 +147,11 @@
 [`apache/poi` ![](https://img.shields.io/github/stars/apache/poi.svg?style=social&label=Star)](https://github.com/apache/poi)|
 [`liaochong/myexcel` ![](https://img.shields.io/github/stars/liaochong/myexcel.svg?style=social&label=Star)](https://github.com/liaochong/myexcel)|集导入、导出、加密Excel等多项功能的工具包
 [`pig-mesh/excel-spring-boot-starter` ![](https://img.shields.io/github/stars/pig-mesh/excel-spring-boot-starter.svg?style=social&label=Star)](https://github.com/pig-mesh/excel-spring-boot-starter)|alibaba easyexcel spring boot starter
+
+### 消息通知
+repositories | 简介  |
+ :------------ |:---:|
+[`https://github.com/AnswerAIL/dingtalk-spring-boot-starter` ![](https://img.shields.io/github/stars/https://github.com/AnswerAIL/dingtalk-spring-boot-starter.svg?style=social&label=Star)](https://github.com/https://github.com/AnswerAIL/dingtalk-spring-boot-starter)
 
 ### 数据库连接池
 repositories |       简介        |
@@ -212,6 +220,9 @@ repositories | 简介  |
 |[`starcwang/easy_javadoc` ![](https://img.shields.io/github/stars/starcwang/easy_javadoc.svg?style=social&label=Star)](https://github.com/starcwang/easy_javadoc)|自动生成javadoc文档注释
 |[`gejun123456/intellij-generateAllSetMethod` ![](https://img.shields.io/github/stars/gejun123456/intellij-generateAllSetMethod.svg?style=social&label=Star)](https://github.com/gejun123456/intellij-generateAllSetMethod)|自动生成set方法
 
+
+### maven插件
+[`diffplug/spotless` ![](https://img.shields.io/github/stars/diffplug/spotless.svg?style=social&label=Star)](https://github.com/diffplug/spotless)|自己校验并格式化代码
 
 
 ## 网关
@@ -355,6 +366,7 @@ repositories |                   简介                    |开发语言|
 [`apache/zookeeper` ![](https://img.shields.io/github/stars/apache/zookeeper.svg?style=social&label=Star)](https://github.com/apache/zookeeper)||                  Java                   
 [`alibaba/nacos` ![](https://img.shields.io/github/stars/alibaba/nacos.svg?style=social&label=Star)](https://github.com/alibaba/nacos)| 阿里开源一个易于使用的动态服务发现、配置和服务管理平台，用于构建云本地应用程序 |Java
 [`etcd-io/etcd` ![](https://img.shields.io/github/stars/etcd-io/etcd.svg?style=social&label=Star)](https://github.com/etcd-io/etcd)||Java
+[`sofastack/sofa-registry` ![](https://img.shields.io/github/stars/sofastack/sofa-registry.svg?style=social&label=Star)](https://github.com/sofastack/sofa-registry)
 
 ## 监控
 repositories |                                                                          简介                                                                          |开发语言|
