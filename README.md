@@ -265,6 +265,7 @@ repositories |                                                                  
 [`rabbitmq/rabbitmq-server` ![](https://img.shields.io/github/stars/rabbitmq/rabbitmq-server.svg?style=social&label=Star)](https://github.com/rabbitmq/rabbitmq-server)|
 [`apache/pulsar` ![](https://img.shields.io/github/stars/apache/pulsar.svg?style=social&label=Star)](https://github.com/apache/pulsar)| apach开源云原生网关     |Java
 [`apache/rocketmq-spring` ![](https://img.shields.io/github/stars/apache/rocketmq-spring.svg?style=social&label=Star)](https://github.com/apache/rocketmq-spring)|rocketmq 客户端使用sdk|Java
+[`inlong` ![](https://img.shields.io/github/stars/inlong.svg?style=social&label=Star)](https://github.com/inlong)|原腾讯开源TubeMQ，后捐赠给apache改名为inlong
 [`weihubeats/wh-mq-Idempotent` ![](https://img.shields.io/github/stars/weihubeats/wh-mq-Idempotent.svg?style=social&label=Star)](https://github.com/weihubeats/wh-mq-Idempotent)|通用MQ幂等框架|Java
 
 ## 搜索引擎
