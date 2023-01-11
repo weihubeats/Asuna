@@ -364,6 +364,8 @@ repositories |              简介               |开发语言|
 [`ssssssss-team/spider-flow` ![](https://img.shields.io/github/stars/ssssssss-team/spider-flow.svg?style=social&label=Star)](https://github.com/ssssssss-team/spider-flow)|新一代爬虫平台，以图形化方式定义爬虫流程，不写代码即可完成爬虫|Java
 [`jhao104/proxy_pool` ![](https://img.shields.io/github/stars/jhao104/proxy_pool.svg?style=social&label=Star)](https://github.com/jhao104/proxy_pool)|   Python爬虫代理IP池(proxy pool)   |Java
 [`code4craft/webmagic` ![](https://img.shields.io/github/stars/code4craft/webmagic.svg?style=social&label=Star)](https://github.com/code4craft/webmagic)|      一个可伸缩的 Java 网络爬虫框架       |java
+[`jhy/jsoup` ![](https://img.shields.io/github/stars/jhy/jsoup.svg?style=social&label=Star)](https://github.com/jhy/jsoup)|Java HTML解析器，为HTML编辑、清理、刮削和XSS安全而构建
+
 ## 注册中心
 repositories |                   简介                    |开发语言|
  :------------ |:---------------------------------------:|:---:|
