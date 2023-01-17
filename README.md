@@ -86,7 +86,7 @@
  [`noear/solon` ![](https://img.shields.io/github/stars/noear/solon.svg?style=social&label=Star)](https://github.com/noear/solon)                                                              |                                                                     国人开源的更现代感的应用开发框架。更快、更小、更自由！主框架0.1M                                                                      
  [`nutzam/nutzboot` ![](https://img.shields.io/github/stars/nutzam/nutzboot.svg?style=social&label=Star)](https://github.com/nutzam/nutzboot)                                                  |                                                                            企业级微服务框架，对各种主流三方框架整合                                                                             
 [`alibaba/COLA` ![](https://img.shields.io/github/stars/alibaba/COLA.svg?style=social&label=Star)](https://github.com/alibaba/COLA)                                                           |                                                                                 阿里开源的COLA架构                                                                                 
-[`shiyindaxiaojie/eden-architect` ![](https://img.shields.io/github/stars/shiyindaxiaojie/eden-architect.svg?style=social&label=Star)](https://github.com/alibaba/COLAshiyindaxiaojie/eden-architect)                                                           |                                                                                 自研应用框架，开箱即用，零侵入性接入，完全遵循 Spring 官方的模块化管理，保证业务依赖可选项。
+[`shiyindaxiaojie/eden-architect` ![](https://img.shields.io/github/stars/shiyindaxiaojie/eden-architect.svg?style=social&label=Star)](https://github.com/shiyindaxiaojie/eden-architect)                                                           |                                                                                 自研应用框架，开箱即用，零侵入性接入，完全遵循 Spring 官方的模块化管理，保证业务依赖可选项。
 
 ### 操作业务log自动记录框架
 | 序号  | repositories | 简介  |
@@ -416,7 +416,7 @@ repositories |    简介     |
 [`jackfrued/Python-100-Days` ![](https://img.shields.io/github/stars/jackfrued/Python-100-Days.svg?style=social&label=Star)](https://github.com/jackfrued/Python-100-Days)|Python - 100天从新手到大师|   python   
 [`Asabeneh/30-Days-Of-JavaScript` ![](https://img.shields.io/github/stars/Asabeneh/30-Days-Of-JavaScript.svg?style=social&label=Star)](https://github.com/Asabeneh/30-Days-Of-JavaScript)|30天学js| javaScript 
 [`MichaelCade/90DaysOfDevOps` ![](https://img.shields.io/github/stars/MichaelCade/90DaysOfDevOps.svg?style=social&label=Star)](https://github.com/MichaelCade/90DaysOfDevOps)|90天学DevOps|
-[`awesome-java-books` ![](https://img.shields.io/github/stars/awesome-java-books.svg?style=social&label=Star)](https://github.com/awesome-java-books)|Java 技术书籍大全|    Java    |
+[`sorenduan/awesome-java-books` ![](https://img.shields.io/github/stars/sorenduan/awesome-java-books.svg?style=social&label=Star)](https://github.com/sorenduan/awesome-java-books)|Java 技术书籍大全|    Java    |
 
 
 
