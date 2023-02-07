@@ -190,6 +190,7 @@ repositories |                                                                  
 [`pig-mesh/pig` ![](https://img.shields.io/github/stars/pig-mesh/pig.svg?style=social&label=Star)](https://github.com/pig-mesh/pig)|                    基于 Spring Cloud 2021 、Spring Boot 2.7、 OAuth2 的 RBAC 权限管理系统                    |
 [`youlaitech/youlai-mall` ![](https://img.shields.io/github/stars/youlaitech/youlai-mall.svg?style=social&label=Star)](https://github.com/youlaitech/youlai-mall)| youlai-mall是基于Spring Boot 2.7Spring Cloud Alibaba 、vue3、element-plus、uni-app 构建的开源全栈微服务商城项目。 |
 [`qqxx6661/miaosha` ![](https://img.shields.io/github/stars/qqxx6661/miaosha.svg?style=social&label=Star)](https://github.com/qqxx6661/miaosha)|                                   从零开始搭建秒杀系统 由浅入深，配合博客入门教程文章食用，风味极佳。                                   
+[`hs-web/hsweb-framework` ![](https://img.shields.io/github/stars/hs-web/hsweb-framework.svg?style=social&label=Star)](https://github.com/hs-web/hsweb-framework)| 基于spring-boot2,全响应式的后台管理框架
 
 ### 源码学习
 repositories |                                                                                    简介                                                                                    |开发语言|
