@@ -276,6 +276,7 @@ repositories |                                                                  
  repositories | 简介               |开发语言 |
 :---------------------------------------------------------------------------------------------------------------------------------------|:-----------------|:----:|
 [`apache/rocketmq` ![](https://img.shields.io/github/stars/apache/rocketmq.svg?style=social&label=Star)](https://github.com/apache/rocketmq)| 阿里开源消息中间件|Java        
+[`didi/DDMQ` ![](https://img.shields.io/github/stars/didi/DDMQ.svg?style=social&label=Star)](https://github.com/didi/DDMQ)|DDMQ 是滴滴出行架构部基于 Apache RocketMQ 构建的消息队列产品
 [`sohutv/mqcloud` ![](https://img.shields.io/github/stars/sohutv/mqcloud.svg?style=social&label=Star)](https://github.com/sohutv/mqcloud)|RocketMQ企业级一站式服务平台|java
 [`qunarcorp/qmq` ![](https://img.shields.io/github/stars/qunarcorp/qmq.svg?style=social&label=Star)](https://github.com/qunarcorp/qmq)| 去哪儿网内部广泛使用的消息中间件 |Java
 [`apache/kafka` ![](https://img.shields.io/github/stars/apache/kafka.svg?style=social&label=Star)](https://github.com/apache/kafka)| apache开源高吞吐消息中间件 |Java
