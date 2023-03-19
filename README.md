@@ -26,6 +26,8 @@
     - [SpringBootCloud学习](#SpringBootCloud学习)
     - [实战项目](#实战项目)
     - [源码学习](#源码学习)
+- [AI](#AI)
+  - [ChatGPT](ChatGPT)
 - [网关](#网关)
 - [数据同步](#数据同步)
 - [一致性算法](#一致性算法)
@@ -109,7 +111,7 @@
 [`opengoofy/hippo4j` ![](https://img.shields.io/github/stars/opengoofy/hippo4j.svg?style=social&label=Star)](https://github.com/opengoofy/hippo4j)|动态线程池框架
 [`dromara/gobrs-async` ![](https://img.shields.io/github/stars/dromara/gobrs-async.svg?style=social&label=Star)](https://github.com/dromara/gobrs-async)|多线程异步任务 编排框架
 [`alibaba/transmittable-thread-local` ![](https://img.shields.io/github/stars/alibaba/transmittable-thread-local.svg?style=social&label=Star)](https://github.com/alibaba/transmittable-thread-local)|阿里开源解决线程池上下文丢失sdk
-
+[`johnlui/PPHC` ![](https://img.shields.io/github/stars/johnlui/PPHC.svg?style=social&label=Star)](https://github.com/johnlui/PPHC)|《高并发的哲学原理》开源图书
 
 ### 基础工具类
  repositories | 简介  |
@@ -120,6 +122,7 @@
 [`google/guava` ![](https://img.shields.io/github/stars/google/guava.svg?style=social&label=Star)](https://github.com/google/guava)|google开源的工具类
 [`oblac/jodd-util` ![](https://img.shields.io/github/stars/oblac/jodd-util.svg?style=social&label=Star)](https://github.com/oblac/jodd-util)|
 [`chillzhuang/blade-tool` ![](https://img.shields.io/github/stars/chillzhuang/blade-tool.svg?style=social&label=Star)](https://github.com/chillzhuang/blade-tool)|spring boot 深度集成工具类
+[`https://github.com/jmrozanec/cron-utils` ![](https://img.shields.io/github/stars/https://github.com/jmrozanec/cron-utils.svg?style=social&label=Star)](https://github.com/https://github.com/jmrozanec/cron-utils)|cron utils
 
 ### ORM框架
  repositories | 简介  |
@@ -224,6 +227,14 @@ repositories | 简介  |
 ### maven插件
 [`diffplug/spotless` ![](https://img.shields.io/github/stars/diffplug/spotless.svg?style=social&label=Star)](https://github.com/diffplug/spotless)|自己校验并格式化代码
 
+## AI
+
+### ChatGPT
+repositories | 简介  |
+| :------------ |:---:|
+[`xx025/carrot` ![](https://img.shields.io/github/stars/xx025/carrot.svg?style=social&label=Star)](https://github.com/xx025/carrot)|免费好用的ChatGPT镜像站点|
+[`yetone/openai-translator` ![](https://img.shields.io/github/stars/yetone/openai-translator.svg?style=social&label=Star)](https://github.com/yetone/openai-translator)|基于 ChatGPT API 的划词翻译浏览器插件和跨平台桌面端应用|
+[`lencx/ChatGPT` ![](https://img.shields.io/github/stars/lencx/ChatGPT.svg?style=social&label=Star)](https://github.com/lencx/ChatGPT)|ChatGPT桌面应用|
 
 ## 网关
  repositories                                                                                                                           | 简介                                           | 开发语言 |
