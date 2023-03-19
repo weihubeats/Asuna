@@ -22,6 +22,7 @@
     - [excel](#excel)
     - [消息通知](#消息通知)
     - [数据库连接池](#数据库连接池)
+    - [微服务SpringCloud](#微服务SpringCloud)
     - [agent](#agent)
     - [SpringBootCloud学习](#SpringBootCloud学习)
     - [实战项目](#实战项目)
@@ -39,6 +40,7 @@
 - [内存数据库](#内存数据库)
 - [RPC框架](#RPC框架)
 - [流程引擎](#流程引擎)
+- [redis客户端工具](#redis客户端工具)
 - [低代码](#低代码)
 - [定时任务调度](#定时任务调度)
 - [爬虫](#爬虫)
@@ -87,7 +89,7 @@
  [`noear/solon` ![](https://img.shields.io/github/stars/noear/solon.svg?style=social&label=Star)](https://github.com/noear/solon)                                                              |                                                                     国人开源的更现代感的应用开发框架。更快、更小、更自由！主框架0.1M                                                                      
  [`nutzam/nutzboot` ![](https://img.shields.io/github/stars/nutzam/nutzboot.svg?style=social&label=Star)](https://github.com/nutzam/nutzboot)                                                  |                                                                            企业级微服务框架，对各种主流三方框架整合                                                                             
 [`alibaba/COLA` ![](https://img.shields.io/github/stars/alibaba/COLA.svg?style=social&label=Star)](https://github.com/alibaba/COLA)                                                           |                                                                                 阿里开源的COLA架构                                                                                 
-[`shiyindaxiaojie/eden-architect` ![](https://img.shields.io/github/stars/shiyindaxiaojie/eden-architect.svg?style=social&label=Star)](https://github.com/alibaba/COLAshiyindaxiaojie/eden-architect)                                                           |                                                                                 自研应用框架，开箱即用，零侵入性接入，完全遵循 Spring 官方的模块化管理，保证业务依赖可选项。
+[`shiyindaxiaojie/eden-architect` ![](https://img.shields.io/github/stars/shiyindaxiaojie/eden-architect.svg?style=social&label=Star)](https://github.com/shiyindaxiaojie/eden-architect)                                                           |                                                                                 自研应用框架，开箱即用，零侵入性接入，完全遵循 Spring 官方的模块化管理，保证业务依赖可选项。
 
 ### 操作业务log自动记录框架
 | 序号  | repositories | 简介  |
@@ -162,6 +164,9 @@ repositories |       简介        |
 [`alibaba/druid` ![](https://img.shields.io/github/stars/alibaba/druid.svg?style=social&label=Star)](https://github.com/alibaba/druid)|  为监控而生的数据库连接池   |
 [`brettwooldridge/HikariCP` ![](https://img.shields.io/github/stars/brettwooldridge/HikariCP.svg?style=social&label=Star)](https://github.com/brettwooldridge/HikariCP)| Spring Boot 默认的高性能的 JDBC 连接池 |
 
+### 微服务SpringCloud
+
+
 ### agent
 repositories | 简介  |
 | :------------ |:---:|
@@ -188,6 +193,7 @@ repositories |                                                                  
 [`pig-mesh/pig` ![](https://img.shields.io/github/stars/pig-mesh/pig.svg?style=social&label=Star)](https://github.com/pig-mesh/pig)|                    基于 Spring Cloud 2021 、Spring Boot 2.7、 OAuth2 的 RBAC 权限管理系统                    |
 [`youlaitech/youlai-mall` ![](https://img.shields.io/github/stars/youlaitech/youlai-mall.svg?style=social&label=Star)](https://github.com/youlaitech/youlai-mall)| youlai-mall是基于Spring Boot 2.7Spring Cloud Alibaba 、vue3、element-plus、uni-app 构建的开源全栈微服务商城项目。 |
 [`qqxx6661/miaosha` ![](https://img.shields.io/github/stars/qqxx6661/miaosha.svg?style=social&label=Star)](https://github.com/qqxx6661/miaosha)|                                   从零开始搭建秒杀系统 由浅入深，配合博客入门教程文章食用，风味极佳。                                   
+[`hs-web/hsweb-framework` ![](https://img.shields.io/github/stars/hs-web/hsweb-framework.svg?style=social&label=Star)](https://github.com/hs-web/hsweb-framework)| 基于spring-boot2,全响应式的后台管理框架
 
 ### 源码学习
 repositories |                                                                                    简介                                                                                    |开发语言|
@@ -247,6 +253,7 @@ repositories | 简介  |
 [`Kong/kong` ![](https://img.shields.io/github/stars/Kong/kong.svg?style=social&label=Star)](https://github.com/Kong/kong)| 高性能云原生网关|Lua
 [`wehotel/fizz-gateway-community` ![](https://img.shields.io/github/stars/wehotel/fizz-gateway-community.svg?style=social&label=Star)](https://github.com/wehotel/fizz-gateway-community)|微服务API聚合网关|Java
 [`istio/istio` ![](https://img.shields.io/github/stars/istio/istio.svg?style=social&label=Star)](https://github.com/istio/istio)|一个用于连接、管理和保护微服务的开放平台|go
+[`envoyproxy/envoy` ![](https://img.shields.io/github/stars/envoyproxy/envoy.svg?style=social&label=Star)](https://github.com/envoyproxy/envoy)|Envoy 是一款 CNCF 旗下的开源项目，由 Lyft 开源。Envoy 采用 C++ 实现，是面向 Service Mesh 的高性能网络代理服务
 
 ## 数据同步
 repositories |                                                        简介                                                        |
@@ -280,6 +287,7 @@ repositories |                                                                  
  repositories | 简介               |开发语言 |
 :---------------------------------------------------------------------------------------------------------------------------------------|:-----------------|:----:|
 [`apache/rocketmq` ![](https://img.shields.io/github/stars/apache/rocketmq.svg?style=social&label=Star)](https://github.com/apache/rocketmq)| 阿里开源消息中间件|Java        
+[`didi/DDMQ` ![](https://img.shields.io/github/stars/didi/DDMQ.svg?style=social&label=Star)](https://github.com/didi/DDMQ)|DDMQ 是滴滴出行架构部基于 Apache RocketMQ 构建的消息队列产品
 [`sohutv/mqcloud` ![](https://img.shields.io/github/stars/sohutv/mqcloud.svg?style=social&label=Star)](https://github.com/sohutv/mqcloud)|RocketMQ企业级一站式服务平台|java
 [`qunarcorp/qmq` ![](https://img.shields.io/github/stars/qunarcorp/qmq.svg?style=social&label=Star)](https://github.com/qunarcorp/qmq)| 去哪儿网内部广泛使用的消息中间件 |Java
 [`apache/kafka` ![](https://img.shields.io/github/stars/apache/kafka.svg?style=social&label=Star)](https://github.com/apache/kafka)| apache开源高吞吐消息中间件 |Java
@@ -287,6 +295,7 @@ repositories |                                                                  
 [`rabbitmq/rabbitmq-server` ![](https://img.shields.io/github/stars/rabbitmq/rabbitmq-server.svg?style=social&label=Star)](https://github.com/rabbitmq/rabbitmq-server)|
 [`apache/pulsar` ![](https://img.shields.io/github/stars/apache/pulsar.svg?style=social&label=Star)](https://github.com/apache/pulsar)| apach开源云原生网关     |Java
 [`apache/rocketmq-spring` ![](https://img.shields.io/github/stars/apache/rocketmq-spring.svg?style=social&label=Star)](https://github.com/apache/rocketmq-spring)|rocketmq 客户端使用sdk|Java
+[`inlong` ![](https://img.shields.io/github/stars/apache/inlong.svg?style=social&label=Star)](https://github.com/apache/inlong)|原腾讯开源TubeMQ，后捐赠给apache改名为inlong
 [`weihubeats/wh-mq-Idempotent` ![](https://img.shields.io/github/stars/weihubeats/wh-mq-Idempotent.svg?style=social&label=Star)](https://github.com/weihubeats/wh-mq-Idempotent)|通用MQ幂等框架|Java
 
 ## 搜索引擎
@@ -347,11 +356,18 @@ repositories |  简介   |开发语言|
 [`alibaba/compileflow` ![](https://img.shields.io/github/stars/alibaba/compileflow.svg?style=social&label=Star)](https://github.com/alibaba/compileflow)|一个高性能流程编排引擎|Java
 [`deliveredtechnologies/rulebook` ![](https://img.shields.io/github/stars/deliveredtechnologies/rulebook.svg?style=social&label=Star)](https://github.com/deliveredtechnologies/rulebook)|Lambda，轻量级规则引擎和简单直观的 DSL
 
+## redis客户端工具
+repositories |      简介      |
+| :------------ |:------------:|
+[`RedisInsight/RedisInsight` ![](https://img.shields.io/github/stars/RedisInsight/RedisInsight.svg?style=social&label=Star)](https://github.com/RedisInsight/RedisInsight)| redis官方客户端工具 |
+[`qishibo/AnotherRedisDesktopManager` ![](https://img.shields.io/github/stars/qishibo/AnotherRedisDesktopManager.svg?style=social&label=Star)](https://github.com/qishibo/AnotherRedisDesktopManager)|一个更快、更好、更稳定的redis桌面管理器|
+[`dromara/RedisFront` ![](https://img.shields.io/github/stars/dromara/RedisFront.svg?style=social&label=Star)](https://github.com/dromara/RedisFront)|Redis 桌面客户端工具, 支持单机模式, 集群模式, 哨兵模式以及 SSH 隧道连接|
+
 ## 低代码
 repositories | 简介  |开发语言|
  :------------ |:---:|:---:|
 [`alibaba/lowcode-demo` ![](https://img.shields.io/github/stars/alibaba/lowcode-demo.svg?style=social&label=Star)](https://github.com/alibaba/lowcode-demo)|阿里开源一套面向扩展设计的企业级低代码技术体系|Java
-[`taowen/awesome-lowcode` ![](https://img.shields.io/github/stars/taowen/awesome-lowcode.svg?style=social&label=Star)](https://github.com/taowen/awesome-lowcode)|国内低代码平台从业者交流|-
+[`taowen/awesome-lowcode` ![](https://img.shields.io/github/stars/taowen/awesome-lowcode.svg?style=social&label=Star)](https://github.com/taowen/awesome-lowcode)|国内低代码平台从业者交流|
 
 
 ## 定时任务调度
@@ -369,6 +385,8 @@ repositories |              简介               |开发语言|
 [`ssssssss-team/spider-flow` ![](https://img.shields.io/github/stars/ssssssss-team/spider-flow.svg?style=social&label=Star)](https://github.com/ssssssss-team/spider-flow)|新一代爬虫平台，以图形化方式定义爬虫流程，不写代码即可完成爬虫|Java
 [`jhao104/proxy_pool` ![](https://img.shields.io/github/stars/jhao104/proxy_pool.svg?style=social&label=Star)](https://github.com/jhao104/proxy_pool)|   Python爬虫代理IP池(proxy pool)   |Java
 [`code4craft/webmagic` ![](https://img.shields.io/github/stars/code4craft/webmagic.svg?style=social&label=Star)](https://github.com/code4craft/webmagic)|      一个可伸缩的 Java 网络爬虫框架       |java
+[`jhy/jsoup` ![](https://img.shields.io/github/stars/jhy/jsoup.svg?style=social&label=Star)](https://github.com/jhy/jsoup)|Java HTML解析器，为HTML编辑、清理、刮削和XSS安全而构建
+
 ## 注册中心
 repositories |                   简介                    |开发语言|
  :------------ |:---------------------------------------:|:---:|
@@ -419,7 +437,7 @@ repositories |    简介     |
 [`jackfrued/Python-100-Days` ![](https://img.shields.io/github/stars/jackfrued/Python-100-Days.svg?style=social&label=Star)](https://github.com/jackfrued/Python-100-Days)|Python - 100天从新手到大师|   python   
 [`Asabeneh/30-Days-Of-JavaScript` ![](https://img.shields.io/github/stars/Asabeneh/30-Days-Of-JavaScript.svg?style=social&label=Star)](https://github.com/Asabeneh/30-Days-Of-JavaScript)|30天学js| javaScript 
 [`MichaelCade/90DaysOfDevOps` ![](https://img.shields.io/github/stars/MichaelCade/90DaysOfDevOps.svg?style=social&label=Star)](https://github.com/MichaelCade/90DaysOfDevOps)|90天学DevOps|
-[`awesome-java-books` ![](https://img.shields.io/github/stars/awesome-java-books.svg?style=social&label=Star)](https://github.com/awesome-java-books)|Java 技术书籍大全|    Java    |
+[`sorenduan/awesome-java-books` ![](https://img.shields.io/github/stars/sorenduan/awesome-java-books.svg?style=social&label=Star)](https://github.com/sorenduan/awesome-java-books)|Java 技术书籍大全|    Java    |
 
 
 
