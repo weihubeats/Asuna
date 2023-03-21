@@ -241,6 +241,7 @@ repositories | 简介  |
 [`xx025/carrot` ![](https://img.shields.io/github/stars/xx025/carrot.svg?style=social&label=Star)](https://github.com/xx025/carrot)|免费好用的ChatGPT镜像站点|
 [`yetone/openai-translator` ![](https://img.shields.io/github/stars/yetone/openai-translator.svg?style=social&label=Star)](https://github.com/yetone/openai-translator)|基于 ChatGPT API 的划词翻译浏览器插件和跨平台桌面端应用|
 [`lencx/ChatGPT` ![](https://img.shields.io/github/stars/lencx/ChatGPT.svg?style=social&label=Star)](https://github.com/lencx/ChatGPT)|ChatGPT桌面应用|
+[`PlexPt/awesome-chatgpt-prompts-zh` ![](https://img.shields.io/github/stars/PlexPt/awesome-chatgpt-prompts-zh.svg?style=social&label=Star)](https://github.com/PlexPt/awesome-chatgpt-prompts-zh)|ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话。
 
 ## 网关
  repositories                                                                                                                           | 简介                                           | 开发语言 |
