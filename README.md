@@ -405,7 +405,7 @@ repositories |                                                                  
 [`dromara/hertzbeat` ![](https://img.shields.io/github/stars/dromara/hertzbeat.svg?style=social&label=Star)](https://github.com/dromara/hertzbeat)|                                一个拥有强大自定义监控能力，无需Agent的实时监控系统。网站监测，PING连通性，端口可用性，数据库，操作系统，中间件，API监控，阈值告警，告警通知(邮件微信钉钉飞书)                                |Java
 [`dianping/cat` ![](https://img.shields.io/github/stars/dianping/cat.svg?style=social&label=Star)](https://github.com/dianping/cat)|CAT 作为服务端项目基础组件，提供了 Java, C/C++, Node.js, Python, Go 等多语言客户端，已经在美团点评的基础架构中间件框架（MVC框架，RPC框架，数据库框架，缓存框架等，消息队列，配置系统等）深度集成，为美团点评各业务线提供系统丰富的性能指标、健康状况、实时告警等|Java
 [`prometheus/prometheus` ![](https://img.shields.io/github/stars/prometheus/prometheus.svg?style=social&label=Star)](https://github.com/prometheus/prometheus)|                                                                  普罗米修斯监测系统及时间序列数据库                                                                   |GO
-
+[`SigNoz/signoz` ![](https://img.shields.io/github/stars/SigNoz/signoz.svg?style=social&label=Star)](https://github.com/SigNoz/signoz)|DataDog、NewRelic等的开源替代品，一个开源的应用性能监控系统，用于监控和诊断分布式应用程序。|Go
 
 ## 文档
 repositories |    简介     |
