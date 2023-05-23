@@ -124,7 +124,9 @@
 [`google/guava` ![](https://img.shields.io/github/stars/google/guava.svg?style=social&label=Star)](https://github.com/google/guava)|google开源的工具类
 [`oblac/jodd-util` ![](https://img.shields.io/github/stars/oblac/jodd-util.svg?style=social&label=Star)](https://github.com/oblac/jodd-util)|
 [`chillzhuang/blade-tool` ![](https://img.shields.io/github/stars/chillzhuang/blade-tool.svg?style=social&label=Star)](https://github.com/chillzhuang/blade-tool)|spring boot 深度集成工具类
-[`https://github.com/jmrozanec/cron-utils` ![](https://img.shields.io/github/stars/https://github.com/jmrozanec/cron-utils.svg?style=social&label=Star)](https://github.com/https://github.com/jmrozanec/cron-utils)|cron utils
+[`jmrozanec/cron-utils` ![](https://img.shields.io/github/stars/jmrozanec/cron-utils.svg?style=social&label=Star)](https://github.com/jmrozanec/cron-utils)|cron utils
+[`apache/commons-collections` ![](https://img.shields.io/github/stars/apache/commons-collections.svg?style=social&label=Star)](https://github.com/apache/commons-collections)|apache collections utils
+
 
 ### ORM框架
  repositories | 简介  |
