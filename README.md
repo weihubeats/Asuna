@@ -17,6 +17,7 @@
     - [权限框架](#权限框架)
     - [序列化](#序列化)
     - [限流](#限流)
+    - [缓存](#缓存)
     - [iead插件](#iead插件)
     - [maven插件](#maven插件)
     - [excel](#excel)
@@ -224,6 +225,13 @@ repositories                                                                    
 [`taptap/ratelimiter-spring-boot-starter` ![](https://img.shields.io/github/stars/taptap/ratelimiter-spring-boot-starter.svg?style=social&label=Star)](https://github.com/taptap/ratelimiter-spring-boot-starter)|基于 redis 的偏业务应用的分布式限流组件，使得项目拥有分布式限流能力变得很简单
 [`alibaba/Sentinel` ![](https://img.shields.io/github/stars/alibaba/Sentinel.svg?style=social&label=Star)](https://github.com/alibaba/Sentinel)|面向云原生微服务的高可用流控防护组件
 [`Netflix/Hystrix` ![](https://img.shields.io/github/stars/Netflix/Hystrix.svg?style=social&label=Star)](https://github.com/Netflix/Hystrix)|
+
+
+### 缓存
+repositories |      简介       |
+| :------------ |:-------------:|
+[`xiaolyuh/layering-cache` ![](https://img.shields.io/github/stars/xiaolyuh/layering-cache.svg?style=social&label=Star)](https://github.com/xiaolyuh/layering-cache) |为监控而生的分布式多级缓存框架|
+[`ck-jesse/l2cache` ![](https://img.shields.io/github/stars/ck-jesse/l2cache.svg?style=social&label=Star)](https://github.com/ck-jesse/l2cache) |基于 Caffeine + Redis 的二级缓存框架|
 
 ### iead插件
 repositories | 简介  |
