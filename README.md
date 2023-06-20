@@ -256,6 +256,10 @@ repositories |  简介   |开发语言|
 [`PlexPt/awesome-chatgpt-prompts-zh` ![](https://img.shields.io/github/stars/PlexPt/awesome-chatgpt-prompts-zh.svg?style=social&label=Star)](https://github.com/PlexPt/awesome-chatgpt-prompts-zh)|ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话。|~
 [`Leizhenpeng/feishu-chatgpt` ![](https://img.shields.io/github/stars/Leizhenpeng/feishu-chatgpt.svg?style=social&label=Star)](https://github.com/Leizhenpeng/feishu-chatgpt)|飞书 ×（GPT-3.5 + DALL·E + Whisper）|go
 [`PlexPt/chatgpt-java` ![](https://img.shields.io/github/stars/PlexPt/chatgpt-java.svg?style=social&label=Star)](https://github.com/PlexPt/chatgpt-java)|ChatGPT Java SDK。支持 GPT3.5、 GPT4 API。开箱即用|java
+[`alibaba/Chat2DB` ![](https://img.shields.io/github/stars/alibaba/Chat2DB.svg?style=social&label=Star)](https://github.com/alibaba/Chat2DB)|智能的通用数据库SQL客户端和报表工具|java
+[`lencx/ChatGPT` ![](https://img.shields.io/github/stars/lencx/ChatGPT.svg?style=social&label=Star)](https://github.com/lencx/ChatGPT)|ChatGPT Desktop Application (Mac, Windows and Linux)|Rust
+[`Yidadaa/ChatGPT-Next-Web` ![](https://img.shields.io/github/stars/Yidadaa/ChatGPT-Next-Web.svg?style=social&label=Star)](https://github.com/Yidadaa/ChatGPT-Next-Web)|一键拥有你自己的跨平台 ChatGPT 应用|TS
+[`Chanzhaoyu/chatgpt-web` ![](https://img.shields.io/github/stars/Chanzhaoyu/chatgpt-web.svg?style=social&label=Star)](https://github.com/Chanzhaoyu/chatgpt-web)|用 Express 和 Vue3 搭建的 ChatGPT 演示网页|vue
 
 ## 网关
  repositories                                                                                                                           | 简介                                           | 开发语言 |
