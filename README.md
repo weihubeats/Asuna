@@ -26,9 +26,13 @@
     - [微服务SpringCloud](#微服务SpringCloud)
     - [agent](#agent)
     - [Raft](#Raft)
+    - [状态机](#状态机)
     - [SpringBootCloud学习](#SpringBootCloud学习)
     - [实战项目](#实战项目)
     - [源码学习](#源码学习)
+
+- [Go开发框架](#Go开发框架)
+
 - [AI](#AI)
   - [ChatGPT](#ChatGPT)
 - [网关](#网关)
@@ -184,6 +188,11 @@ repositories | 简介  |
 [`openmessaging/dledger` ![](https://img.shields.io/github/stars/openmessaging/dledger.svg?style=social&label=Star)](https://github.com/https://github.com/openmessaging/dledger)|提出了一个基于raft的java库，用于构建高可用、高持久、强一致的commitlog，作为分布式存储系统的持久层，即.消息传送、流、KV、DB等。
 [`apache/ratis` ![](https://img.shields.io/github/stars/apache/ratis.svg?style=social&label=Star)](https://github.com/apache/ratis)|apache Raft共识协议的开源Java实现。
 [`maemual/raft-zh_cn` ![](https://img.shields.io/github/stars/maemual/raft-zh_cn.svg?style=social&label=Star)](https://github.com/maemual/raft-zh_cn)|Raft一致性算法论文的中文翻译
+
+### 状态机
+repositories | 简介  |
+| :------------ |:---:|
+[`stateless4j/stateless4j` ![](https://img.shields.io/github/stars/stateless4j/stateless4j.svg?style=social&label=Star)](https://github.com/stateless4j/stateless4j)|轻量级Java状态机
 
 
 
