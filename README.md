@@ -18,7 +18,7 @@
     - [序列化](#序列化)
     - [限流](#限流)
     - [缓存](#缓存)
-    - [iead插件](#iead插件)
+    - [idea插件](#idea插件)
     - [maven插件](#maven插件)
     - [excel](#excel)
     - [消息通知](#消息通知)
@@ -180,6 +180,7 @@ repositories |       简介        |
 repositories | 简介  |
 | :------------ |:---:|
 [`HotswapProjects/HotswapAgent` ![](https://img.shields.io/github/stars/HotswapProjects/HotswapAgent.svg?style=social&label=Star)](https://github.com/HotswapProjects/HotswapAgent)|Java 在运行时无限制地重新定义类|
+[`linyimin0812/spring-startup-analyzer` ![](https://img.shields.io/github/stars/linyimin0812/spring-startup-analyzer.svg?style=social&label=Star)](https://github.com/linyimin0812/spring-startup-analyzer)|采集Spring应用启动过程数据，生成交互式分析报告(HTML)，用于分析Spring应用启动卡点，支持Spring Bean异步初始化，减少优化Spring应用启动时间
 
 
 ### Raft
@@ -256,12 +257,15 @@ repositories |      简介       |
 [`alibaba/jetcache` ![](https://img.shields.io/github/stars/alibaba/jetcache.svg?style=social&label=Star)](https://github.com/alibaba/jetcache)| 阿里开源的多级缓存框架
 
 
-### iead插件
+### idea插件
 repositories | 简介  |
 | :------------ |:---:|
 |[`starcwang/easy_javadoc` ![](https://img.shields.io/github/stars/starcwang/easy_javadoc.svg?style=social&label=Star)](https://github.com/starcwang/easy_javadoc)|自动生成javadoc文档注释
 |[`gejun123456/intellij-generateAllSetMethod` ![](https://img.shields.io/github/stars/gejun123456/intellij-generateAllSetMethod.svg?style=social&label=Star)](https://github.com/gejun123456/intellij-generateAllSetMethod)|自动生成set方法
-
+[`mrmanzhaow/RestfulToolkit` ![](https://img.shields.io/github/stars/mrmanzhaow/RestfulToolkit.svg?style=social&label=Star)](https://github.com/mrmanzhaow/RestfulToolkit)|根据 URL 直接导航到对应的controller
+[`Link-Kou/intellij-mybaitslog` ![](https://img.shields.io/github/stars/Link-Kou/intellij-mybaitslog.svg?style=social&label=Star)](https://github.com/Link-Kou/intellij-mybaitslog)|将Mybatis的SQL日志还原为可执行的SQL
+[`gejun123456/MyBatisCodeHelper-Pro` ![](https://img.shields.io/github/stars/gejun123456/MyBatisCodeHelper-Pro.svg?style=social&label=Star)](https://github.com/gejun123456/MyBatisCodeHelper-Pro)|mybatis接口调整xml,自动生成xml，xml 字段提示等
+[`WangJi92/arthas-idea-plugin` ![](https://img.shields.io/github/stars/WangJi92/arthas-idea-plugin.svg?style=social&label=Star)](https://github.com/WangJi92/arthas-idea-plugin)|更简单的使用arthas的IDEA 插件,方便的构建各种arthas 命令,复制到剪切板
 
 ### maven插件
 repositories | 简介  |
