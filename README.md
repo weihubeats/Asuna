@@ -54,6 +54,7 @@
 - [注册中心](#注册中心)
 - [APM&DistributedTracing&log](#APM&DistributedTracing&log)
 - [文档](#文档)
+- [论文](#论文)
 - [学习](#学习)
     - [英语学习](#英语学习)
 - [常用工具](#常用工具)
@@ -464,6 +465,11 @@ repositories |    简介     |
 [`sparanoid/chinese-copywriting-guidelines` ![](https://img.shields.io/github/stars/sparanoid/chinese-copywriting-guidelines.svg?style=social&label=Star)](https://github.com/sparanoid/chinese-copywriting-guidelines)|中文文案排版指北|
 [`guodongxiaren/README` ![](https://img.shields.io/github/stars/guodongxiaren/README.svg?style=social&label=Star)](https://github.com/guodongxiaren/README)|GitHub markdown 语法教程|
 [`slidevjs/slidev` ![](https://img.shields.io/github/stars/slidevjs/slidev.svg?style=social&label=Star)](https://github.com/slidevjs/slidev)|markdown语法写PPT
+
+## 论文
+repositories |    简介     |
+https://storage.googleapis.com/pub-tools-public-publication-data/pdf/36356.pdf| google Dapper分布式跟踪系统 论文原文
+[`bigbully/Dapper-translation` ![](https://img.shields.io/github/stars/bigbully/Dapper-translation.svg?style=social&label=Star)](https://github.com/bigbully/Dapper-translation)|  google Dapper分布式跟踪系统 论文 译文
 
 ## 学习
 
