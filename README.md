@@ -58,6 +58,7 @@
 - [学习](#学习)
     - [英语学习](#英语学习)
 - [常用工具](#常用工具)
+  - [mac](#mac)
 - [健康](#健康)
 - [项目推荐科技周刊](#项目推荐科技周刊)
 ## 工作
@@ -507,6 +508,10 @@ repositories |   简介    |
 [`TransparentLC/WechatMomentScreenshot` ![](https://img.shields.io/github/stars/TransparentLC/WechatMomentScreenshot.svg?style=social&label=Star)](https://github.com/TransparentLC/WechatMomentScreenshot)|朋友圈转发截图生成工具
 [`docmirror/dev-sidecar` ![](https://img.shields.io/github/stars/docmirror/dev-sidecar.svg?style=social&label=Star)](https://github.com/docmirror/dev-sidecar)|github加速|
 
+### mac
+ repositories | 简介  |
+ :------------ |:---:|
+[`jaywcjlove/awesome-mac` ![](https://img.shields.io/github/stars/jaywcjlove/awesome-mac.svg?style=social&label=Star)](https://github.com/jaywcjlove/awesome-mac)|mac软件推荐合集，什么软件都有
 
 ## 健康
 
