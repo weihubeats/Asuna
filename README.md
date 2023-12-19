@@ -362,10 +362,12 @@ repositories | 简介  |开发语言|
 
 ## 自建博客
 
-| 序号  | repositories | 简介  |开发语言|
-|:----| :------------ |:---:|:---:|
-| 1   |[`halo-dev/halo` ![](https://img.shields.io/github/stars/halo-dev/halo.svg?style=social&label=Star)](https://github.com/halo-dev/halo)|一款现代化的开源博客|Java
-| 2   |[`88250/solo` ![](https://img.shields.io/github/stars/88250/solo.svg?style=social&label=Star)](https://github.com/88250/solo)|小而美的开源博客系统|Java
+ repositories | 简介  |开发语言|
+ :------------ |:---:|:---:|
+[`halo-dev/halo` ![](https://img.shields.io/github/stars/halo-dev/halo.svg?style=social&label=Star)](https://github.com/halo-dev/halo)|一款现代化的开源博客|Java
+[`88250/solo` ![](https://img.shields.io/github/stars/88250/solo.svg?style=social&label=Star)](https://github.com/88250/solo)|小而美的开源博客系统|Java
+[`facebook/docusaurus` ![](https://img.shields.io/github/stars/facebook/docusaurus.svg?style=social&label=Star)](https://github.com/facebook/docusaurus)|Facebook开源可维护文档网站
+
 
 ## 数据库
 
