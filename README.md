@@ -471,6 +471,7 @@ repositories |    简介     |
 
 ## 论文
 repositories |    简介     |
+| :------------ |:---------:|
 https://storage.googleapis.com/pub-tools-public-publication-data/pdf/36356.pdf| google Dapper分布式跟踪系统 论文原文
 [`bigbully/Dapper-translation` ![](https://img.shields.io/github/stars/bigbully/Dapper-translation.svg?style=social&label=Star)](https://github.com/bigbully/Dapper-translation)|  google Dapper分布式跟踪系统 论文 译文
 
