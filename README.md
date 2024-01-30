@@ -278,6 +278,13 @@ repositories | 简介  |
 | :------------ |:---:|
 [`diffplug/spotless` ![](https://img.shields.io/github/stars/diffplug/spotless.svg?style=social&label=Star)](https://github.com/diffplug/spotless)|自己校验并格式化代码
 
+### 代码扫描
+repositories | 简介  |
+| :------------ |:---:|
+[`pmd/pmd` ![](https://img.shields.io/github/stars/pmd/pmd.svg?style=social&label=Star)](https://github.com/pmd/pmd)|一个可扩展的多语言静态代码分析器。
+[`SonarSource/sonarqube` ![](https://img.shields.io/github/stars/SonarSource/sonarqube.svg?style=social&label=Star)](https://github.com/SonarSource/sonarqube)|SonarQube是一个开源的代码质量管理平台，用于管理源代码的质量。SonarQube平台提供了一个中央服务器，用于展示源代码的质量状况和各种分析结果。
+
+
 ## AI
 
 ### ChatGPT
@@ -488,7 +495,7 @@ https://storage.googleapis.com/pub-tools-public-publication-data/pdf/36356.pdf| 
 [`Kaiyiwing/qwerty-learner` ![](https://img.shields.io/github/stars/Kaiyiwing/qwerty-learner.svg?style=social&label=Star)](https://github.com/Kaiyiwing/qwerty-learner)|为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件
 [`yujiangshui/A-Programmers-Guide-to-English` ![](https://img.shields.io/github/stars/yujiangshui/A-Programmers-Guide-to-English.svg?style=social&label=Star)](https://github.com/yujiangshui/A-Programmers-Guide-to-English)|专为程序员编写的英语学习指南
 [`chinese-programmer-wrong-pronunciation` ![](https://img.shields.io/github/stars/chinese-programmer-wrong-pronunciation.svg?style=social&label=Star)](https://github.com/chinese-programmer-wrong-pronunciation)|中国程序员容易发音错误的单词
-
+[`byoungd/English-level-up-tips` ![](https://img.shields.io/github/stars/byoungd/English-level-up-tips.svg?style=social&label=Star)](https://github.com/byoungd/English-level-up-tips)|离谱的英语学习指南/英语学习教程
 
 
 ### 语言学习
