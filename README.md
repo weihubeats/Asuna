@@ -284,6 +284,13 @@ repositories | 简介  |
 [`pmd/pmd` ![](https://img.shields.io/github/stars/pmd/pmd.svg?style=social&label=Star)](https://github.com/pmd/pmd)|一个可扩展的多语言静态代码分析器。
 [`SonarSource/sonarqube` ![](https://img.shields.io/github/stars/SonarSource/sonarqube.svg?style=social&label=Star)](https://github.com/SonarSource/sonarqube)|SonarQube是一个开源的代码质量管理平台，用于管理源代码的质量。SonarQube平台提供了一个中央服务器，用于展示源代码的质量状况和各种分析结果。
 
+### 反编译工具
+repositories | 简介  |
+| :------------ |:---:|
+[`skylot/jadx` ![](https://img.shields.io/github/stars/skylot/jadx.svg?style=social&label=Star)](https://github.com/skylot/jadx)| jadx是一款Android反编译gui工具，它支持apk、dex、jar、class、zip、aar等文件
+[`fesh0r/fernflower` ![](https://img.shields.io/github/stars/fesh0r/fernflower.svg?style=social&label=Star)](https://github.com/fesh0r/fernflower)|JetBrains开源的反编译工具
+[jd-gui](https://java-decompiler.github.io/)|JD-GUI 是一个用 C++ 开发的 Java 反编译工具,jdk8以上的版本可能不支持
+[`Konloch/bytecode-viewer` ![](https://img.shields.io/github/stars/Konloch/bytecode-viewer.svg?style=social&label=Star)](https://github.com/Konloch/bytecode-viewer)|Java反编译器，Java字节码编辑器，APK编辑器，Dex编辑器，APK反编译器，DEX反编译器
 
 ## AI
 
