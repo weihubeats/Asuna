@@ -89,6 +89,8 @@
 |[`SharingSource/LogicStack-LeetCode` ![](https://img.shields.io/github/stars/SharingSource/LogicStack-LeetCode.svg?style=social&label=Star)](https://github.com/SharingSource/LogicStack-LeetCode)|                                                 宫叶三水刷穿 LeetCode 系列文章源码                                                 |Java
 [`youngyangyang04/leetcode-master` ![](https://img.shields.io/github/stars/youngyangyang04/leetcode-master.svg?style=social&label=Star)](https://github.com/youngyangyang04/leetcode-master)| 代码随想录 LeetCode 刷题攻略：200道经典题目刷题顺序，共60w字的详细图解，视频难点剖析，50余张思维导图，支持C++，Java，Python，Go，JavaScript等多语言版本，从此算法学习不再迷茫 |多语言
 [`halfrost/LeetCode-Go` ![](https://img.shields.io/github/stars/halfrost/LeetCode-Go.svg?style=social&label=Star)](https://github.com/halfrost/LeetCode-Go)|                                                      LeetCode 题解                                                       |go
+[`krahets/hello-algo` ![](https://img.shields.io/github/stars/krahets/hello-algo.svg?style=social&label=Star)](https://github.com/krahets/hello-algo)|动画图解、一键运行的数据结构与算法教程，支持 Python, C++, Java, C#, Go, Swift, JS, TS, Dart, Rust, C, Zig 等语言
+
 
 ## Java开发框架
 
@@ -309,6 +311,7 @@ repositories |  简介   |开发语言|
 [`lencx/ChatGPT` ![](https://img.shields.io/github/stars/lencx/ChatGPT.svg?style=social&label=Star)](https://github.com/lencx/ChatGPT)|ChatGPT Desktop Application (Mac, Windows and Linux)|Rust
 [`Yidadaa/ChatGPT-Next-Web` ![](https://img.shields.io/github/stars/Yidadaa/ChatGPT-Next-Web.svg?style=social&label=Star)](https://github.com/Yidadaa/ChatGPT-Next-Web)|一键拥有你自己的跨平台 ChatGPT 应用|TS
 [`Chanzhaoyu/chatgpt-web` ![](https://img.shields.io/github/stars/Chanzhaoyu/chatgpt-web.svg?style=social&label=Star)](https://github.com/Chanzhaoyu/chatgpt-web)|用 Express 和 Vue3 搭建的 ChatGPT 演示网页|vue
+[`abi/screenshot-to-code` ![](https://img.shields.io/github/stars/abi/screenshot-to-code.svg?style=social&label=Star)](https://github.com/abi/screenshot-to-code)|截屏自动生成html代码
 
 ## 网关
  repositories                                                                                                                           | 简介                                           | 开发语言 |
