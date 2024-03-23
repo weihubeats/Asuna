@@ -299,19 +299,24 @@ repositories | 简介  |
 ## AI
 
 ### ChatGPT
-repositories |  简介   |开发语言|
- :------------ |:-----:|:---:|
-[`xx025/carrot` ![](https://img.shields.io/github/stars/xx025/carrot.svg?style=social&label=Star)](https://github.com/xx025/carrot)|免费好用的ChatGPT镜像站点|~|
-[`yetone/openai-translator` ![](https://img.shields.io/github/stars/yetone/openai-translator.svg?style=social&label=Star)](https://github.com/yetone/openai-translator)|基于 ChatGPT API 的划词翻译浏览器插件和跨平台桌面端应用|~|
-[`lencx/ChatGPT` ![](https://img.shields.io/github/stars/lencx/ChatGPT.svg?style=social&label=Star)](https://github.com/lencx/ChatGPT)|ChatGPT桌面应用|~|
-[`PlexPt/awesome-chatgpt-prompts-zh` ![](https://img.shields.io/github/stars/PlexPt/awesome-chatgpt-prompts-zh.svg?style=social&label=Star)](https://github.com/PlexPt/awesome-chatgpt-prompts-zh)|ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话。|~
-[`Leizhenpeng/feishu-chatgpt` ![](https://img.shields.io/github/stars/Leizhenpeng/feishu-chatgpt.svg?style=social&label=Star)](https://github.com/Leizhenpeng/feishu-chatgpt)|飞书 ×（GPT-3.5 + DALL·E + Whisper）|go
-[`PlexPt/chatgpt-java` ![](https://img.shields.io/github/stars/PlexPt/chatgpt-java.svg?style=social&label=Star)](https://github.com/PlexPt/chatgpt-java)|ChatGPT Java SDK。支持 GPT3.5、 GPT4 API。开箱即用|java
-[`alibaba/Chat2DB` ![](https://img.shields.io/github/stars/alibaba/Chat2DB.svg?style=social&label=Star)](https://github.com/alibaba/Chat2DB)|智能的通用数据库SQL客户端和报表工具|java
-[`lencx/ChatGPT` ![](https://img.shields.io/github/stars/lencx/ChatGPT.svg?style=social&label=Star)](https://github.com/lencx/ChatGPT)|ChatGPT Desktop Application (Mac, Windows and Linux)|Rust
-[`Yidadaa/ChatGPT-Next-Web` ![](https://img.shields.io/github/stars/Yidadaa/ChatGPT-Next-Web.svg?style=social&label=Star)](https://github.com/Yidadaa/ChatGPT-Next-Web)|一键拥有你自己的跨平台 ChatGPT 应用|TS
-[`Chanzhaoyu/chatgpt-web` ![](https://img.shields.io/github/stars/Chanzhaoyu/chatgpt-web.svg?style=social&label=Star)](https://github.com/Chanzhaoyu/chatgpt-web)|用 Express 和 Vue3 搭建的 ChatGPT 演示网页|vue
-[`abi/screenshot-to-code` ![](https://img.shields.io/github/stars/abi/screenshot-to-code.svg?style=social&label=Star)](https://github.com/abi/screenshot-to-code)|截屏自动生成html代码
+repositories |                          简介                          |开发语言|
+ :------------ |:----------------------------------------------------:|:---:|
+[openai](https://chat.openai.com/)|                        openai                        |~
+[gemini](https://gemini.google.com/app)|                      google大模型                       |~
+[claude](https://claude.ai/)|claude|~
+[kimi](https://kimi.moonshot.cn/)|                     国内超常大文本处理大模型                     |~      
+[文心一言](https://yiyan.baidu.com/)|                        百度大模型                         |~
+[`xx025/carrot` ![](https://img.shields.io/github/stars/xx025/carrot.svg?style=social&label=Star)](https://github.com/xx025/carrot)|                   免费好用的ChatGPT镜像站点                   |~|
+[`yetone/openai-translator` ![](https://img.shields.io/github/stars/yetone/openai-translator.svg?style=social&label=Star)](https://github.com/yetone/openai-translator)|          基于 ChatGPT API 的划词翻译浏览器插件和跨平台桌面端应用          |~|
+[`lencx/ChatGPT` ![](https://img.shields.io/github/stars/lencx/ChatGPT.svg?style=social&label=Star)](https://github.com/lencx/ChatGPT)|                     ChatGPT桌面应用                      |~|
+[`PlexPt/awesome-chatgpt-prompts-zh` ![](https://img.shields.io/github/stars/PlexPt/awesome-chatgpt-prompts-zh.svg?style=social&label=Star)](https://github.com/PlexPt/awesome-chatgpt-prompts-zh)|         ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话。          |~
+[`Leizhenpeng/feishu-chatgpt` ![](https://img.shields.io/github/stars/Leizhenpeng/feishu-chatgpt.svg?style=social&label=Star)](https://github.com/Leizhenpeng/feishu-chatgpt)|           飞书 ×（GPT-3.5 + DALL·E + Whisper）           |go
+[`PlexPt/chatgpt-java` ![](https://img.shields.io/github/stars/PlexPt/chatgpt-java.svg?style=social&label=Star)](https://github.com/PlexPt/chatgpt-java)|      ChatGPT Java SDK。支持 GPT3.5、 GPT4 API。开箱即用       |java
+[`alibaba/Chat2DB` ![](https://img.shields.io/github/stars/alibaba/Chat2DB.svg?style=social&label=Star)](https://github.com/alibaba/Chat2DB)|                 智能的通用数据库SQL客户端和报表工具                  |java
+[`lencx/ChatGPT` ![](https://img.shields.io/github/stars/lencx/ChatGPT.svg?style=social&label=Star)](https://github.com/lencx/ChatGPT)| ChatGPT Desktop Application (Mac, Windows and Linux) |Rust
+[`Yidadaa/ChatGPT-Next-Web` ![](https://img.shields.io/github/stars/Yidadaa/ChatGPT-Next-Web.svg?style=social&label=Star)](https://github.com/Yidadaa/ChatGPT-Next-Web)|                一键拥有你自己的跨平台 ChatGPT 应用                |TS
+[`Chanzhaoyu/chatgpt-web` ![](https://img.shields.io/github/stars/Chanzhaoyu/chatgpt-web.svg?style=social&label=Star)](https://github.com/Chanzhaoyu/chatgpt-web)|          用 Express 和 Vue3 搭建的 ChatGPT 演示网页           |vue
+[`abi/screenshot-to-code` ![](https://img.shields.io/github/stars/abi/screenshot-to-code.svg?style=social&label=Star)](https://github.com/abi/screenshot-to-code)|                     截屏自动生成html代码                     
 
 ## 网关
  repositories                                                                                                                           | 简介                                           | 开发语言 |
