@@ -37,11 +37,13 @@
 
 - [AI](#AI)
   - [ChatGPT](#ChatGPT)
+  - [大模型](#大模型)
 - [网关](#网关)
 - [数据同步](#数据同步)
 - [一致性算法](#一致性算法)
 - [分布式事务](#分布式事务)
 - [消息中间件](#消息中间件)
+  - [消息队列dashboard](#消息队列dashboard)
 - [搜索引擎](#搜索引擎)
 - [测试](#测试)
 - [自建博客](#自建博客)
@@ -66,7 +68,6 @@
 ## 工作
 
 ### 面试
-
  repositories | 简介  |
  :------------ |:---:|
  [`yifeikong/reverse-interview-zh` ![](https://img.shields.io/github/stars/yifeikong/reverse-interview-zh.svg?style=social&label=Star)](https://github.com/yifeikong/reverse-interview-zh)| 技术面试最后反问面试官的话  |
@@ -95,7 +96,6 @@
 ## Java开发框架
 
 ### 开发框架
-
  repositories |                                                                                     简介                                                                                      |
  :------------ |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 [`spring-projects/spring-framework` ![](https://img.shields.io/github/stars/spring-projects/spring-framework.svg?style=social&label=Star)](https://github.com/spring-projects/spring-framework)|                                                                                 Spring 一统天下                                                                                 
@@ -301,11 +301,6 @@ repositories | 简介  |
 ### ChatGPT
 repositories |                          简介                          |开发语言|
  :------------ |:----------------------------------------------------:|:---:|
-[openai](https://chat.openai.com/)|                        openai                        |~
-[gemini](https://gemini.google.com/app)|                      google大模型                       |~
-[claude](https://claude.ai/)|claude|~
-[kimi](https://kimi.moonshot.cn/)|                     国内超常大文本处理大模型                     |~      
-[文心一言](https://yiyan.baidu.com/)|                        百度大模型                         |~
 [`xx025/carrot` ![](https://img.shields.io/github/stars/xx025/carrot.svg?style=social&label=Star)](https://github.com/xx025/carrot)|                   免费好用的ChatGPT镜像站点                   |~|
 [`yetone/openai-translator` ![](https://img.shields.io/github/stars/yetone/openai-translator.svg?style=social&label=Star)](https://github.com/yetone/openai-translator)|          基于 ChatGPT API 的划词翻译浏览器插件和跨平台桌面端应用          |~|
 [`lencx/ChatGPT` ![](https://img.shields.io/github/stars/lencx/ChatGPT.svg?style=social&label=Star)](https://github.com/lencx/ChatGPT)|                     ChatGPT桌面应用                      |~|
@@ -317,6 +312,15 @@ repositories |                          简介                          |开发�
 [`Yidadaa/ChatGPT-Next-Web` ![](https://img.shields.io/github/stars/Yidadaa/ChatGPT-Next-Web.svg?style=social&label=Star)](https://github.com/Yidadaa/ChatGPT-Next-Web)|                一键拥有你自己的跨平台 ChatGPT 应用                |TS
 [`Chanzhaoyu/chatgpt-web` ![](https://img.shields.io/github/stars/Chanzhaoyu/chatgpt-web.svg?style=social&label=Star)](https://github.com/Chanzhaoyu/chatgpt-web)|          用 Express 和 Vue3 搭建的 ChatGPT 演示网页           |vue
 [`abi/screenshot-to-code` ![](https://img.shields.io/github/stars/abi/screenshot-to-code.svg?style=social&label=Star)](https://github.com/abi/screenshot-to-code)|                     截屏自动生成html代码                     
+
+### 大模型
+repositories |                          简介                          |开发语言|
+ :------------ |:----------------------------------------------------:|:---:|
+[openai](https://chat.openai.com/)|                        openai                        |~
+[gemini](https://gemini.google.com/app)|                      google大模型                       |~
+[claude](https://claude.ai/)|claude|~
+[kimi](https://kimi.moonshot.cn/)|                     国内超常大文本处理大模型                     |~      
+[文心一言](https://yiyan.baidu.com/)|                        百度大模型                         |~
 
 ## 网关
  repositories                                                                                                                           | 简介                                           | 开发语言 |
@@ -362,17 +366,24 @@ repositories |                                                                  
 ## 消息中间件
  repositories | 简介               |开发语言 |
 :---------------------------------------------------------------------------------------------------------------------------------------|:-----------------|:----:|
+[`AutoMQ/automq` ![](https://img.shields.io/github/stars/AutoMQ/automq.svg?style=social&label=Star)](https://github.com/AutoMQ/automq)|基于云原生重新设计Kafka|java
+[`AutoMQ/automq-for-rocketmq` ![](https://img.shields.io/github/stars/AutoMQ/automq-for-rocketmq.svg?style=social&label=Star)](https://github.com/AutoMQ/automq-for-rocketmq)|基于云原生重新设计RocketMQ|java
 [`apache/rocketmq` ![](https://img.shields.io/github/stars/apache/rocketmq.svg?style=social&label=Star)](https://github.com/apache/rocketmq)| 阿里开源消息中间件|Java        
 [`didi/DDMQ` ![](https://img.shields.io/github/stars/didi/DDMQ.svg?style=social&label=Star)](https://github.com/didi/DDMQ)|DDMQ 是滴滴出行架构部基于 Apache RocketMQ 构建的消息队列产品
-[`sohutv/mqcloud` ![](https://img.shields.io/github/stars/sohutv/mqcloud.svg?style=social&label=Star)](https://github.com/sohutv/mqcloud)|RocketMQ企业级一站式服务平台|java
 [`qunarcorp/qmq` ![](https://img.shields.io/github/stars/qunarcorp/qmq.svg?style=social&label=Star)](https://github.com/qunarcorp/qmq)| 去哪儿网内部广泛使用的消息中间件 |Java
 [`apache/kafka` ![](https://img.shields.io/github/stars/apache/kafka.svg?style=social&label=Star)](https://github.com/apache/kafka)| apache开源高吞吐消息中间件 |Java
-[`didi/KnowStreaming` ![](https://img.shields.io/github/stars/didi/KnowStreaming.svg?style=social&label=Star)](https://github.com/didi/KnowStreaming)|一站式云原生Kafka管控平台|Java
 [`rabbitmq/rabbitmq-server` ![](https://img.shields.io/github/stars/rabbitmq/rabbitmq-server.svg?style=social&label=Star)](https://github.com/rabbitmq/rabbitmq-server)|
 [`apache/pulsar` ![](https://img.shields.io/github/stars/apache/pulsar.svg?style=social&label=Star)](https://github.com/apache/pulsar)| apach开源云原生网关     |Java
 [`apache/rocketmq-spring` ![](https://img.shields.io/github/stars/apache/rocketmq-spring.svg?style=social&label=Star)](https://github.com/apache/rocketmq-spring)|rocketmq 客户端使用sdk|Java
 [`inlong` ![](https://img.shields.io/github/stars/apache/inlong.svg?style=social&label=Star)](https://github.com/apache/inlong)|原腾讯开源TubeMQ，后捐赠给apache改名为inlong
 [`weihubeats/wh-mq-Idempotent` ![](https://img.shields.io/github/stars/weihubeats/wh-mq-Idempotent.svg?style=social&label=Star)](https://github.com/weihubeats/wh-mq-Idempotent)|通用MQ幂等框架|Java
+
+### 消息队列dashboard
+ repositories | 简介               |开发语言 |
+:---------------------------------------------------------------------------------------------------------------------------------------|:-----------------|:----:|
+[`sohutv/mqcloud` ![](https://img.shields.io/github/stars/sohutv/mqcloud.svg?style=social&label=Star)](https://github.com/sohutv/mqcloud)|RocketMQ企业级一站式服务平台|java
+[`didi/KnowStreaming` ![](https://img.shields.io/github/stars/didi/KnowStreaming.svg?style=social&label=Star)](https://github.com/didi/KnowStreaming)|一站式云原生Kafka管控平台|Java
+
 
 ## 搜索引擎
 
@@ -655,3 +666,4 @@ repositories |     简介      |
 
 ## 贡献指南
 [贡献指南](contribution-Asuna.md)
+
