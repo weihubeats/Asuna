@@ -63,6 +63,7 @@
     - [英语学习](#英语学习)
 - [常用工具](#常用工具)
   - [mac](#mac)
+- [微信](#微信)
 - [健康](#健康)
 - [项目推荐科技周刊](#项目推荐科技周刊)
 ## 工作
@@ -301,6 +302,7 @@ repositories | 简介  |
 ### ChatGPT
 repositories |                          简介                          |开发语言|
  :------------ |:----------------------------------------------------:|:---:|
+[`aurora-develop/aurora` ![](https://img.shields.io/github/stars/aurora-develop/aurora.svg?style=social&label=Star)](https://github.com/aurora-develop/aurora)|免费试用gpt3.5|GO
 [`xx025/carrot` ![](https://img.shields.io/github/stars/xx025/carrot.svg?style=social&label=Star)](https://github.com/xx025/carrot)|                   免费好用的ChatGPT镜像站点                   |~|
 [`yetone/openai-translator` ![](https://img.shields.io/github/stars/yetone/openai-translator.svg?style=social&label=Star)](https://github.com/yetone/openai-translator)|          基于 ChatGPT API 的划词翻译浏览器插件和跨平台桌面端应用          |~|
 [`lencx/ChatGPT` ![](https://img.shields.io/github/stars/lencx/ChatGPT.svg?style=social&label=Star)](https://github.com/lencx/ChatGPT)|                     ChatGPT桌面应用                      |~|
@@ -321,6 +323,7 @@ repositories |                          简介                          |开发�
 [claude](https://claude.ai/)|claude|~
 [kimi](https://kimi.moonshot.cn/)|                     国内超常大文本处理大模型                     |~      
 [文心一言](https://yiyan.baidu.com/)|                        百度大模型                         |~
+[perplexity](https://www.perplexity.ai/)|perplexity|~
 
 ## 网关
  repositories                                                                                                                           | 简介                                           | 开发语言 |
@@ -517,7 +520,6 @@ https://storage.googleapis.com/pub-tools-public-publication-data/pdf/36356.pdf| 
 ## 学习
 
 ### 英语学习
-
  repositories | 简介  |
  :------------ |:---:|
 [`Kaiyiwing/qwerty-learner` ![](https://img.shields.io/github/stars/Kaiyiwing/qwerty-learner.svg?style=social&label=Star)](https://github.com/Kaiyiwing/qwerty-learner)|为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件
@@ -527,7 +529,6 @@ https://storage.googleapis.com/pub-tools-public-publication-data/pdf/36356.pdf| 
 
 
 ### 语言学习
-
  repositories |        简介        |    开发语言    |
  :------------ |:----------------:|:----------:|
 [`zhisheng17/flink-learning` ![](https://img.shields.io/github/stars/zhisheng17/flink-learning.svg?style=social&label=Star)](https://github.com/zhisheng17/flink-learning)|       Java       |  Flink 学习  
@@ -555,8 +556,13 @@ repositories |   简介    |
  :------------ |:---:|
 [`jaywcjlove/awesome-mac` ![](https://img.shields.io/github/stars/jaywcjlove/awesome-mac.svg?style=social&label=Star)](https://github.com/jaywcjlove/awesome-mac)|mac软件推荐合集，什么软件都有
 
-## 健康
+## 微信
+ repositories |        简介        |    开发语言    |
+ :------------ |:----------------:|:----------:|
+[`eatmoreapple/openwechat` ![](https://img.shields.io/github/stars/eatmoreapple/openwechat.svg?style=social&label=Star)](https://github.com/eatmoreapple/openwechat)|golang微信SDK|GO
 
+
+## 健康
 repositories |   简介    |
 | :------------ |:-------:|
 [`geekan/HowToLiveLonger` ![](https://img.shields.io/github/stars/geekan/HowToLiveLonger.svg?style=social&label=Star)](https://github.com/geekan/HowToLiveLonger)| 程序员延寿指南 |
@@ -564,7 +570,6 @@ repositories |   简介    |
 
 
 ## 项目推荐科技周刊
-
 repositories |     简介      |
 | :------------ |:-----------:|
 [`ruanyf/weekly` ![](https://img.shields.io/github/stars/ruanyf/weekly.svg?style=social&label=Star)](https://github.com/ruanyf/weekly)|科技爱好者周刊，每周五发布|
