@@ -66,6 +66,7 @@
 - [微信](#微信)
 - [健康](#健康)
 - [项目推荐科技周刊](#项目推荐科技周刊)
+- [程序员副业](#程序员副业)
 ## 工作
 
 ### 面试
@@ -218,7 +219,6 @@ repositories |                                                                  
 
 
 ### 实战项目
-
  repositories |                                                   简介                                                   |
  :------------ |:------------------------------------------------------------------------------------------------------:|
 [`macrozheng/mall` ![](https://img.shields.io/github/stars/macrozheng/mall.svg?style=social&label=Star)](https://github.com/macrozheng/mall)|                                                前后端微服务项目                                                
@@ -234,6 +234,7 @@ repositories |                                                                  
 ### 源码学习
 repositories |                                                                                    简介                                                                                    |开发语言|
  :------------ |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---:|
+[`fangjian0423/springmvc-source-minibook` ![](https://img.shields.io/github/stars/fangjian0423/springmvc-source-minibook.svg?style=social&label=Star)](https://github.com/fangjian0423/springmvc-source-minibook)|SpringMVC源码分析迷你书|java
 [`DerekYRC/mini-spring-cloud` ![](https://img.shields.io/github/stars/DerekYRC/mini-spring-cloud.svg?style=social&label=Star)](https://github.com/DerekYRC/mini-spring-cloud)    | mini-spring-cloud是简化版的spring-cloud框架，能帮助你快速熟悉spring-cloud源码及掌握其核心原理。在保留spring cloud核心功能的的前提下尽量精简代码，核心功能包括服务注册、服务发现、负载均衡、集成Feign简化调用、流量控制、熔断降级、API网关等 |
 [`DerekYRC/mini-spring` ![](https://img.shields.io/github/stars/DerekYRC/mini-spring.svg?style=social&label=Star)](https://github.com/DerekYRC/mini-spring)|           mini-spring是简化版的spring框架，能帮助你快速熟悉spring源码和掌握spring的核心原理。抽取了spring的核心逻辑，代码极度简化，保留spring的核心功能，如IoC和AOP、资源加载器、事件监听器、类型转换、容器扩展点、bean生命周期和作用域、应用上下文等核心功能            |
 [`tuguangquan/mybatis` ![](https://img.shields.io/github/stars/tuguangquan/mybatis.svg?style=social&label=Star)](https://github.com/tuguangquan/mybatis)|                                                                              mybatis源码中文注释                                                                               |
@@ -389,12 +390,11 @@ repositories |                                                                  
 
 
 ## 搜索引擎
-
-| 序号  | repositories |       简介        |开发语言|
-|:----| :------------ |:---------------:|:---:|
-| 1   |[`apache/lucene` ![](https://img.shields.io/github/stars/apache/lucene.svg?style=social&label=Star)](https://github.com/apache/lucene)|                | Java           
-| 2   |[`elastic/elasticsearch` ![](https://img.shields.io/github/stars/elastic/elasticsearch.svg?style=social&label=Star)](https://github.com/elastic/elasticsearch)| 基于lucene开源的搜索引擎 |Java
-| 3   |[`apache/solr` ![](https://img.shields.io/github/stars/apache/solr.svg?style=social&label=Star)](https://github.com/apache/solr)||      Java       
+ repositories | 简介               |开发语言 |
+:---------------------------------------------------------------------------------------------------------------------------------------|:-----------------|:----:|
+[`apache/lucene` ![](https://img.shields.io/github/stars/apache/lucene.svg?style=social&label=Star)](https://github.com/apache/lucene)|                | Java           
+[`elastic/elasticsearch` ![](https://img.shields.io/github/stars/elastic/elasticsearch.svg?style=social&label=Star)](https://github.com/elastic/elasticsearch)| 基于lucene开源的搜索引擎 |Java
+[`apache/solr` ![](https://img.shields.io/github/stars/apache/solr.svg?style=social&label=Star)](https://github.com/apache/solr)||      Java       
 
 ## 测试
 repositories | 简介  |开发语言|
@@ -403,7 +403,6 @@ repositories | 简介  |开发语言|
 
 
 ## 自建博客
-
  repositories | 简介  |开发语言|
  :------------ |:---:|:---:|
 [`halo-dev/halo` ![](https://img.shields.io/github/stars/halo-dev/halo.svg?style=social&label=Star)](https://github.com/halo-dev/halo)|一款现代化的开源博客|Java
@@ -412,7 +411,6 @@ repositories | 简介  |开发语言|
 
 
 ## 数据库
-
  repositories |                       简介                       |开发语言|
  :------------ |:----------------------------------------------:|:---:|
 [`mysql/mysql-server` ![](https://img.shields.io/github/stars/mysql/mysql-server.svg?style=social&label=Star)](https://github.com/mysql/mysql-server)|           MySQLServer 是世界上最流行的开源数据库            |C++
@@ -430,7 +428,6 @@ repositories |  简介   |开发语言|
 
 
 ## RPC框架
-
  repositories | 简介  |开发语言|
  :------------ |:---:|:---:|
 [`apache/dubbo` ![](https://img.shields.io/github/stars/apache/dubbo.svg?style=social&label=Star)](https://github.com/apache/dubbo)|阿里开源tpc协议RPC框架|
@@ -440,8 +437,8 @@ repositories |  简介   |开发语言|
 [`weibocom/motan` ![](https://img.shields.io/github/stars/weibocom/motan.svg?style=social&label=Star)](https://github.com/weibocom/motan)|微博开源rpc框架|多语言
 [`sofastack/sofa-rpc` ![](https://img.shields.io/github/stars/sofastack/sofa-rpc.svg?style=social&label=Star)](https://github.com/sofastack/sofa-rpc)|蚂蚁开源rpc框架
 [`baidu/starlight` ![](https://img.shields.io/github/stars/baidu/starlight.svg?style=social&label=Star)](https://github.com/baidu/starlight)|面向百度 RPC、多协议、高性能 RPC 的 Java 实现
-## 流程引擎
 
+## 流程引擎
  repositories |            简介             |开发语言|
  :------------ |:-------------------------:|:---:|
 [`alibaba/bulbasaur` ![](https://img.shields.io/github/stars/alibaba/bulbasaur.svg?style=social&label=Star)](https://github.com/alibaba/bulbasaur)|      阿里开源可插拔的精简流程引擎       |Java
@@ -467,7 +464,6 @@ repositories | 简介  |开发语言|
 
 
 ## 定时任务调度
-
  repositories | 简介  |开发语言|
  :------------ |:---:|:---:|
 [`xuxueli/xxl-job` ![](https://img.shields.io/github/stars/xuxueli/xxl-job.svg?style=social&label=Star)](https://github.com/xuxueli/xxl-job)|分布式任务调度框架|Java
@@ -542,8 +538,6 @@ https://storage.googleapis.com/pub-tools-public-publication-data/pdf/36356.pdf| 
 [`MichaelCade/90DaysOfDevOps` ![](https://img.shields.io/github/stars/MichaelCade/90DaysOfDevOps.svg?style=social&label=Star)](https://github.com/MichaelCade/90DaysOfDevOps)|90天学DevOps|
 [`sorenduan/awesome-java-books` ![](https://img.shields.io/github/stars/sorenduan/awesome-java-books.svg?style=social&label=Star)](https://github.com/sorenduan/awesome-java-books)|Java 技术书籍大全|    Java    |
 
-
-
 ## 常用工具
 repositories |   简介    |
 | :------------ |:-------:|
@@ -575,100 +569,7 @@ repositories |     简介      |
 [`ruanyf/weekly` ![](https://img.shields.io/github/stars/ruanyf/weekly.svg?style=social&label=Star)](https://github.com/ruanyf/weekly)|科技爱好者周刊，每周五发布|
 [`GrowingGit/GitHub-Chinese-Top-Charts` ![](https://img.shields.io/github/stars/GrowingGit/GitHub-Chinese-Top-Charts.svg?style=social&label=Star)](https://github.com/GrowingGit/GitHub-Chinese-Top-Charts)|GitHub中文排行榜，各语言分设「软件 | 资料」榜单，精准定位中文好项目。各取所需，高效学习|
 
-
-
-#### [layering-cache](https://github.com/xiaolyuh/layering-cache) 多级缓存框架
-
-#### [redisson](https://github.com/redisson/redisson) 主流的Redis java sdk
-
-
-#### [arthas](https://github.com/alibaba/arthas) Java诊断利器
-
-#### [incubator-eventmesh](https://github.com/apache/incubator-eventmesh) Apache 动态的云原生事件驱动架构基础设施
-
-#### [netty](https://github.com/netty/netty) 网络应用程序框架
-
-
-#### [APIJSON](https://github.com/Tencent/APIJSON) 腾讯开源的零代码、全自动、强安全 ORM 库
-
-
-#### [zookeeper](https://github.com/apache/zookeeper) Apache 分布式协调框架
-
-#### [nacos](https://github.com/alibaba/nacos) 阿里开源注册中心、配置中心框架
-
-#### [checkstyle](https://github.com/checkstyle/checkstyle) java代码规范插件
-
-#### [Kubernetes Java Client](https://github.com/kubernetes-client/java) k8s java client
-#### [hotkey](https://gitee.com/jd-platform-opensource/hotkey) 京东热点key缓存
-#### [WxJava](https://github.com/Wechat-Group/WxJava) 微信开发 Java SDK
-#### [mica](https://github.com/lets-mica/mica) Spring Cloud 微服务开发核心包
-#### [spring-cloud-tencent](https://github.com/Tencent/spring-cloud-tencent) 腾讯开源spring cloud 全家桶
-
-
-
-
-
-
-
-### 分库分表
-#### [shardingsphere](https://github.com/apache/shardingsphere) 客户端级别分库分表
-
-### 字节码框架
-#### [javassist](https://github.com/jboss-javassist/javassist)
-
-### 代码质量检测
-#### [sonarqube](https://github.com/SonarSource/sonarqube) 代码检测
-
-
-
-## 前端
-
-
-
-
-#### [flash-linux0.11-talk](https://github.com/sunym1993/flash-linux0.11-talk) 像小说一样品读 Linux 0.11 核心代码
-
-#### [system-design-primer](https://github.com/donnemartin/system-design-primer) 学习如何实际大型系统 
-
-#### [ddia](https://github.com/Vonng/ddia) 《Designing Data-Intensive Application》DDIA中文翻译
-
-
-#### [Go 语言学习资料索引](https://github.com/Unknwon/go-study-index) Go 语言学习资料索引
-
-
-
-
-## 其他
-
-
-#### [kubernetes](https://github.com/kubernetes/kubernetes) k8s不会有人不认识吧
-
-#### [easy-yapi](https://github.com/tangcent/easy-yapi) Yapi idea接口自动同步
-
-#### [free](https://github.com/freefq/free) 翻墙、免费翻墙、免费科学上网、免费节点、免费梯子
-
-#### [feedback](https://github.com/github/feedback) github官方产品讨论项目
-
-
-
-
-
----
-## 安全
-
-### [murphysec](https://github.com/murphysecurity/murphysec) 软件供应链安全，具备专业的软件成分分析（SCA）、漏洞检测、专业漏洞库
-
-## 推荐相关
-
-#### [HelloGitHub](https://github.com/521xueweihan/HelloGitHub) 分享 GitHub 上有趣、入门级的开源项目
-
-
-
- repositories | 简介  |
- :------------ |:---:|
-[`apache/superset` ![](https://img.shields.io/github/stars/apache/superset.svg?style=social&label=Star)](https://github.com/apache/superset)|数据可视化和数据探索平台
-
-
-## 贡献指南
-[贡献指南](contribution-Asuna.md)
-
+## 程序员副业
+repositories | 简介  |开发语言|
+ :------------ |:---:|:---:|
+[`easychen/howto-make-more-money` ![](https://img.shields.io/github/stars/easychen/howto-make-more-money.svg?style=social&label=Star)](https://github.com/easychen/howto-make-more-money)|程序员如何优雅的挣零花钱|php
