@@ -79,10 +79,10 @@
 [`doocs/source-code-hunter` ![](https://img.shields.io/github/stars/doocs/source-code-hunter.svg?style=social&label=Star)](https://github.com/doocs/source-code-hunter)|从源码层面，剖析挖掘互联网行业主流技术的底层实现原理
 [Java面试突击](https://www.javacn.site/)|八股
 [Java 全栈知识体系](https://pdai.tech/)|八股
-[https://xiaolincoding.com/]|八股
-
+[xiaolincoding](https://xiaolincoding.com/)|八股
 [`996icu/996.ICU` ![](https://img.shields.io/github/stars/996icu/996.ICU.svg?style=social&label=Star)](https://github.com/996icu/996.ICU)|996公司名单
 [`formulahendry/955.WLB` ![](https://img.shields.io/github/stars/formulahendry/955.WLB.svg?style=social&label=Star)](https://github.com/formulahendry/955.WLB)|955公司白名单
+
 ### 算法
  repositories |                                                           简介                                                           | 语言  |
  :------------ |:----------------------------------------------------------------------------------------------------------------------:|:---:|
@@ -93,7 +93,6 @@
 [`youngyangyang04/leetcode-master` ![](https://img.shields.io/github/stars/youngyangyang04/leetcode-master.svg?style=social&label=Star)](https://github.com/youngyangyang04/leetcode-master)| 代码随想录 LeetCode 刷题攻略：200道经典题目刷题顺序，共60w字的详细图解，视频难点剖析，50余张思维导图，支持C++，Java，Python，Go，JavaScript等多语言版本，从此算法学习不再迷茫 |多语言
 [`halfrost/LeetCode-Go` ![](https://img.shields.io/github/stars/halfrost/LeetCode-Go.svg?style=social&label=Star)](https://github.com/halfrost/LeetCode-Go)|                                                      LeetCode 题解                                                       |go
 [`krahets/hello-algo` ![](https://img.shields.io/github/stars/krahets/hello-algo.svg?style=social&label=Star)](https://github.com/krahets/hello-algo)|动画图解、一键运行的数据结构与算法教程，支持 Python, C++, Java, C#, Go, Swift, JS, TS, Dart, Rust, C, Zig 等语言
-
 
 ## Java开发框架
 
@@ -491,6 +490,7 @@ repositories |                   简介                    |开发语言|
 ## APM&DistributedTracing&log
 repositories |                                                                           简介                                                                           |开发语言|
  :---------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------:|:---:|
+[`ccfos/nightingale` ![](https://img.shields.io/github/stars/ccfos/nightingale.svg?style=social&label=Star)](https://github.com/ccfos/nightingale)|夜莺(Nightingale)是中国计算机学会接受捐赠并托管的第一个开源项目，是一个All-in-One的云原生监控工具，集合了Prometheus和Grafana的优点，你可以在WebUI上管理和配置告警策略，也可以对分布在多个Region的指标、日志、链路追踪数据进行统一的可视化和分析。夜莺融入了一线互联网公司可观测性最佳实践，沉淀了众多社区专家经验，开箱即用|GO
 [`dromara/hertzbeat` ![](https://img.shields.io/github/stars/dromara/hertzbeat.svg?style=social&label=Star)](https://github.com/dromara/hertzbeat)|                                 一个拥有强大自定义监控能力，无需Agent的实时监控系统。网站监测，PING连通性，端口可用性，数据库，操作系统，中间件，API监控，阈值告警，告警通知(邮件微信钉钉飞书)                                 |Java
 [`dianping/cat` ![](https://img.shields.io/github/stars/dianping/cat.svg?style=social&label=Star)](https://github.com/dianping/cat)| CAT 作为服务端项目基础组件，提供了 Java, C/C++, Node.js, Python, Go 等多语言客户端，已经在美团点评的基础架构中间件框架（MVC框架，RPC框架，数据库框架，缓存框架等，消息队列，配置系统等）深度集成，为美团点评各业务线提供系统丰富的性能指标、健康状况、实时告警等 |Java
 [`prometheus/prometheus` ![](https://img.shields.io/github/stars/prometheus/prometheus.svg?style=social&label=Star)](https://github.com/prometheus/prometheus)|                                                                   普罗米修斯监测系统及时间序列数据库                                                                    |GO
