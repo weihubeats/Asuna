@@ -271,6 +271,9 @@ repositories |      简介       |
 ### idea插件
 repositories | 简介  |
 | :------------ |:---:|
+[`YiiGuxing/TranslationPlugin` ![](https://img.shields.io/github/stars/YiiGuxing/TranslationPlugin.svg?style=social&label=Star)](https://github.com/YiiGuxing/TranslationPlugin)|idea翻译插件|Java
+[`krasa/MavenHelper` ![](https://img.shields.io/github/stars/krasa/MavenHelper.svg?style=social&label=Star)](https://github.com/krasa/MavenHelper)|对依赖的jar进行分析,定位依赖冲突、查看依赖树|Java
+[`projectlombok/lombok` ![](https://img.shields.io/github/stars/projectlombok/lombok.svg?style=social&label=Star)](https://github.com/projectlombok/lombok)|注解生成get、set等方法简化代码|Java
 |[`starcwang/easy_javadoc` ![](https://img.shields.io/github/stars/starcwang/easy_javadoc.svg?style=social&label=Star)](https://github.com/starcwang/easy_javadoc)|自动生成javadoc文档注释
 |[`gejun123456/intellij-generateAllSetMethod` ![](https://img.shields.io/github/stars/gejun123456/intellij-generateAllSetMethod.svg?style=social&label=Star)](https://github.com/gejun123456/intellij-generateAllSetMethod)|自动生成set方法
 [`mrmanzhaow/RestfulToolkit` ![](https://img.shields.io/github/stars/mrmanzhaow/RestfulToolkit.svg?style=social&label=Star)](https://github.com/mrmanzhaow/RestfulToolkit)|根据 URL 直接导航到对应的controller
