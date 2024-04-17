@@ -27,7 +27,6 @@
     - [数据库连接池](#数据库连接池)
     - [微服务SpringCloud](#微服务SpringCloud)
     - [agent](#agent)
-    - [Raft](#Raft)
     - [状态机](#状态机)
     - [SpringBootCloud学习](#SpringBootCloud学习)
     - [实战项目](#实战项目)
@@ -193,20 +192,10 @@ repositories | 简介  |
 [`HotswapProjects/HotswapAgent` ![](https://img.shields.io/github/stars/HotswapProjects/HotswapAgent.svg?style=social&label=Star)](https://github.com/HotswapProjects/HotswapAgent)|Java 在运行时无限制地重新定义类|
 [`linyimin0812/spring-startup-analyzer` ![](https://img.shields.io/github/stars/linyimin0812/spring-startup-analyzer.svg?style=social&label=Star)](https://github.com/linyimin0812/spring-startup-analyzer)|采集Spring应用启动过程数据，生成交互式分析报告(HTML)，用于分析Spring应用启动卡点，支持Spring Bean异步初始化，减少优化Spring应用启动时间
 
-
-### Raft
-repositories | 简介  |
-| :------------ |:---:|
-[`openmessaging/dledger` ![](https://img.shields.io/github/stars/openmessaging/dledger.svg?style=social&label=Star)](https://github.com/https://github.com/openmessaging/dledger)|提出了一个基于raft的java库，用于构建高可用、高持久、强一致的commitlog，作为分布式存储系统的持久层，即.消息传送、流、KV、DB等。
-[`apache/ratis` ![](https://img.shields.io/github/stars/apache/ratis.svg?style=social&label=Star)](https://github.com/apache/ratis)|apache Raft共识协议的开源Java实现。
-[`maemual/raft-zh_cn` ![](https://img.shields.io/github/stars/maemual/raft-zh_cn.svg?style=social&label=Star)](https://github.com/maemual/raft-zh_cn)|Raft一致性算法论文的中文翻译
-
 ### 状态机
 repositories | 简介  |
 | :------------ |:---:|
 [`stateless4j/stateless4j` ![](https://img.shields.io/github/stars/stateless4j/stateless4j.svg?style=social&label=Star)](https://github.com/stateless4j/stateless4j)|轻量级Java状态机
-
-
 
 ### SpringBootCloud学习
 repositories |                                                                                                                                                                             简介                                                                                                                                                                             |
@@ -214,8 +203,6 @@ repositories |                                                                  
 [`smart-cloud/smart-cloud` ![](https://img.shields.io/github/stars/smart-cloud/smart-cloud.svg?style=social&label=Star)](https://github.com/smart-cloud/smart-cloud)   |                                                                                                                  基于springboot && springcloud的脚手架，支持服务合并部署与拆分部署、接口加解密签名、日志数据 脱敏、接口数据mock、接口文档自动生成、请求幂等校验、接口日志&&sql日志切面打印、分表分库分布式事务、国际化语言等                                                                                                                   |
 [`xkcoding/spring-boot-demo` ![](https://img.shields.io/github/stars/xkcoding/spring-boot-demo.svg?style=social&label=Star)](https://github.com/xkcoding/spring-boot-demo)|该项目已成功集成 actuator(监控)、admin(可视化监控)、logback(日志)、aopLog(通过AOP记录web请求日志)、统一异常处理(json级别和页面级别)、freemarker(模板引擎)、thymeleaf(模板引擎)、Beetl(模板引擎)、Enjoy(模板引擎)、JdbcTemplate(通用JDBC操作数据库)、JPA(强大的ORM框架)、mybatis(强大的ORM框架)、通用Mapper(快速操作Mybatis)、PageHelper(通用的Mybatis分页插件)、mybatis-plus(快速操作Mybatis)、BeetlSQL(强大的ORM框架)、upload(本地文件上传和七牛云文件上传)、redis(缓存)、ehcache(缓存)、ema…|
 [`zuihou/lamp-util` ![](https://img.shields.io/github/stars/zuihou/lamp-util.svg?style=social&label=Star)](https://github.com/zuihou/lamp-util)|                                                                                                                            lamp-util 基于Jdk11 ，是 lamp-cloud 和 lamp-boot 项目的核心工具包，开发宗旨是打造一套兼顾 SpringBoot 和 SpringCloud 项目的公共工具类。                                                                                                                             |
-
-
 
 ### 实战项目
  repositories |                                                   简介                                                   |
@@ -356,9 +343,13 @@ repositories |                                                        简介    
 ## 一致性算法
 repositories |                                                                                                 简介                                                                                                 |开发语言|
  :------------ |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---:|
+[`hashicorp/raft` ![](https://img.shields.io/github/stars/hashicorp/raft.svg?style=social&label=Star)](https://github.com/hashicorp/raft)|Golang实现Raft共识协议|GO
+[`etcd-io/raft` ![](https://img.shields.io/github/stars/etcd-io/raft.svg?style=social&label=Star)](https://github.com/etcd-io/raft)|etcd使用的raft库|GO
 [`sofastack/sofa-jraft` ![](https://img.shields.io/github/stars/sofastack/sofa-jraft.svg?style=social&label=Star)](https://github.com/sofastack/sofa-jraft)| SOFAJRaft是一个基于 RAFT一致性算法的生产级高性能Java 实现支持 MULTI-RAFT-GROUP，适用于高负载低延迟的场景 使用 SOFAJRaft 你可以专注于自己的业务领域，由 SOFAJRaft 负责处理所有与 RAFT 相关的技术难题，并且 SOFAJRaft 非常易于使用你可以通过几个示例在很短的时间内掌握它 |Java
 [`maemual/raft-zh_cn` ![](https://img.shields.io/github/stars/maemual/raft-zh_cn.svg?style=social&label=Star)](https://github.com/maemual/raft-zh_cn)|                                                                                          Raft一致性算法论文的中文翻译                                                                                          |-
 [`wenweihu86/raft-java` ![](https://img.shields.io/github/stars/wenweihu86/raft-java.svg?style=social&label=Star)](https://github.com/wenweihu86/raft-java)|                                                                                            Raft java 实现                                                                                            |Java
+[`openmessaging/dledger` ![](https://img.shields.io/github/stars/openmessaging/dledger.svg?style=social&label=Star)](https://github.com/https://github.com/openmessaging/dledger)|提出了一个基于raft的java库，用于构建高可用、高持久、强一致的commitlog，作为分布式存储系统的持久层，即.消息传送、流、KV、DB等|java
+[`apache/ratis` ![](https://img.shields.io/github/stars/apache/ratis.svg?style=social&label=Star)](https://github.com/apache/ratis)|apache Raft共识协议的开源Java实现|java
 
 ## 分布式事务
  repositories | 简介  |开发语言 |
