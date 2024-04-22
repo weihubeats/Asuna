@@ -308,6 +308,7 @@ repositories |                          简介                          |开发�
 ### 大模型
 repositories |                          简介                          |开发语言|
  :------------ |:----------------------------------------------------:|:---:|
+[`netease-youdao/QAnything?tab=readme-ov-file` ![](https://img.shields.io/github/stars/netease-youdao/QAnything?tab=readme-ov-file.svg?style=social&label=Star)](https://github.com/netease-youdao/QAnything?tab=readme-ov-file)|有道云开源的致力于支持任意格式文件或数据库的本地知识库问答系统，可断网安装使用。|Python
 [openai](https://chat.openai.com/)|                        openai                        |~
 [gemini](https://gemini.google.com/app)|                      google大模型                       |~
 [claude](https://claude.ai/)|claude|~
