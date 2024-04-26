@@ -23,7 +23,6 @@
     - [代码扫描](#代码扫描)
     - [反编译工具](#反编译工具)
     - [excel](#excel)
-    - [消息通知](#消息通知)
     - [数据库连接池](#数据库连接池)
     - [微服务SpringCloud](#微服务SpringCloud)
     - [agent](#agent)
@@ -37,6 +36,7 @@
 - [AI](#AI)
   - [ChatGPT](#ChatGPT)
   - [大模型](#大模型)
+  - [prompt](#prompt)
 - [网关](#网关)
 - [数据同步](#数据同步)
 - [一致性算法](#一致性算法)
@@ -66,6 +66,7 @@
 - [健康](#健康)
 - [项目推荐科技周刊](#项目推荐科技周刊)
 - [程序员副业](#程序员副业)
+- [chrome插件](#chrome插件)
 ## 工作
 
 ### 面试
@@ -172,10 +173,6 @@
 [`liaochong/myexcel` ![](https://img.shields.io/github/stars/liaochong/myexcel.svg?style=social&label=Star)](https://github.com/liaochong/myexcel)|集导入、导出、加密Excel等多项功能的工具包
 [`pig-mesh/excel-spring-boot-starter` ![](https://img.shields.io/github/stars/pig-mesh/excel-spring-boot-starter.svg?style=social&label=Star)](https://github.com/pig-mesh/excel-spring-boot-starter)|alibaba easyexcel spring boot starter
 
-### 消息通知
-repositories | 简介  |
- :------------ |:---:|
-[`https://github.com/AnswerAIL/dingtalk-spring-boot-starter` ![](https://img.shields.io/github/stars/https://github.com/AnswerAIL/dingtalk-spring-boot-starter.svg?style=social&label=Star)](https://github.com/https://github.com/AnswerAIL/dingtalk-spring-boot-starter)
 
 ### 数据库连接池
 repositories |       简介        |
@@ -315,6 +312,11 @@ repositories |                          简介                          |开发�
 [kimi](https://kimi.moonshot.cn/)|                     国内超常大文本处理大模型                     |~      
 [文心一言](https://yiyan.baidu.com/)|                        百度大模型                         |~
 [perplexity](https://www.perplexity.ai/)|perplexity|~
+
+### prompt
+repositories |                          简介                          |开发语言|
+ :------------ |:----------------------------------------------------:|:---:|
+[`PandaBearLab/prompt-tutorial` ![](https://img.shields.io/github/stars/PandaBearLab/prompt-tutorial.svg?style=social&label=Star)](https://github.com/PandaBearLab/prompt-tutorial)|prompt教程|~
 
 ## 网关
  repositories                                                                                                                           | 简介                                           | 开发语言 |
@@ -568,3 +570,8 @@ repositories |     简介      |
 repositories | 简介  |开发语言|
  :------------ |:---:|:---:|
 [`easychen/howto-make-more-money` ![](https://img.shields.io/github/stars/easychen/howto-make-more-money.svg?style=social&label=Star)](https://github.com/easychen/howto-make-more-money)|程序员如何优雅的挣零花钱|php
+
+### chrome插件
+repositories |   简介   |开发语言|
+ :------------ |:------:|:---:|
+[Twitter video downloader](https://chromewebstore.google.com/detail/twitter-video-downloader/akmdionenlnfcipmdhbhcnkighafmdha)| 推特视频下载 ||
