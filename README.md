@@ -68,6 +68,7 @@
 - [项目推荐科技周刊](#项目推荐科技周刊)
 - [程序员副业](#程序员副业)
 - [chrome插件](#chrome插件)
+- [绘图](#绘图)
 ## 工作
 
 ### 面试
@@ -577,8 +578,13 @@ repositories | 简介  |开发语言|
  :------------ |:---:|:---:|
 [`easychen/howto-make-more-money` ![](https://img.shields.io/github/stars/easychen/howto-make-more-money.svg?style=social&label=Star)](https://github.com/easychen/howto-make-more-money)|程序员如何优雅的挣零花钱|php
 
-### chrome插件
+## chrome插件
 repositories |   简介   |开发语言|
  :------------ |:------:|:---:|
 [Twitter video downloader](https://chromewebstore.google.com/detail/twitter-video-downloader/akmdionenlnfcipmdhbhcnkighafmdha)| 推特视频下载 |~
 [插件小屋](https://www.chajianxw.com/)|推荐常用的chrome插件|~
+
+## 绘图
+repositories |   简介   |开发语言|
+ :------------ |:------:|:---:|
+[`excalidraw/excalidraw` ![](https://img.shields.io/github/stars/excalidraw/excalidraw.svg?style=social&label=Star)](https://github.com/excalidraw/excalidraw)|用于绘制手绘图的虚拟白板|TypeScript
