@@ -37,6 +37,7 @@
   - [ChatGPT](#ChatGPT)
   - [大模型](#大模型)
   - [prompt](#prompt)
+  - [大模型应用](#大模型应用)
 - [网关](#网关)
 - [数据同步](#数据同步)
 - [一致性算法](#一致性算法)
@@ -305,7 +306,7 @@ repositories |                          简介                          |开发�
 ### 大模型
 repositories |                          简介                          |开发语言|
  :------------ |:----------------------------------------------------:|:---:|
-[`netease-youdao/QAnything?tab=readme-ov-file` ![](https://img.shields.io/github/stars/netease-youdao/QAnything?tab=readme-ov-file.svg?style=social&label=Star)](https://github.com/netease-youdao/QAnything?tab=readme-ov-file)|有道云开源的致力于支持任意格式文件或数据库的本地知识库问答系统，可断网安装使用。|Python
+[`netease-youdao/QAnything?tab=readme-ov-file` ![](https://img.shields.io/github/stars/netease-youdao/QAnything?style=social&label=Star)](https://github.com/netease-youdao/QAnything?tab=readme-ov-file)|有道云开源的致力于支持任意格式文件或数据库的本地知识库问答系统，可断网安装使用。|Python
 [openai](https://chat.openai.com/)|                        openai                        |~
 [gemini](https://gemini.google.com/app)|                      google大模型                       |~
 [claude](https://claude.ai/)|claude|~
@@ -317,6 +318,11 @@ repositories |                          简介                          |开发�
 repositories |                          简介                          |开发语言|
  :------------ |:----------------------------------------------------:|:---:|
 [`PandaBearLab/prompt-tutorial` ![](https://img.shields.io/github/stars/PandaBearLab/prompt-tutorial.svg?style=social&label=Star)](https://github.com/PandaBearLab/prompt-tutorial)|prompt教程|~
+
+### 大模型应用
+repositories |                          简介                          |开发语言|
+ :------------ |:----------------------------------------------------:|:---:|
+[`yisol/IDM-VTON` ![](https://img.shields.io/github/stars/yisol/IDM-VTON.svg?style=social&label=Star)](https://github.com/yisol/IDM-VTON)|一键换衣项目|Python
 
 ## 网关
  repositories                                                                                                                           | 简介                                           | 开发语言 |
@@ -574,4 +580,5 @@ repositories | 简介  |开发语言|
 ### chrome插件
 repositories |   简介   |开发语言|
  :------------ |:------:|:---:|
-[Twitter video downloader](https://chromewebstore.google.com/detail/twitter-video-downloader/akmdionenlnfcipmdhbhcnkighafmdha)| 推特视频下载 ||
+[Twitter video downloader](https://chromewebstore.google.com/detail/twitter-video-downloader/akmdionenlnfcipmdhbhcnkighafmdha)| 推特视频下载 |~
+[插件小屋](https://www.chajianxw.com/)|推荐常用的chrome插件|~
