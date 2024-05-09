@@ -324,6 +324,8 @@ repositories |                          简介                          |开发�
 repositories |                          简介                          |开发语言|
  :------------ |:----------------------------------------------------:|:---:|
 [`yisol/IDM-VTON` ![](https://img.shields.io/github/stars/yisol/IDM-VTON.svg?style=social&label=Star)](https://github.com/yisol/IDM-VTON)|一键换衣项目|Python
+[myvoiceyourface](https://myvoiceyourface.com/)|AI视频换脸|~
+[character](https://character.ai/)|ai虚拟人物聊天(马斯克、动漫人物等)，支持语音聊天|~
 
 ## 网关
  repositories                                                                                                                           | 简介                                           | 开发语言 |
@@ -557,6 +559,7 @@ repositories |   简介    |
 ## 微信
  repositories |        简介        |    开发语言    |
  :------------ |:----------------:|:----------:|
+[`MustangYM/WeChatExtension-ForMac` ![](https://img.shields.io/github/stars/MustangYM/WeChatExtension-ForMac.svg?style=social&label=Star)](https://github.com/MustangYM/WeChatExtension-ForMac/tree/master)|免认证登录与微信多开,群员监控,AI回复,显示被撤回的消息,消息转发,显示小程序详情|Objective-C
 [`eatmoreapple/openwechat` ![](https://img.shields.io/github/stars/eatmoreapple/openwechat.svg?style=social&label=Star)](https://github.com/eatmoreapple/openwechat)|golang微信SDK|GO
 
 
@@ -583,6 +586,7 @@ repositories |   简介   |开发语言|
  :------------ |:------:|:---:|
 [Twitter video downloader](https://chromewebstore.google.com/detail/twitter-video-downloader/akmdionenlnfcipmdhbhcnkighafmdha)| 推特视频下载 |~
 [插件小屋](https://www.chajianxw.com/)|推荐常用的chrome插件|~
+[马大哈翻译](https://chromewebstore.google.com/detail/%E9%A9%AC%E5%A4%A7%E5%93%88%E7%BF%BB%E8%AF%91/ihipdlbkomhbfdoiiiabphiggkhmoibo)|中文阅读: 马大哈会挑选词汇替换为英文,英文阅读: 马大哈会刻意省略一些单词|~
 
 ## 绘图
 repositories |   简介   |开发语言|
