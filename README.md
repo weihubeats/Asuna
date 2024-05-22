@@ -286,6 +286,12 @@ repositories | 简介  |
 [jd-gui](https://java-decompiler.github.io/)|JD-GUI 是一个用 C++ 开发的 Java 反编译工具,jdk8以上的版本可能不支持
 [`Konloch/bytecode-viewer` ![](https://img.shields.io/github/stars/Konloch/bytecode-viewer.svg?style=social&label=Star)](https://github.com/Konloch/bytecode-viewer)|Java反编译器，Java字节码编辑器，APK编辑器，Dex编辑器，APK反编译器，DEX反编译器
 
+## Go开发框架
+repositories |                          简介                          |开发语言|
+ :------------ |:----------------------------------------------------:|:---:|
+[`golang-standards/project-layout` ![](https://img.shields.io/github/stars/golang-standards/project-layout.svg?style=social&label=Star)](https://github.com/golang-standards/project-layout/tree/master)|标准Go项目布局|Makefile
+
+
 ## AI
 
 ### ChatGPT
