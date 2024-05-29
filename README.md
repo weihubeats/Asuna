@@ -240,6 +240,8 @@ repositories                                                                    
 ### 限流
  repositories | 简介  |
  :------------ |:---:|
+[`resilience4j/resilience4j` ![](https://img.shields.io/github/stars/resilience4j/resilience4j.svg?style=social&label=Star)](https://github.com/resilience4j/resilience4j)|Resilience4j是为Java8和函数式编程设计的容错库|java
+[`bucket4j/bucket4j` ![](https://img.shields.io/github/stars/bucket4j/bucket4j.svg?style=social&label=Star)](https://github.com/bucket4j/bucket4j)|基于令牌桶算法的Java速率限制库|java
 [`didi/sds` ![](https://img.shields.io/github/stars/didi/sds.svg?style=social&label=Star)](https://github.com/didi/sds)|简单、易用、高性能的服务降级系统，支持限流、熔断和降级等功能
 [`taptap/ratelimiter-spring-boot-starter` ![](https://img.shields.io/github/stars/taptap/ratelimiter-spring-boot-starter.svg?style=social&label=Star)](https://github.com/taptap/ratelimiter-spring-boot-starter)|基于 redis 的偏业务应用的分布式限流组件，使得项目拥有分布式限流能力变得很简单
 [`alibaba/Sentinel` ![](https://img.shields.io/github/stars/alibaba/Sentinel.svg?style=social&label=Star)](https://github.com/alibaba/Sentinel)|面向云原生微服务的高可用流控防护组件
