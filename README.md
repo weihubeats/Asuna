@@ -69,6 +69,8 @@
 - [程序员副业](#程序员副业)
 - [chrome插件](#chrome插件)
 - [绘图](#绘图)
+- [视频下载](#视频下载)
+
 ## 工作
 
 ### 面试
@@ -600,3 +602,9 @@ repositories |   简介   |开发语言|
 repositories |   简介   |开发语言|
  :------------ |:------:|:---:|
 [`excalidraw/excalidraw` ![](https://img.shields.io/github/stars/excalidraw/excalidraw.svg?style=social&label=Star)](https://github.com/excalidraw/excalidraw)|用于绘制手绘图的虚拟白板|TypeScript
+
+## 视频下载
+repositories |   简介   |开发语言|
+ :------------ |:------:|:---:|
+[`leiurayer/downkyi` ![](https://img.shields.io/github/stars/leiurayer/downkyi.svg?style=social&label=Star)](https://github.com/leiurayer/downkyi)|哔哩下载姬downkyi|C#
+[snapany](https://snapany.com/zh)|万能视频图片解析下载|~
