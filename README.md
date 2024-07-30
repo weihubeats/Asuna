@@ -70,6 +70,7 @@
 - [chrome插件](#chrome插件)
 - [绘图](#绘图)
 - [视频下载](#视频下载)
+- [未整理分类](#未整理分类)
 
 ## 工作
 
@@ -608,3 +609,9 @@ repositories |   简介   |开发语言|
  :------------ |:------:|:---:|
 [`leiurayer/downkyi` ![](https://img.shields.io/github/stars/leiurayer/downkyi.svg?style=social&label=Star)](https://github.com/leiurayer/downkyi)|哔哩下载姬downkyi|C#
 [snapany](https://snapany.com/zh)|万能视频图片解析下载|~
+[[twittervid](https://twittervid.com/)]|推特高清视频下载|~
+
+## 未整理分类
+repositories |   简介   |开发语言|
+ :------------ |:------:|:---:|
+[`GuoXiCheng/SKIP` ![](https://img.shields.io/github/stars/GuoXiCheng/SKIP.svg?style=social&label=Star)](https://github.com/GuoXiCheng/SKIP)|自动跳过APP开屏广告|Kotlin
