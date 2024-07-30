@@ -608,8 +608,13 @@ repositories |   简介   |开发语言|
 repositories |   简介   |开发语言|
  :------------ |:------:|:---:|
 [`leiurayer/downkyi` ![](https://img.shields.io/github/stars/leiurayer/downkyi.svg?style=social&label=Star)](https://github.com/leiurayer/downkyi)|哔哩下载姬downkyi|C#
-[snapany](https://snapany.com/zh)|万能视频图片解析下载|~
 [[twittervid](https://twittervid.com/)]|推特高清视频下载|~
+[`iawia002/lux` ![](https://img.shields.io/github/stars/iawia002/lux.svg?style=social&label=Star)](https://github.com/iawia002/lux)|用Go语言编写的快速简单的视频下载库和CLI工具|GO
+[`imputnet/cobalt` ![](https://img.shields.io/github/stars/imputnet/cobalt.svg?style=social&label=Star)](https://github.com/imputnet/cobalt)|开源，简洁，无广告，支持YouTube，B站，twitter.tiktok,instogrom,reddit等网站|java
+[`yt-dlp/yt-dlp` ![](https://img.shields.io/github/stars/yt-dlp/yt-dlp.svg?style=social&label=Star)](https://github.com/yt-dlp/yt-dlp)|yt-dlp是youtube-dl的一个增强版                          |java
+[`ytdl-org/youtube-dl` ![](https://img.shields.io/github/stars/ytdl-org/youtube-dl.svg?style=social&label=Star)](https://github.com/ytdl-org/youtube-dl)|一个命令行工具，用于从YouTube及其他数百个网站下载视频。它支持多种格式和选项，功能强大且易于使用|Python
+[snapany](https://snapany.com/zh)|                    万能视频图片解析下载 |~
+
 
 ## 未整理分类
 repositories |   简介   |开发语言|
