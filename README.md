@@ -30,6 +30,7 @@
     - [SpringBootCloud学习](#SpringBootCloud学习)
     - [实战项目](#实战项目)
     - [源码学习](#源码学习)
+    - [领域驱动设计](#领域驱动设计)
 
 - [Go开发框架](#Go开发框架)
 
@@ -220,8 +221,8 @@ repositories |                                                                  
 [`hs-web/hsweb-framework` ![](https://img.shields.io/github/stars/hs-web/hsweb-framework.svg?style=social&label=Star)](https://github.com/hs-web/hsweb-framework)| 基于spring-boot2,全响应式的后台管理框架
 
 ### 源码学习
-repositories |                                                                                    简介                                                                                    |开发语言|
- :------------ |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---:|
+repositories |   简介   |开发语言|
+ :------------ |:------:|:---:|
 [`fangjian0423/springmvc-source-minibook` ![](https://img.shields.io/github/stars/fangjian0423/springmvc-source-minibook.svg?style=social&label=Star)](https://github.com/fangjian0423/springmvc-source-minibook)|SpringMVC源码分析迷你书|java
 [`DerekYRC/mini-spring-cloud` ![](https://img.shields.io/github/stars/DerekYRC/mini-spring-cloud.svg?style=social&label=Star)](https://github.com/DerekYRC/mini-spring-cloud)    | mini-spring-cloud是简化版的spring-cloud框架，能帮助你快速熟悉spring-cloud源码及掌握其核心原理。在保留spring cloud核心功能的的前提下尽量精简代码，核心功能包括服务注册、服务发现、负载均衡、集成Feign简化调用、流量控制、熔断降级、API网关等 |
 [`DerekYRC/mini-spring` ![](https://img.shields.io/github/stars/DerekYRC/mini-spring.svg?style=social&label=Star)](https://github.com/DerekYRC/mini-spring)|           mini-spring是简化版的spring框架，能帮助你快速熟悉spring源码和掌握spring的核心原理。抽取了spring的核心逻辑，代码极度简化，保留spring的核心功能，如IoC和AOP、资源加载器、事件监听器、类型转换、容器扩展点、bean生命周期和作用域、应用上下文等核心功能            |
@@ -230,9 +231,15 @@ repositories |                                                                  
 [`coderbruis/JavaSourceCodeLearning` ![](https://img.shields.io/github/stars/coderbruis/JavaSourceCodeLearning.svg?style=social&label=Star)](https://github.com/coderbruis/JavaSourceCodeLearning)|                            Java流行框架源码分析Spring源码、SpringBoot源码SpringAOP源码、SpringSecurity源码SpringSecurity OAuth2源码、JDK源码、Netty源码                             |
 [`doocs/source-code-hunter` ![](https://img.shields.io/github/stars/doocs/source-code-hunter.svg?style=social&label=Star)](https://github.com/doocs/source-code-hunter)|                            从源码层面剖析挖掘互联网行业主流技术的底层实现原理为广大开发者 “提升技术深度” 提供便利。目前开放 Spring 全家桶，Mybatis、Netty、Dubbo 框架，及 Redis、Tomcat 中间件等                            |
 
+### 领域驱动设计
+repositories |   简介   |开发语言|
+ :------------ |:------:|:---:|
+[`ddd-by-examples/library` ![](https://img.shields.io/github/stars/ddd-by-examples/library.svg?style=social&label=Star)](https://github.com/ddd-by-examples/library)|一个全面的领域驱动设计示例|java
+
+
 ### 序列化
-repositories                                                                                                                                                          | 简介  |
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------:|
+repositories |   简介   |开发语言|
+ :------------ |:------:|:---:|
 [`alibaba/fastjson` ![](https://img.shields.io/github/stars/alibaba/fastjson.svg?style=social&label=Star)](https://github.com/alibaba/fastjson)                       |阿里开源序列化框架           
 [`alibaba/fastjson2` ![](https://img.shields.io/github/stars/alibaba/fastjson2.svg?style=social&label=Star)](https://github.com/alibaba/fastjson2)                    |FASTJSON2是FASTJSON项目的重要升级，目标是为下一个十年提供一个高性能的JSON库
 [`FasterXML/jackson` ![](https://img.shields.io/github/stars/FasterXML/jackson.svg?style=social&label=Star)](https://github.com/FasterXML/jackson)                    |目前spring boot 默认json序列化框架
