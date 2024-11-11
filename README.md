@@ -614,6 +614,7 @@ repositories |   简介   |开发语言|
 ## 视频下载
 repositories |   简介   |开发语言|
  :------------ |:------:|:---:|
+[`filecxx/FileCentipede` ![](https://img.shields.io/github/stars/filecxx/FileCentipede.svg?style=social&label=Star)](https://github.com/filecxx/FileCentipede)|文件上传/下载管理开源神器,支持几乎所有常见的协议，如 HTTPS、BT/磁力链接、FTP、WebDAV、m3u8 等|c++
 [`leiurayer/downkyi` ![](https://img.shields.io/github/stars/leiurayer/downkyi.svg?style=social&label=Star)](https://github.com/leiurayer/downkyi)|哔哩下载姬downkyi|C#
 [[twittervid](https://twittervid.com/)]|推特高清视频下载|~
 [`iawia002/lux` ![](https://img.shields.io/github/stars/iawia002/lux.svg?style=social&label=Star)](https://github.com/iawia002/lux)|用Go语言编写的快速简单的视频下载库和CLI工具|GO
@@ -626,5 +627,6 @@ repositories |   简介   |开发语言|
 ## 未整理分类
 repositories |   简介   |开发语言|
  :------------ |:------:|:---:|
+[`gkd-kit/gkd` ![](https://img.shields.io/github/stars/gkd-kit/gkd.svg?style=social&label=Star)](https://github.com/gkd-kit/gkd)|开屏广告自动跳过|kotlin
 [`hagezi/dns-blocklists` ![](https://img.shields.io/github/stars/hagezi/dns-blocklists.svg?style=social&label=Star)](https://github.com/hagezi/dns-blocklists)|DNS-阻止列表,为了更好的互联网-保持互联网清洁|Text
 [`GuoXiCheng/SKIP` ![](https://img.shields.io/github/stars/GuoXiCheng/SKIP.svg?style=social&label=Star)](https://github.com/GuoXiCheng/SKIP)|自动跳过APP开屏广告|Kotlin
