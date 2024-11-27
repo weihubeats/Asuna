@@ -71,6 +71,7 @@
 - [chrome插件](#chrome插件)
 - [绘图](#绘图)
 - [视频下载](#视频下载)
+- [监控](#监控)
 - [未整理分类](#未整理分类)
 
 ## 工作
@@ -623,6 +624,10 @@ repositories |   简介   |开发语言|
 [`ytdl-org/youtube-dl` ![](https://img.shields.io/github/stars/ytdl-org/youtube-dl.svg?style=social&label=Star)](https://github.com/ytdl-org/youtube-dl)|一个命令行工具，用于从YouTube及其他数百个网站下载视频。它支持多种格式和选项，功能强大且易于使用|Python
 [snapany](https://snapany.com/zh)|                    万能视频图片解析下载 |~
 
+## 监控
+repositories |                   简介                    |开发语言|
+ :------------ |:---------------------------------------:|:---:|
+[`Abdenasser/neohtop` ![](https://img.shields.io/github/stars/Abdenasser/neohtop.svg?style=social&label=Star)](https://github.com/Abdenasser/neohtop)| 一个现代化的、跨平台的系统监控器,构建在Svelte、Rust和Tauri之上 |Svelte、Rust
 
 ## 未整理分类
 repositories |   简介   |开发语言|
