@@ -62,6 +62,9 @@
 - [论文](#论文)
 - [学习](#学习)
     - [英语学习](#英语学习)
+    - [编程语言学习](#编程语言学习)
+      - [rust](#rust)
+      - [js](#js)
 - [常用工具](#常用工具)
   - [mac](#mac)
 - [微信](#微信)
@@ -549,7 +552,7 @@ https://storage.googleapis.com/pub-tools-public-publication-data/pdf/36356.pdf| 
 [`byoungd/English-level-up-tips` ![](https://img.shields.io/github/stars/byoungd/English-level-up-tips.svg?style=social&label=Star)](https://github.com/byoungd/English-level-up-tips)|离谱的英语学习指南/英语学习教程
 
 
-### 语言学习
+### 编程语言学习
  repositories |        简介        |    开发语言    |
  :------------ |:----------------:|:----------:|
 [`zhisheng17/flink-learning` ![](https://img.shields.io/github/stars/zhisheng17/flink-learning.svg?style=social&label=Star)](https://github.com/zhisheng17/flink-learning)|       Java       |  Flink 学习  
@@ -559,9 +562,19 @@ https://storage.googleapis.com/pub-tools-public-publication-data/pdf/36356.pdf| 
 [`xkcoding/spring-boot-demo` ![](https://img.shields.io/github/stars/xkcoding/spring-boot-demo.svg?style=social&label=Star)](https://github.com/xkcoding/spring-boot-demo)|spring boot 相关demo学习|    Java    
 [`digoal/blog` ![](https://img.shields.io/github/stars/digoal/blog.svg?style=social&label=Star)](https://github.com/digoal/blog)|国内postgresql大神的一些pg分享|    SQL     
 [`jackfrued/Python-100-Days` ![](https://img.shields.io/github/stars/jackfrued/Python-100-Days.svg?style=social&label=Star)](https://github.com/jackfrued/Python-100-Days)|Python - 100天从新手到大师|   python   
-[`Asabeneh/30-Days-Of-JavaScript` ![](https://img.shields.io/github/stars/Asabeneh/30-Days-Of-JavaScript.svg?style=social&label=Star)](https://github.com/Asabeneh/30-Days-Of-JavaScript)|30天学js| javaScript 
 [`MichaelCade/90DaysOfDevOps` ![](https://img.shields.io/github/stars/MichaelCade/90DaysOfDevOps.svg?style=social&label=Star)](https://github.com/MichaelCade/90DaysOfDevOps)|90天学DevOps|
 [`sorenduan/awesome-java-books` ![](https://img.shields.io/github/stars/sorenduan/awesome-java-books.svg?style=social&label=Star)](https://github.com/sorenduan/awesome-java-books)|Java 技术书籍大全|    Java    |
+
+#### rust
+ repositories |        简介        |    开发语言    |
+ :------------ |:----------------:|:----------:|
+[`mainmatter/100-exercises-to-learn-rust` ![](https://img.shields.io/github/stars/mainmatter/100-exercises-to-learn-rust.svg?style=social&label=Star)](https://github.com/mainmatter/100-exercises-to-learn-rust)|一个自学Rust的课程|rust
+
+#### js
+repositories |        简介        |    开发语言    |
+ :------------ |:----------------:|:----------:|
+[`Asabeneh/30-Days-Of-JavaScript` ![](https://img.shields.io/github/stars/Asabeneh/30-Days-Of-JavaScript.svg?style=social&label=Star)](https://github.com/Asabeneh/30-Days-Of-JavaScript)|30天学js| javaScript 
+
 
 ## 常用工具
 repositories |   简介    |
