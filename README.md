@@ -75,7 +75,8 @@
 - [绘图](#绘图)
 - [视频下载](#视频下载)
 - [监控](#监控)
-- [3D打印](#3D打印)
+- [3D模型](#3D模型)
+- [开源管理面板](#开源管理面板)
 - [未整理分类](#未整理分类)
 
 ## 工作
@@ -642,6 +643,16 @@ repositories |   简介   |开发语言|
 repositories |                   简介                    |开发语言|
  :------------ |:---------------------------------------:|:---:|
 [`Abdenasser/neohtop` ![](https://img.shields.io/github/stars/Abdenasser/neohtop.svg?style=social&label=Star)](https://github.com/Abdenasser/neohtop)| 一个现代化的、跨平台的系统监控器,构建在Svelte、Rust和Tauri之上 |Svelte、Rust
+
+## 3D模型
+repositories |                   简介                    |开发语言|
+ :------------ |:---------------------------------------:|:---:|
+[`github/gh-skyline` ![](https://img.shields.io/github/stars/github/gh-skyline.svg?style=social&label=Star)](https://github.com/github/gh-skyline)|生成GitHub贡献历史的3D模型|go
+
+## 开源管理面板
+repositories |                   简介                    |开发语言|
+ :------------ |:---------------------------------------:|:---:|
+[`vbenjs/vue-vben-admin` ![](https://img.shields.io/github/stars/vbenjs/vue-vben-admin.svg?style=social&label=Star)](https://github.com/vbenjs/vue-vben-admin)|一个现代的vue管理面板|vue
 
 ## 未整理分类
 repositories |   简介   |开发语言|
