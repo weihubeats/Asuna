@@ -557,6 +557,7 @@ https://storage.googleapis.com/pub-tools-public-publication-data/pdf/36356.pdf| 
 ### 编程语言学习
  repositories |        简介        |    开发语言    |
  :------------ |:----------------:|:----------:|
+[`AmazingAng/WTF-Solidity` ![](https://img.shields.io/github/stars/AmazingAng/WTF-Solidity.svg?style=social&label=Star)](https://github.com/AmazingAng/WTF-Solidity)|WTF Solidity 极简入门教|
 [`zhisheng17/flink-learning` ![](https://img.shields.io/github/stars/zhisheng17/flink-learning.svg?style=social&label=Star)](https://github.com/zhisheng17/flink-learning)|       Java       |  Flink 学习  
 [`Avik-Jain/100-Days-Of-ML-Code` ![](https://img.shields.io/github/stars/Avik-Jain/100-Days-Of-ML-Code.svg?style=social&label=Star)](https://github.com/Avik-Jain/100-Days-Of-ML-Code)|       机器学习       |
 [`iluwatar/java-design-patterns` ![](https://img.shields.io/github/stars/iluwatar/java-design-patterns.svg?style=social&label=Star)](https://github.com/iluwatar/java-design-patterns)|       设计模式       |    Java    
