@@ -26,6 +26,10 @@ func Execute() {
 	rootCmd.AddCommand(addTCmd())
 	rootCmd.AddCommand(addRCmd())
 
+	fmt.Printf("Welcome to the Asuna")
+	fmt.Println("Available commands:")
+	fmt.Println("addR -t 消息中间件 -r https://github.com/weihubeats/fluxcache -n 多级缓存框架 -l java")
+
 	for {
 		fmt.Print("> ")
 		scanner := bufio.NewScanner(os.Stdin)

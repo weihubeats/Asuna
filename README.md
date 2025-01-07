@@ -653,6 +653,7 @@ repositories |                   简介                    |开发语言|
 ## 开源管理面板
 repositories |                   简介                    |开发语言|
  :------------ |:---------------------------------------:|:---:|
+[`vueComponent/ant-design-vue-pro` ![](https://img.shields.io/github/stars/vueComponent/ant-design-vue-pro.svg?style=social&label=Star)](https://github.com/vueComponent/ant-design-vue-pro)|使用Ant,Design,Vue就像专业人士一样|vue
 [`vbenjs/vue-vben-admin` ![](https://img.shields.io/github/stars/vbenjs/vue-vben-admin.svg?style=social&label=Star)](https://github.com/vbenjs/vue-vben-admin)|一个现代的vue管理面板|vue
 
 ## 未整理分类
