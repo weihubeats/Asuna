@@ -181,6 +181,7 @@
 ### excel
  repositories | 简介  |
  :------------ |:---:|
+[`CodePhiliaX/fastexcel` ![](https://img.shields.io/github/stars/CodePhiliaX/fastexcel.svg?style=social&label=Star)](https://github.com/CodePhiliaX/fastexcel)|easyexcel作者最新升级版本， 快速、简洁、解决大文件内存溢出的java处理Excel工具 -l java，|java
 [`alibaba/easyexcel` ![](https://img.shields.io/github/stars/alibaba/easyexcel.svg?style=social&label=Star)](https://github.com/alibaba/easyexcel)|阿里开源快速、简洁、解决大文件内存溢出的java处理Excel工具
 [`apache/poi` ![](https://img.shields.io/github/stars/apache/poi.svg?style=social&label=Star)](https://github.com/apache/poi)|
 [`liaochong/myexcel` ![](https://img.shields.io/github/stars/liaochong/myexcel.svg?style=social&label=Star)](https://github.com/liaochong/myexcel)|集导入、导出、加密Excel等多项功能的工具包
