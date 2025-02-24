@@ -79,6 +79,7 @@
 - [开源管理面板](#开源管理面板)
 - [Docker](#Docker)
 - [markdown编辑器](#markdown编辑器)
+- [内网穿透](#内网穿透)
 - [未整理分类](#未整理分类)
 
 ## 工作
@@ -670,8 +671,13 @@ repositories |                   简介                    |开发语言|
 ## markdown编辑器
 repositories |                   简介                    |开发语言|
  :------------ |:---------------------------------------:|:---:|
-[`tianyaxiang/neurapress` ![](https://img.shields.io/github/stars/tianyaxiang/neurapress.svg?style=social&label=Star)](https://github.com/tianyaxiang/neurapress)|现代化的|TypeScript
+[`siyuan-note/siyuan` ![](https://img.shields.io/github/stars/siyuan-note/siyuan.svg?style=social&label=Star)](https://github.com/siyuan-note/siyuan)|自我托管，完全开源的个人知识管理软件|TypeScript
+[`tianyaxiang/neurapress` ![](https://img.shields.io/github/stars/tianyaxiang/neurapress.svg?style=social&label=Star)](https://github.com/tianyaxiang/neurapress)|现代化的 Markdown 编辑器|TypeScript
 
+## 内网穿透
+repositories |                   简介                    |开发语言|
+ :------------ |:---------------------------------------:|:---:|
+[`luckjiawei/frpc-desktop` ![](https://img.shields.io/github/stars/luckjiawei/frpc-desktop.svg?style=social&label=Star)](https://github.com/luckjiawei/frpc-desktop)|frp跨平台桌面客户端，可视化配置，轻松实现内网穿透|vue
 
 ## 未整理分类
 repositories |   简介   |开发语言|
