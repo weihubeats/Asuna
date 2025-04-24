@@ -80,6 +80,7 @@
 - [Docker](#Docker)
 - [markdown编辑器](#markdown编辑器)
 - [内网穿透](#内网穿透)
+- [项目管理](#项目管理)
 - [未整理分类](#未整理分类)
 
 ## 工作
@@ -661,6 +662,7 @@ repositories |                   简介                    |开发语言|
 ## 开源管理面板
 repositories |                   简介                    |开发语言|
  :------------ |:---------------------------------------:|:---:|
+[`soybeanjs/soybean-admin` ![](https://img.shields.io/github/stars/soybeanjs/soybean-admin.svg?style=social&label=Star)](https://github.com/soybeanjs/soybean-admin)|一个清新优雅,高颜值且功能强大的后台管理模板|java
 [`vueComponent/ant-design-vue-pro` ![](https://img.shields.io/github/stars/vueComponent/ant-design-vue-pro.svg?style=social&label=Star)](https://github.com/vueComponent/ant-design-vue-pro)|使用Ant,Design,Vue就像专业人士一样|vue
 [`vbenjs/vue-vben-admin` ![](https://img.shields.io/github/stars/vbenjs/vue-vben-admin.svg?style=social&label=Star)](https://github.com/vbenjs/vue-vben-admin)|一个现代的vue管理面板|vue
 
@@ -679,6 +681,11 @@ repositories |                   简介                    |开发语言|
 repositories |                   简介                    |开发语言|
  :------------ |:---------------------------------------:|:---:|
 [`luckjiawei/frpc-desktop` ![](https://img.shields.io/github/stars/luckjiawei/frpc-desktop.svg?style=social&label=Star)](https://github.com/luckjiawei/frpc-desktop)|frp跨平台桌面客户端，可视化配置，轻松实现内网穿透|vue
+
+## 项目管理
+repositories |                   简介                    |开发语言|
+ :------------ |:---------------------------------------:|:---:|
+[`Worklenz/worklenz` ![](https://img.shields.io/github/stars/Worklenz/worklenz.svg?style=social&label=Star)](https://github.com/Worklenz/worklenz)|用于高效团队的一体化项目管理工具|JS
 
 ## 未整理分类
 repositories |   简介   |开发语言|
