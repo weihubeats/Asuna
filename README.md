@@ -68,6 +68,8 @@
 - [常用工具](#常用工具)
   - [mac](#mac)
 - [微信](#微信)
+- [前端](#前端)
+  - [vue](#vue)
 - [健康](#健康)
 - [项目推荐科技周刊](#项目推荐科技周刊)
 - [程序员副业](#程序员副业)
@@ -606,6 +608,11 @@ repositories |   简介    |
 [`MustangYM/WeChatExtension-ForMac` ![](https://img.shields.io/github/stars/MustangYM/WeChatExtension-ForMac.svg?style=social&label=Star)](https://github.com/MustangYM/WeChatExtension-ForMac/tree/master)|免认证登录与微信多开,群员监控,AI回复,显示被撤回的消息,消息转发,显示小程序详情|Objective-C
 [`eatmoreapple/openwechat` ![](https://img.shields.io/github/stars/eatmoreapple/openwechat.svg?style=social&label=Star)](https://github.com/eatmoreapple/openwechat)|golang微信SDK|GO
 
+# 前端
+## vue
+ repositories |        简介        |    开发语言    |
+ :------------ |:----------------:|:----------:|
+[`KennyHito/HelloVue3` ![](https://img.shields.io/github/stars/KennyHito/HelloVue3.svg?style=social&label=Star)](https://github.com/KennyHito/HelloVue3)|尚硅谷Vue3入门到实战|vue
 
 ## 健康
 repositories |   简介    |
