@@ -1,0 +1,71 @@
+name: 从新 Issue 更新 README
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  update-readme:
+    # 仅当 Issue 带有 'new-entry' 标签时运行
+    if: |
+      github.event.action == 'opened' &&
+      contains(github.event.issue.labels.*.name, 'new-entry')
+    runs-on: ubuntu-latest-arm64
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 设置 Go 环境
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+
+      - name: 提取 Issue 数据并更新 README
+        id: update_readme_script
+        run: |
+          ISSUE_BODY="${{ github.event.issue.body }}"
+
+          # 使用正则表达式提取数据，假设模板结构
+          CATEGORY=$(echo "$ISSUE_BODY" | grep -oP '(?<=Category \(title in README.md\):\n).*' | head -1)
+          REPO_URL=$(echo "$ISSUE_BODY" | grep -oP '(?<=Repository URL:\n).*' | head -1)
+          PROJECT_NAME=$(echo "$ISSUE_BODY" | grep -oP '(?<=Project Name/Description:\n).*' | head -1)
+          LANGUAGE=$(echo "$ISSUE_BODY" | grep -oP '(?<=Language \(optional, but recommended if applicable\):\n).*' | head -1)
+
+          # 去除空格
+          CATEGORY=$(echo "$CATEGORY" | xargs)
+          REPO_URL=$(echo "$REPO_URL" | xargs)
+          PROJECT_NAME=$(echo "$PROJECT_NAME" | xargs)
+          LANGUAGE=$(echo "$LANGUAGE" | xargs)
+
+          # 为您的 Go CLI 工具准备命令
+          # 您的 CLI 工具期望 -t (title), -r (repo), -n (name), -l (label)
+          # 将 'Category' 映射到 -t，'Repo URL' 映射到 -r，'Project Name/Description' 映射到 -n
+          # 对于 '-l' (label)，您可以决定一个默认值或从 Issue 主体中提取（如果已添加到模板中）。
+          # 目前，让我们将提取到的语言作为标签，如果没有提供则为空字符串。
+          
+          # 构造您的 CLI 工具的命令
+          # 如果变量中可能包含单引号，请对其进行转义
+          COMMAND_ARGS="addR -t \"$CATEGORY\" -r \"$REPO_URL\" -n \"$PROJECT_NAME\""
+          if [ -n "$LANGUAGE" ]; then
+            COMMAND_ARGS="$COMMAND_ARGS -l \"$LANGUAGE\""
+          fi
+
+          echo "Running command: ./app $COMMAND_ARGS"
+          ./app $COMMAND_ARGS # 执行您的 Go CLI 工具
+
+          # 检查 README.md 是否已修改
+          if git diff --exit-code README.md; then
+            echo "::set-output name=readme_changed::false"
+          else
+            echo "::set-output name=readme_changed::true"
+          fi
+        shell: bash
+
+      - name: 如果 README.md 发生更改，则提交并推送
+        if: steps.update_readme_script.outputs.readme_changed == 'true'
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add README.md
+          git commit -m "Docs: Add new entry from issue #${{ github.event.issue.number }}"
+          git push
