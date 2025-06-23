@@ -18,33 +18,39 @@ func addRCmd() *cobra.Command {
 		Use:   "addR",
 		Short: "Add a new entry to README.md",
 		Run: func(cmd *cobra.Command, args []string) {
-			repoParts := strings.Split(repo, "/")
-			repoName := repoParts[3] + "/" + repoParts[4]
-			entry := fmt.Sprintf("[`%s` ![](https://img.shields.io/github/stars/%s.svg?style=social&label=Star)](%s)|%s|%s",
-				repoName, // 提取仓库名称
-				repoName, // 提取仓库名称
-				repo, name, label)
 
-			filePath := "README.md"
-			lines, err := readFile(filePath)
-			if err != nil {
-				fmt.Println("Error reading file:", err)
-				return
+			if title != "" && repo != "" && name != "" && label != "" {
+				// 非交互模式直接添加
+				addEntry(title, repo, name, label)
+			} else {
+				repoParts := strings.Split(repo, "/")
+				repoName := repoParts[3] + "/" + repoParts[4]
+				entry := fmt.Sprintf("[`%s` ![](https://img.shields.io/github/stars/%s.svg?style=social&label=Star)](%s)|%s|%s",
+					repoName, // 提取仓库名称
+					repoName, // 提取仓库名称
+					repo, name, label)
+
+				filePath := "README.md"
+				lines, err := readFile(filePath)
+				if err != nil {
+					fmt.Println("Error reading file:", err)
+					return
+				}
+
+				newLines, err := insertEntry(lines, title, entry)
+				if err != nil {
+					fmt.Println("Error inserting entry:", err)
+					return
+				}
+
+				err = writeFile(filePath, newLines)
+				if err != nil {
+					fmt.Println("Error writing file:", err)
+					return
+				}
+
+				fmt.Println("add success")
 			}
-
-			newLines, err := insertEntry(lines, title, entry)
-			if err != nil {
-				fmt.Println("Error inserting entry:", err)
-				return
-			}
-
-			err = writeFile(filePath, newLines)
-			if err != nil {
-				fmt.Println("Error writing file:", err)
-				return
-			}
-
-			fmt.Println("add success")
 		},
 	}
 	cmd.Flags().StringVarP(&title, "title", "t", "", "Title to find in README.md (prefixed with ##)")
@@ -52,4 +58,16 @@ func addRCmd() *cobra.Command {
 	cmd.Flags().StringVarP(&name, "name", "n", "", "Name of the entry")
 	cmd.Flags().StringVarP(&label, "label", "l", "", "Label of the entry")
 	return cmd
+}
+
+func addEntry(title, repo, name, label string) {
+	// 生成 Markdown 条目
+	repoPath := strings.TrimPrefix(repo, "https://github.com/")
+	entry := fmt.Sprintf("[`%s` ![](https://img.shields.io/github/stars/%s.svg?style=social&label=Star)](%s)| %s | %s |",
+		name, repoPath, repo, name, label)
+
+	// 读取和更新 README.md
+	lines, _ := readFile("README.md")
+	newLines, _ := insertEntry(lines, title, entry)
+	_ = writeFile("README.md", newLines)
 }

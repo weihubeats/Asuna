@@ -1,0 +1,52 @@
+name: Add Repository Entry
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  add-entry:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Go
+        uses: actions/setup-go@v3
+        with:
+          go-version: '1.20'
+
+      - name: Build tool
+        run: go build -o asuna-tool main.go
+
+      - name: Parse issue and add entry
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          # 提取 issue 中的参数
+          TITLE=$(echo "$ISSUE_BODY" | grep -oP 'Title:\s*\K.*')
+          REPO=$(echo "$ISSUE_BODY" | grep -oP 'Repo:\s*\K.*')
+          NAME=$(echo "$ISSUE_BODY" | grep -oP 'Name:\s*\K.*')
+          LABEL=$(echo "$ISSUE_BODY" | grep -oP 'Label:\s*\K.*')
+          
+          # 执行添加命令
+          ./asuna-tool addR -t "$TITLE" -r "$REPO" -n "$NAME" -l "$LABEL"
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add README.md
+          git commit -m "Add entry from issue #${{ github.event.issue.number }}"
+          git push
+
+      - name: Close issue
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: ${{ github.event.issue.number }},
+              state: 'closed'
+            })
