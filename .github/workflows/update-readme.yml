@@ -6,7 +6,7 @@ on:
 
 jobs:
   update-readme:
-    if: contains(github.event.issue.labels.*.name, 'new-entry')
+    if: contains(github.event.issue.labels.*.name, 'add-repo')
     runs-on: ubuntu-latest
     steps:
       - name: 检出仓库
@@ -23,7 +23,9 @@ jobs:
       - name: 提取 Issue 数据并更新 README
         id: update_readme
         run: |
-          echo '${{ github.event.issue.body }}' > issue_body.txt
+          ISSUE_BODY='${{ github.event.issue.body }}'
+          echo "$ISSUE_BODY" > issue_body.txt
+          # 使用grep -P进行更可靠的提取，并处理多行内容
           CATEGORY=$(grep -A 1 "Category (title in README.md):" issue_body.txt | tail -1 | xargs)
           REPO_URL=$(grep -A 1 "Repository URL:" issue_body.txt | tail -1 | xargs)
           PROJECT_NAME=$(grep -A 1 "Project Name/Description:" issue_body.txt | tail -1 | xargs)
@@ -46,7 +48,7 @@ jobs:
           git diff --quiet README.md || echo "readme_changed=true" >> $GITHUB_OUTPUT
         shell: bash
 
-      - name: 如果 README.md 发生更改，则提交并推送
+      - name: push
         if: steps.update_readme.outputs.readme_changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
@@ -54,3 +56,13 @@ jobs:
           git add README.md
           git commit -m "Docs: Add new entry from issue #${{ github.event.issue.number }}"
           git push
+
+      - name: close Issue
+        if: steps.update_readme.outputs.readme_changed == 'true'
+        uses: peter-evans/close-issue@v3
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          comment: |
+            该条目已成功添加到 README.md！谢谢您的贡献！
+            Entry has been successfully added to README.md! Thank you for your contribution!
+          token: ${{ secrets.GITHUB_TOKEN }}

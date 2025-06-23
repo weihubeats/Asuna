@@ -115,25 +115,25 @@ func readFile(filePath string) ([]string, error) {
 }
 
 func insertEntry(lines []string, title, entry string) ([]string, error) {
+	// 构建正则表达式，匹配任意数量的 # 后跟空格和 title
 	pattern := fmt.Sprintf(`^#+\s+%s\s*$`, regexp.QuoteMeta(title))
 	re, err := regexp.Compile(pattern)
 	if err != nil {
-		return nil, fmt.Errorf("无效的正则表达式模式: %v", err)
+		return nil, fmt.Errorf("invalid regex pattern: %v", err)
 	}
 
 	for i, line := range lines {
 		if re.MatchString(line) {
-			// 找到不是空行或表头分隔符的下一行
-			// 此逻辑可能需要根据您的确切表格结构进行更健壮的调整
-			insertIndex := i + 2 // 在标题行和标题分隔符之后开始
-			for insertIndex < len(lines) && (strings.TrimSpace(lines[insertIndex]) == "" || strings.HasPrefix(strings.TrimSpace(lines[insertIndex]), ":---:")) {
-				insertIndex++
+			// 找到目标行，在其下方第三行插入内容
+			insertIndex := i + 3
+			if insertIndex > len(lines) {
+				insertIndex = len(lines)
 			}
 			lines = append(lines[:insertIndex], append([]string{entry}, lines[insertIndex:]...)...)
 			return lines, nil
 		}
 	}
-	return nil, fmt.Errorf("未找到标题 '%s'", title)
+	return nil, fmt.Errorf("title '%s' not found", title)
 }
 
 func writeFile(filePath string, lines []string) error {
