@@ -636,6 +636,7 @@ repositories | 简介  |开发语言|
 ## chrome插件
 repositories |   简介   |开发语言|
  :------------ |:------:|:---:|
+|[`extesy/hoverzoom` ![](https://img.shields.io/github/stars/extesy/hoverzoom.svg?style=social&label=Star)](https://github.com/extesy/hoverzoom)|鼠标悬停时缩放图像|JavaScript|
 [Twitter video downloader](https://chromewebstore.google.com/detail/twitter-video-downloader/akmdionenlnfcipmdhbhcnkighafmdha)| 推特视频下载 |~
 [插件小屋](https://www.chajianxw.com/)|推荐常用的chrome插件|~
 [马大哈翻译](https://chromewebstore.google.com/detail/%E9%A9%AC%E5%A4%A7%E5%93%88%E7%BF%BB%E8%AF%91/ihipdlbkomhbfdoiiiabphiggkhmoibo)|中文阅读: 马大哈会挑选词汇替换为英文,英文阅读: 马大哈会刻意省略一些单词|~
