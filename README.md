@@ -39,6 +39,7 @@
   - [大模型](#大模型)
   - [prompt](#prompt)
   - [大模型应用](#大模型应用)
+  - [AI学习](#AI学习)
 - [网关](#网关)
 - [数据同步](#数据同步)
 - [一致性算法](#一致性算法)
@@ -360,6 +361,10 @@ repositories |                          简介                          |开发�
 [`yisol/IDM-VTON` ![](https://img.shields.io/github/stars/yisol/IDM-VTON.svg?style=social&label=Star)](https://github.com/yisol/IDM-VTON)|一键换衣项目|Python
 [myvoiceyourface](https://myvoiceyourface.com/)|AI视频换脸|~
 [character](https://character.ai/)|ai虚拟人物聊天(马斯克、动漫人物等)，支持语音聊天|~
+
+### AI学习
+repositories |                          简介                          |开发语言|
+ :------------ |:----------------------------------------------------:|:---:|
 
 ## 网关
  repositories                                                                                                                           | 简介                                           | 开发语言 |
