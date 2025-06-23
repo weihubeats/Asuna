@@ -365,6 +365,7 @@ repositories |                          简介                          |开发�
 ### AI学习
 repositories |                          简介                          |开发语言|
  :------------ |:----------------------------------------------------:|:---:|
+|[`godfanmiao/PyAI-Github-2024` ![](https://img.shields.io/github/stars/godfanmiao/PyAI-Github-2024.svg?style=social&label=Star)](https://github.com/godfanmiao/PyAI-Github-2024)|Python人工智能编程实践全书数据和开源代码|~|
 
 ## 网关
  repositories                                                                                                                           | 简介                                           | 开发语言 |
