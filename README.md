@@ -89,6 +89,7 @@
 
 ### 面试
  repositories | 简介  |
+|[`rasbt/LLMs-from-scratch` ![](https://img.shields.io/github/stars/rasbt/LLMs-from-scratch.svg?style=social&label=Star)](https://github.com/rasbt/LLMs-from-scratch)|LLM学习|python|
  :------------ |:---:|
  [`yifeikong/reverse-interview-zh` ![](https://img.shields.io/github/stars/yifeikong/reverse-interview-zh.svg?style=social&label=Star)](https://github.com/yifeikong/reverse-interview-zh)| 技术面试最后反问面试官的话  |
 [`Snailclimb/JavaGuide` ![](https://img.shields.io/github/stars/Snailclimb/JavaGuide.svg?style=social&label=Star)](https://github.com/Snailclimb/JavaGuide)|一份涵盖大部分 Java 程序员所需要掌握的核心知识。准备 Java 面试
