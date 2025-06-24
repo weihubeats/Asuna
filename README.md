@@ -39,6 +39,7 @@
   - [大模型](#大模型)
   - [prompt](#prompt)
   - [大模型应用](#大模型应用)
+  - [AI学习](#AI学习)
 - [网关](#网关)
 - [数据同步](#数据同步)
 - [一致性算法](#一致性算法)
@@ -338,6 +339,7 @@ repositories |                          简介                          |开发�
 ### 大模型
 repositories |                          简介                          |开发语言|
  :------------ |:----------------------------------------------------:|:---:|
+|[`rasbt/LLMs-from-scratch` ![](https://img.shields.io/github/stars/rasbt/LLMs-from-scratch.svg?style=social&label=Star)](https://github.com/rasbt/LLMs-from-scratch)|LLM学习|python|
 [`ollama/ollama` ![](https://img.shields.io/github/stars/ollama/ollama.svg?style=social&label=Star)](https://github.com/ollama/ollama)|启动并运行大模型|golang
 [`deepseek-ai/DeepSeek-V3` ![](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-V3.svg?style=social&label=Star)](https://github.com/deepseek-ai/DeepSeek-V3)|deepseek|python
 [`netease-youdao/QAnything?tab=readme-ov-file` ![](https://img.shields.io/github/stars/netease-youdao/QAnything?style=social&label=Star)](https://github.com/netease-youdao/QAnything?tab=readme-ov-file)|有道云开源的致力于支持任意格式文件或数据库的本地知识库问答系统，可断网安装使用。|Python
@@ -359,6 +361,11 @@ repositories |                          简介                          |开发�
 [`yisol/IDM-VTON` ![](https://img.shields.io/github/stars/yisol/IDM-VTON.svg?style=social&label=Star)](https://github.com/yisol/IDM-VTON)|一键换衣项目|Python
 [myvoiceyourface](https://myvoiceyourface.com/)|AI视频换脸|~
 [character](https://character.ai/)|ai虚拟人物聊天(马斯克、动漫人物等)，支持语音聊天|~
+
+### AI学习
+repositories |                          简介                          |开发语言|
+ :------------ |:----------------------------------------------------:|:---:|
+|[`godfanmiao/PyAI-Github-2024` ![](https://img.shields.io/github/stars/godfanmiao/PyAI-Github-2024.svg?style=social&label=Star)](https://github.com/godfanmiao/PyAI-Github-2024)|Python人工智能编程实践全书数据和开源代码|~|
 
 ## 网关
  repositories                                                                                                                           | 简介                                           | 开发语言 |
@@ -635,6 +642,7 @@ repositories | 简介  |开发语言|
 ## chrome插件
 repositories |   简介   |开发语言|
  :------------ |:------:|:---:|
+|[`extesy/hoverzoom` ![](https://img.shields.io/github/stars/extesy/hoverzoom.svg?style=social&label=Star)](https://github.com/extesy/hoverzoom)|鼠标悬停时缩放图像|JavaScript|
 [Twitter video downloader](https://chromewebstore.google.com/detail/twitter-video-downloader/akmdionenlnfcipmdhbhcnkighafmdha)| 推特视频下载 |~
 [插件小屋](https://www.chajianxw.com/)|推荐常用的chrome插件|~
 [马大哈翻译](https://chromewebstore.google.com/detail/%E9%A9%AC%E5%A4%A7%E5%93%88%E7%BF%BB%E8%AF%91/ihipdlbkomhbfdoiiiabphiggkhmoibo)|中文阅读: 马大哈会挑选词汇替换为英文,英文阅读: 马大哈会刻意省略一些单词|~
