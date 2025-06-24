@@ -25,7 +25,6 @@ jobs:
         run: |
           ISSUE_BODY='${{ github.event.issue.body }}'
           echo "$ISSUE_BODY" > issue_body.txt
-          # 使用grep -P进行更可靠的提取，并处理多行内容
           CATEGORY=$(grep -A 1 "Category (title in README.md):" issue_body.txt | tail -1 | xargs)
           REPO_URL=$(grep -A 1 "Repository URL:" issue_body.txt | tail -1 | xargs)
           PROJECT_NAME=$(grep -A 1 "Project Name/Description:" issue_body.txt | tail -1 | xargs)
@@ -38,7 +37,6 @@ jobs:
           echo "仓库URL: $REPO_URL"
           echo "项目名称: $PROJECT_NAME"
           echo "语言: $LANGUAGE"
-          # 直接用 go run 执行
           if [ -n "$LANGUAGE" ]; then
             go run main.go addR -t "$CATEGORY" -r "$REPO_URL" -n "$PROJECT_NAME" -l "$LANGUAGE"
           else

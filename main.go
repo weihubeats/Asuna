@@ -40,13 +40,12 @@ func Execute() {
 	}
 }
 
-// addRCmd 函数（假设这是您添加仓库的命令）
 func addRCmd() *cobra.Command {
 	addR := &cobra.Command{
 		Use:   "addR",
 		Short: "向 README.md 添加新的仓库条目",
 		Run: func(cmd *cobra.Command, args []string) {
-			filePath := "README.md" // 确保此路径相对于 GitHub Action 的工作目录是正确的
+			filePath := "README.md"
 
 			lines, err := readFile(filePath)
 			if err != nil {
