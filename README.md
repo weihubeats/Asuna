@@ -275,6 +275,7 @@ repositories |   简介   |开发语言|
 ### 缓存
 repositories |      简介       |
 | :------------ |:-------------:|
+|[`weihubeats/fluxcache` ![](https://img.shields.io/github/stars/weihubeats/fluxcache.svg?style=social&languages=Star)](https://github.com/weihubeats/fluxcache)|多级缓存框架|Java|
 [`xiaolyuh/layering-cache` ![](https://img.shields.io/github/stars/xiaolyuh/layering-cache.svg?style=social&label=Star)](https://github.com/xiaolyuh/layering-cache) |为监控而生的分布式多级缓存框架|
 [`ck-jesse/l2cache` ![](https://img.shields.io/github/stars/ck-jesse/l2cache.svg?style=social&label=Star)](https://github.com/ck-jesse/l2cache) |基于 Caffeine + Redis 的二级缓存框架|
 [`alibaba/jetcache` ![](https://img.shields.io/github/stars/alibaba/jetcache.svg?style=social&label=Star)](https://github.com/alibaba/jetcache)| 阿里开源的多级缓存框架

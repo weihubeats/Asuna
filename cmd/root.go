@@ -6,44 +6,33 @@ import (
 	"github.com/spf13/cobra"
 	"os"
 	"regexp"
-	"strings"
 )
 
 var (
-	title string
-	repo  string
-	name  string
-	label string
+	title     string
+	repo      string
+	name      string
+	languages string
+	fileName  string
 )
 
 var rootCmd = &cobra.Command{
 	Use:   "app",
 	Short: "A CLI tool to manage README.md",
+	Run: func(cmd *cobra.Command, args []string) {
+		if len(args) == 0 {
+			cmd.Help()
+			return
+		}
+	},
 }
 
 func Execute() {
-
 	rootCmd.AddCommand(addTCmd())
 	rootCmd.AddCommand(addRCmd())
-
-	fmt.Printf("Welcome to the Asuna")
-	fmt.Println("Available commands:")
-	fmt.Println("addR -t 消息中间件 -r https://github.com/weihubeats/fluxcache -n 多级缓存框架 -l java")
-
-	for {
-		fmt.Print("> ")
-		scanner := bufio.NewScanner(os.Stdin)
-		if scanner.Scan() {
-			input := scanner.Text()
-			if input == "exit" {
-				break
-			}
-
-			rootCmd.SetArgs(strings.Fields(input))
-			if err := rootCmd.Execute(); err != nil {
-				fmt.Println("Error:", err)
-			}
-		}
+	if err := rootCmd.Execute(); err != nil {
+		fmt.Fprintf(os.Stderr, "错误: %v\n", err)
+		os.Exit(1)
 	}
 }
 
