@@ -613,6 +613,7 @@ repositories |   简介    |
 ## 微信
  repositories |        简介        |    开发语言    |
  :------------ |:----------------:|:----------:|
+|[`sjzar/chatlog` ![](https://img.shields.io/github/stars/sjzar/chatlog.svg?style=social&languages=Star)](https://github.com/sjzar/chatlog)|轻松使用自己的微信聊天数据|GO|
 [`MustangYM/WeChatExtension-ForMac` ![](https://img.shields.io/github/stars/MustangYM/WeChatExtension-ForMac.svg?style=social&label=Star)](https://github.com/MustangYM/WeChatExtension-ForMac/tree/master)|免认证登录与微信多开,群员监控,AI回复,显示被撤回的消息,消息转发,显示小程序详情|Objective-C
 [`eatmoreapple/openwechat` ![](https://img.shields.io/github/stars/eatmoreapple/openwechat.svg?style=social&label=Star)](https://github.com/eatmoreapple/openwechat)|golang微信SDK|GO
 
