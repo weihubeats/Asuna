@@ -608,6 +608,7 @@ repositories |   简介    |
 ### mac
  repositories | 简介  |
  :------------ |:---:|
+|[`lihaoyun6/QuickRecorder` ![](https://img.shields.io/github/stars/lihaoyun6/QuickRecorder.svg?style=social&languages=Star)](https://github.com/lihaoyun6/QuickRecorder)|轻量化多功能 macOS 录屏工具|Swift|
 [`jaywcjlove/awesome-mac` ![](https://img.shields.io/github/stars/jaywcjlove/awesome-mac.svg?style=social&label=Star)](https://github.com/jaywcjlove/awesome-mac)|mac软件推荐合集，什么软件都有
 
 ## 微信
