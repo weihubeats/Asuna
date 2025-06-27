@@ -418,6 +418,7 @@ repositories |                                                                  
 ## 消息中间件
  repositories | 简介               |开发语言 |
 :---------------------------------------------------------------------------------------------------------------------------------------|:-----------------|:----:|
+|[`robustmq/robustmq` ![](https://img.shields.io/github/stars/robustmq/robustmq.svg?style=social&languages=Star)](https://github.com/robustmq/robustmq)|下一代高性能云原生融合消息队列，兼容多种主流消息队列协议，具有完整的无服务功能|Rust|
 [`AutoMQ/automq` ![](https://img.shields.io/github/stars/AutoMQ/automq.svg?style=social&label=Star)](https://github.com/AutoMQ/automq)|基于云原生重新设计Kafka|java
 [`AutoMQ/automq-for-rocketmq` ![](https://img.shields.io/github/stars/AutoMQ/automq-for-rocketmq.svg?style=social&label=Star)](https://github.com/AutoMQ/automq-for-rocketmq)|基于云原生重新设计RocketMQ|java
 [`apache/rocketmq` ![](https://img.shields.io/github/stars/apache/rocketmq.svg?style=social&label=Star)](https://github.com/apache/rocketmq)| 阿里开源消息中间件|Java        
