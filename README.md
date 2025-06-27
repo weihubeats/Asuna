@@ -372,6 +372,7 @@ repositories |                          简介                          |开发�
 ## 网关
  repositories                                                                                                                           | 简介                                           | 开发语言 |
 :---------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------|:----:|
+|[`labring/aiproxy` ![](https://img.shields.io/github/stars/labring/aiproxy.svg?style=social&languages=Star)](https://github.com/labring/aiproxy)|使用OpenAI协议作为入口点的高性能AI网关|GO|
  [`apache/shenyu` ![](https://img.shields.io/github/stars/apache/shenyu.svg?style=social&label=Star)](https://github.com/apache/shenyu) | Java 原生API网关,用于服务代理、协议转换和API治理               | Java
  [`Netflix/zuul` ![](https://img.shields.io/github/stars/Netflix/zuul.svg?style=social&label=Star)](https://github.com/Netflix/zuul)    | Netflix开源的网关                                 |Java
 [`spring-cloud/spring-cloud-gateway` ![](https://img.shields.io/github/stars/spring-cloud/spring-cloud-gateway.svg?style=social&label=Star)](https://github.com/spring-cloud/spring-cloud-gateway)| spring 开源的高性能网关                              |Java
