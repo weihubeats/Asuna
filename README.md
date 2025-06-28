@@ -454,6 +454,7 @@ repositories | 简介  |开发语言|
 ## 自建博客
  repositories | 简介  |开发语言|
  :------------ |:---:|:---:|
+|[`jackyzha0/quartz` ![](https://img.shields.io/github/stars/jackyzha0/quartz.svg?style=social&languages=Star)](https://github.com/jackyzha0/quartz)|Markdown内容转换为功能齐全的网站|TypeScript|
 [`uxiaohan/vhAstro-Theme` ![](https://img.shields.io/github/stars/uxiaohan/vhAstro-Theme.svg?style=social&label=Star)](https://github.com/uxiaohan/vhAstro-Theme)|一款基于Astro构建的优雅的响应式博客主题|Less
 [`MaxGripe/skunk-html` ![](https://img.shields.io/github/stars/MaxGripe/skunk-html.svg?style=social&label=Star)](https://github.com/MaxGripe/skunk-html)|使用GitHub|F#
 [`halo-dev/halo` ![](https://img.shields.io/github/stars/halo-dev/halo.svg?style=social&label=Star)](https://github.com/halo-dev/halo)|一款现代化的开源博客|Java
