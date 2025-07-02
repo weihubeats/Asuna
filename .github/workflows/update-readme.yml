@@ -52,7 +52,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "Docs: Add new entry from issue #${{ github.event.issue.number }}"
+          git commit -m "Docs: Add new repository from issue #${{ github.event.issue.number }}"
           git push
 
       - name: close Issue
@@ -61,6 +61,5 @@ jobs:
         with:
           issue-number: ${{ github.event.issue.number }}
           comment: |
-            该条目已成功添加到 README.md！谢谢您的贡献！
-            Entry has been successfully added to README.md! Thank you for your contribution!
+            repository has been successfully added to README.md! Thank you for your contribution!
           token: ${{ secrets.GITHUB_TOKEN }}
