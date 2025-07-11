@@ -716,6 +716,7 @@ repositories |                   简介                    |开发语言|
 ## PDF
 repositories |                   简介                    |开发语言|
  :------------ |:---------------------------------------:|:---:|
+|[`Byaidu/PDFMathTranslate` ![](https://img.shields.io/github/stars/Byaidu/PDFMathTranslate.svg?style=social&languages=Star)](https://github.com/Byaidu/PDFMathTranslate)|基于 AI 完整保留排版的 PDF 文档全文双语翻译|Python|
 
 ## 未整理分类
 repositories |   简介   |开发语言|
