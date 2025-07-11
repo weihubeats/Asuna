@@ -360,6 +360,7 @@ repositories |                          简介                          |开发�
 ### 大模型应用
 repositories |                          简介                          |开发语言|
  :------------ |:----------------------------------------------------:|:---:|
+|[`langgenius/dify` ![](https://img.shields.io/github/stars/langgenius/dify.svg?style=social&languages=Star)](https://github.com/langgenius/dify)|用于代理工作流开发的生产就绪平台。|TypeScript|
 |[`google-gemini/gemini-cli` ![](https://img.shields.io/github/stars/google-gemini/gemini-cli.svg?style=social&languages=Star)](https://github.com/google-gemini/gemini-cli)|将Gemini的强大功能直接带入您的终端|TypeScript|
 [`yisol/IDM-VTON` ![](https://img.shields.io/github/stars/yisol/IDM-VTON.svg?style=social&label=Star)](https://github.com/yisol/IDM-VTON)|一键换衣项目|Python
 [myvoiceyourface](https://myvoiceyourface.com/)|AI视频换脸|~
