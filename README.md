@@ -529,6 +529,7 @@ repositories | 简介  |开发语言|
 ## 爬虫
 repositories |              简介               |开发语言|
  :------------ |:-----------------------------:|:---:|
+|[`NanmiCoder/MediaCrawler` ![](https://img.shields.io/github/stars/NanmiCoder/MediaCrawler.svg?style=social&languages=Star)](https://github.com/NanmiCoder/MediaCrawler)|小红书抖音等主流短视频社交平台爬虫|Python|
 [`ssssssss-team/spider-flow` ![](https://img.shields.io/github/stars/ssssssss-team/spider-flow.svg?style=social&label=Star)](https://github.com/ssssssss-team/spider-flow)|新一代爬虫平台，以图形化方式定义爬虫流程，不写代码即可完成爬虫|Java
 [`jhao104/proxy_pool` ![](https://img.shields.io/github/stars/jhao104/proxy_pool.svg?style=social&label=Star)](https://github.com/jhao104/proxy_pool)|   Python爬虫代理IP池(proxy pool)   |Java
 [`code4craft/webmagic` ![](https://img.shields.io/github/stars/code4craft/webmagic.svg?style=social&label=Star)](https://github.com/code4craft/webmagic)|      一个可伸缩的 Java 网络爬虫框架       |java
