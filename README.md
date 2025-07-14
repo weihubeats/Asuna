@@ -457,6 +457,7 @@ repositories | 简介  |开发语言|
 ## API
 repositories | 简介  |开发语言|
  :------------ |:---:|:---:|
+|[`hoppscotch/hoppscotch` ![](https://img.shields.io/github/stars/hoppscotch/hoppscotch.svg?style=social&languages=Star)](https://github.com/hoppscotch/hoppscotch)|Postman的开源替代品|TypeScript|
 
 ## 自建博客
  repositories | 简介  |开发语言|
