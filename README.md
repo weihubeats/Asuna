@@ -327,6 +327,7 @@ repositories |                          简介                          |开发�
 ### AI-Agent
 repositories |                          简介                          |开发语言|
  :------------ |:----------------------------------------------------:|:---:|
+|[`FoundationAgents/MetaGPT` ![](https://img.shields.io/github/stars/FoundationAgents/MetaGPT.svg?style=social&languages=Star)](https://github.com/FoundationAgents/MetaGPT)|多智能体框架|Python|
 
 ### ChatGPT
 repositories |                          简介                          |开发语言|
