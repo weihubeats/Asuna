@@ -87,6 +87,7 @@
 - [内网穿透](#内网穿透)
 - [项目管理](#项目管理)
 - [PDF](#PDF)
+- [邮件](#邮件)
 - [未整理分类](#未整理分类)
 
 ## 工作
@@ -731,6 +732,10 @@ repositories |                   简介                    |开发语言|
 repositories |                   简介                    |开发语言|
  :------------ |:---------------------------------------:|:---:|
 |[`Byaidu/PDFMathTranslate` ![](https://img.shields.io/github/stars/Byaidu/PDFMathTranslate.svg?style=social&languages=Star)](https://github.com/Byaidu/PDFMathTranslate)|基于 AI 完整保留排版的 PDF 文档全文双语翻译|Python|
+
+## 邮件
+repositories |                   简介                    |开发语言|
+ :------------ |:---------------------------------------:|:---:|
 
 ## 未整理分类
 repositories |   简介   |开发语言|
