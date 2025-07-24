@@ -736,6 +736,7 @@ repositories |                   简介                    |开发语言|
 ## 邮件
 repositories |                   简介                    |开发语言|
  :------------ |:---------------------------------------:|:---:|
+|[`aaPanel/BillionMail` ![](https://img.shields.io/github/stars/aaPanel/BillionMail.svg?style=social&languages=Star)](https://github.com/aaPanel/BillionMail)|电子邮件营销-完全自托管，开发人员友好|Go|
 
 ## 未整理分类
 repositories |   简介   |开发语言|
