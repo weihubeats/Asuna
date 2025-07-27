@@ -731,6 +731,7 @@ repositories |                   简介                    |开发语言|
 ## PDF
 repositories |                   简介                    |开发语言|
  :------------ |:---------------------------------------:|:---:|
+|[`MarkPDFdown/markpdfdown` ![](https://img.shields.io/github/stars/MarkPDFdown/markpdfdown.svg?style=social&languages=Star)](https://github.com/MarkPDFdown/markpdfdown)|一款基于大模型视觉识别的高质量PDF转Markdown工具||
 |[`Byaidu/PDFMathTranslate` ![](https://img.shields.io/github/stars/Byaidu/PDFMathTranslate.svg?style=social&languages=Star)](https://github.com/Byaidu/PDFMathTranslate)|基于 AI 完整保留排版的 PDF 文档全文双语翻译|Python|
 
 ## 邮件
