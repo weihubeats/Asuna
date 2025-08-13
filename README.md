@@ -693,6 +693,7 @@ repositories |   简介   |开发语言|
 ## 监控
 repositories |                   简介                    |开发语言|
  :------------ |:---------------------------------------:|:---:|
+|[`openobserve/openobserve` ![](https://img.shields.io/github/stars/openobserve/openobserve.svg?style=social&languages=Star)](https://github.com/openobserve/openobserve)|简单10倍、存储成本降低140倍、高性能、可扩展至100PB- Elasticsearch/Splunk/Datadog替代方案|Rust|
 [`Abdenasser/neohtop` ![](https://img.shields.io/github/stars/Abdenasser/neohtop.svg?style=social&label=Star)](https://github.com/Abdenasser/neohtop)| 一个现代化的、跨平台的系统监控器,构建在Svelte、Rust和Tauri之上 |Svelte、Rust
 
 ## 3D模型
