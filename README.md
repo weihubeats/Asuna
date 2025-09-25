@@ -43,6 +43,7 @@
   - [AI学习](#AI学习)
 - [网关](#网关)
 - [数据同步](#数据同步)
+- [分布式系统](#分布式系统)
 - [一致性算法](#一致性算法)
 - [分布式事务](#分布式事务)
 - [消息中间件](#消息中间件)
@@ -407,6 +408,11 @@ repositories |                                                        简介    
 [`apache/inlong` ![](https://img.shields.io/github/stars/apache/inlong.svg?style=social&label=Star)](https://github.com/apache/inlong)|                       一站式海量数据集成框架提供自动、安全、可靠和高性能的数据传输能力，同时支持批和流，方便业务构建基于流式的数据分析、建模和应用                        |
 [`apache/incubator-seatunnel` ![](https://img.shields.io/github/stars/apache/incubator-seatunnel.svg?style=social&label=Star)](https://github.com/apache/incubator-seatunnel)|                                       一个分布式、高性能的数据集成平台，用于同步和转换海量数据(离线和实时)                                        |
 [`ghi/dbsyncer` ![](https://gitee.com/ghi/dbsyncer/badge/star.svg?theme=gray)](https://gitee.com/ghi/dbsyncer)    | 提供MySQL、Oracle、SqlServer、PostgreSQL、Elasticsearch(ES)、Kafka、File、SQL等同步场景。支持上传插件自定义同步转换业务，提供监控全量和增量数据统计图、应用性能预警等 |
+
+## 分布式系统
+repositories |                                                                                                 简介                                                                                                 |开发语言|
+ :------------ |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---:|
+
 
 ## 一致性算法
 repositories |                                                                                                 简介                                                                                                 |开发语言|
