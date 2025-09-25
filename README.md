@@ -418,6 +418,7 @@ repositories |                                                                  
 ## 一致性算法
 repositories |                                                                                                 简介                                                                                                 |开发语言|
  :------------ |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---:|
+|[`raft/raft.github.io` ![](https://img.shields.io/github/stars/raft/raft.github.io.svg?style=social&languages=Star)](https://github.com/raft/raft.github.io)|Raft website|HTML|
 [`hashicorp/raft` ![](https://img.shields.io/github/stars/hashicorp/raft.svg?style=social&label=Star)](https://github.com/hashicorp/raft)|Golang实现Raft共识协议|GO
 [`etcd-io/raft` ![](https://img.shields.io/github/stars/etcd-io/raft.svg?style=social&label=Star)](https://github.com/etcd-io/raft)|etcd使用的raft库|GO
 [`sofastack/sofa-jraft` ![](https://img.shields.io/github/stars/sofastack/sofa-jraft.svg?style=social&label=Star)](https://github.com/sofastack/sofa-jraft)| SOFAJRaft是一个基于 RAFT一致性算法的生产级高性能Java 实现支持 MULTI-RAFT-GROUP，适用于高负载低延迟的场景 使用 SOFAJRaft 你可以专注于自己的业务领域，由 SOFAJRaft 负责处理所有与 RAFT 相关的技术难题，并且 SOFAJRaft 非常易于使用你可以通过几个示例在很短的时间内掌握它 |Java
