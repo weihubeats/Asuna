@@ -412,6 +412,7 @@ repositories |                                                        简介    
 ## 分布式系统
 repositories |                                                                                                 简介                                                                                                 |开发语言|
  :------------ |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---:|
+|[`theanalyst/awesome-distributed-systems?tab=readme-ov-file` ![](https://img.shields.io/github/stars/theanalyst/awesome-distributed-systems?tab=readme-ov-file.svg?style=social&languages=Star)](https://github.com/theanalyst/awesome-distributed-systems?tab=readme-ov-file)|了解分布式系统的精选列表|~|
 
 
 ## 一致性算法
