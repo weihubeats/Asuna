@@ -377,6 +377,7 @@ repositories |                          简介                          |开发�
 ### AI学习
 repositories |                          简介                          |开发语言|
  :------------ |:----------------------------------------------------:|:---:|
+|[`Microsoft/AI-For-Beginners` ![](https://img.shields.io/github/stars/Microsoft/AI-For-Beginners.svg?style=social&languages=Star)](https://github.com/Microsoft/AI-For-Beginners)|12周，24节课，AI为所有人|Jupyter Notebook|
 |[`datawhalechina/happy-llm` ![](https://img.shields.io/github/stars/datawhalechina/happy-llm.svg?style=social&languages=Star)](https://github.com/datawhalechina/happy-llm)|从零开始的大语言模型原理与实践教程|~|
 |[`godfanmiao/PyAI-Github-2024` ![](https://img.shields.io/github/stars/godfanmiao/PyAI-Github-2024.svg?style=social&label=Star)](https://github.com/godfanmiao/PyAI-Github-2024)|Python人工智能编程实践全书数据和开源代码|~|
 
