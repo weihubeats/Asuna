@@ -675,6 +675,7 @@ repositories |   简介   |开发语言|
 ## 绘图
 repositories |   简介   |开发语言|
  :------------ |:------:|:---:|
+|[`mermaid-js/mermaid` ![](https://img.shields.io/github/stars/mermaid-js/mermaid.svg?style=social&languages=Star)](https://github.com/mermaid-js/mermaid)|通过解析类 Markdown 的文本语法来实现图表的创建和动态修改|TypeScript|
 [`excalidraw/excalidraw` ![](https://img.shields.io/github/stars/excalidraw/excalidraw.svg?style=social&label=Star)](https://github.com/excalidraw/excalidraw)|用于绘制手绘图的虚拟白板|TypeScript
 
 ## 视频下载
