@@ -174,6 +174,7 @@
 ### ORM框架
  repositories | 简介  |
  :------------ |:---:|
+|[`mybatis-flex/mybatis-flex` ![](https://img.shields.io/github/stars/mybatis-flex/mybatis-flex.svg?style=social&languages=Star)](https://github.com/mybatis-flex/mybatis-flex)|一个优雅的 MyBatis 增强框架|Java|
 [`spring-projects/spring-data-jpa` ![](https://img.shields.io/github/stars/spring-projects/spring-data-jpa.svg?style=social&label=Star)](https://github.com/spring-projects/spring-data-jpa)|通过方法名方式映射sql
 [`mybatis/mybatis-3` ![](https://img.shields.io/github/stars/mybatis/mybatis-3.svg?style=social&label=Star)](https://github.com/mybatis/mybatis-3)|
 [`baomidou/mybatis-plus` ![](https://img.shields.io/github/stars/baomidou/mybatis-plus.svg?style=social&label=Star)](https://github.com/baomidou/mybatis-plus)|mybatis单表无需写sql
