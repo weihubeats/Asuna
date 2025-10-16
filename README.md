@@ -476,6 +476,7 @@ repositories | 简介  |开发语言|
 ## API
 repositories | 简介  |开发语言|
  :------------ |:---:|:---:|
+|[`usebruno/bruno` ![](https://img.shields.io/github/stars/usebruno/bruno.svg?style=social&languages=Star)](https://github.com/usebruno/bruno)|Postman/Incubator的轻量级替代品,支持离线|JavaScript|
 |[`hoppscotch/hoppscotch` ![](https://img.shields.io/github/stars/hoppscotch/hoppscotch.svg?style=social&languages=Star)](https://github.com/hoppscotch/hoppscotch)|Postman的开源替代品|TypeScript|
 
 ## 自建博客
