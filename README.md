@@ -476,6 +476,7 @@ repositories | 简介  |开发语言|
 ## API
 repositories | 简介  |开发语言|
  :------------ |:---:|:---:|
+|[`mountain-loop/yaak` ![](https://img.shields.io/github/stars/mountain-loop/yaak.svg?style=social&languages=Star)](https://github.com/mountain-loop/yaak)|Yaak 是一款离线优先的 API 客户端，旨在为您提供所需的一切，同时又不打扰您的工作。快速、轻量且私密。也不受云平台锁定。|TypeScrpit|
 |[`usebruno/bruno` ![](https://img.shields.io/github/stars/usebruno/bruno.svg?style=social&languages=Star)](https://github.com/usebruno/bruno)|Postman/Incubator的轻量级替代品,支持离线|JavaScript|
 |[`hoppscotch/hoppscotch` ![](https://img.shields.io/github/stars/hoppscotch/hoppscotch.svg?style=social&languages=Star)](https://github.com/hoppscotch/hoppscotch)|Postman的开源替代品|TypeScript|
 
