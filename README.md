@@ -304,6 +304,7 @@ repositories | 简介  |
 ### maven插件
 repositories | 简介  |
 | :------------ |:---:|
+|[`ASSERT-KTH/depclean` ![](https://img.shields.io/github/stars/ASSERT-KTH/depclean.svg?style=social&languages=Star)](https://github.com/ASSERT-KTH/depclean)|自动检测并删除Maven项目中未使用的依赖项|Java|
 [`diffplug/spotless` ![](https://img.shields.io/github/stars/diffplug/spotless.svg?style=social&label=Star)](https://github.com/diffplug/spotless)|自己校验并格式化代码
 
 ### 代码扫描
