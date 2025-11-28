@@ -534,6 +534,7 @@ repositories |  简介   |开发语言|
 ## redis客户端工具
 repositories |      简介      |
 | :------------ |:------------:|
+|[`tiny-craft/tiny-rdm` ![](https://img.shields.io/github/stars/tiny-craft/tiny-rdm.svg?style=social&languages=Star)](https://github.com/tiny-craft/tiny-rdm)|Redis Desktop Manager|Vue GoLang|
 [`RedisInsight/RedisInsight` ![](https://img.shields.io/github/stars/RedisInsight/RedisInsight.svg?style=social&label=Star)](https://github.com/RedisInsight/RedisInsight)| redis官方客户端工具 |
 [`qishibo/AnotherRedisDesktopManager` ![](https://img.shields.io/github/stars/qishibo/AnotherRedisDesktopManager.svg?style=social&label=Star)](https://github.com/qishibo/AnotherRedisDesktopManager)|一个更快、更好、更稳定的redis桌面管理器|
 [`dromara/RedisFront` ![](https://img.shields.io/github/stars/dromara/RedisFront.svg?style=social&label=Star)](https://github.com/dromara/RedisFront)|Redis 桌面客户端工具, 支持单机模式, 集群模式, 哨兵模式以及 SSH 隧道连接|
