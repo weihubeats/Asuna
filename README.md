@@ -762,3 +762,6 @@ repositories |   简介   |开发语言|
 [`gkd-kit/gkd` ![](https://img.shields.io/github/stars/gkd-kit/gkd.svg?style=social&label=Star)](https://github.com/gkd-kit/gkd)|开屏广告自动跳过|kotlin
 [`hagezi/dns-blocklists` ![](https://img.shields.io/github/stars/hagezi/dns-blocklists.svg?style=social&label=Star)](https://github.com/hagezi/dns-blocklists)|DNS-阻止列表,为了更好的互联网-保持互联网清洁|Text
 [`GuoXiCheng/SKIP` ![](https://img.shields.io/github/stars/GuoXiCheng/SKIP.svg?style=social&label=Star)](https://github.com/GuoXiCheng/SKIP)|自动跳过APP开屏广告|Kotlin
+
+
+⬆️ | [Go to Top](#table-of-contents)
