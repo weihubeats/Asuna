@@ -764,4 +764,4 @@ repositories |   简介   |开发语言|
 [`GuoXiCheng/SKIP` ![](https://img.shields.io/github/stars/GuoXiCheng/SKIP.svg?style=social&label=Star)](https://github.com/GuoXiCheng/SKIP)|自动跳过APP开屏广告|Kotlin
 
 
-⬆️ | [Go to Top](#table-of-contents)
+⬆️ | [Go to Top](#目录)
