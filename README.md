@@ -310,6 +310,7 @@ repositories | 简介  |
 ### 代码扫描
 repositories | 简介  |
 | :------------ |:---:|
+|[`Done-0/fuck-u-code` ![](https://img.shields.io/github/stars/Done-0/fuck-u-code.svg?style=social&languages=Star)](https://github.com/Done-0/fuck-u-code)|屎山代码检测器，评估代码的“屎山等级”并输出美观的报告|GO|
 [`pmd/pmd` ![](https://img.shields.io/github/stars/pmd/pmd.svg?style=social&label=Star)](https://github.com/pmd/pmd)|一个可扩展的多语言静态代码分析器。
 [`SonarSource/sonarqube` ![](https://img.shields.io/github/stars/SonarSource/sonarqube.svg?style=social&label=Star)](https://github.com/SonarSource/sonarqube)|SonarQube是一个开源的代码质量管理平台，用于管理源代码的质量。SonarQube平台提供了一个中央服务器，用于展示源代码的质量状况和各种分析结果。
 
