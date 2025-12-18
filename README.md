@@ -645,6 +645,7 @@ repositories |   简介    |
 ### mac
  repositories | 简介  |
  :------------ |:---:|
+|[`productdevbook/port-killer` ![](https://img.shields.io/github/stars/productdevbook/port-killer.svg?style=social&languages=Star)](https://github.com/productdevbook/port-killer)|原生macOS菜单栏应用程序，用于查找和杀死打开端口上的进程|Swift|
 |[`p0deje/Maccy` ![](https://img.shields.io/github/stars/p0deje/Maccy.svg?style=social&languages=Star)](https://github.com/p0deje/Maccy)|适用于 macOS 的轻量级剪贴板管理器|Swift|
 |[`tw93/Mole` ![](https://img.shields.io/github/stars/tw93/Mole.svg?style=social&languages=Star)](https://github.com/tw93/Mole)|像鼹鼠一样深入挖掘来清理你的 Mac|Shell|
 |[`KrishKrosh/TrackWeight` ![](https://img.shields.io/github/stars/KrishKrosh/TrackWeight.svg?style=social&languages=Star)](https://github.com/KrishKrosh/TrackWeight)|将Mac触控板用作体重秤|Swift|
