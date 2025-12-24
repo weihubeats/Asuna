@@ -588,6 +588,7 @@ repositories |                                                                  
 ## 安全
 repositories |    简介     |
 | :------------ |:---------:|
+|[`cybermaxluo/AI-ESA` ![](https://img.shields.io/github/stars/cybermaxluo/AI-ESA.svg?style=social&languages=Star)](https://github.com/cybermaxluo/AI-ESA)|AI驱动的企业安全建设实战，覆盖安全架构设计、方法论框架与工程实践，系统化提出 AISecOps 方法论框架，将 AI 能力深度融入企业安全体系|~|
 
 ## 文档
 repositories |    简介     |
