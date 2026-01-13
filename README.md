@@ -692,6 +692,7 @@ repositories | 简介  |开发语言|
 ## chrome插件
 repositories |   简介   |开发语言|
  :------------ |:------:|:---:|
+|[`EnixCoda/Gitako` ![](https://img.shields.io/github/stars/EnixCoda/Gitako.svg?style=social&languages=Star)](https://github.com/EnixCoda/Gitako)|Chrome、Firefox和Edge上GitHub的文件树扩展|TypeScript|
 |[`extesy/hoverzoom` ![](https://img.shields.io/github/stars/extesy/hoverzoom.svg?style=social&label=Star)](https://github.com/extesy/hoverzoom)|鼠标悬停时缩放图像|JavaScript|
 [Twitter video downloader](https://chromewebstore.google.com/detail/twitter-video-downloader/akmdionenlnfcipmdhbhcnkighafmdha)| 推特视频下载 |~
 [插件小屋](https://www.chajianxw.com/)|推荐常用的chrome插件|~
