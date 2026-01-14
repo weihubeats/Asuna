@@ -589,6 +589,7 @@ repositories |                                                                  
 ## 安全
 repositories |    简介     |
 | :------------ |:---------:|
+|[`keepassxreboot/keepassxc` ![](https://img.shields.io/github/stars/keepassxreboot/keepassxc.svg?style=social&languages=Star)](https://github.com/keepassxreboot/keepassxc)|KeePassXC是一个现代，安全和开源的密码管理器，可存储和管理您最敏感的信息|C++|
 |[`cybermaxluo/AI-ESA` ![](https://img.shields.io/github/stars/cybermaxluo/AI-ESA.svg?style=social&languages=Star)](https://github.com/cybermaxluo/AI-ESA)|AI驱动的企业安全建设实战，覆盖安全架构设计、方法论框架与工程实践，系统化提出 AISecOps 方法论框架，将 AI 能力深度融入企业安全体系|~|
 
 ## 文档
