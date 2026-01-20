@@ -474,6 +474,7 @@ repositories |                                                                  
 ## 测试
 repositories | 简介  |开发语言|
  :------------ |:---:|:---:|
+|[`link1st/go-stress-testing` ![](https://img.shields.io/github/stars/link1st/go-stress-testing.svg?style=social&languages=Star)](https://github.com/link1st/go-stress-testing)|go 实现的压测工具|Go|
 |[`metersphere/metersphere` ![](https://img.shields.io/github/stars/http://github.com/metersphere/metersphere.svg?style=social&languages=Star)](http://github.com/metersphere/metersphere)|开源持续测试工具，内置 AI 助手，让软件测试工作更简单、更高效|Java|
 [`datafaker-net/datafaker` ![](https://img.shields.io/github/stars/datafaker-net/datafaker.svg?style=social&label=Star)](https://github.com/datafaker-net/datafaker)|生成测试数据|Java
 
