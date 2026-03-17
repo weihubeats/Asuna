@@ -500,6 +500,7 @@ repositories | 简介  |开发语言|
 ## 数据库
  repositories |                       简介                       |开发语言|
  :------------ |:----------------------------------------------:|:---:|
+|[`alibaba/AliSQL` ![](https://img.shields.io/github/stars/alibaba/AliSQL.svg?style=social&languages=Star)](https://github.com/alibaba/AliSQL)|阿里巴巴企业版 MySQL 分支，集成 DuckDB OLAP 和原生向量搜索|C++|
 |[`github/gh-ost` ![](https://img.shields.io/github/stars/github/gh-ost.svg?style=social&languages=Star)](https://github.com/github/gh-ost)|GitHub的MySQL在线模式迁移工具|GO|
 [`mysql/mysql-server` ![](https://img.shields.io/github/stars/mysql/mysql-server.svg?style=social&label=Star)](https://github.com/mysql/mysql-server)|           MySQLServer 是世界上最流行的开源数据库            |C++
 [`postgres/postgres` ![](https://img.shields.io/github/stars/postgres/postgres.svg?style=social&label=Star)](https://github.com/postgres/postgres)|                                                |C
