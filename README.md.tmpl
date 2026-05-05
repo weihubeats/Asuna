@@ -1,0 +1,16 @@
+# Asuna
+
+基于 GitHub Actions 驱动的开源项目全自动收录与管理聚合器。
+
+> 💡 **参与贡献**：只需提交一个 Issue，系统会自动拉取项目状态并重绘此页面！
+
+---
+
+{{range .}}
+## {{.Category}}
+| 项目名称 | 描述 | 核心语言 | ⭐️ Stars |
+| :--- | :--- | :--- | :--- |
+{{range .Projects}}| [{{.Name}}]({{.URL}}) | {{.Description}} | {{.Language}} | {{.Stars}} |
+{{end}}
+
+{{end}}

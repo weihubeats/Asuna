@@ -1,0 +1,54 @@
+name: Asuna Auto Sync Engine
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  process-issue:
+    # 仅针对打上了特定 Label 的 Issue 触发工作流
+    if: contains(github.event.issue.labels.*.name, 'auto-add') || contains(github.event.issue.labels.*.name, 'auto-delete')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # 允许代码推送
+      issues: write   # 允许关闭 Issue
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Go Environment
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+
+      - name: Determine Action Type
+        id: set_action
+        run: |
+          if [[ "${{ contains(github.event.issue.labels.*.name, 'auto-add') }}" == "true" ]]; then
+            echo "type=add" >> $GITHUB_OUTPUT
+          elif [[ "${{ contains(github.event.issue.labels.*.name, 'auto-delete') }}" == "true" ]]; then
+            echo "type=delete" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Execute Core Business Logic
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACTION_TYPE: ${{ steps.set_action.outputs.type }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: go run main.go
+
+      - name: Commit and Push Data Migration
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Asuna Bot"
+          git add data.json README.md
+          
+          # 如果没有内容更新（例如项目已存在导致拦截），这步会跳过，防止 Action 报错退出
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-sync data via issue #${{ github.event.issue.number }}" && git push)
+
+      - name: Close Processed Issue
+        uses: peter-evans/close-issue@v3
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          comment: "✨ 数据同步引擎已执行完毕，README.md 更新已入库。感谢您的支持！"

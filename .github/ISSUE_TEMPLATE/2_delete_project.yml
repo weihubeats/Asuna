@@ -1,0 +1,12 @@
+name: ➖ 移除失效/违规项目
+description: 申请将失效的仓库从列表中移除
+title: "[Delete]: <填写项目名>"
+labels: ["auto-delete"]
+body:
+  - type: input
+    id: repo_url
+    attributes:
+      label: GitHub 仓库地址
+      description: 填入需要移除的仓库完整链接
+    validations:
+      required: true
