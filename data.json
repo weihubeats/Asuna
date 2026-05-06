@@ -15,5 +15,17 @@
         ]
       }
     ]
+  },
+  {
+    "name": "None",
+    "projects": [
+      {
+        "name": "skills",
+        "url": "https://github.com/mattpocock/skills",
+        "description": "Skills for Real Engineers. Straight from my .claude directory.",
+        "language": "Shell",
+        "stars": 61881
+      }
+    ]
   }
 ]

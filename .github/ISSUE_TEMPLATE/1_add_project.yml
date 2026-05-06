@@ -16,6 +16,7 @@ body:
       options:
         - "☕ Java 生态"
         - "☕ Java 生态 / 开发框架(Spring)"
+        - "None"
   - type: input
     id: new_category
     attributes:
