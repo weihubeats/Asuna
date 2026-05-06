@@ -1,54 +1,35 @@
-name: Asuna Auto Sync Engine
-
+name: Asuna Engine
 on:
   issues:
-    types: [opened]
+    types: [opened, labeled]
 
 jobs:
-  process-issue:
-    # 仅针对打上了特定 Label 的 Issue 触发工作流
+  sync:
     if: contains(github.event.issue.labels.*.name, 'auto-add') || contains(github.event.issue.labels.*.name, 'auto-delete')
     runs-on: ubuntu-latest
     permissions:
-      contents: write # 允许代码推送
-      issues: write   # 允许关闭 Issue
-
+      contents: write
+      issues: write
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Setup Go Environment
-        uses: actions/setup-go@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
         with:
           go-version: '1.21'
-
-      - name: Determine Action Type
-        id: set_action
-        run: |
-          if [[ "${{ contains(github.event.issue.labels.*.name, 'auto-add') }}" == "true" ]]; then
-            echo "type=add" >> $GITHUB_OUTPUT
-          elif [[ "${{ contains(github.event.issue.labels.*.name, 'auto-delete') }}" == "true" ]]; then
-            echo "type=delete" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Execute Core Business Logic
+      - name: Run
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ACTION_TYPE: ${{ steps.set_action.outputs.type }}
+          ACTION_TYPE: ${{ contains(github.event.issue.labels.*.name, 'auto-add') && 'add' || 'delete' }}
           ISSUE_BODY: ${{ github.event.issue.body }}
         run: go run main.go
-
-      - name: Commit and Push Data Migration
+      - name: Deploy
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "Asuna Bot"
-          git add data.json README.md
-          
-          # 如果没有内容更新（例如项目已存在导致拦截），这步会跳过，防止 Action 报错退出
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-sync data via issue #${{ github.event.issue.number }}" && git push)
-
-      - name: Close Processed Issue
+          git config --local user.email "bot@github.com"
+          git config --local user.name "AsunaBot"
+          git add .
+          git commit -m "auto: sync via issue #${{ github.event.issue.number }}" || exit 0
+          git push
+      - name: Close
         uses: peter-evans/close-issue@v3
         with:
           issue-number: ${{ github.event.issue.number }}
-          comment: "✨ 数据同步引擎已执行完毕，README.md 更新已入库。感谢您的支持！"
+          comment: "✅ 任务已处理，README 与分类表单已自动刷新！"

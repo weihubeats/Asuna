@@ -1,14 +1,1 @@
-[
-  {
-    "category": "🚀 效能与开发工具",
-    "projects": [
-      {
-        "name": "infisical",
-        "url": "https://github.com/Infisical/infisical",
-        "description": "Infisical is the open-source platform for secrets, certificates, and privileged access management.",
-        "language": "TypeScript",
-        "stars": 26623
-      }
-    ]
-  }
-]
+[]

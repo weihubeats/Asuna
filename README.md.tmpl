@@ -1,16 +1,24 @@
-# Asuna
+# Asuna 开源项目精选
 
-基于 GitHub Actions 驱动的开源项目全自动收录与管理聚合器。
+> 自动化管理与聚合优质开源项目。提交 Issue 即可自动收录。
 
-> 💡 **参与贡献**：只需提交一个 Issue，系统会自动拉取项目状态并重绘此页面！
+{{define "RenderNode"}}
+  {{$level := .Level}}
+  {{range .Nodes}}
+{{repeat "#" $level}} {{.Name}}
 
----
-
-{{range .}}
-## {{.Category}}
-| 项目名称 | 描述 | 核心语言 | ⭐️ Stars |
+{{if .Projects}}
+| 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
-{{range .Projects}}| [{{.Name}}]({{.URL}}) | {{.Description}} | {{.Language}} | {{.Stars}} |
+{{range .Projects}}| [{{.Name}}]({{.URL}}) | {{.Description}} | {{.Language}} | {{formatStars .Stars}} |
+{{end}}
 {{end}}
 
+{{if .Children}}
+{{template "RenderNode" dict "Nodes" .Children "Level" (add $level 1)}}
 {{end}}
+  {{end}}
+{{end}}
+
+{{/* 从二级标题开始渲染根节点 */}}
+{{template "RenderNode" dict "Nodes" . "Level" 2}}
