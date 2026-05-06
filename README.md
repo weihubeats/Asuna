@@ -30,14 +30,25 @@
 
 
   
-## None
+## AI
+
+
+
+
+
+  
+  
+### Skills
 
 
 | 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
-| [skills](https://github.com/mattpocock/skills) | Skills for Real Engineers. Straight from my .claude directory. | Shell | 61.9k |
+| [skills](https://github.com/mattpocock/skills) | Skills for Real Engineers. Straight from my .claude directory. | Shell | 62.4k |
 
 
+
+
+  
 
 
   
