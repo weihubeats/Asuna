@@ -66,10 +66,16 @@ func main() {
 	repoURL := extractField(issueBody, "GitHub 仓库地址")
 
 	if actionType == "add" {
-		pathStr := extractField(issueBody, `💡 或创建新分类`)
-		if pathStr == "" || pathStr == "_No response_" {
-			pathStr = extractField(issueBody, `归属分类 \(选择已有\)`)
+		pathStr := extractField(issueBody, "💡 或创建新分类")
+		if pathStr == "" {
+			pathStr = extractField(issueBody, "归属分类")
 		}
+
+		if pathStr == "" {
+			fmt.Println("⚠️ 未提供有效分类路径，跳过新增")
+			os.Exit(0)
+		}
+
 		pathParts := splitPath(pathStr)
 		targetNode := findOrCreateNode(&db, pathParts)
 
@@ -137,13 +143,16 @@ func getAllPaths(nodes []*CategoryNode, prefix string) []string {
 	return paths
 }
 
-// ======== 辅助工具 ========
-
 func extractField(body, fieldName string) string {
-	re := regexp.MustCompile("(?m)^### " + fieldName + `\s*\n+([^\n]+)`)
+	re := regexp.MustCompile(`(?m)^### ` + regexp.QuoteMeta(fieldName) + `[^\n]*\r?\n+([^\n]+)`)
 	m := re.FindStringSubmatch(body)
 	if len(m) > 1 {
-		return strings.TrimSpace(m[1])
+		val := strings.TrimSpace(m[1])
+		// 自动过滤 GitHub 表单默认的未填写/未选择占位符
+		if val == "_No response_" || val == "None" {
+			return ""
+		}
+		return val
 	}
 	return ""
 }
