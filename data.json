@@ -6,6 +6,12 @@
         "name": "开发框架(Spring)",
         "projects": [
           {
+            "name": "spring-boot",
+            "url": "https://github.com/spring-projects/spring-boot",
+            "description": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
+            "language": "Java"
+          },
+          {
             "name": "spring-framework",
             "url": "https://github.com/spring-projects/spring-framework",
             "description": "Spring Framework",

@@ -20,6 +20,7 @@
 
 | 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
+| [spring-boot](https://github.com/spring-projects/spring-boot) | Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss. | Java | ![Star](https://img.shields.io/github/stars/spring-projects/spring-boot.svg?style=social&label=Star) |
 | [spring-framework](https://github.com/spring-projects/spring-framework) | Spring Framework | Java | ![Star](https://img.shields.io/github/stars/spring-projects/spring-framework.svg?style=social&label=Star) |
 
 
