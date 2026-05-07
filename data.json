@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "name": "☕ Java 生态",
+    "children": [
+      {
+        "name": "开发框架(Spring)",
+        "projects": [
+          {
+            "name": "spring-framework",
+            "url": "https://github.com/spring-projects/spring-framework",
+            "description": "Spring Framework",
+            "language": "Java"
+          }
+        ]
+      }
+    ]
+  }
+]

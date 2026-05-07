@@ -5,7 +5,6 @@
 
 
 
-
   
   
 ## ☕ Java 生态
@@ -21,30 +20,7 @@
 
 | 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
-| [spring-framework](https://github.com/spring-projects/spring-framework) | Spring Framework | Java | 59.9k |
-| [spring-boot](https://github.com/spring-projects/spring-boot) | Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss. | Java | 80.6k |
-
-
-
-
-  
-
-
-  
-## AI
-
-
-
-
-
-  
-  
-### Skills
-
-
-| 项目名称 | 描述 | 语言 | ⭐️ Stars |
-| :--- | :--- | :--- | :--- |
-| [skills](https://github.com/mattpocock/skills) | Skills for Real Engineers. Straight from my .claude directory. | Shell | 62.4k |
+| [spring-framework](https://github.com/spring-projects/spring-framework) | Spring Framework | Java | ![Star](https://img.shields.io/github/stars/spring-projects/spring-framework.svg?style=social&label=Star) |
 
 
 
