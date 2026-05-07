@@ -23,8 +23,6 @@ body:
         - "🗄️ 数据库 / 客户端管理工具"
         - "文档工具"
         - "文档工具 / 知识库&个人笔记"
-        - "后端"
-        - "后端 / AI 编程助手 & 桌面客户端"
   - type: input
     id: new_category
     attributes:

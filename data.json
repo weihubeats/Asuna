@@ -85,21 +85,5 @@
         ]
       }
     ]
-  },
-  {
-    "name": "后端",
-    "children": [
-      {
-        "name": "AI 编程助手 \u0026 桌面客户端",
-        "projects": [
-          {
-            "name": "DeepSeek-TUI",
-            "url": "https://github.com/Hmbown/DeepSeek-TUI",
-            "description": "Coding agent for DeepSeek models that runs in your terminal",
-            "language": "Rust"
-          }
-        ]
-      }
-    ]
   }
 ]
