@@ -66,6 +66,7 @@
 
 | 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
+| [spec-kit](https://github.com/github/spec-kit) | 💫 Toolkit to help you get started with Spec-Driven Development | Python | ![Star](https://img.shields.io/github/stars/github/spec-kit.svg?style=social&label=Star) |
 | [cc-switch](https://github.com/farion1231/cc-switch) | A cross-platform desktop All-in-One assistant tool for Claude Code, Codex, OpenCode, openclaw &amp; Gemini CLI. | Rust | ![Star](https://img.shields.io/github/stars/farion1231/cc-switch.svg?style=social&label=Star) |
 | [DeepSeek-TUI](https://github.com/Hmbown/DeepSeek-TUI) | Coding agent for DeepSeek models that runs in your terminal | Rust | ![Star](https://img.shields.io/github/stars/Hmbown/DeepSeek-TUI.svg?style=social&label=Star) |
 
