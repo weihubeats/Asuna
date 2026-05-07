@@ -50,6 +50,17 @@
 
 
   
+### 学习资料
+
+
+| 项目名称 | 描述 | 语言 | ⭐️ Stars |
+| :--- | :--- | :--- | :--- |
+| [hands-on-modern-rl](https://github.com/walkinglabs/hands-on-modern-rl) | 🚀 An open-source, hands-on curriculum bridging the gap from basic RL concepts to LLM alignment, RLVR, and advanced Agentic systems.  | Python | ![Star](https://img.shields.io/github/stars/walkinglabs/hands-on-modern-rl.svg?style=social&label=Star) |
+
+
+
+
+  
 
 
   

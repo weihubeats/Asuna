@@ -40,6 +40,17 @@
             "language": "Shell"
           }
         ]
+      },
+      {
+        "name": "学习资料",
+        "projects": [
+          {
+            "name": "hands-on-modern-rl",
+            "url": "https://github.com/walkinglabs/hands-on-modern-rl",
+            "description": "🚀 An open-source, hands-on curriculum bridging the gap from basic RL concepts to LLM alignment, RLVR, and advanced Agentic systems. ",
+            "language": "Python"
+          }
+        ]
       }
     ]
   },
