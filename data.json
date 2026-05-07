@@ -42,5 +42,21 @@
         ]
       }
     ]
+  },
+  {
+    "name": "🗄️ 数据库",
+    "children": [
+      {
+        "name": "客户端管理工具",
+        "projects": [
+          {
+            "name": "dataflare",
+            "url": "https://github.com/DataflareApp/dataflare",
+            "description": "Simple, easy-to-use database manager",
+            "language": "TypeScript"
+          }
+        ]
+      }
+    ]
   }
 ]

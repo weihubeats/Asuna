@@ -18,6 +18,8 @@ body:
         - "☕ Java 生态 / 开发框架(Spring)"
         - "AI"
         - "AI / Skills"
+        - "🗄️ 数据库"
+        - "🗄️ 数据库 / 客户端管理工具"
   - type: input
     id: new_category
     attributes:
