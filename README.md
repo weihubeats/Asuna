@@ -66,6 +66,7 @@
 
 | 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
+| [cc-switch](https://github.com/farion1231/cc-switch) | A cross-platform desktop All-in-One assistant tool for Claude Code, Codex, OpenCode, openclaw &amp; Gemini CLI. | Rust | ![Star](https://img.shields.io/github/stars/farion1231/cc-switch.svg?style=social&label=Star) |
 | [DeepSeek-TUI](https://github.com/Hmbown/DeepSeek-TUI) | Coding agent for DeepSeek models that runs in your terminal | Rust | ![Star](https://img.shields.io/github/stars/Hmbown/DeepSeek-TUI.svg?style=social&label=Star) |
 
 

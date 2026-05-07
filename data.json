@@ -56,6 +56,12 @@
         "name": "AI 编程助手 \u0026 桌面客户端",
         "projects": [
           {
+            "name": "cc-switch",
+            "url": "https://github.com/farion1231/cc-switch",
+            "description": "A cross-platform desktop All-in-One assistant tool for Claude Code, Codex, OpenCode, openclaw \u0026amp; Gemini CLI.",
+            "language": "Rust"
+          },
+          {
             "name": "DeepSeek-TUI",
             "url": "https://github.com/Hmbown/DeepSeek-TUI",
             "description": "Coding agent for DeepSeek models that runs in your terminal",
