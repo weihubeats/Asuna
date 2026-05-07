@@ -20,6 +20,8 @@ body:
         - "AI / Skills"
         - "🗄️ 数据库"
         - "🗄️ 数据库 / 客户端管理工具"
+        - "文档工具"
+        - "文档工具 / 知识库&个人笔记"
   - type: input
     id: new_category
     attributes:

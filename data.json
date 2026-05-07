@@ -58,5 +58,21 @@
         ]
       }
     ]
+  },
+  {
+    "name": "文档工具",
+    "children": [
+      {
+        "name": "知识库\u0026个人笔记",
+        "projects": [
+          {
+            "name": "blinko",
+            "url": "https://github.com/blinkospace/blinko",
+            "description": "An open-source, self-hosted personal AI note tool prioritizing privacy, built using TypeScript .",
+            "language": "TypeScript"
+          }
+        ]
+      }
+    ]
   }
 ]

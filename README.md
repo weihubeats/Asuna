@@ -75,3 +75,25 @@
 
 
   
+## 文档工具
+
+
+
+
+
+  
+  
+### 知识库&个人笔记
+
+
+| 项目名称 | 描述 | 语言 | ⭐️ Stars |
+| :--- | :--- | :--- | :--- |
+| [blinko](https://github.com/blinkospace/blinko) | An open-source, self-hosted personal AI note tool prioritizing privacy, built using TypeScript . | TypeScript | ![Star](https://img.shields.io/github/stars/blinkospace/blinko.svg?style=social&label=Star) |
+
+
+
+
+  
+
+
+  
