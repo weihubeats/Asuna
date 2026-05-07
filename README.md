@@ -61,6 +61,17 @@
 
 
   
+### AI 编程助手 & 桌面客户端
+
+
+| 项目名称 | 描述 | 语言 | ⭐️ Stars |
+| :--- | :--- | :--- | :--- |
+| [DeepSeek-TUI](https://github.com/Hmbown/DeepSeek-TUI) | Coding agent for DeepSeek models that runs in your terminal | Rust | ![Star](https://img.shields.io/github/stars/Hmbown/DeepSeek-TUI.svg?style=social&label=Star) |
+
+
+
+
+  
 
 
   
@@ -100,28 +111,6 @@
 | 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
 | [blinko](https://github.com/blinkospace/blinko) | An open-source, self-hosted personal AI note tool prioritizing privacy, built using TypeScript . | TypeScript | ![Star](https://img.shields.io/github/stars/blinkospace/blinko.svg?style=social&label=Star) |
-
-
-
-
-  
-
-
-  
-## 后端
-
-
-
-
-
-  
-  
-### AI 编程助手 & 桌面客户端
-
-
-| 项目名称 | 描述 | 语言 | ⭐️ Stars |
-| :--- | :--- | :--- | :--- |
-| [DeepSeek-TUI](https://github.com/Hmbown/DeepSeek-TUI) | Coding agent for DeepSeek models that runs in your terminal | Rust | ![Star](https://img.shields.io/github/stars/Hmbown/DeepSeek-TUI.svg?style=social&label=Star) |
 
 
 
