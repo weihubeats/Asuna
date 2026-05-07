@@ -11,6 +11,13 @@
             "description": "Spring Framework",
             "language": "Java",
             "stars": 59896
+          },
+          {
+            "name": "spring-boot",
+            "url": "https://github.com/spring-projects/spring-boot",
+            "description": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
+            "language": "Java",
+            "stars": 80567
           }
         ]
       }
