@@ -6,6 +6,12 @@
         "name": "开发框架(Spring)",
         "projects": [
           {
+            "name": "sofa-boot",
+            "url": "https://github.com/sofastack/sofa-boot",
+            "description": "SOFABoot is a framework that enhances Spring Boot and fully compatible with it, provides readiness check, class isolation, etc.",
+            "language": "Java"
+          },
+          {
             "name": "spring-boot",
             "url": "https://github.com/spring-projects/spring-boot",
             "description": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",

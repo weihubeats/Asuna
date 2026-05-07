@@ -20,6 +20,7 @@
 
 | 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
+| [sofa-boot](https://github.com/sofastack/sofa-boot) | SOFABoot is a framework that enhances Spring Boot and fully compatible with it, provides readiness check, class isolation, etc. | Java | ![Star](https://img.shields.io/github/stars/sofastack/sofa-boot.svg?style=social&label=Star) |
 | [spring-boot](https://github.com/spring-projects/spring-boot) | Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss. | Java | ![Star](https://img.shields.io/github/stars/spring-projects/spring-boot.svg?style=social&label=Star) |
 | [spring-framework](https://github.com/spring-projects/spring-framework) | Spring Framework | Java | ![Star](https://img.shields.io/github/stars/spring-projects/spring-framework.svg?style=social&label=Star) |
 
