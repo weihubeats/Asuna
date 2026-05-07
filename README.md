@@ -108,3 +108,25 @@
 
 
   
+## 后端
+
+
+
+
+
+  
+  
+### AI 编程助手 & 桌面客户端
+
+
+| 项目名称 | 描述 | 语言 | ⭐️ Stars |
+| :--- | :--- | :--- | :--- |
+| [DeepSeek-TUI](https://github.com/Hmbown/DeepSeek-TUI) | Coding agent for DeepSeek models that runs in your terminal | Rust | ![Star](https://img.shields.io/github/stars/Hmbown/DeepSeek-TUI.svg?style=social&label=Star) |
+
+
+
+
+  
+
+
+  
