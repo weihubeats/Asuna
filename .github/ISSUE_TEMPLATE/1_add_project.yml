@@ -1,6 +1,6 @@
 name: ➕ 新增开源项目
 description: 提交一个新的优秀开源项目到收录录
-title: "[Add]: <填写项目名>"
+title: "[Add]: 自动解析新项目"
 labels: ["auto-add"]
 body:
   - type: input
@@ -14,10 +14,18 @@ body:
     attributes:
       label: 归属分类 (选择已有)
       options:
-        - "☕ Java 生态"
+        # 后端开发
         - "☕ Java 生态 / 开发框架(Spring)"
-        - "AI"
-        - "AI / Skills"
+        - "☕ Java 生态 / 基础工具类"
+        - "☕ Java 生态 / ORM 持久层"
+        - "☕ Java 生态 / 权限&安全"
+        - "☕ Java 生态 / 缓存&限流"
+        - "☕ Java 生态 / 多线程&并发"
+        - "☕ Java 生态 / 日志&监控"
+        - "☕ Java 生态 / 组件&插件"
+        - "☕ Java 生态 / 实战&源码"
+        - "🐹 Go 生态 / Go 开发框架"
+        - "🐹 Go 生态 / 工具&实战"
   - type: input
     id: new_category
     attributes:

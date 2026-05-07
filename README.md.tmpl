@@ -10,7 +10,7 @@
 {{if .Projects}}
 | 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
-{{range .Projects}}| [{{.Name}}]({{.URL}}) | {{.Description}} | {{.Language}} | {{formatStars .Stars}} |
+{{range .Projects}}| [{{.Name}}]({{.URL}}) | {{.Description}} | {{.Language}} | {{dynamicStar .URL}} |
 {{end}}
 {{end}}
 
@@ -20,5 +20,4 @@
   {{end}}
 {{end}}
 
-{{/* 从二级标题开始渲染根节点 */}}
 {{template "RenderNode" dict "Nodes" . "Level" 2}}

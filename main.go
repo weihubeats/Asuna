@@ -11,12 +11,12 @@ import (
 	"text/template"
 )
 
+// ======== 纯净版数据结构 (去除 Stars) ========
 type Project struct {
 	Name        string `json:"name"`
 	URL         string `json:"url"`
 	Description string `json:"description"`
 	Language    string `json:"language"`
-	Stars       int    `json:"stars"`
 }
 
 type CategoryNode struct {
@@ -27,7 +27,7 @@ type CategoryNode struct {
 
 const issueTemplateHeader = `name: ➕ 新增开源项目
 description: 提交一个新的优秀开源项目到收录录
-title: "[Add]: <填写项目名>"
+title: "[Add]: 自动解析新项目"
 labels: ["auto-add"]
 body:
   - type: input
@@ -66,14 +66,15 @@ func main() {
 	repoURL := extractField(issueBody, "GitHub 仓库地址")
 
 	if actionType == "add" {
-		pathStr := extractField(issueBody, "💡 或创建新分类")
-		if pathStr == "" {
-			pathStr = extractField(issueBody, "归属分类")
+		pathStr := extractField(issueBody, "💡 或创建新分类 (支持多级，用 / 分隔)")
+
+		if pathStr == "" || pathStr == "_No response_" || pathStr == "None" {
+			pathStr = extractField(issueBody, "归属分类 (选择已有)")
 		}
 
-		if pathStr == "" {
-			fmt.Println("⚠️ 未提供有效分类路径，跳过新增")
-			os.Exit(0)
+		if pathStr == "" || pathStr == "_No response_" || pathStr == "None" {
+			fmt.Println("未提取到有效分类，拦截执行。")
+			os.Exit(1)
 		}
 
 		pathParts := splitPath(pathStr)
@@ -82,7 +83,11 @@ func main() {
 		owner, repo := parseGitHubURL(repoURL)
 		p, err := fetchRepoMeta(owner, repo, githubToken)
 		if err == nil {
-			targetNode.Projects = append(targetNode.Projects, *p)
+			// 新项目置顶：插入到数组最前面
+			targetNode.Projects = append([]Project{*p}, targetNode.Projects...)
+		} else {
+			fmt.Println("获取仓库元数据失败:", err)
+			os.Exit(1)
 		}
 	} else if actionType == "delete" {
 		recursiveDelete(db, repoURL)
@@ -143,16 +148,15 @@ func getAllPaths(nodes []*CategoryNode, prefix string) []string {
 	return paths
 }
 
+// ======== 辅助工具 ========
+
 func extractField(body, fieldName string) string {
-	re := regexp.MustCompile(`(?m)^### ` + regexp.QuoteMeta(fieldName) + `[^\n]*\r?\n+([^\n]+)`)
+	// 自动转义括号等特殊字符，修复正则提取失败的问题
+	safeFieldName := regexp.QuoteMeta(fieldName)
+	re := regexp.MustCompile("(?m)^### " + safeFieldName + `\s*\n+([^\n]+)`)
 	m := re.FindStringSubmatch(body)
 	if len(m) > 1 {
-		val := strings.TrimSpace(m[1])
-		// 自动过滤 GitHub 表单默认的未填写/未选择占位符
-		if val == "_No response_" || val == "None" {
-			return ""
-		}
-		return val
+		return strings.TrimSpace(m[1])
 	}
 	return ""
 }
@@ -189,15 +193,16 @@ func fetchRepoMeta(owner, repo, token string) (*Project, error) {
 		return nil, err
 	}
 	defer resp.Body.Close()
+
+	// API 解析结构中彻底移除 Stars 字段
 	var d struct {
-		Name  string `json:"name"`
-		Desc  string `json:"description"`
-		Lang  string `json:"language"`
-		Stars int    `json:"stargazers_count"`
-		URL   string `json:"html_url"`
+		Name string `json:"name"`
+		Desc string `json:"description"`
+		Lang string `json:"language"`
+		URL  string `json:"html_url"`
 	}
 	json.NewDecoder(resp.Body).Decode(&d)
-	return &Project{Name: d.Name, URL: d.URL, Description: html.EscapeString(d.Desc), Language: d.Lang, Stars: d.Stars}, nil
+	return &Project{Name: d.Name, URL: d.URL, Description: html.EscapeString(d.Desc), Language: d.Lang}, nil
 }
 
 func saveData(path string, db []*CategoryNode) {
@@ -229,11 +234,12 @@ func renderView(tmplPath, outPath string, db []*CategoryNode) {
 			}
 			return dict, nil
 		},
-		"formatStars": func(s int) string {
-			if s < 1000 {
-				return fmt.Sprintf("%d", s)
+		"dynamicStar": func(u string) string {
+			owner, repo := parseGitHubURL(u)
+			if owner != "" && repo != "" {
+				return fmt.Sprintf("![Star](https://img.shields.io/github/stars/%s/%s.svg?style=social&label=Star)", owner, repo)
 			}
-			return fmt.Sprintf("%.1fk", float64(s)/1000.0)
+			return "N/A"
 		},
 	}
 	t, _ := template.New("README.md.tmpl").Funcs(funcMap).ParseFiles(tmplPath)
