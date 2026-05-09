@@ -24,6 +24,8 @@ body:
         - "🗄️ 数据库 / 客户端管理工具"
         - "文档工具"
         - "文档工具 / 知识库&个人笔记"
+        - "🌐 分布式"
+        - "🌐 分布式 / RPC 框架"
   - type: input
     id: new_category
     attributes:

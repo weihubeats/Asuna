@@ -108,5 +108,21 @@
         ]
       }
     ]
+  },
+  {
+    "name": "🌐 分布式",
+    "children": [
+      {
+        "name": "RPC 框架",
+        "projects": [
+          {
+            "name": "dubbo",
+            "url": "https://github.com/apache/dubbo",
+            "description": "The java implementation of Apache Dubbo. An RPC and microservice framework.",
+            "language": "Java"
+          }
+        ]
+      }
+    ]
   }
 ]
