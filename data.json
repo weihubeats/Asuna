@@ -141,5 +141,21 @@
         ]
       }
     ]
+  },
+  {
+    "name": "🛠️ 效率工具",
+    "children": [
+      {
+        "name": "Mac 工具",
+        "projects": [
+          {
+            "name": "port-killer",
+            "url": "https://github.com/productdevbook/port-killer",
+            "description": "A powerful cross-platform port management tool for developers. Monitor ports, manage Kubernetes port forwards, integrate Cloudflare Tunnels, and kill processes with one click.",
+            "language": "Swift"
+          }
+        ]
+      }
+    ]
   }
 ]
