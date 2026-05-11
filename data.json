@@ -182,6 +182,12 @@
         "name": "🐳 容器编排与管理",
         "projects": [
           {
+            "name": "kubespray",
+            "url": "https://github.com/kubernetes-sigs/kubespray",
+            "description": "Deploy a Production Ready Kubernetes Cluster",
+            "language": "Jinja"
+          },
+          {
             "name": "kubernetes",
             "url": "https://github.com/kubernetes/kubernetes",
             "description": "Production-Grade Container Scheduling and Management",

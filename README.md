@@ -202,6 +202,7 @@
 
 | 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
+| [kubespray](https://github.com/kubernetes-sigs/kubespray) | Deploy a Production Ready Kubernetes Cluster | Jinja | ![Star](https://img.shields.io/github/stars/kubernetes-sigs/kubespray.svg?style=social&label=Star) |
 | [kubernetes](https://github.com/kubernetes/kubernetes) | Production-Grade Container Scheduling and Management | Go | ![Star](https://img.shields.io/github/stars/kubernetes/kubernetes.svg?style=social&label=Star) |
 
 
