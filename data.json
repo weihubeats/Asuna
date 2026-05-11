@@ -24,6 +24,17 @@
             "language": "Java"
           }
         ]
+      },
+      {
+        "name": "ORM 框架",
+        "projects": [
+          {
+            "name": "mybatis-3",
+            "url": "https://github.com/mybatis/mybatis-3",
+            "description": "MyBatis SQL mapper framework for Java",
+            "language": "Java"
+          }
+        ]
       }
     ]
   },

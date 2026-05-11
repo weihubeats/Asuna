@@ -28,6 +28,17 @@
 
 
   
+### ORM 框架
+
+
+| 项目名称 | 描述 | 语言 | ⭐️ Stars |
+| :--- | :--- | :--- | :--- |
+| [mybatis-3](https://github.com/mybatis/mybatis-3) | MyBatis SQL mapper framework for Java | Java | ![Star](https://img.shields.io/github/stars/mybatis/mybatis-3.svg?style=social&label=Star) |
+
+
+
+
+  
 
 
   
