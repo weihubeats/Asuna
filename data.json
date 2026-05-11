@@ -73,6 +73,12 @@
         "name": "AI 编程助手 \u0026 桌面客户端",
         "projects": [
           {
+            "name": "oh-my-openagent",
+            "url": "https://github.com/code-yeongyu/oh-my-openagent",
+            "description": "omo; the best agent harness - previously oh-my-opencode",
+            "language": "TypeScript"
+          },
+          {
             "name": "OpenSpec",
             "url": "https://github.com/Fission-AI/OpenSpec",
             "description": "Spec-driven development (SDD) for AI coding assistants.",

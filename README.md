@@ -78,6 +78,7 @@
 
 | 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
+| [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | omo; the best agent harness - previously oh-my-opencode | TypeScript | ![Star](https://img.shields.io/github/stars/code-yeongyu/oh-my-openagent.svg?style=social&label=Star) |
 | [OpenSpec](https://github.com/Fission-AI/OpenSpec) | Spec-driven development (SDD) for AI coding assistants. | TypeScript | ![Star](https://img.shields.io/github/stars/Fission-AI/OpenSpec.svg?style=social&label=Star) |
 | [spec-kit](https://github.com/github/spec-kit) | 💫 Toolkit to help you get started with Spec-Driven Development | Python | ![Star](https://img.shields.io/github/stars/github/spec-kit.svg?style=social&label=Star) |
 | [cc-switch](https://github.com/farion1231/cc-switch) | A cross-platform desktop All-in-One assistant tool for Claude Code, Codex, OpenCode, openclaw &amp; Gemini CLI. | Rust | ![Star](https://img.shields.io/github/stars/farion1231/cc-switch.svg?style=social&label=Star) |
