@@ -56,6 +56,12 @@
         "name": "学习资料",
         "projects": [
           {
+            "name": "learn-opencode",
+            "url": "https://github.com/vbgate/learn-opencode",
+            "description": "OpenCode 中文实战课源码与内容仓库：一课一页，覆盖入门到实战工作流。",
+            "language": "Shell"
+          },
+          {
             "name": "hands-on-modern-rl",
             "url": "https://github.com/walkinglabs/hands-on-modern-rl",
             "description": "🚀 An open-source, hands-on curriculum bridging the gap from basic RL concepts to LLM alignment, RLVR, and advanced Agentic systems. ",
