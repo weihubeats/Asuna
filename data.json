@@ -168,5 +168,21 @@
         ]
       }
     ]
+  },
+  {
+    "name": "☁️ 云原生与自动化运维 (Cloud Native \u0026 DevOps)",
+    "children": [
+      {
+        "name": "🐳 容器编排与管理",
+        "projects": [
+          {
+            "name": "kubernetes",
+            "url": "https://github.com/kubernetes/kubernetes",
+            "description": "Production-Grade Container Scheduling and Management",
+            "language": "Go"
+          }
+        ]
+      }
+    ]
   }
 ]

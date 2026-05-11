@@ -30,6 +30,8 @@ body:
         - "🌐 分布式 / RPC 框架"
         - "🛠️ 效率工具"
         - "🛠️ 效率工具 / Mac 工具"
+        - "☁️ 云原生与自动化运维 (Cloud Native & DevOps)"
+        - "☁️ 云原生与自动化运维 (Cloud Native & DevOps) / 🐳 容器编排与管理"
   - type: input
     id: new_category
     attributes:
