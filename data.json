@@ -56,6 +56,12 @@
         "name": "AI 编程助手 \u0026 桌面客户端",
         "projects": [
           {
+            "name": "OpenSpec",
+            "url": "https://github.com/Fission-AI/OpenSpec",
+            "description": "Spec-driven development (SDD) for AI coding assistants.",
+            "language": "TypeScript"
+          },
+          {
             "name": "spec-kit",
             "url": "https://github.com/github/spec-kit",
             "description": "💫 Toolkit to help you get started with Spec-Driven Development",
