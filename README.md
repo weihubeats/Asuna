@@ -213,3 +213,25 @@
 
 
   
+## ☁️ 云原生与自动化运维
+
+
+
+
+
+  
+  
+### CI、CD 持续交付
+
+
+| 项目名称 | 描述 | 语言 | ⭐️ Stars |
+| :--- | :--- | :--- | :--- |
+| [jj](https://github.com/jj-vcs/jj) | A Git-compatible VCS that is both simple and powerful | Rust | ![Star](https://img.shields.io/github/stars/jj-vcs/jj.svg?style=social&label=Star) |
+
+
+
+
+  
+
+
+  
