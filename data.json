@@ -211,6 +211,12 @@
         "name": "CI、CD 持续交付",
         "projects": [
           {
+            "name": "gitleaks",
+            "url": "https://github.com/gitleaks/gitleaks",
+            "description": "Find secrets with Gitleaks 🔑",
+            "language": "Go"
+          },
+          {
             "name": "jj",
             "url": "https://github.com/jj-vcs/jj",
             "description": "A Git-compatible VCS that is both simple and powerful",

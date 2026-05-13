@@ -216,6 +216,7 @@
 
 | 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
+| [gitleaks](https://github.com/gitleaks/gitleaks) | Find secrets with Gitleaks 🔑 | Go | ![Star](https://img.shields.io/github/stars/gitleaks/gitleaks.svg?style=social&label=Star) |
 | [jj](https://github.com/jj-vcs/jj) | A Git-compatible VCS that is both simple and powerful | Rust | ![Star](https://img.shields.io/github/stars/jj-vcs/jj.svg?style=social&label=Star) |
 
 
