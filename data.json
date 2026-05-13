@@ -200,6 +200,17 @@
             "language": "Go"
           }
         ]
+      },
+      {
+        "name": "CI、CD 持续交付",
+        "projects": [
+          {
+            "name": "jj",
+            "url": "https://github.com/jj-vcs/jj",
+            "description": "A Git-compatible VCS that is both simple and powerful",
+            "language": "Rust"
+          }
+        ]
       }
     ]
   }
