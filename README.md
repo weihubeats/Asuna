@@ -66,6 +66,7 @@
 
 | 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
+| [hello-agents](https://github.com/datawhalechina/hello-agents) | 📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程 | Python | ![Star](https://img.shields.io/github/stars/datawhalechina/hello-agents.svg?style=social&label=Star) |
 | [learn-opencode](https://github.com/vbgate/learn-opencode) | OpenCode 中文实战课源码与内容仓库：一课一页，覆盖入门到实战工作流。 | Shell | ![Star](https://img.shields.io/github/stars/vbgate/learn-opencode.svg?style=social&label=Star) |
 | [hands-on-modern-rl](https://github.com/walkinglabs/hands-on-modern-rl) | 🚀 An open-source, hands-on curriculum bridging the gap from basic RL concepts to LLM alignment, RLVR, and advanced Agentic systems.  | Python | ![Star](https://img.shields.io/github/stars/walkinglabs/hands-on-modern-rl.svg?style=social&label=Star) |
 

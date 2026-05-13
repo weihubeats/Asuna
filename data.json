@@ -56,6 +56,12 @@
         "name": "学习资料",
         "projects": [
           {
+            "name": "hello-agents",
+            "url": "https://github.com/datawhalechina/hello-agents",
+            "description": "📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程",
+            "language": "Python"
+          },
+          {
             "name": "learn-opencode",
             "url": "https://github.com/vbgate/learn-opencode",
             "description": "OpenCode 中文实战课源码与内容仓库：一课一页，覆盖入门到实战工作流。",
