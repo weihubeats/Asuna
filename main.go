@@ -11,7 +11,6 @@ import (
 	"text/template"
 )
 
-// ======== 纯净版数据结构 (去除 Stars) ========
 type Project struct {
 	Name        string `json:"name"`
 	URL         string `json:"url"`
