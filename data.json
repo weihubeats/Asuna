@@ -225,5 +225,21 @@
         ]
       }
     ]
+  },
+  {
+    "name": "📈 金融科技",
+    "children": [
+      {
+        "name": "量化交易",
+        "projects": [
+          {
+            "name": "indicator",
+            "url": "https://github.com/cinar/indicator",
+            "description": "Indicator Go delivers a rich set of technical analysis indicators, customizable strategies, and a powerful backtesting framework. No dependencies, just pure simplicity. ✨ See how! 👀",
+            "language": "Go"
+          }
+        ]
+      }
+    ]
   }
 ]

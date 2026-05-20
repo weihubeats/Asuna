@@ -226,3 +226,25 @@
 
 
   
+## 📈 金融科技
+
+
+
+
+
+  
+  
+### 量化交易
+
+
+| 项目名称 | 描述 | 语言 | ⭐️ Stars |
+| :--- | :--- | :--- | :--- |
+| [indicator](https://github.com/cinar/indicator) | Indicator Go delivers a rich set of technical analysis indicators, customizable strategies, and a powerful backtesting framework. No dependencies, just pure simplicity. ✨ See how! 👀 | Go | ![Star](https://img.shields.io/github/stars/cinar/indicator.svg?style=social&label=Star) |
+
+
+
+
+  
+
+
+  
