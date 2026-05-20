@@ -56,6 +56,12 @@
         "name": "学习资料",
         "projects": [
           {
+            "name": "easy-vibe",
+            "url": "https://github.com/datawhalechina/easy-vibe",
+            "description": "💻 vibe coding 2026 | Your first modern Coding course for beginners to master step by step.",
+            "language": "JavaScript"
+          },
+          {
             "name": "hello-agents",
             "url": "https://github.com/datawhalechina/hello-agents",
             "description": "📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程",
