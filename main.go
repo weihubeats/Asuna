@@ -3,7 +3,6 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"html"
 	"net/http"
 	"os"
 	"regexp"
@@ -150,7 +149,6 @@ func getAllPaths(nodes []*CategoryNode, prefix string) []string {
 // ======== 辅助工具 ========
 
 func extractField(body, fieldName string) string {
-	// 自动转义括号等特殊字符，修复正则提取失败的问题
 	safeFieldName := regexp.QuoteMeta(fieldName)
 	re := regexp.MustCompile("(?m)^### " + safeFieldName + `\s*\n+([^\n]+)`)
 	m := re.FindStringSubmatch(body)
@@ -181,6 +179,22 @@ func parseGitHubURL(u string) (string, string) {
 	return m[1], strings.TrimSuffix(m[2], ".git")
 }
 
+// 新增：专门针对 Markdown 文本安全的清洗函数
+func cleanMarkdownDesc(desc string) string {
+	if desc == "" {
+		return ""
+	}
+	// 1. 去除换行和回车，防止折行破坏 Markdown 表格/列表结构
+	desc = strings.ReplaceAll(desc, "\r", "")
+	desc = strings.ReplaceAll(desc, "\n", " ")
+
+	// 2. 转义竖线 '|'，如果你的 README 模板用到了表格，不转义它会导致表格列错乱
+	desc = strings.ReplaceAll(desc, "|", "\\|")
+
+	// 3. 去除首尾空格
+	return strings.TrimSpace(desc)
+}
+
 func fetchRepoMeta(owner, repo, token string) (*Project, error) {
 	url := fmt.Sprintf("https://api.github.com/repos/%s/%s", owner, repo)
 	req, _ := http.NewRequest("GET", url, nil)
@@ -193,7 +207,6 @@ func fetchRepoMeta(owner, repo, token string) (*Project, error) {
 	}
 	defer resp.Body.Close()
 
-	// API 解析结构中彻底移除 Stars 字段
 	var d struct {
 		Name string `json:"name"`
 		Desc string `json:"description"`
@@ -201,7 +214,10 @@ func fetchRepoMeta(owner, repo, token string) (*Project, error) {
 		URL  string `json:"html_url"`
 	}
 	json.NewDecoder(resp.Body).Decode(&d)
-	return &Project{Name: d.Name, URL: d.URL, Description: html.EscapeString(d.Desc), Language: d.Lang}, nil
+
+	cleanDesc := cleanMarkdownDesc(d.Desc)
+
+	return &Project{Name: d.Name, URL: d.URL, Description: cleanDesc, Language: d.Lang}, nil
 }
 
 func saveData(path string, db []*CategoryNode) {
