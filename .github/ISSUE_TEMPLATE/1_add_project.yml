@@ -33,6 +33,8 @@ body:
         - "☁️ 云原生与自动化运维 (Cloud Native & DevOps)"
         - "☁️ 云原生与自动化运维 (Cloud Native & DevOps) / 🐳 容器编排与管理"
         - "☁️ 云原生与自动化运维 (Cloud Native & DevOps) / CI、CD 持续交付"
+        - "📈 金融科技"
+        - "📈 金融科技 / 量化交易"
   - type: input
     id: new_category
     attributes:

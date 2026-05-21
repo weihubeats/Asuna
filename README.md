@@ -66,6 +66,8 @@
 
 | 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
+| [easy-vibe](https://github.com/datawhalechina/easy-vibe) | 💻 vibe coding 2026 | Your first modern Coding course for beginners to master step by step. | JavaScript | ![Star](https://img.shields.io/github/stars/datawhalechina/easy-vibe.svg?style=social&label=Star) |
+| [hello-agents](https://github.com/datawhalechina/hello-agents) | 📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程 | Python | ![Star](https://img.shields.io/github/stars/datawhalechina/hello-agents.svg?style=social&label=Star) |
 | [learn-opencode](https://github.com/vbgate/learn-opencode) | OpenCode 中文实战课源码与内容仓库：一课一页，覆盖入门到实战工作流。 | Shell | ![Star](https://img.shields.io/github/stars/vbgate/learn-opencode.svg?style=social&label=Star) |
 | [hands-on-modern-rl](https://github.com/walkinglabs/hands-on-modern-rl) | 🚀 An open-source, hands-on curriculum bridging the gap from basic RL concepts to LLM alignment, RLVR, and advanced Agentic systems.  | Python | ![Star](https://img.shields.io/github/stars/walkinglabs/hands-on-modern-rl.svg?style=social&label=Star) |
 
@@ -210,23 +212,35 @@
 
 
   
-
-
-  
-## ☁️ 云原生与自动化运维
-
-
-
-
-
-  
-  
 ### CI、CD 持续交付
 
 
 | 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
+| [gitleaks](https://github.com/gitleaks/gitleaks) | Find secrets with Gitleaks 🔑 | Go | ![Star](https://img.shields.io/github/stars/gitleaks/gitleaks.svg?style=social&label=Star) |
 | [jj](https://github.com/jj-vcs/jj) | A Git-compatible VCS that is both simple and powerful | Rust | ![Star](https://img.shields.io/github/stars/jj-vcs/jj.svg?style=social&label=Star) |
+
+
+
+
+  
+
+
+  
+## 📈 金融科技
+
+
+
+
+
+  
+  
+### 量化交易
+
+
+| 项目名称 | 描述 | 语言 | ⭐️ Stars |
+| :--- | :--- | :--- | :--- |
+| [indicator](https://github.com/cinar/indicator) | Indicator Go delivers a rich set of technical analysis indicators, customizable strategies, and a powerful backtesting framework. No dependencies, just pure simplicity. ✨ See how! 👀 | Go | ![Star](https://img.shields.io/github/stars/cinar/indicator.svg?style=social&label=Star) |
 
 
 

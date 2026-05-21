@@ -56,6 +56,18 @@
         "name": "学习资料",
         "projects": [
           {
+            "name": "easy-vibe",
+            "url": "https://github.com/datawhalechina/easy-vibe",
+            "description": "💻 vibe coding 2026 | Your first modern Coding course for beginners to master step by step.",
+            "language": "JavaScript"
+          },
+          {
+            "name": "hello-agents",
+            "url": "https://github.com/datawhalechina/hello-agents",
+            "description": "📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程",
+            "language": "Python"
+          },
+          {
             "name": "learn-opencode",
             "url": "https://github.com/vbgate/learn-opencode",
             "description": "OpenCode 中文实战课源码与内容仓库：一课一页，覆盖入门到实战工作流。",
@@ -197,6 +209,39 @@
             "name": "kubernetes",
             "url": "https://github.com/kubernetes/kubernetes",
             "description": "Production-Grade Container Scheduling and Management",
+            "language": "Go"
+          }
+        ]
+      },
+      {
+        "name": "CI、CD 持续交付",
+        "projects": [
+          {
+            "name": "gitleaks",
+            "url": "https://github.com/gitleaks/gitleaks",
+            "description": "Find secrets with Gitleaks 🔑",
+            "language": "Go"
+          },
+          {
+            "name": "jj",
+            "url": "https://github.com/jj-vcs/jj",
+            "description": "A Git-compatible VCS that is both simple and powerful",
+            "language": "Rust"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "📈 金融科技",
+    "children": [
+      {
+        "name": "量化交易",
+        "projects": [
+          {
+            "name": "indicator",
+            "url": "https://github.com/cinar/indicator",
+            "description": "Indicator Go delivers a rich set of technical analysis indicators, customizable strategies, and a powerful backtesting framework. No dependencies, just pure simplicity. ✨ See how! 👀",
             "language": "Go"
           }
         ]
