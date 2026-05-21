@@ -66,6 +66,7 @@
 
 | 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
+| [easy-vibe](https://github.com/datawhalechina/easy-vibe) | 💻 vibe coding 2026 \| Your first modern Coding course for beginners to master step by step. | JavaScript | ![Star](https://img.shields.io/github/stars/datawhalechina/easy-vibe.svg?style=social&label=Star) |
 | [easy-vibe](https://github.com/datawhalechina/easy-vibe) | 💻 vibe coding 2026 | Your first modern Coding course for beginners to master step by step. | JavaScript | ![Star](https://img.shields.io/github/stars/datawhalechina/easy-vibe.svg?style=social&label=Star) |
 | [hello-agents](https://github.com/datawhalechina/hello-agents) | 📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程 | Python | ![Star](https://img.shields.io/github/stars/datawhalechina/hello-agents.svg?style=social&label=Star) |
 | [learn-opencode](https://github.com/vbgate/learn-opencode) | OpenCode 中文实战课源码与内容仓库：一课一页，覆盖入门到实战工作流。 | Shell | ![Star](https://img.shields.io/github/stars/vbgate/learn-opencode.svg?style=social&label=Star) |

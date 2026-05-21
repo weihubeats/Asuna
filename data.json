@@ -58,6 +58,12 @@
           {
             "name": "easy-vibe",
             "url": "https://github.com/datawhalechina/easy-vibe",
+            "description": "💻 vibe coding 2026 \\| Your first modern Coding course for beginners to master step by step.",
+            "language": "JavaScript"
+          },
+          {
+            "name": "easy-vibe",
+            "url": "https://github.com/datawhalechina/easy-vibe",
             "description": "💻 vibe coding 2026 | Your first modern Coding course for beginners to master step by step.",
             "language": "JavaScript"
           },
