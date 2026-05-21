@@ -184,6 +184,7 @@
 
 | 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
+| [muxy](https://github.com/muxy-app/muxy) | Lightweight and Memory efficient terminal for Mac built with SwiftUI and libghostty | Swift | ![Star](https://img.shields.io/github/stars/muxy-app/muxy.svg?style=social&label=Star) |
 | [port-killer](https://github.com/productdevbook/port-killer) | A powerful cross-platform port management tool for developers. Monitor ports, manage Kubernetes port forwards, integrate Cloudflare Tunnels, and kill processes with one click. | Swift | ![Star](https://img.shields.io/github/stars/productdevbook/port-killer.svg?style=social&label=Star) |
 
 
