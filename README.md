@@ -192,6 +192,17 @@
 
 
   
+### 浏览器自动化工具
+
+
+| 项目名称 | 描述 | 语言 | ⭐️ Stars |
+| :--- | :--- | :--- | :--- |
+| [obscura](https://github.com/h4ckf0r0day/obscura) | The headless browser for AI agents and web scraping | Rust | ![Star](https://img.shields.io/github/stars/h4ckf0r0day/obscura.svg?style=social&label=Star) |
+
+
+
+
+  
 
 
   
