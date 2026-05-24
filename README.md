@@ -125,6 +125,17 @@
 
 
   
+### 向量数据库
+
+
+| 项目名称 | 描述 | 语言 | ⭐️ Stars |
+| :--- | :--- | :--- | :--- |
+| [zvec](https://github.com/alibaba/zvec) | A lightweight, lightning-fast, in-process vector database | C++ | ![Star](https://img.shields.io/github/stars/alibaba/zvec.svg?style=social&label=Star) |
+
+
+
+
+  
 
 
   

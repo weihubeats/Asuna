@@ -154,6 +154,17 @@
             "language": "C++"
           }
         ]
+      },
+      {
+        "name": "向量数据库",
+        "projects": [
+          {
+            "name": "zvec",
+            "url": "https://github.com/alibaba/zvec",
+            "description": "A lightweight, lightning-fast, in-process vector database",
+            "language": "C++"
+          }
+        ]
       }
     ]
   },
