@@ -62,6 +62,12 @@
         "name": "学习资料",
         "projects": [
           {
+            "name": "learn-claude-code",
+            "url": "https://github.com/shareAI-lab/learn-claude-code",
+            "description": "Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1",
+            "language": "Python"
+          },
+          {
             "name": "easy-vibe",
             "url": "https://github.com/datawhalechina/easy-vibe",
             "description": "💻 vibe coding 2026 \\| Your first modern Coding course for beginners to master step by step.",

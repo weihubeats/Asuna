@@ -67,6 +67,7 @@
 
 | 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
+| [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) | Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1 | Python | ![Star](https://img.shields.io/github/stars/shareAI-lab/learn-claude-code.svg?style=social&label=Star) |
 | [easy-vibe](https://github.com/datawhalechina/easy-vibe) | 💻 vibe coding 2026 \| Your first modern Coding course for beginners to master step by step. | JavaScript | ![Star](https://img.shields.io/github/stars/datawhalechina/easy-vibe.svg?style=social&label=Star) |
 | [easy-vibe](https://github.com/datawhalechina/easy-vibe) | 💻 vibe coding 2026 | Your first modern Coding course for beginners to master step by step. | JavaScript | ![Star](https://img.shields.io/github/stars/datawhalechina/easy-vibe.svg?style=social&label=Star) |
 | [hello-agents](https://github.com/datawhalechina/hello-agents) | 📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程 | Python | ![Star](https://img.shields.io/github/stars/datawhalechina/hello-agents.svg?style=social&label=Star) |
