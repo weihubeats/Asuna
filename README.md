@@ -55,6 +55,7 @@
 
 | 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
+| [native-feel-skill](https://github.com/yetone/native-feel-skill) | An Agent Skill for designing cross-platform desktop apps that feel native — distilled from Raycast's 2.0 deep-dive and reverse engineering of Raycast Beta.app. Eight architectural tenets, four-layer architecture, WebKit/WebView2 survival guide, 75-item ship audit. |  | ![Star](https://img.shields.io/github/stars/yetone/native-feel-skill.svg?style=social&label=Star) |
 | [skills](https://github.com/mattpocock/skills) | Skills for Real Engineers. Straight from my .claude directory. | Shell | ![Star](https://img.shields.io/github/stars/mattpocock/skills.svg?style=social&label=Star) |
 
 

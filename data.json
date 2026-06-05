@@ -45,6 +45,12 @@
         "name": "Skills",
         "projects": [
           {
+            "name": "native-feel-skill",
+            "url": "https://github.com/yetone/native-feel-skill",
+            "description": "An Agent Skill for designing cross-platform desktop apps that feel native — distilled from Raycast's 2.0 deep-dive and reverse engineering of Raycast Beta.app. Eight architectural tenets, four-layer architecture, WebKit/WebView2 survival guide, 75-item ship audit.",
+            "language": ""
+          },
+          {
             "name": "skills",
             "url": "https://github.com/mattpocock/skills",
             "description": "Skills for Real Engineers. Straight from my .claude directory.",
