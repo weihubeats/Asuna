@@ -230,6 +230,17 @@
             "language": "Rust"
           }
         ]
+      },
+      {
+        "name": "个人知识管理与笔记软件",
+        "projects": [
+          {
+            "name": "tolaria",
+            "url": "https://github.com/refactoringhq/tolaria",
+            "description": "Desktop app to manage markdown knowledge bases",
+            "language": "TypeScript"
+          }
+        ]
       }
     ]
   },
