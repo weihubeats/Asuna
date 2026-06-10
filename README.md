@@ -39,6 +39,17 @@
 
 
   
+### idea 插件
+
+
+| 项目名称 | 描述 | 语言 | ⭐️ Stars |
+| :--- | :--- | :--- | :--- |
+| [TranslationPlugin](https://github.com/YiiGuxing/TranslationPlugin) | Translation plugin for IntelliJ-based IDEs/Android Studio. | Kotlin | ![Star](https://img.shields.io/github/stars/YiiGuxing/TranslationPlugin.svg?style=social&label=Star) |
+
+
+
+
+  
 
 
   

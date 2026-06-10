@@ -35,6 +35,17 @@
             "language": "Java"
           }
         ]
+      },
+      {
+        "name": "idea 插件",
+        "projects": [
+          {
+            "name": "TranslationPlugin",
+            "url": "https://github.com/YiiGuxing/TranslationPlugin",
+            "description": "Translation plugin for IntelliJ-based IDEs/Android Studio.",
+            "language": "Kotlin"
+          }
+        ]
       }
     ]
   },
