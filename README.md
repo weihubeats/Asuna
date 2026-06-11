@@ -165,6 +165,7 @@
 
 | 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
+| [marktext](https://github.com/marktext/marktext) | 📝A simple and elegant markdown editor, available for Linux, macOS and Windows. | TypeScript | ![Star](https://img.shields.io/github/stars/marktext/marktext.svg?style=social&label=Star) |
 | [blinko](https://github.com/blinkospace/blinko) | An open-source, self-hosted personal AI note tool prioritizing privacy, built using TypeScript . | TypeScript | ![Star](https://img.shields.io/github/stars/blinkospace/blinko.svg?style=social&label=Star) |
 
 

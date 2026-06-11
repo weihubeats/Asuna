@@ -198,6 +198,12 @@
         "name": "知识库\u0026个人笔记",
         "projects": [
           {
+            "name": "marktext",
+            "url": "https://github.com/marktext/marktext",
+            "description": "📝A simple and elegant markdown editor, available for Linux, macOS and Windows.",
+            "language": "TypeScript"
+          },
+          {
             "name": "blinko",
             "url": "https://github.com/blinkospace/blinko",
             "description": "An open-source, self-hosted personal AI note tool prioritizing privacy, built using TypeScript .",
