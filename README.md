@@ -94,6 +94,7 @@
 
 | 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
+| [MiMo-Code](https://github.com/XiaomiMiMo/MiMo-Code) | MiMo Code: Where Models and Agents Co-Evolve | TypeScript | ![Star](https://img.shields.io/github/stars/XiaomiMiMo/MiMo-Code.svg?style=social&label=Star) |
 | [OpenMonoAgent.ai](https://github.com/StartupHakk/OpenMonoAgent.ai) | (BETA) AI shouldn't have a meter. Unlimited tokens. Forever. Your machine. Your agent. Use it from anywhere. Terminal-native coding agent powered by local LLMs — 100% open source, free forever, and installed with a single command. Proudly built on C#/.NET, because AI tooling should be infrastructure, not a subscription. | C# | ![Star](https://img.shields.io/github/stars/StartupHakk/OpenMonoAgent.ai.svg?style=social&label=Star) |
 | [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | omo; the best agent harness - previously oh-my-opencode | TypeScript | ![Star](https://img.shields.io/github/stars/code-yeongyu/oh-my-openagent.svg?style=social&label=Star) |
 | [OpenSpec](https://github.com/Fission-AI/OpenSpec) | Spec-driven development (SDD) for AI coding assistants. | TypeScript | ![Star](https://img.shields.io/github/stars/Fission-AI/OpenSpec.svg?style=social&label=Star) |

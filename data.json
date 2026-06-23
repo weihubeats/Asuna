@@ -114,6 +114,12 @@
         "name": "AI 编程助手 \u0026 桌面客户端",
         "projects": [
           {
+            "name": "MiMo-Code",
+            "url": "https://github.com/XiaomiMiMo/MiMo-Code",
+            "description": "MiMo Code: Where Models and Agents Co-Evolve",
+            "language": "TypeScript"
+          },
+          {
             "name": "OpenMonoAgent.ai",
             "url": "https://github.com/StartupHakk/OpenMonoAgent.ai",
             "description": "(BETA) AI shouldn't have a meter. Unlimited tokens. Forever. Your machine. Your agent. Use it from anywhere. Terminal-native coding agent powered by local LLMs — 100% open source, free forever, and installed with a single command. Proudly built on C#/.NET, because AI tooling should be infrastructure, not a subscription.",
