@@ -122,6 +122,7 @@
 
 | 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
+| [dbx](https://github.com/t8y2/dbx) | 15MB, lightweight, cross-platform database client. Supports MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, ClickHouse, SQL Server and more.15MB，轻量级跨平台数据库客户端、数据库管理工具。支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、DuckDB、ClickHouse、SQL Server 等。 | Rust | ![Star](https://img.shields.io/github/stars/t8y2/dbx.svg?style=social&label=Star) |
 | [dataflare](https://github.com/DataflareApp/dataflare) | Simple, easy-to-use database manager | TypeScript | ![Star](https://img.shields.io/github/stars/DataflareApp/dataflare.svg?style=social&label=Star) |
 
 
