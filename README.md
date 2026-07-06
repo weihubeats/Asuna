@@ -134,6 +134,7 @@
 
 | 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
+| [wcdb](https://github.com/Tencent/wcdb) | WCDB is a cross-platform database framework developed by WeChat. | C | ![Star](https://img.shields.io/github/stars/Tencent/wcdb.svg?style=social&label=Star) |
 | [mysql-server](https://github.com/mysql/mysql-server) | MySQL Server, the world&#39;s most popular open source database, and MySQL Cluster, a real-time, open source transactional database. | C++ | ![Star](https://img.shields.io/github/stars/mysql/mysql-server.svg?style=social&label=Star) |
 
 

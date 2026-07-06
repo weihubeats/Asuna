@@ -183,6 +183,12 @@
         "name": "关系型数据库",
         "projects": [
           {
+            "name": "wcdb",
+            "url": "https://github.com/Tencent/wcdb",
+            "description": "WCDB is a cross-platform database framework developed by WeChat.",
+            "language": "C"
+          },
+          {
             "name": "mysql-server",
             "url": "https://github.com/mysql/mysql-server",
             "description": "MySQL Server, the world\u0026#39;s most popular open source database, and MySQL Cluster, a real-time, open source transactional database.",
