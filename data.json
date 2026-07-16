@@ -156,6 +156,17 @@
             "language": "Rust"
           }
         ]
+      },
+      {
+        "name": "Agent 框架",
+        "projects": [
+          {
+            "name": "agentscope-java",
+            "url": "https://github.com/agentscope-ai/agentscope-java",
+            "description": "Build distributed, production-grade, long-running agents.",
+            "language": "Java"
+          }
+        ]
       }
     ]
   },

@@ -106,6 +106,17 @@
 
 
   
+### Agent 框架
+
+
+| 项目名称 | 描述 | 语言 | ⭐️ Stars |
+| :--- | :--- | :--- | :--- |
+| [agentscope-java](https://github.com/agentscope-ai/agentscope-java) | Build distributed, production-grade, long-running agents. | Java | ![Star](https://img.shields.io/github/stars/agentscope-ai/agentscope-java.svg?style=social&label=Star) |
+
+
+
+
+  
 
 
   
