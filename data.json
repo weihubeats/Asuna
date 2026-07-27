@@ -177,6 +177,12 @@
         "name": "客户端管理工具",
         "projects": [
           {
+            "name": "Chat2DB",
+            "url": "https://github.com/OtterMind/Chat2DB",
+            "description": "🔥🔥🔥 AI-driven database tool and SQL client, The hottest GUI client, supporting MySQL, Oracle, PostgreSQL, DB2, SQL Server, DB2, SQLite, H2, ClickHouse, and more.",
+            "language": "Java"
+          },
+          {
             "name": "dbx",
             "url": "https://github.com/t8y2/dbx",
             "description": "15MB, lightweight, cross-platform database client. Supports MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, ClickHouse, SQL Server and more.15MB，轻量级跨平台数据库客户端、数据库管理工具。支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、DuckDB、ClickHouse、SQL Server 等。",
