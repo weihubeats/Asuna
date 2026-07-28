@@ -117,6 +117,17 @@
 
 
   
+### Token压缩
+
+
+| 项目名称 | 描述 | 语言 | ⭐️ Stars |
+| :--- | :--- | :--- | :--- |
+| [caveman](https://github.com/JuliusBrussee/caveman) | 🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman | JavaScript | ![Star](https://img.shields.io/github/stars/JuliusBrussee/caveman.svg?style=social&label=Star) |
+
+
+
+
+  
 
 
   
