@@ -122,6 +122,7 @@
 
 | 项目名称 | 描述 | 语言 | ⭐️ Stars |
 | :--- | :--- | :--- | :--- |
+| [rtk](https://github.com/rtk-ai/rtk) | CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies | Rust | ![Star](https://img.shields.io/github/stars/rtk-ai/rtk.svg?style=social&label=Star) |
 | [caveman](https://github.com/JuliusBrussee/caveman) | 🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman | JavaScript | ![Star](https://img.shields.io/github/stars/JuliusBrussee/caveman.svg?style=social&label=Star) |
 
 
