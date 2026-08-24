@@ -4,136 +4,278 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Asuna · 开源项目精选</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5/github-markdown-light.css">
 <style>
   :root {
-    --bg: #f6f8fa; --card: #fff; --border: #d0d7de;
-    --fg: #1f2328; --muted: #656d76; --accent: #0969da; --danger: #cf222e;
+    --bg: #f5f7fa;
+    --card: #ffffff;
+    --border: #e6e9ef;
+    --fg: #1c2128;
+    --muted: #77808c;
+    --accent: #2563eb;
+    --accent-soft: #eff4ff;
+    --green: #16a34a;
+    --danger: #dc2626;
+    --gold: #eab308;
+    --shadow-sm: 0 1px 2px rgba(16,24,40,.05);
+    --shadow-md: 0 4px 16px rgba(16,24,40,.08);
+    --radius: 12px;
   }
   * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
   body {
-    margin: 0; font-family: -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
-    background: var(--bg); color: var(--fg);
+    margin: 0; color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background:
+      radial-gradient(1200px 400px at 80% -10%, rgba(37,99,235,.07), transparent 60%),
+      radial-gradient(900px 300px at 10% -10%, rgba(22,163,74,.06), transparent 60%),
+      var(--bg);
+    min-height: 100vh;
   }
-  header {
-    display: flex; align-items: center; gap: 16px;
-    padding: 12px 24px; background: var(--card); border-bottom: 1px solid var(--border);
-    position: sticky; top: 0; z-index: 10;
-  }
-  header h1 { font-size: 18px; margin: 0 auto 0 0; }
-  header h1 a { color: inherit; text-decoration: none; }
-  .tab {
-    padding: 6px 14px; border-radius: 6px; cursor: pointer; border: none;
-    background: transparent; font-size: 14px; color: var(--muted);
-  }
-  .tab.active { background: var(--accent); color: #fff; }
-  .btn {
-    padding: 6px 14px; border-radius: 6px; border: 1px solid var(--border);
-    background: var(--card); color: var(--fg); cursor: pointer; font-size: 14px;
-  }
-  .btn.primary { background: #1a7f37; border-color: #1a7f37; color: #fff; }
-  .btn.primary:hover { opacity: .92; }
-  .btn.ghost { background: transparent; }
-  .btn.sm { padding: 3px 10px; font-size: 13px; }
-  .btn.block { display: block; width: calc(100% - 24px); margin: 4px 12px; }
-  .btn[disabled] { opacity: .6; cursor: wait; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
 
-  main { max-width: 1200px; margin: 20px auto; padding: 0 16px; }
-  #browseView { display: flex; gap: 16px; align-items: flex-start; }
+  /* ---------- Header ---------- */
+  header {
+    display: flex; align-items: center; gap: 10px;
+    padding: 12px 28px;
+    background: rgba(255,255,255,.82);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    position: sticky; top: 0; z-index: 20;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; margin-right: 18px; }
+  .brand .logo {
+    width: 34px; height: 34px; border-radius: 9px;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-size: 17px; box-shadow: var(--shadow-sm);
+  }
+  .brand b { font-size: 16px; letter-spacing: .2px; }
+  .brand small { display: block; color: var(--muted); font-size: 12px; margin-top: 1px; }
+  .brand a { color: inherit; }
+  .brand a:hover { text-decoration: none; }
+
+  .tab {
+    padding: 7px 16px; border-radius: 999px; cursor: pointer; border: none;
+    background: transparent; font-size: 14px; color: var(--muted);
+    transition: all .15s;
+  }
+  .tab:hover { color: var(--fg); background: rgba(0,0,0,.04); }
+  .tab.active { background: var(--accent); color: #fff; box-shadow: var(--shadow-sm); }
+
+  .spacer { flex: 1; }
+
+  .search-wrap { position: relative; }
+  .search-wrap input {
+    width: 220px; padding: 8px 12px 8px 32px;
+    border: 1px solid var(--border); border-radius: 999px;
+    font-size: 13px; background: var(--bg); outline: none;
+    transition: all .15s;
+  }
+  .search-wrap input:focus { width: 280px; border-color: var(--accent); background: #fff; box-shadow: 0 0 0 3px rgba(37,99,235,.12); }
+  .search-wrap::before {
+    content: "🔍"; position: absolute; left: 10px; top: 50%;
+    transform: translateY(-50%); font-size: 12px; opacity: .6;
+  }
+
+  .btn {
+    padding: 8px 16px; border-radius: 8px; border: 1px solid var(--border);
+    background: var(--card); color: var(--fg); cursor: pointer; font-size: 14px;
+    transition: all .15s; white-space: nowrap;
+  }
+  .btn:hover { border-color: #cdd3dc; box-shadow: var(--shadow-sm); }
+  .btn.primary { background: var(--green); border-color: var(--green); color: #fff; font-weight: 500; }
+  .btn.primary:hover { filter: brightness(1.05); box-shadow: 0 2px 8px rgba(22,163,74,.3); }
+  .btn.ghost { background: transparent; border-color: transparent; color: var(--muted); }
+  .btn.ghost:hover { color: var(--fg); background: rgba(0,0,0,.05); box-shadow: none; }
+  .btn.sm { padding: 4px 12px; font-size: 13px; border-radius: 7px; }
+  .btn.block { display: block; width: calc(100% - 20px); margin: 6px 10px 10px; }
+  .btn[disabled] { opacity: .55; cursor: wait; }
+
+  .user-chip {
+    display: flex; align-items: center; gap: 8px; font-size: 13px;
+    background: var(--accent-soft); color: var(--accent);
+    padding: 5px 12px; border-radius: 999px;
+  }
+  .user-chip img { border-radius: 50%; }
+  #logoutLink { color: inherit; opacity: .7; cursor: pointer; }
+  #logoutLink:hover { opacity: 1; }
+
+  /* ---------- Layout ---------- */
+  main { max-width: 1240px; margin: 24px auto 60px; padding: 0 24px; }
+  #browseView { display: flex; gap: 20px; align-items: flex-start; }
 
   aside#tree {
     width: 300px; flex-shrink: 0; background: var(--card);
-    border: 1px solid var(--border); border-radius: 8px; overflow: hidden;
+    border: 1px solid var(--border); border-radius: var(--radius);
+    box-shadow: var(--shadow-sm); overflow: hidden;
+    position: sticky; top: 78px;
+    max-height: calc(100vh - 100px); display: flex; flex-direction: column;
   }
+  .tree-head {
+    padding: 14px 16px 10px; font-size: 12px; font-weight: 600;
+    color: var(--muted); text-transform: uppercase; letter-spacing: .8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .tree-scroll { overflow-y: auto; padding: 6px 0; flex: 1; }
   .tree-row {
-    display: flex; align-items: center; gap: 6px;
-    padding: 8px 12px; cursor: pointer; font-size: 14px;
+    display: flex; align-items: center; gap: 8px;
+    padding: 8px 14px; cursor: pointer; font-size: 14px;
     border-left: 3px solid transparent;
+    transition: background .12s;
+    margin: 0 6px; border-radius: 0 8px 8px 0;
   }
   .tree-row:hover { background: var(--bg); }
-  .tree-row.active { background: #ddf4ff; border-left-color: var(--accent); }
-  .tree-row.lv1 { padding-left: 26px; }
-  .tree-row.lv2 { padding-left: 40px; }
-  .tree-row.lv3 { padding-left: 54px; }
+  .tree-row.active {
+    background: var(--accent-soft); border-left-color: var(--accent);
+    color: var(--accent); font-weight: 500;
+  }
+  .tree-row.lv1 { padding-left: 28px; }
+  .tree-row.lv2 { padding-left: 42px; }
+  .tree-row.lv3 { padding-left: 56px; }
   .tree-name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .count {
-    font-size: 12px; color: var(--muted); background: var(--bg);
-    border-radius: 10px; padding: 1px 8px;
+    font-size: 11px; color: var(--muted); background: var(--bg);
+    border-radius: 999px; padding: 2px 8px; font-weight: 500;
+    min-width: 26px; text-align: center;
   }
-  .tree-row .ops { visibility: hidden; display: flex; gap: 6px; }
-  .tree-row:hover .ops { visibility: visible; }
-  .ops a { color: var(--accent); cursor: pointer; font-size: 12px; text-decoration: none; }
+  .tree-row.active .count { background: #dbe7ff; color: var(--accent); }
+  .tree-row .ops { visibility: hidden; display: flex; gap: 8px; }
+  .tree-row:hover .ops, .tree-row.active .ops { visibility: visible; }
+  .ops a { color: var(--accent); cursor: pointer; font-size: 12px; }
+  .ops a.del { color: var(--danger); }
 
+  /* ---------- Panel ---------- */
   section#panel {
     flex: 1; min-width: 0; background: var(--card);
-    border: 1px solid var(--border); border-radius: 8px; padding: 20px 24px;
+    border: 1px solid var(--border); border-radius: var(--radius);
+    box-shadow: var(--shadow-sm); padding: 24px 28px; min-height: 400px;
   }
-  #panel h2 { margin-top: 0; font-size: 18px; }
+  .panel-title { display: flex; align-items: baseline; gap: 10px; margin: 0 0 6px; }
+  .panel-title h2 { margin: 0; font-size: 20px; }
+  .panel-title .crumb { color: var(--muted); font-size: 13px; }
+  .panel-sub { color: var(--muted); font-size: 13px; margin-bottom: 18px; }
+
   table.projects { width: 100%; border-collapse: collapse; font-size: 14px; }
-  table.projects th, table.projects td {
-    text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top;
+  table.projects th {
+    text-align: left; padding: 10px 12px; color: var(--muted);
+    font-weight: 500; font-size: 12px; text-transform: uppercase; letter-spacing: .5px;
+    border-bottom: 1px solid var(--border);
   }
-  table.projects th { color: var(--muted); font-weight: 500; }
-  td .desc { color: var(--muted); font-size: 13px; margin-top: 2px; }
-  td.stars { white-space: nowrap; color: #9a6700; }
+  table.projects td {
+    padding: 12px; border-bottom: 1px solid var(--border); vertical-align: top;
+  }
+  table.projects tr:last-child td { border-bottom: none; }
+  table.projects tbody tr { transition: background .12s; }
+  table.projects tbody tr:hover { background: #fafbfd; }
+  td .pname { font-weight: 600; }
+  td .desc { color: var(--muted); font-size: 13px; margin-top: 3px; line-height: 1.5; }
+  td.stars { white-space: nowrap; color: var(--gold); font-weight: 600; }
   .row-ops { white-space: nowrap; text-align: right; }
-  .row-ops a { cursor: pointer; color: var(--danger); font-size: 13px; margin-left: 10px; text-decoration: none; }
-  .move-sel { font-size: 12px; max-width: 160px; color: var(--accent); }
-  .empty { color: var(--muted); padding: 40px 0; text-align: center; }
+  .row-ops a.danger { color: var(--danger); font-size: 13px; margin-left: 12px; cursor: pointer; }
+  .move-sel {
+    font-size: 12px; max-width: 170px; color: var(--accent);
+    border: 1px solid var(--border); border-radius: 6px; padding: 3px 6px; background: #fff;
+  }
+  .lang-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; }
+  .muted { color: var(--muted); }
+  .empty { color: var(--muted); text-align: center; padding: 70px 0; }
+  .empty .big { font-size: 40px; margin-bottom: 10px; }
 
-  /* 编辑条 */
+  .hit-path { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+  /* ---------- Editor bar ---------- */
   #editorBar {
-    margin-top: 24px; padding: 16px; border: 1px dashed var(--border);
-    border-radius: 8px; background: var(--bg);
+    margin-top: 20px; padding: 18px 20px;
+    background: linear-gradient(to right, var(--accent-soft), #fff 40%);
+    border: 1px solid #d6e2ff; border-radius: var(--radius);
   }
-  #editorBar h3 { margin: 0 0 12px; font-size: 14px; color: var(--muted); }
-  .form-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+  #editorBar h3 { margin: 0 0 12px; font-size: 14px; color: var(--accent); display: flex; align-items: center; gap: 6px; }
+  .form-row { display: flex; gap: 8px; flex-wrap: wrap; }
   .form-row input[type=text], .form-row select {
-    padding: 7px 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 14px;
+    padding: 8px 12px; border: 1px solid var(--border); border-radius: 8px;
+    font-size: 14px; background: #fff; outline: none; transition: all .15s;
   }
-  .form-row input[type=text] { flex: 1; min-width: 240px; }
-  #metaCard { margin-top: 10px; padding: 12px; border-radius: 6px; background: var(--card); border: 1px solid var(--border); }
-  #metaBody { white-space: pre-wrap; font-size: 14px; }
+  .form-row input[type=text] { flex: 1; min-width: 260px; }
+  .form-row input[type=text]:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(37,99,235,.12); }
+  #metaCard {
+    margin-top: 12px; padding: 14px 16px; border-radius: 8px;
+    background: #fff; border: 1px solid var(--border); box-shadow: var(--shadow-sm);
+  }
+  #metaBody { white-space: pre-wrap; font-size: 14px; line-height: 1.6; }
 
-  /* 用户区 */
-  .user-chip { display: flex; align-items: center; gap: 8px; font-size: 14px; }
-  .user-chip img { border-radius: 50%; }
-  #logoutLink { color: var(--muted); cursor: pointer; font-size: 13px; }
+  /* ---------- Preview ---------- */
+  #previewView {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 28px 36px;
+  }
+  #previewView pre {
+    white-space: pre-wrap; word-break: break-all; font-size: 13px;
+    background: var(--bg); padding: 16px; border-radius: 8px; line-height: 1.6;
+  }
+  .md-body { font-size: 15px; line-height: 1.7; }
+  .md-body h1, .md-body h2 { border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+  .md-body table { border-collapse: collapse; }
+  .md-body th, .md-body td { border: 1px solid var(--border); padding: 6px 12px; }
 
-  /* toast / 弹窗 */
+  /* ---------- Toast / Dialog ---------- */
   #toast {
-    position: fixed; bottom: -60px; left: 50%; transform: translateX(-50%);
-    background: #24292f; color: #fff; padding: 10px 22px; border-radius: 8px;
-    transition: bottom .25s; z-index: 99; max-width: 80vw; font-size: 14px;
+    position: fixed; bottom: -70px; left: 50%; transform: translateX(-50%);
+    background: #1c2128; color: #fff; padding: 12px 24px; border-radius: 999px;
+    transition: bottom .3s cubic-bezier(.2,.9,.3,1.2); z-index: 99;
+    max-width: 82vw; font-size: 14px; box-shadow: var(--shadow-md);
   }
-  #toast.show { bottom: 32px; }
+  #toast.show { bottom: 34px; }
   #toast.err { background: var(--danger); }
-  #codeBox {
-    display: none; position: fixed; inset: 0; background: rgba(0,0,0,.45);
-    z-index: 98; align-items: center; justify-content: center;
-  }
-  #codeBox .box {
-    background: var(--card); padding: 28px 36px; border-radius: 12px; text-align: center;
-  }
-  #codeVal { font-size: 34px; letter-spacing: 6px; font-weight: 700; color: var(--accent); margin: 12px 0; user-select: all; }
 
-  #previewView { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 24px 32px; }
-  #previewView pre { white-space: pre-wrap; word-break: break-all; font-size: 13px; }
+  .overlay {
+    display: none; position: fixed; inset: 0; background: rgba(15,23,42,.45);
+    z-index: 98; align-items: center; justify-content: center; backdrop-filter: blur(2px);
+  }
+  .overlay .box {
+    background: #fff; padding: 30px 34px; border-radius: 16px;
+    box-shadow: var(--shadow-md); max-width: 480px; width: 92vw;
+  }
+  .overlay h3 { margin: 0 0 14px; font-size: 17px; }
+  .overlay .steps { margin: 0 0 16px; padding-left: 20px; color: var(--muted); font-size: 13.5px; line-height: 2; }
+  .overlay input[type=password], .overlay input[type=text] {
+    width: 100%; padding: 10px 12px; border: 1px solid var(--border);
+    border-radius: 8px; font-size: 14px; margin-bottom: 14px; outline: none;
+  }
+  .overlay input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(37,99,235,.12); }
+  #codeVal {
+    font-size: 34px; letter-spacing: 6px; font-weight: 700; color: var(--accent);
+    margin: 14px 0; user-select: all; text-align: center;
+  }
 
-  @media (max-width: 800px) {
+  footer { text-align: center; color: var(--muted); font-size: 12.5px; padding: 0 0 40px; }
+
+  @media (max-width: 860px) {
     #browseView { flex-direction: column; }
-    aside#tree { width: 100%; }
+    aside#tree { width: 100%; position: static; max-height: 320px; }
+    .search-wrap input { width: 150px; }
+    .search-wrap input:focus { width: 180px; }
+    header { padding: 10px 14px; flex-wrap: wrap; }
   }
 </style>
 </head>
 <body>
 
 <header>
-  <h1><a href="./" id="repoHome">⭐ Asuna 开源项目精选</a></h1>
+  <div class="brand">
+    <div class="logo">⭐</div>
+    <div>
+      <b><a href="./" id="repoHome">Asuna</a></b>
+      <small>开源项目精选 · 提交即收录</small>
+    </div>
+  </div>
   <button class="tab active" data-view="browse">浏览</button>
   <button class="tab" data-view="preview">README 预览</button>
-  <button id="saveBtn" class="btn primary" hidden>保存</button>
+  <div class="spacer"></div>
+  <div class="search-wrap"><input type="text" id="searchInput" placeholder="搜索项目…"></div>
+  <button id="saveBtn" class="btn primary" hidden>💾 保存更改</button>
   <span class="user-chip" id="userChip" hidden>
+    <img id="userAvatar" width="20" height="20" alt="">
     <span id="userName"></span>·<a id="logoutLink">退出</a>
   </span>
   <button id="loginBtn" class="btn">🔑 登录编辑</button>
@@ -141,14 +283,17 @@
 
 <main>
   <div id="browseView">
-    <aside id="tree"></aside>
+    <aside id="tree">
+      <div class="tree-head">📂 分类目录</div>
+      <div class="tree-scroll" id="treeScroll"></div>
+    </aside>
     <section id="panel"></section>
   </div>
 
   <div id="previewView" hidden></div>
 
   <div id="editorBar" hidden>
-    <h3>➕ 新增项目（暂存，点右上角「保存」统一提交）</h3>
+    <h3>➕ 新增项目 <span class="muted" style="font-weight:400">（先暂存，点右上角「保存更改」统一提交）</span></h3>
     <div class="form-row">
       <input type="text" id="inUrl" placeholder="https://github.com/owner/repo">
       <button class="btn" id="fetchMetaBtn">获取信息</button>
@@ -159,23 +304,34 @@
   </div>
 </main>
 
-<div id="codeBox">
+<footer>
+  Powered by <a href="https://github.com/weihubeats/Asuna" target="_blank" rel="noopener">Asuna</a>
+  · 数据存储于 GitHub 仓库 · <a href="https://github.com/weihubeats/Asuna/issues/new/choose" target="_blank" rel="noopener">Issue 投稿</a>
+</footer>
+
+<div class="overlay" id="tokenBox">
   <div class="box">
-    <div>请在 GitHub 输入以下一次性代码：</div>
-    <div id="codeVal"></div>
-    <a id="codeLink" href="https://github.com/login/device" target="_blank">
-      <button class="btn primary">打开 github.com/login/device</button>
-    </a>
-    <div style="margin-top:14px"><button class="btn ghost sm" id="codeCancel">取消</button></div>
+    <h3>🔑 登录编辑</h3>
+    <ol class="steps">
+      <li>打开 <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">创建 Fine-grained Token</a></li>
+      <li>Repository access → <b>Only select repositories</b> → 勾选 <b>Asuna</b></li>
+      <li>Permissions → Repository permissions → <b>Contents</b> 设为 <b>Read and write</b></li>
+      <li>生成后复制 Token 粘贴到下方（仅存于你的浏览器）</li>
+    </ol>
+    <input type="password" id="tokenInput" placeholder="github_pat_… 或 ghp_…">
+    <div style="display:flex;gap:8px">
+      <button class="btn primary" id="tokenSave">验证并登录</button>
+      <button class="btn ghost" id="tokenCancel">取消</button>
+    </div>
   </div>
 </div>
 
 <div id="toast"></div>
 
-<script src="config.js"></script>
-<script src="render.js"></script>
+<script src="config.js?v=2"></script>
+<script src="render.js?v=2"></script>
 <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
-<script src="app.js"></script>
+<script src="app.js?v=2"></script>
 <script>
   (function () {
     var m = location.pathname.match(/^\/([^/]+)\/([^/]+)\/?/);
