@@ -1,10 +1,18 @@
 name: Asuna Engine
+
 on:
   issues:
     types: [opened, labeled]
 
+# 串行执行，避免并发提交互相覆盖
+concurrency:
+  group: asuna-sync
+  cancel-in-progress: false
+
 jobs:
   sync:
+    # 如需限制仅维护者可触发，改用下方条件：
+    # if: contains(github.event.issue.labels.*.name, 'auto-add') && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association) || contains(github.event.issue.labels.*.name, 'auto-delete') && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association)
     if: contains(github.event.issue.labels.*.name, 'auto-add') || contains(github.event.issue.labels.*.name, 'auto-delete')
     runs-on: ubuntu-latest
     permissions:
@@ -27,9 +35,32 @@ jobs:
           git config --local user.name "AsunaBot"
           git add .
           git commit -m "auto: sync via issue #${{ github.event.issue.number }}" || exit 0
-          git push
-      - name: Close
+          for i in 1 2 3; do
+            if git pull --rebase --autostash origin main && git push; then
+              exit 0
+            fi
+            echo "push 冲突，重试 $i/3"
+            sleep $((i * 5))
+          done
+          exit 1
+      - name: Close on success
+        if: success()
         uses: peter-evans/close-issue@v3
         with:
           issue-number: ${{ github.event.issue.number }}
           comment: "✅ 任务已处理，README 与分类表单已自动刷新！"
+      - name: Comment on failure
+        if: failure()
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            ❌ 自动处理失败，本次未修改仓库。
+
+            可能原因：
+            - GitHub 仓库地址无效或格式不正确
+            - 项目已收录（请勿重复提交）
+            - 分类名包含非法字符（如 | " ' [ ] < > #）
+            - GitHub API 限流
+
+            请修正内容后重新提交 Issue，或查看 [Action 日志](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})。

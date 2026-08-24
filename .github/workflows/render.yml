@@ -1,0 +1,40 @@
+name: Asuna Render & Stars
+
+on:
+  push:
+    branches: [main]
+    paths: ["data.json"]
+  schedule:
+    - cron: "0 1 * * *" # 每天 UTC 01:00 刷新 star 快照
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render-stars:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+
+      # 定时任务：刷新 data.json 内 star 数 + docs/stars.json 快照（页面零成本读取）
+      - name: Update stars snapshot
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ASUNA_STARS=1 go run main.go
+
+      # 每次数据变更：用 Go 真源重算 README 与 Issue 表单，纠正任何漂移
+      - name: Render artifacts
+        run: ASUNA_RENDER=1 go run main.go
+
+      - name: Commit
+        run: |
+          git config --local user.email "bot@github.com"
+          git config --local user.name "AsunaBot"
+          git add -A
+          git diff --cached --quiet || git commit -m "auto: render README & stars snapshot"
+          git push

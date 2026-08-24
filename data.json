@@ -85,12 +85,6 @@
             "language": "JavaScript"
           },
           {
-            "name": "easy-vibe",
-            "url": "https://github.com/datawhalechina/easy-vibe",
-            "description": "💻 vibe coding 2026 | Your first modern Coding course for beginners to master step by step.",
-            "language": "JavaScript"
-          },
-          {
             "name": "hello-agents",
             "url": "https://github.com/datawhalechina/hello-agents",
             "description": "📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程",
@@ -105,7 +99,7 @@
           {
             "name": "hands-on-modern-rl",
             "url": "https://github.com/walkinglabs/hands-on-modern-rl",
-            "description": "🚀 An open-source, hands-on curriculum bridging the gap from basic RL concepts to LLM alignment, RLVR, and advanced Agentic systems. ",
+            "description": "🚀 An open-source, hands-on curriculum bridging the gap from basic RL concepts to LLM alignment, RLVR, and advanced Agentic systems.",
             "language": "Python"
           }
         ]
@@ -146,7 +140,7 @@
           {
             "name": "cc-switch",
             "url": "https://github.com/farion1231/cc-switch",
-            "description": "A cross-platform desktop All-in-One assistant tool for Claude Code, Codex, OpenCode, openclaw \u0026amp; Gemini CLI.",
+            "description": "A cross-platform desktop All-in-One assistant tool for Claude Code, Codex, OpenCode, openclaw \u0026 Gemini CLI.",
             "language": "Rust"
           },
           {
@@ -225,7 +219,7 @@
           {
             "name": "mysql-server",
             "url": "https://github.com/mysql/mysql-server",
-            "description": "MySQL Server, the world\u0026#39;s most popular open source database, and MySQL Cluster, a real-time, open source transactional database.",
+            "description": "MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open source transactional database.",
             "language": "C++"
           }
         ]

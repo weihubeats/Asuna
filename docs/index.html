@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asuna · 开源项目精选</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5/github-markdown-light.css">
+<style>
+  :root {
+    --bg: #f6f8fa; --card: #fff; --border: #d0d7de;
+    --fg: #1f2328; --muted: #656d76; --accent: #0969da; --danger: #cf222e;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; font-family: -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg); color: var(--fg);
+  }
+  header {
+    display: flex; align-items: center; gap: 16px;
+    padding: 12px 24px; background: var(--card); border-bottom: 1px solid var(--border);
+    position: sticky; top: 0; z-index: 10;
+  }
+  header h1 { font-size: 18px; margin: 0 auto 0 0; }
+  header h1 a { color: inherit; text-decoration: none; }
+  .tab {
+    padding: 6px 14px; border-radius: 6px; cursor: pointer; border: none;
+    background: transparent; font-size: 14px; color: var(--muted);
+  }
+  .tab.active { background: var(--accent); color: #fff; }
+  .btn {
+    padding: 6px 14px; border-radius: 6px; border: 1px solid var(--border);
+    background: var(--card); color: var(--fg); cursor: pointer; font-size: 14px;
+  }
+  .btn.primary { background: #1a7f37; border-color: #1a7f37; color: #fff; }
+  .btn.primary:hover { opacity: .92; }
+  .btn.ghost { background: transparent; }
+  .btn.sm { padding: 3px 10px; font-size: 13px; }
+  .btn.block { display: block; width: calc(100% - 24px); margin: 4px 12px; }
+  .btn[disabled] { opacity: .6; cursor: wait; }
+
+  main { max-width: 1200px; margin: 20px auto; padding: 0 16px; }
+  #browseView { display: flex; gap: 16px; align-items: flex-start; }
+
+  aside#tree {
+    width: 300px; flex-shrink: 0; background: var(--card);
+    border: 1px solid var(--border); border-radius: 8px; overflow: hidden;
+  }
+  .tree-row {
+    display: flex; align-items: center; gap: 6px;
+    padding: 8px 12px; cursor: pointer; font-size: 14px;
+    border-left: 3px solid transparent;
+  }
+  .tree-row:hover { background: var(--bg); }
+  .tree-row.active { background: #ddf4ff; border-left-color: var(--accent); }
+  .tree-row.lv1 { padding-left: 26px; }
+  .tree-row.lv2 { padding-left: 40px; }
+  .tree-row.lv3 { padding-left: 54px; }
+  .tree-name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .count {
+    font-size: 12px; color: var(--muted); background: var(--bg);
+    border-radius: 10px; padding: 1px 8px;
+  }
+  .tree-row .ops { visibility: hidden; display: flex; gap: 6px; }
+  .tree-row:hover .ops { visibility: visible; }
+  .ops a { color: var(--accent); cursor: pointer; font-size: 12px; text-decoration: none; }
+
+  section#panel {
+    flex: 1; min-width: 0; background: var(--card);
+    border: 1px solid var(--border); border-radius: 8px; padding: 20px 24px;
+  }
+  #panel h2 { margin-top: 0; font-size: 18px; }
+  table.projects { width: 100%; border-collapse: collapse; font-size: 14px; }
+  table.projects th, table.projects td {
+    text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top;
+  }
+  table.projects th { color: var(--muted); font-weight: 500; }
+  td .desc { color: var(--muted); font-size: 13px; margin-top: 2px; }
+  td.stars { white-space: nowrap; color: #9a6700; }
+  .row-ops { white-space: nowrap; text-align: right; }
+  .row-ops a { cursor: pointer; color: var(--danger); font-size: 13px; margin-left: 10px; text-decoration: none; }
+  .move-sel { font-size: 12px; max-width: 160px; color: var(--accent); }
+  .empty { color: var(--muted); padding: 40px 0; text-align: center; }
+
+  /* 编辑条 */
+  #editorBar {
+    margin-top: 24px; padding: 16px; border: 1px dashed var(--border);
+    border-radius: 8px; background: var(--bg);
+  }
+  #editorBar h3 { margin: 0 0 12px; font-size: 14px; color: var(--muted); }
+  .form-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+  .form-row input[type=text], .form-row select {
+    padding: 7px 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 14px;
+  }
+  .form-row input[type=text] { flex: 1; min-width: 240px; }
+  #metaCard { margin-top: 10px; padding: 12px; border-radius: 6px; background: var(--card); border: 1px solid var(--border); }
+  #metaBody { white-space: pre-wrap; font-size: 14px; }
+
+  /* 用户区 */
+  .user-chip { display: flex; align-items: center; gap: 8px; font-size: 14px; }
+  .user-chip img { border-radius: 50%; }
+  #logoutLink { color: var(--muted); cursor: pointer; font-size: 13px; }
+
+  /* toast / 弹窗 */
+  #toast {
+    position: fixed; bottom: -60px; left: 50%; transform: translateX(-50%);
+    background: #24292f; color: #fff; padding: 10px 22px; border-radius: 8px;
+    transition: bottom .25s; z-index: 99; max-width: 80vw; font-size: 14px;
+  }
+  #toast.show { bottom: 32px; }
+  #toast.err { background: var(--danger); }
+  #codeBox {
+    display: none; position: fixed; inset: 0; background: rgba(0,0,0,.45);
+    z-index: 98; align-items: center; justify-content: center;
+  }
+  #codeBox .box {
+    background: var(--card); padding: 28px 36px; border-radius: 12px; text-align: center;
+  }
+  #codeVal { font-size: 34px; letter-spacing: 6px; font-weight: 700; color: var(--accent); margin: 12px 0; user-select: all; }
+
+  #previewView { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 24px 32px; }
+  #previewView pre { white-space: pre-wrap; word-break: break-all; font-size: 13px; }
+
+  @media (max-width: 800px) {
+    #browseView { flex-direction: column; }
+    aside#tree { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1><a href="./" id="repoHome">⭐ Asuna 开源项目精选</a></h1>
+  <button class="tab active" data-view="browse">浏览</button>
+  <button class="tab" data-view="preview">README 预览</button>
+  <button id="saveBtn" class="btn primary" hidden>保存</button>
+  <span class="user-chip" id="userChip" hidden>
+    <span id="userName"></span>·<a id="logoutLink">退出</a>
+  </span>
+  <button id="loginBtn" class="btn">🔑 登录编辑</button>
+</header>
+
+<main>
+  <div id="browseView">
+    <aside id="tree"></aside>
+    <section id="panel"></section>
+  </div>
+
+  <div id="previewView" hidden></div>
+
+  <div id="editorBar" hidden>
+    <h3>➕ 新增项目（暂存，点右上角「保存」统一提交）</h3>
+    <div class="form-row">
+      <input type="text" id="inUrl" placeholder="https://github.com/owner/repo">
+      <button class="btn" id="fetchMetaBtn">获取信息</button>
+      <select id="selCategory"></select>
+      <button class="btn primary" id="addProjectBtn">加入收录</button>
+    </div>
+    <div id="metaCard" hidden><div id="metaBody"></div></div>
+  </div>
+</main>
+
+<div id="codeBox">
+  <div class="box">
+    <div>请在 GitHub 输入以下一次性代码：</div>
+    <div id="codeVal"></div>
+    <a id="codeLink" href="https://github.com/login/device" target="_blank">
+      <button class="btn primary">打开 github.com/login/device</button>
+    </a>
+    <div style="margin-top:14px"><button class="btn ghost sm" id="codeCancel">取消</button></div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script src="config.js"></script>
+<script src="render.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+<script src="app.js"></script>
+<script>
+  (function () {
+    var m = location.pathname.match(/^\/([^/]+)\/([^/]+)\/?/);
+    if (window.ASUNA_CONFIG && !window.ASUNA_CONFIG.OWNER && m) {
+      window.ASUNA_CONFIG.OWNER = m[1];
+      window.ASUNA_CONFIG.REPO = m[2];
+    }
+    if (window.ASUNA_CONFIG) {
+      document.getElementById("repoHome").href =
+        "https://github.com/" + window.ASUNA_CONFIG.OWNER + "/" + window.ASUNA_CONFIG.REPO;
+    }
+  })();
+</script>
+</body>
+</html>

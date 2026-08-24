@@ -2,9 +2,7 @@
 
 > 自动化管理与聚合优质开源项目。提交 Issue 即可自动收录。
 
-{{define "RenderNode"}}
-  {{$level := .Level}}
-  {{range .Nodes}}
+{{define "RenderNode"}}{{$level := .Level}}{{range .Nodes}}{{if or .Projects .Children}}
 {{repeat "#" $level}} {{.Name}}
 
 {{if .Projects}}
@@ -14,10 +12,6 @@
 {{end}}
 {{end}}
 
-{{if .Children}}
-{{template "RenderNode" dict "Nodes" .Children "Level" (add $level 1)}}
-{{end}}
-  {{end}}
-{{end}}
-
+{{if .Children}}{{template "RenderNode" dict "Nodes" .Children "Level" (add $level 1)}}
+{{end}}{{end}}{{end}}{{end}}
 {{template "RenderNode" dict "Nodes" . "Level" 2}}
