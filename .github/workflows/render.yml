@@ -27,8 +27,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: ASUNA_STARS=1 go run main.go
 
-      # 每次数据变更：用 Go 真源重算 README 与 Issue 表单，纠正任何漂移
-      - name: Render artifacts
+      # 每次数据变更：同步 Issue 表单分类下拉
+      - name: Sync issue form
         run: ASUNA_RENDER=1 go run main.go
 
       - name: Commit
@@ -36,5 +36,5 @@ jobs:
           git config --local user.email "bot@github.com"
           git config --local user.name "AsunaBot"
           git add -A
-          git diff --cached --quiet || git commit -m "auto: render README & stars snapshot"
+          git diff --cached --quiet || git commit -m "auto: sync issue form & stars snapshot"
           git push

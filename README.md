@@ -1,154 +1,40 @@
 # Asuna 开源项目精选
 
-> 自动化管理与聚合优质开源项目。提交 Issue 即可自动收录。
+> 自动化管理与聚合优质开源项目 —— 提交 Issue 或在网页上直接编辑，数据存储于本仓库。
 
-## ☕ Java 生态
+## 🌐 在线访问
 
-### 开发框架(Spring)
+**https://weihubeats.github.io/Asuna/**
 
-| 项目名称 | 描述 | 语言 | ⭐️ Stars |
-| :--- | :--- | :--- | :--- |
-| [sofa-boot](https://github.com/sofastack/sofa-boot) | SOFABoot is a framework that enhances Spring Boot and fully compatible with it, provides readiness check, class isolation, etc. | Java | ![Star](https://img.shields.io/github/stars/sofastack/sofa-boot.svg?style=social&label=Star) |
-| [spring-boot](https://github.com/spring-projects/spring-boot) | Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss. | Java | ![Star](https://img.shields.io/github/stars/spring-projects/spring-boot.svg?style=social&label=Star) |
-| [spring-framework](https://github.com/spring-projects/spring-framework) | Spring Framework | Java | ![Star](https://img.shields.io/github/stars/spring-projects/spring-framework.svg?style=social&label=Star) |
+- 匿名访客：浏览全部收录、全局搜索、查看 Star 数
+- 协作者：粘贴 Token 登录后可直接在网页上增删项目、调整分类、拖拽移动
 
-### ORM 框架
+## ✨ 特性
 
-| 项目名称 | 描述 | 语言 | ⭐️ Stars |
-| :--- | :--- | :--- | :--- |
-| [mybatis-3](https://github.com/mybatis/mybatis-3) | MyBatis SQL mapper framework for Java | Java | ![Star](https://img.shields.io/github/stars/mybatis/mybatis-3.svg?style=social&label=Star) |
+- 🗂️ 树形多级分类，卡片式浏览，语言彩点 + Star 排序
+- 🔍 全局搜索（`/` 快捷键聚焦）
+- 🖱️ 拖拽移动项目到任意分类
+- 💾 编辑结果直接提交到仓库（Contents API + SHA 乐观锁，防并发覆盖）
+- 🤖 CI 自动维护 Issue 表单分类下拉与 Star 快照
 
-### idea 插件
+## 📥 如何收录新项目
 
-| 项目名称 | 描述 | 语言 | ⭐️ Stars |
-| :--- | :--- | :--- | :--- |
-| [TranslationPlugin](https://github.com/YiiGuxing/TranslationPlugin) | Translation plugin for IntelliJ-based IDEs/Android Studio. | Kotlin | ![Star](https://img.shields.io/github/stars/YiiGuxing/TranslationPlugin.svg?style=social&label=Star) |
+| 方式 | 适合人群 | 入口 |
+| :--- | :--- | :--- |
+| 网页编辑 | 协作者 | [在线控制台](https://weihubeats.github.io/Asuna/) → 登录编辑 |
+| Issue 投稿 | 所有人 | [新建 Issue](https://github.com/weihubeats/Asuna/issues/new/choose)，机器人自动收录 |
 
-## AI
+## 🏗️ 架构
 
-### Skills
+```
+data.json          # 唯一数据源（分类树 + 项目元数据）
+docs/              # GitHub Pages 静态管理台（纯前端，无后端）
+main.go            # 引擎：Issue 解析、GitHub API 元数据抓取、表单生成
+.github/workflows/
+  asuna_sync.yml   # Issue 驱动自动收录/删除
+  render.yml       # 表单同步 + 每日 Star 快照
+```
 
-| 项目名称 | 描述 | 语言 | ⭐️ Stars |
-| :--- | :--- | :--- | :--- |
-| [native-feel-skill](https://github.com/yetone/native-feel-skill) | An Agent Skill for designing cross-platform desktop apps that feel native — distilled from Raycast's 2.0 deep-dive and reverse engineering of Raycast Beta.app. Eight architectural tenets, four-layer architecture, WebKit/WebView2 survival guide, 75-item ship audit. |  | ![Star](https://img.shields.io/github/stars/yetone/native-feel-skill.svg?style=social&label=Star) |
-| [skills](https://github.com/mattpocock/skills) | Skills for Real Engineers. Straight from my .claude directory. | Shell | ![Star](https://img.shields.io/github/stars/mattpocock/skills.svg?style=social&label=Star) |
+## License
 
-### 学习资料
-
-| 项目名称 | 描述 | 语言 | ⭐️ Stars |
-| :--- | :--- | :--- | :--- |
-| [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) | Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1 | Python | ![Star](https://img.shields.io/github/stars/shareAI-lab/learn-claude-code.svg?style=social&label=Star) |
-| [easy-vibe](https://github.com/datawhalechina/easy-vibe) | 💻 vibe coding 2026 \| Your first modern Coding course for beginners to master step by step. | JavaScript | ![Star](https://img.shields.io/github/stars/datawhalechina/easy-vibe.svg?style=social&label=Star) |
-| [hello-agents](https://github.com/datawhalechina/hello-agents) | 📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程 | Python | ![Star](https://img.shields.io/github/stars/datawhalechina/hello-agents.svg?style=social&label=Star) |
-| [learn-opencode](https://github.com/vbgate/learn-opencode) | OpenCode 中文实战课源码与内容仓库：一课一页，覆盖入门到实战工作流。 | Shell | ![Star](https://img.shields.io/github/stars/vbgate/learn-opencode.svg?style=social&label=Star) |
-| [hands-on-modern-rl](https://github.com/walkinglabs/hands-on-modern-rl) | 🚀 An open-source, hands-on curriculum bridging the gap from basic RL concepts to LLM alignment, RLVR, and advanced Agentic systems. | Python | ![Star](https://img.shields.io/github/stars/walkinglabs/hands-on-modern-rl.svg?style=social&label=Star) |
-
-### AI 编程助手 & 桌面客户端
-
-| 项目名称 | 描述 | 语言 | ⭐️ Stars |
-| :--- | :--- | :--- | :--- |
-| [MiMo-Code](https://github.com/XiaomiMiMo/MiMo-Code) | MiMo Code: Where Models and Agents Co-Evolve | TypeScript | ![Star](https://img.shields.io/github/stars/XiaomiMiMo/MiMo-Code.svg?style=social&label=Star) |
-| [OpenMonoAgent.ai](https://github.com/StartupHakk/OpenMonoAgent.ai) | (BETA) AI shouldn't have a meter. Unlimited tokens. Forever. Your machine. Your agent. Use it from anywhere. Terminal-native coding agent powered by local LLMs — 100% open source, free forever, and installed with a single command. Proudly built on C#/.NET, because AI tooling should be infrastructure, not a subscription. | C# | ![Star](https://img.shields.io/github/stars/StartupHakk/OpenMonoAgent.ai.svg?style=social&label=Star) |
-| [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | omo; the best agent harness - previously oh-my-opencode | TypeScript | ![Star](https://img.shields.io/github/stars/code-yeongyu/oh-my-openagent.svg?style=social&label=Star) |
-| [OpenSpec](https://github.com/Fission-AI/OpenSpec) | Spec-driven development (SDD) for AI coding assistants. | TypeScript | ![Star](https://img.shields.io/github/stars/Fission-AI/OpenSpec.svg?style=social&label=Star) |
-| [spec-kit](https://github.com/github/spec-kit) | 💫 Toolkit to help you get started with Spec-Driven Development | Python | ![Star](https://img.shields.io/github/stars/github/spec-kit.svg?style=social&label=Star) |
-| [cc-switch](https://github.com/farion1231/cc-switch) | A cross-platform desktop All-in-One assistant tool for Claude Code, Codex, OpenCode, openclaw & Gemini CLI. | Rust | ![Star](https://img.shields.io/github/stars/farion1231/cc-switch.svg?style=social&label=Star) |
-| [DeepSeek-TUI](https://github.com/Hmbown/DeepSeek-TUI) | Coding agent for DeepSeek models that runs in your terminal | Rust | ![Star](https://img.shields.io/github/stars/Hmbown/DeepSeek-TUI.svg?style=social&label=Star) |
-
-### Agent 框架
-
-| 项目名称 | 描述 | 语言 | ⭐️ Stars |
-| :--- | :--- | :--- | :--- |
-| [agentscope-java](https://github.com/agentscope-ai/agentscope-java) | Build distributed, production-grade, long-running agents. | Java | ![Star](https://img.shields.io/github/stars/agentscope-ai/agentscope-java.svg?style=social&label=Star) |
-
-### Token压缩
-
-| 项目名称 | 描述 | 语言 | ⭐️ Stars |
-| :--- | :--- | :--- | :--- |
-| [rtk](https://github.com/rtk-ai/rtk) | CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies | Rust | ![Star](https://img.shields.io/github/stars/rtk-ai/rtk.svg?style=social&label=Star) |
-| [caveman](https://github.com/JuliusBrussee/caveman) | 🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman | JavaScript | ![Star](https://img.shields.io/github/stars/JuliusBrussee/caveman.svg?style=social&label=Star) |
-
-## 🗄️ 数据库
-
-### 客户端管理工具
-
-| 项目名称 | 描述 | 语言 | ⭐️ Stars |
-| :--- | :--- | :--- | :--- |
-| [Chat2DB](https://github.com/OtterMind/Chat2DB) | 🔥🔥🔥 AI-driven database tool and SQL client, The hottest GUI client, supporting MySQL, Oracle, PostgreSQL, DB2, SQL Server, DB2, SQLite, H2, ClickHouse, and more. | Java | ![Star](https://img.shields.io/github/stars/OtterMind/Chat2DB.svg?style=social&label=Star) |
-| [dbx](https://github.com/t8y2/dbx) | 15MB, lightweight, cross-platform database client. Supports MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, ClickHouse, SQL Server and more.15MB，轻量级跨平台数据库客户端、数据库管理工具。支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、DuckDB、ClickHouse、SQL Server 等。 | Rust | ![Star](https://img.shields.io/github/stars/t8y2/dbx.svg?style=social&label=Star) |
-| [dataflare](https://github.com/DataflareApp/dataflare) | Simple, easy-to-use database manager | TypeScript | ![Star](https://img.shields.io/github/stars/DataflareApp/dataflare.svg?style=social&label=Star) |
-
-### 关系型数据库
-
-| 项目名称 | 描述 | 语言 | ⭐️ Stars |
-| :--- | :--- | :--- | :--- |
-| [wcdb](https://github.com/Tencent/wcdb) | WCDB is a cross-platform database framework developed by WeChat. | C | ![Star](https://img.shields.io/github/stars/Tencent/wcdb.svg?style=social&label=Star) |
-| [mysql-server](https://github.com/mysql/mysql-server) | MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open source transactional database. | C++ | ![Star](https://img.shields.io/github/stars/mysql/mysql-server.svg?style=social&label=Star) |
-
-### 向量数据库
-
-| 项目名称 | 描述 | 语言 | ⭐️ Stars |
-| :--- | :--- | :--- | :--- |
-| [zvec](https://github.com/alibaba/zvec) | A lightweight, lightning-fast, in-process vector database | C++ | ![Star](https://img.shields.io/github/stars/alibaba/zvec.svg?style=social&label=Star) |
-
-## 文档工具
-
-### 知识库&个人笔记
-
-| 项目名称 | 描述 | 语言 | ⭐️ Stars |
-| :--- | :--- | :--- | :--- |
-| [marktext](https://github.com/marktext/marktext) | 📝A simple and elegant markdown editor, available for Linux, macOS and Windows. | TypeScript | ![Star](https://img.shields.io/github/stars/marktext/marktext.svg?style=social&label=Star) |
-| [blinko](https://github.com/blinkospace/blinko) | An open-source, self-hosted personal AI note tool prioritizing privacy, built using TypeScript . | TypeScript | ![Star](https://img.shields.io/github/stars/blinkospace/blinko.svg?style=social&label=Star) |
-
-## 🌐 分布式
-
-### RPC 框架
-
-| 项目名称 | 描述 | 语言 | ⭐️ Stars |
-| :--- | :--- | :--- | :--- |
-| [dubbo](https://github.com/apache/dubbo) | The java implementation of Apache Dubbo. An RPC and microservice framework. | Java | ![Star](https://img.shields.io/github/stars/apache/dubbo.svg?style=social&label=Star) |
-
-## 🛠️ 效率工具
-
-### Mac 工具
-
-| 项目名称 | 描述 | 语言 | ⭐️ Stars |
-| :--- | :--- | :--- | :--- |
-| [muxy](https://github.com/muxy-app/muxy) | Lightweight and Memory efficient terminal for Mac built with SwiftUI and libghostty | Swift | ![Star](https://img.shields.io/github/stars/muxy-app/muxy.svg?style=social&label=Star) |
-| [port-killer](https://github.com/productdevbook/port-killer) | A powerful cross-platform port management tool for developers. Monitor ports, manage Kubernetes port forwards, integrate Cloudflare Tunnels, and kill processes with one click. | Swift | ![Star](https://img.shields.io/github/stars/productdevbook/port-killer.svg?style=social&label=Star) |
-
-### 浏览器自动化工具
-
-| 项目名称 | 描述 | 语言 | ⭐️ Stars |
-| :--- | :--- | :--- | :--- |
-| [obscura](https://github.com/h4ckf0r0day/obscura) | The headless browser for AI agents and web scraping | Rust | ![Star](https://img.shields.io/github/stars/h4ckf0r0day/obscura.svg?style=social&label=Star) |
-
-### 个人知识管理与笔记软件
-
-| 项目名称 | 描述 | 语言 | ⭐️ Stars |
-| :--- | :--- | :--- | :--- |
-| [tolaria](https://github.com/refactoringhq/tolaria) | Desktop app to manage markdown knowledge bases | TypeScript | ![Star](https://img.shields.io/github/stars/refactoringhq/tolaria.svg?style=social&label=Star) |
-
-## ☁️ 云原生与自动化运维 (Cloud Native & DevOps)
-
-### 🐳 容器编排与管理
-
-| 项目名称 | 描述 | 语言 | ⭐️ Stars |
-| :--- | :--- | :--- | :--- |
-| [kubespray](https://github.com/kubernetes-sigs/kubespray) | Deploy a Production Ready Kubernetes Cluster | Jinja | ![Star](https://img.shields.io/github/stars/kubernetes-sigs/kubespray.svg?style=social&label=Star) |
-| [kubernetes](https://github.com/kubernetes/kubernetes) | Production-Grade Container Scheduling and Management | Go | ![Star](https://img.shields.io/github/stars/kubernetes/kubernetes.svg?style=social&label=Star) |
-
-### CI、CD 持续交付
-
-| 项目名称 | 描述 | 语言 | ⭐️ Stars |
-| :--- | :--- | :--- | :--- |
-| [gitleaks](https://github.com/gitleaks/gitleaks) | Find secrets with Gitleaks 🔑 | Go | ![Star](https://img.shields.io/github/stars/gitleaks/gitleaks.svg?style=social&label=Star) |
-| [jj](https://github.com/jj-vcs/jj) | A Git-compatible VCS that is both simple and powerful | Rust | ![Star](https://img.shields.io/github/stars/jj-vcs/jj.svg?style=social&label=Star) |
-
-## 📈 金融科技
-
-### 量化交易
-
-| 项目名称 | 描述 | 语言 | ⭐️ Stars |
-| :--- | :--- | :--- | :--- |
-| [indicator](https://github.com/cinar/indicator) | Indicator Go delivers a rich set of technical analysis indicators, customizable strategies, and a powerful backtesting framework. No dependencies, just pure simplicity. ✨ See how! 👀 | Go | ![Star](https://img.shields.io/github/stars/cinar/indicator.svg?style=social&label=Star) |
+[MIT](LICENSE)

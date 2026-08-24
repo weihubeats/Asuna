@@ -48,7 +48,7 @@ jobs:
         uses: peter-evans/close-issue@v3
         with:
           issue-number: ${{ github.event.issue.number }}
-          comment: "✅ 任务已处理，README 与分类表单已自动刷新！"
+          comment: "✅ 任务已处理，分类表单已自动刷新！"
       - name: Comment on failure
         if: failure()
         uses: peter-evans/create-or-update-comment@v4

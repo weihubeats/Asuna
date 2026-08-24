@@ -8,11 +8,9 @@ import (
 	"html"
 	"net/http"
 	"os"
-	"path/filepath"
 	"regexp"
 	"sort"
 	"strings"
-	"text/template"
 	"time"
 )
 
@@ -32,8 +30,6 @@ type CategoryNode struct {
 
 const (
 	dbPath            = "data.json"
-	readmePath        = "README.md"
-	tmplPath          = "README.md.tmpl"
 	issueFormPath     = ".github/ISSUE_TEMPLATE/1_add_project.yml"
 	starsSnapshotPath = "docs/stars.json"
 
@@ -123,9 +119,6 @@ func main() {
 	if err := saveData(dbPath, db); err != nil {
 		fatal(err)
 	}
-	if err := renderView(tmplPath, readmePath, db); err != nil {
-		fatal(err)
-	}
 	if err := updateIssueTemplate(issueFormPath, buildIssueForm(db)); err != nil {
 		fatal(err)
 	}
@@ -138,7 +131,7 @@ func fatal(v interface{}) {
 
 // ======== CI 模式 ========
 
-// renderAll 由 render workflow 在每次 push 后调用，保证 README 与表单始终由 Go 真源生成
+// renderAll 由 CI 在每次数据变更后调用：同步 Issue 表单分类下拉（README 为静态介绍页，不再生成）
 func renderAll() {
 	db, err := loadDB(dbPath)
 	if err != nil {
@@ -148,13 +141,10 @@ func renderAll() {
 	if err := saveData(dbPath, db); err != nil {
 		fatal(err)
 	}
-	if err := renderView(tmplPath, readmePath, db); err != nil {
-		fatal(err)
-	}
 	if err := updateIssueTemplate(issueFormPath, buildIssueForm(db)); err != nil {
 		fatal(err)
 	}
-	fmt.Println("渲染完成：README.md + issue form")
+	fmt.Println("同步完成：issue form")
 }
 
 // updateStars 刷新 data.json 内所有项目的 star 数，并写 docs/stars.json 快照供页面零成本读取
@@ -555,45 +545,4 @@ func buildIssueForm(db []*CategoryNode) string {
 
 func updateIssueTemplate(path, content string) error {
 	return os.WriteFile(path, []byte(content), 0644)
-}
-
-var multiBlankRe = regexp.MustCompile(`\n{3,}`)
-
-func collapseBlankLines(s string) string {
-	return multiBlankRe.ReplaceAllString(s, "\n\n")
-}
-
-func renderView(tmplFile, outPath string, db []*CategoryNode) error {
-	funcMap := template.FuncMap{
-		"add":    func(a, b int) int { return a + b },
-		"repeat": func(s string, n int) string { return strings.Repeat(s, n) },
-		"dict": func(values ...interface{}) (map[string]interface{}, error) {
-			if len(values)%2 != 0 {
-				return nil, errors.New("invalid dict")
-			}
-			dict := make(map[string]interface{}, len(values)/2)
-			for i := 0; i < len(values); i += 2 {
-				dict[values[i].(string)] = values[i+1]
-			}
-			return dict, nil
-		},
-		"dynamicStar": func(u string) string {
-			owner, repo, err := parseOwnerRepo(u)
-			if err == nil {
-				return fmt.Sprintf("![Star](https://img.shields.io/github/stars/%s/%s.svg?style=social&label=Star)", owner, repo)
-			}
-			return "N/A"
-		},
-	}
-	t, err := template.New(filepath.Base(tmplFile)).Funcs(funcMap).ParseFiles(tmplFile)
-	if err != nil {
-		return err
-	}
-	var buf bytes.Buffer
-	if err := t.Execute(&buf, db); err != nil {
-		return err
-	}
-	out := collapseBlankLines(buf.String())
-	out = strings.TrimRight(out, "\n") + "\n"
-	return os.WriteFile(outPath, []byte(out), 0644)
 }

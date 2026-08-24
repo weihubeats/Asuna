@@ -264,31 +264,13 @@ func TestIssueFormMatchesCommitted(t *testing.T) {
 	}
 }
 
-func TestRenderedREADMEMatchesCommitted(t *testing.T) {
-	out := filepath.Join(t.TempDir(), "README.md")
-	if err := renderView(tmplPath, out, loadTestDB(t)); err != nil {
-		t.Fatal(err)
-	}
-	got, _ := os.ReadFile(out)
-	want, err := os.ReadFile(readmePath)
-	if err != nil {
-		t.Fatal(err)
-	}
-	if string(got) != string(want) {
-		t.Error("渲染结果与 README.md 不一致，运行 REGEN=1 go test 更新产物")
-	}
-}
-
-// REGEN=1 go test ./... 可重新生成 README.md 与 Issue 表单
+// REGEN=1 go test ./... 可重新生成 Issue 表单
 func TestRegenerateArtifacts(t *testing.T) {
 	if os.Getenv("REGEN") == "" {
-		t.Skip("set REGEN=1 to refresh README.md and issue form")
+		t.Skip("set REGEN=1 to refresh issue form")
 	}
 	db := loadTestDB(t)
 	pruneEmpty(&db)
-	if err := renderView(tmplPath, readmePath, db); err != nil {
-		t.Fatal(err)
-	}
 	if err := updateIssueTemplate(issueFormPath, buildIssueForm(db)); err != nil {
 		t.Fatal(err)
 	}

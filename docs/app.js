@@ -771,17 +771,6 @@
     lazyFetchStars();
   }
 
-  function renderPreviewTab() {
-    var md = renderREADME(state.db);
-    var out = $("#previewView");
-    out.textContent = "";
-    if (window.marked) {
-      var div = el("div", { class: "md-body" });
-      try { div.innerHTML = window.marked.parse(md); out.appendChild(div); return; } catch (e) { /* fallback */ }
-    }
-    out.appendChild(el("pre", { text: md }));
-  }
-
   // ---------- 初始化 ----------
   function bindUI() {
     $("#loginBtn").addEventListener("click", showTokenDialog);
@@ -809,17 +798,6 @@
 
     document.querySelectorAll(".overlay").forEach(function (ov) {
       ov.addEventListener("click", function (e) { if (e.target === ov) ov.style.display = "none"; });
-    });
-
-    document.querySelectorAll(".tab").forEach(function (t) {
-      t.addEventListener("click", function () {
-        document.querySelectorAll(".tab").forEach(function (x) { x.classList.remove("active"); });
-        t.classList.add("active");
-        var view = t.dataset.view;
-        $("#browseView").hidden = view !== "browse";
-        $("#previewView").hidden = view !== "preview";
-        if (view === "preview") renderPreviewTab();
-      });
     });
   }
 
