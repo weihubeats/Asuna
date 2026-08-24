@@ -16,6 +16,7 @@
         if (k === "text") node.textContent = attrs[k];
         else if (k === "class") node.className = attrs[k];
         else if (k === "html") node.innerHTML = attrs[k];
+        else if (k === "style") node.style.cssText = attrs[k];
         else if (k.slice(0, 2) === "on") node.addEventListener(k.slice(2), attrs[k]);
         else node.setAttribute(k, attrs[k]);
       });
@@ -31,7 +32,6 @@
     t._timer = setTimeout(function () { t.className = ""; }, 3200);
   }
 
-  // base64（UTF-8 安全）
   function b64encode(str) {
     var bytes = new TextEncoder().encode(str);
     var bin = "";
@@ -53,12 +53,6 @@
     Jinja: "#a52a22", Dart: "#00B4AB", Lua: "#000080", Zig: "#ec915c"
   };
 
-  function canonicalRepoURL(u) {
-    var m = REPO_URL_RE.exec((u || "").trim());
-    if (!m) return null;
-    return "https://github.com/" + m[1] + "/" + m[2].replace(/\.git$/i, "");
-  }
-
   function sanitizeSegment(s) {
     s = (s || "").trim();
     if (!s) return "分类名不能为空";
@@ -76,10 +70,12 @@
     user: null,
     canEdit: false,
     selectedPath: [],
-    stars: {},          // docs/stars.json 快照
-    query: "",          // 搜索关键词
+    query: "",
+    sort: localStorage.getItem("asuna_sort") || "default",
+    expanded: JSON.parse(localStorage.getItem("asuna_expanded") || "{}"),
+    stars: {},
     starCache: JSON.parse(localStorage.getItem("asuna_starcache") || "{}"),
-    starFetchBudget: 30, // 本次会话匿名 API 配额保护
+    starFetchBudget: 30,
   };
 
   var API = "https://api.github.com";
@@ -111,10 +107,20 @@
   }
 
   // ---------- 数据读写 ----------
+  function renderSkeleton() {
+    var grid = el("div", { class: "skel-grid" });
+    for (var i = 0; i < 6; i++) grid.appendChild(el("div", { class: "skel" }));
+    $("#panel").textContent = "";
+    $("#panel").appendChild(grid);
+  }
+
   function loadDB() {
+    renderSkeleton();
     return fetchFirst([RAW + "/data.json"]).then(function (r) { return r.json(); }).then(function (db) {
       state.db = db;
       state.dirty = false;
+      // 默认展开所有根分类
+      state.db.forEach(function (n) { state.expanded[n.name] = true; });
       renderTree();
       renderPanel();
     });
@@ -180,8 +186,7 @@
       state.canEdit = !!(r.permissions && r.permissions.push);
       localStorage.setItem("asuna_token", tok);
       hideTokenDialog();
-      updateChrome();
-      refreshSHA();
+      updateChrome(); renderTree(); renderPanel();
       toast("欢迎，" + state.user.login + (state.canEdit ? "（编辑者）" : "（只读：无推送权限）"));
     }).catch(function (e) {
       state.token = prev;
@@ -198,7 +203,7 @@
     state.user = null;
     state.canEdit = false;
     localStorage.removeItem("asuna_token");
-    updateChrome();
+    updateChrome(); renderTree(); renderPanel();
     toast("已退出");
   }
 
@@ -216,7 +221,7 @@
     });
   }
 
-  // ---------- 树操作（纯内存，保存时统一提交）----------
+  // ---------- 树操作 ----------
   function getNodeByPath(path) {
     var nodes = state.db;
     var found = null;
@@ -285,25 +290,49 @@
     updateChrome();
   }
 
-  // ---------- 编辑动作 ----------
+  // ---------- 添加项目（弹窗流程）----------
   var fetchedMeta = null;
+
+  function openAddDialog() {
+    fetchedMeta = null;
+    $("#inUrl").value = "";
+    $("#addStep2").hidden = true;
+    $("#addBox").style.display = "flex";
+    $("#inUrl").focus();
+  }
+  function closeAddDialog() { $("#addBox").style.display = "none"; }
 
   function fetchMeta() {
     var raw = $("#inUrl").value;
     var parts = REPO_URL_RE.exec(raw.trim());
     if (!parts) { toast("URL 无效：需为 github.com/owner/repo 形式", true); return; }
-    $("#metaCard").hidden = false;
-    $("#metaBody").textContent = "获取中…";
+    $("#fetchMetaBtn").disabled = true;
+    $("#fetchMetaBtn").textContent = "获取中";
     gh("/repos/" + parts[1] + "/" + parts[2]).then(function (d) {
       fetchedMeta = d;
-      $("#metaBody").textContent = "";
-      $("#metaBody").appendChild(el("strong", { text: d.full_name }));
-      $("#metaBody").appendChild(document.createTextNode(
-        "   ★ " + d.stargazers_count + " · " + (d.language || "未知语言") +
-        (d.description ? "\n" + d.description : "")));
+      var prev = $("#metaPreview");
+      prev.textContent = "";
+      prev.appendChild(el("img", { src: "https://github.com/" + parts[1] + ".png?size=80", alt: "" }));
+      var info = el("div", { style: "flex:1;min-width:0" });
+      info.appendChild(el("div", { class: "mp-name", text: d.full_name }));
+      if (d.description) info.appendChild(el("div", { class: "mp-desc", text: d.description }));
+      var meta = el("div", { class: "mp-meta" });
+      meta.appendChild(el("span", { text: "★ " + d.stargazers_count }));
+      if (d.language) {
+        var lg = el("span", { class: "lang" });
+        lg.appendChild(el("i", { class: "lang-dot" })).style.background = LANG_COLORS[d.language] || "#8b949e";
+        lg.appendChild(document.createTextNode(d.language));
+        meta.appendChild(lg);
+      }
+      info.appendChild(meta);
+      prev.appendChild(info);
+      $("#addStep2").hidden = false;
     }).catch(function (e) {
       fetchedMeta = null;
-      $("#metaBody").textContent = "获取失败：" + (e.status === 403 ? "API 限流，稍后再试" : "仓库不存在或不可访问");
+      toast(e.status === 403 ? "API 限流，稍后再试" : "获取失败：仓库不存在或不可访问", true);
+    }).finally(function () {
+      $("#fetchMetaBtn").disabled = false;
+      $("#fetchMetaBtn").textContent = "获取";
     });
   }
 
@@ -317,7 +346,7 @@
   }
 
   function addProject() {
-    if (!fetchedMeta) { toast("请先获取仓库信息", true); return; }
+    if (!fetchedMeta) return;
     var pathStr = $("#selCategory").value;
     if (!pathStr) { toast("请选择分类", true); return; }
     if (containsProject(state.db, fetchedMeta.html_url)) {
@@ -337,29 +366,44 @@
     state.selectedPath = pathStr.split(" / ");
     state.query = "";
     $("#searchInput").value = "";
+    state.expanded[pathStr] = true;
     renderTree(); renderPanel();
-    $("#metaCard").hidden = true;
-    $("#inUrl").value = "";
-    toast("已暂存：「" + fetchedMeta.name + "」，点击右上角「保存更改」生效");
+    closeAddDialog();
+    toast("已暂存：「" + fetchedMeta.name + "」→ " + pathStr);
   }
 
   function deleteProject(node, url) {
-    if (!confirm("确认删除项目？保存后生效。")) return;
+    if (!confirm("确认删除该项目？保存后生效。")) return;
     node.projects = (node.projects || []).filter(function (p) { return p.url !== url; });
     pruneEmpty(state.db);
     markDirty();
     renderTree(); renderPanel();
   }
 
-  function moveProject(node, idx, newPath) {
-    var p = node.projects.splice(idx, 1)[0];
+  function moveProjectByUrl(url, newPath) {
+    var found = null;
+    (function walk(nodes) {
+      (nodes || []).forEach(function (n) {
+        if (found) return;
+        var idx = (n.projects || []).findIndex(function (p) { return p.url === url; });
+        if (idx >= 0) { found = { node: n, idx: idx }; return; }
+        walk(n.children);
+      });
+    })(state.db);
+    if (!found) return;
+    if (getNodeByPath(newPath.split(" / ")) === found.node) {
+      toast("已在该分类中", true);
+      return;
+    }
+    var p = found.node.projects.splice(found.idx, 1)[0];
     var target = ensureNode(newPath.split(" / "));
     target.projects = target.projects || [];
     target.projects.push(p);
+    state.expanded[newPath] = true;
     pruneEmpty(state.db);
     markDirty();
     renderTree(); renderPanel();
-    toast("已移动到「" + newPath + "」（未保存）");
+    toast("已移动「" + p.name + "」→ " + newPath);
   }
 
   function addCategory(parentPath) {
@@ -370,6 +414,7 @@
     ensureNode((parentPath || []).concat([name]));
     markDirty();
     state.selectedPath = (parentPath || []).concat([name]);
+    state.expanded[(parentPath || []).join(" / ")] = true;
     renderTree(); renderPanel();
   }
 
@@ -392,7 +437,7 @@
     renderTree(); renderPanel();
   }
 
-  // ---------- Star 显示与懒加载 ----------
+  // ---------- Star ----------
   function starOf(p) {
     if (p.stars != null) return p.stars;
     var c = state.starCache[p.url];
@@ -408,22 +453,22 @@
 
   function lazyFetchStars() {
     var missing = [];
-    document.querySelectorAll("td.stars[data-url]").forEach(function (td) {
-      if (td.textContent === "…") missing.push(td);
+    document.querySelectorAll(".card-meta .star[data-url]").forEach(function (sp) {
+      if (sp.textContent === "★ …") missing.push(sp);
     });
     missing = missing.slice(0, 10);
     function next() {
       if (!missing.length || state.starFetchBudget <= 0) return;
-      var td = missing.shift();
-      var url = td.getAttribute("data-url");
-      var parts = REPO_URL_RE.exec(url);
-      if (!parts) { td.textContent = "-"; return; }
+      var sp = missing.shift();
+      var url = sp.getAttribute("data-url");
+      var m = REPO_URL_RE.exec(url);
+      if (!m) { sp.textContent = "★ -"; return; }
       state.starFetchBudget--;
-      gh("/repos/" + parts[1] + "/" + parts[2]).then(function (d) {
+      gh("/repos/" + m[1] + "/" + m[2]).then(function (d) {
         state.starCache[url] = { s: d.stargazers_count, t: Date.now() };
         localStorage.setItem("asuna_starcache", JSON.stringify(state.starCache));
-        td.textContent = fmtStars(d.stargazers_count);
-      }).catch(function () { td.textContent = "-"; })
+        sp.textContent = "★ " + fmtStars(d.stargazers_count);
+      }).catch(function () { sp.textContent = "★ -"; })
         .finally(next);
     }
     next();
@@ -436,7 +481,7 @@
       loginBtn.hidden = true;
       userChip.hidden = false;
       $("#userName").textContent = state.user.login + (state.canEdit ? " · 编辑者" : " · 只读");
-      if (state.user.avatar_url) $("#userAvatar").src = state.user.avatar_url + "&s=40";
+      if (state.user.avatar_url) $("#userAvatar").src = state.user.avatar_url + "&s=48";
     } else {
       loginBtn.hidden = false;
       loginBtn.textContent = state.token ? "重新登录" : "🔑 登录编辑";
@@ -444,11 +489,7 @@
     }
     saveBtn.hidden = !(state.canEdit && state.dirty);
     saveBtn.textContent = state.dirty ? "💾 保存更改" : "保存";
-    $("#editorBar").hidden = !state.canEdit;
-    $("#searchInput").hidden = false;
   }
-
-  function isActive(p) { return p.join("/") === state.selectedPath.join("/"); }
 
   function countProjects(n) {
     var c = (n.projects || []).length;
@@ -456,88 +497,147 @@
     return c;
   }
 
+  function totalProjects() {
+    return state.db.reduce(function (s, n) { return s + countProjects(n); }, 0);
+  }
+
   function renderTree() {
     var box = $("#treeScroll");
     box.textContent = "";
+    $("#treeTotal").textContent = totalProjects() + " 项目";
 
-    function draw(nodes, path, level) {
+    function drawInto(container, nodes, path, level) {
       (nodes || []).forEach(function (n) {
         var p = path.concat([n.name]);
+        var key = p.join(" / ");
+        var kids = n.children || [];
+        var isOpen = !!state.expanded[key];
+        var active = p.join("/") === state.selectedPath.join("/");
+
         var row = el("div", {
-          class: "tree-row lv" + level + (isActive(p) ? " active" : ""),
-          onclick: (function (pp) { return function () { state.selectedPath = pp; state.query = ""; $("#searchInput").value = ""; renderTree(); renderPanel(); }; })(p),
+          class: "tree-row" + (active ? " active" : ""),
+          onclick: function () {
+            state.selectedPath = p;
+            state.query = "";
+            $("#searchInput").value = "";
+            if (kids.length) state.expanded[key] = true;
+            renderTree(); renderPanel();
+          },
+          ondragover: state.canEdit ? function (e) { e.preventDefault(); row.classList.add("drop-target"); } : null,
+          ondragleave: function () { row.classList.remove("drop-target"); },
+          ondrop: state.canEdit ? function (e) {
+            e.preventDefault();
+            row.classList.remove("drop-target");
+            var url = e.dataTransfer.getData("text/plain");
+            if (url) moveProjectByUrl(url, key);
+          } : null,
         });
+
+        row.appendChild(el("span", {
+          class: "chev" + (isOpen ? " open" : "") + (kids.length ? "" : " hidden-vis"),
+          text: "▶",
+          onclick: (function (k) {
+            return function (e) {
+              e.stopPropagation();
+              state.expanded[k] = !state.expanded[k];
+              localStorage.setItem("asuna_expanded", JSON.stringify(state.expanded));
+              renderTree();
+            };
+          })(key),
+        }));
+        row.appendChild(el("span", { class: "ficon", text: isOpen && kids.length ? "📂" : "📁" }));
         row.appendChild(el("span", { class: "tree-name", text: n.name }));
         row.appendChild(el("span", { class: "count", text: String(countProjects(n)) }));
 
         if (state.canEdit) {
           var ops = el("span", { class: "ops" });
-          ops.appendChild(el("a", { text: "+子类", onclick: (function (pp) { return function (e) { e.stopPropagation(); addCategory(pp); }; })(p) }));
-          if ((n.projects || []).length === 0 && (n.children || []).length === 0) {
+          ops.appendChild(el("a", { text: "+", title: "添加子分类", onclick: (function (pp) { return function (e) { e.stopPropagation(); addCategory(pp); }; })(p) }));
+          if (kids.length === 0 && (n.projects || []).length === 0) {
             ops.appendChild(el("a", { class: "del", text: "删", onclick: (function (pp) { return function (e) { e.stopPropagation(); deleteCategory(pp); }; })(p) }));
           }
           row.appendChild(ops);
         }
-        box.appendChild(row);
-        draw(n.children, p, Math.min(level + 1, 3));
+        container.appendChild(row);
+
+        if (kids.length && isOpen) {
+          var wrap = el("div", { class: "tree-children", style: "margin-left:" + Math.min(level + 1, 3) * 14 + "px" });
+          container.appendChild(wrap);
+          drawInto(wrap, kids, p, level + 1);
+        }
       });
     }
-    draw(state.db, [], 0);
+    drawInto(box, state.db, [], 0);
 
     if (state.canEdit) {
       box.appendChild(el("button", { class: "btn ghost sm block", text: "＋ 新增根分类", onclick: function () { addCategory([]); } }));
     }
   }
 
-  function langCell(lang) {
-    var td = el("td", { class: "muted" });
-    if (lang) {
-      td.appendChild(el("span", { class: "lang-dot" })).style.background = LANG_COLORS[lang] || "#8b949e";
-      td.appendChild(document.createTextNode(lang));
-    } else {
-      td.textContent = "-";
-    }
-    return td;
+  function sorted(list) {
+    var arr = list.slice();
+    if (state.sort === "stars") arr.sort(function (a, b) { return (starOf(b) || 0) - (starOf(a) || 0); });
+    else if (state.sort === "name") arr.sort(function (a, b) { return (a.name || "").localeCompare(b.name || ""); });
+    return arr;
   }
 
-  function projectRow(p, node, idx, pathForCrumb) {
-    var tr = el("tr");
-    var tdName = el("td");
-    tdName.appendChild(el("span", { class: "pname" })).appendChild(el("a", { href: p.url, target: "_blank", rel: "noopener", text: p.name }));
-    if (p.description) tdName.appendChild(el("div", { class: "desc", text: p.description }));
-    if (pathForCrumb) tdName.appendChild(el("div", { class: "hit-path", text: "📂 " + pathForCrumb.join(" / ") }));
-    tr.appendChild(tdName);
-    tr.appendChild(langCell(p.language));
+  function projectCard(p, pathForCrumb) {
+    var owner = REPO_URL_RE.exec(p.url);
+    var card = el("div", { class: "pcard", style: "animation-delay:" + Math.min((p._i || 0) * 30, 300) + "ms" });
+    card.onclick = function () { window.open(p.url, "_blank", "noopener"); };
 
-    var tdStar = el("td", { class: "stars" });
-    tdStar.setAttribute("data-url", p.url);
-    tdStar.textContent = fmtStars(starOf(p));
-    tr.appendChild(tdStar);
-
-    var tdOps = el("td", { class: "row-ops" });
     if (state.canEdit) {
-      var sel = el("select", { class: "move-sel", onchange: (function (n, i) { return function (e) { if (e.target.value) moveProject(n, i, e.target.value); e.target.value = ""; }; })(node, idx) });
-      sel.appendChild(el("option", { value: "", text: "移到…" }));
-      getAllPaths(state.db, "").forEach(function (pth) { sel.appendChild(el("option", { value: pth, text: pth })); });
-      tdOps.appendChild(sel);
-      tdOps.appendChild(el("a", { class: "danger", text: "删除", onclick: (function (n, u) { return function () { deleteProject(n, u); }; })(node, p.url) }));
+      card.setAttribute("draggable", "true");
+      card.addEventListener("dragstart", function (e) {
+        e.dataTransfer.setData("text/plain", p.url);
+        e.dataTransfer.effectAllowed = "move";
+      });
+      var acts = el("div", { class: "card-actions" });
+      acts.appendChild(el("button", {
+        class: "icon-btn del", title: "删除", text: "🗑",
+        onclick: function (e) { e.stopPropagation(); deleteProjectByCard(card, p); },
+      }));
+      card.appendChild(acts);
     }
-    tr.appendChild(tdOps);
-    return tr;
+
+    var top = el("div", { class: "pcard-top" });
+    if (owner) top.appendChild(el("img", { src: "https://github.com/" + owner[1] + ".png?size=64", alt: "", loading: "lazy" }));
+    else top.appendChild(el("img", { src: "https://github.com/github.png?size=64", alt: "" }));
+    var nameWrap = el("b");
+    nameWrap.appendChild(el("a", { href: p.url, target: "_blank", rel: "noopener", text: p.name, onclick: function (e) { e.stopPropagation(); } }));
+    top.appendChild(nameWrap);
+    top.appendChild(el("span", { class: "card-go", text: "→" }));
+    card.appendChild(top);
+
+    if (p.description) card.appendChild(el("div", { class: "card-desc", text: p.description }));
+
+    var meta = el("div", { class: "card-meta" });
+    if (p.language) {
+      var lg = el("span", { class: "lang" });
+      lg.appendChild(el("i", { class: "lang-dot" })).style.background = LANG_COLORS[p.language] || "#8b949e";
+      lg.appendChild(document.createTextNode(p.language));
+      meta.appendChild(lg);
+    }
+    var star = el("span", { class: "star" });
+    star.setAttribute("data-url", p.url);
+    star.textContent = "★ " + fmtStars(starOf(p));
+    meta.appendChild(star);
+    card.appendChild(meta);
+
+    if (pathForCrumb) card.appendChild(el("span", { class: "hit-path", text: "📂 " + pathForCrumb.join(" / ") }));
+    return card;
   }
 
-  var TABLE_HEAD = ["项目", "语言", "★", ""];
-
-  function buildTable(rows) {
-    var table = el("table", { class: "projects" });
-    var thead = el("thead"), trh = el("tr");
-    TABLE_HEAD.forEach(function (c) { trh.appendChild(el("th", { text: c })); });
-    thead.appendChild(trh);
-    table.appendChild(thead);
-    var tbody = el("tbody");
-    rows.forEach(function (r) { tbody.appendChild(r); });
-    table.appendChild(tbody);
-    return table;
+  function deleteProjectByCard(card, p) {
+    var found = null;
+    (function walk(nodes) {
+      (nodes || []).forEach(function (n) {
+        if (found) return;
+        var idx = (n.projects || []).findIndex(function (x) { return x.url === p.url; });
+        if (idx >= 0) { found = { node: n, idx: idx }; return; }
+        walk(n.children);
+      });
+    })(state.db);
+    if (found) deleteProject(found.node, p.url);
   }
 
   function searchHits(q) {
@@ -545,9 +645,9 @@
     (function walk(nodes, path) {
       (nodes || []).forEach(function (n) {
         var p = path.concat([n.name]);
-        (n.projects || []).forEach(function (proj, idx) {
+        (n.projects || []).forEach(function (proj) {
           var hay = ((proj.name || "") + " " + (proj.description || "") + " " + (proj.language || "")).toLowerCase();
-          if (hay.indexOf(q) !== -1) hits.push({ proj: proj, node: n, idx: idx, path: p });
+          if (hay.indexOf(q) !== -1) hits.push({ proj: proj, path: p });
         });
         walk(n.children, p);
       });
@@ -555,53 +655,119 @@
     return hits;
   }
 
+  function cardsGrid(items, withPath) {
+    var grid = el("div", { class: "cards" });
+    items.forEach(function (it, i) {
+      it._i = i;
+      grid.appendChild(projectCard(it.proj || it, withPath ? it.path : null));
+    });
+    return grid;
+  }
+
   function renderPanel() {
     var panel = $("#panel");
     panel.textContent = "";
 
-    // 全局搜索模式
+    // 搜索模式
     if (state.query) {
-      var q = state.query.toLowerCase();
-      var hits = searchHits(q);
-      panel.appendChild(el("div", { class: "panel-title" })).appendChild(el("h2", { text: "搜索：" + state.query }));
-      panel.appendChild(el("div", { class: "panel-sub", text: hits.length + " 个结果" }));
+      var hits = searchHits(state.query.toLowerCase());
+      var sc = el("div", { class: "panel-card" });
+      var head = el("div", { class: "panel-head" });
+      var crumbs = el("div", { class: "crumbs" });
+      crumbs.appendChild(el("span", { class: "seg", text: "搜索：" + state.query }));
+      head.appendChild(crumbs);
+      sc.appendChild(head);
+      sc.appendChild(el("div", { class: "panel-sub" })).innerHTML = "<b>" + hits.length + "</b> 个结果";
       if (!hits.length) {
-        panel.appendChild(el("div", { class: "empty" })).innerHTML = '<div class="big">🔍</div>没有找到匹配的项目';
+        sc.appendChild(el("div", { class: "empty" })).innerHTML = '<div class="big">🔍</div><p>没有找到匹配的项目</p>';
+        panel.appendChild(sc);
         return;
       }
-      panel.appendChild(buildTable(hits.slice(0, 50).map(function (h) {
-        return projectRow(h.proj, h.node, h.idx, h.path);
-      })));
+      sc.appendChild(cardsGrid(hits.slice(0, 60), true));
+      panel.appendChild(sc);
       lazyFetchStars();
       return;
     }
 
+    // 未选择分类：全局概览
     if (!state.selectedPath.length) {
-      var total = countProjects({ projects: [], children: state.db });
-      var empty = el("div", { class: "empty" });
-      empty.innerHTML = '<div class="big">👈</div>从左侧选择分类查看项目';
-      panel.appendChild(empty);
-      panel.appendChild(el("div", { class: "panel-sub", style: "text-align:center", text: "共收录 " + total + " 个项目 · " + getAllPaths(state.db, "").length + " 个分类" }));
+      var ov = el("div", { class: "panel-card" });
+      var ohead = el("div", { class: "panel-head" });
+      ohead.appendChild(el("div", { class: "crumbs" })).appendChild(el("span", { class: "seg", text: "全部项目" }));
+      if (state.canEdit) {
+        var tools0 = el("div", { class: "panel-tools" });
+        tools0.appendChild(el("button", { class: "btn accent sm", text: "＋ 添加项目", onclick: openAddDialog }));
+        ohead.appendChild(tools0);
+      }
+      ov.appendChild(ohead);
+      var all = [];
+      (function walk(nodes, path) {
+        (nodes || []).forEach(function (n) {
+          var p = path.concat([n.name]);
+          (n.projects || []).forEach(function (proj) { all.push({ proj: proj, path: p }); });
+          walk(n.children, p);
+        });
+      })(state.db, []);
+      ov.appendChild(el("div", { class: "panel-sub" })).innerHTML =
+        "共 <b>" + all.length + "</b> 个项目 · <b>" + getAllPaths(state.db, "").length + "</b> 个分类 · 合计 <b>★ " + fmtStars(all.reduce(function (s, x) { return s + (starOf(x.proj) || 0); }, 0)) + "</b> stars";
+      ov.appendChild(cardsGrid(sorted(all.map(function (x) { return x.proj; })).map(function (proj) {
+        var hit = all.find(function (x) { return x.proj === proj; });
+        return { proj: proj, path: hit.path };
+      }), true));
+      panel.appendChild(ov);
+      lazyFetchStars();
       return;
     }
 
+    // 普通分类视图
     var node = getNodeByPath(state.selectedPath);
     if (!node) { state.selectedPath = []; return renderPanel(); }
 
-    var title = el("div", { class: "panel-title" });
-    title.appendChild(el("h2", { text: state.selectedPath[state.selectedPath.length - 1] }));
-    title.appendChild(el("span", { class: "crumb", text: state.selectedPath.join(" / ") }));
-    panel.appendChild(title);
+    var card = el("div", { class: "panel-card" });
+
+    var head = el("div", { class: "panel-head" });
+    var crumbs = el("div", { class: "crumbs" });
+    state.selectedPath.forEach(function (seg, i) {
+      if (i > 0) crumbs.appendChild(el("span", { class: "sep", text: "/" }));
+      crumbs.appendChild(el("span", {
+        class: "seg",
+        text: seg,
+        onclick: (function (idx) { return function () { state.selectedPath = state.selectedPath.slice(0, idx + 1); renderTree(); renderPanel(); }; })(i),
+      }));
+    });
+    head.appendChild(crumbs);
+
+    var tools = el("div", { class: "panel-tools" });
     var projects = node.projects || [];
-    panel.appendChild(el("div", { class: "panel-sub", text: projects.length + " 个项目" }));
+    if (projects.length > 1) {
+      var sortSel = el("select", { onchange: function (e) { state.sort = e.target.value; localStorage.setItem("asuna_sort", e.target.value); renderPanel(); } });
+      [["default", "默认排序"], ["stars", "按 Star"], ["name", "按名称"]].forEach(function (o) {
+        var opt = el("option", { value: o[0], text: o[1] });
+        if (state.sort === o[0]) opt.selected = true;
+        sortSel.appendChild(opt);
+      });
+      tools.appendChild(sortSel);
+    }
+    if (state.canEdit) {
+      tools.appendChild(el("button", { class: "btn ghost sm", text: "＋ 子分类", onclick: function () { addCategory(state.selectedPath); } }));
+      tools.appendChild(el("button", { class: "btn accent sm", text: "＋ 添加项目", onclick: openAddDialog }));
+    }
+    head.appendChild(tools);
+    card.appendChild(head);
+
+    var totalStar = projects.reduce(function (s, p) { return s + (starOf(p) || 0); }, 0);
+    card.appendChild(el("div", { class: "panel-sub" })).innerHTML =
+      "<b>" + projects.length + "</b> 个项目" + (totalStar ? " · 合计 ★ " + fmtStars(totalStar) : "");
 
     if (!projects.length) {
-      panel.appendChild(el("div", { class: "empty" })).innerHTML = '<div class="big">📭</div>该分类暂无项目';
+      var empty = el("div", { class: "empty" });
+      empty.innerHTML = '<div class="big">📭</div><p>该分类暂无项目</p>';
+      if (state.canEdit) empty.appendChild(el("button", { class: "btn accent", text: "＋ 添加第一个项目", onclick: openAddDialog }));
+      card.appendChild(empty);
     } else {
-      panel.appendChild(buildTable(projects.map(function (p, idx) {
-        return projectRow(p, node, idx, null);
-      })));
+      card.appendChild(cardsGrid(sorted(projects)));
     }
+    panel.appendChild(card);
     lazyFetchStars();
   }
 
@@ -623,6 +789,7 @@
     $("#saveBtn").addEventListener("click", saveAll);
     $("#fetchMetaBtn").addEventListener("click", fetchMeta);
     $("#addProjectBtn").addEventListener("click", addProject);
+    $("#addCancel").addEventListener("click", closeAddDialog);
     $("#tokenSave").addEventListener("click", loginWithToken);
     $("#tokenCancel").addEventListener("click", function () { hideTokenDialog(); });
     $("#tokenInput").addEventListener("keydown", function (e) { if (e.key === "Enter") loginWithToken(); });
@@ -630,6 +797,18 @@
     $("#searchInput").addEventListener("input", function (e) {
       state.query = e.target.value.trim();
       renderPanel();
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "/" && !/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)) {
+        e.preventDefault();
+        $("#searchInput").focus();
+      }
+      if (e.key === "Escape") { closeAddDialog(); hideTokenDialog(); }
+    });
+
+    document.querySelectorAll(".overlay").forEach(function (ov) {
+      ov.addEventListener("click", function (e) { if (e.target === ov) ov.style.display = "none"; });
     });
 
     document.querySelectorAll(".tab").forEach(function (t) {
@@ -662,7 +841,11 @@
           .then(fillCategorySelect)
           .then(restoreSession)
           .then(function () { renderTree(); renderPanel(); updateChrome(); })
-          .catch(function (e) { toast("数据加载失败：" + e.message, true); });
+          .catch(function (e) {
+            $("#panel").textContent = "";
+            $("#panel").appendChild(el("div", { class: "panel-card" })).appendChild(
+              el("div", { class: "empty" })).innerHTML = '<div class="big">⚠️</div><p>数据加载失败：' + e.message + "</p>";
+          });
       });
   }
 
