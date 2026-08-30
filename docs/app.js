@@ -53,6 +53,57 @@
     Jinja: "#a52a22", Dart: "#00B4AB", Lua: "#000080", Zig: "#ec915c"
   };
 
+  // ---------- SVG 图标（线性风格，继承 currentColor） ----------
+  var ICONS = {
+    chevron: '<path d="M9 18l6-6-6-6"/>',
+    folder: '<path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/>',
+    folderOpen: '<path fill="currentColor" stroke="none" opacity=".4" d="M3 6a2 2 0 0 1 2-2h4.2a2 2 0 0 1 1.4.6L12 6h7a2 2 0 0 1 2 2v1H5.4a2 2 0 0 0-1.95 1.52L2.2 15.9A1 1 0 0 1 2 16.2V6z"/><path fill="currentColor" stroke="none" d="M4.6 10.5h16a1 1 0 0 1 .97 1.25l-1.47 5.9A2 2 0 0 1 18.16 19H5.2a2 2 0 0 1-1.95-2.46l1.38-5.55a1 1 0 0 1 .97-.75z"/>',
+    search: '<circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/>',
+    star: '<path fill="currentColor" stroke="none" d="M12 2.6l2.9 5.87 6.48.94-4.69 4.57 1.11 6.45L12 17.4l-5.8 3.03 1.11-6.45-4.69-4.57 6.48-.94z"/>',
+    sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+    moon: '<path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/>',
+    plus: '<path d="M12 5v14M5 12h14"/>',
+    trash: '<path d="M3 6h18M8 6V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2m3 0v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/>',
+    key: '<path d="M21 2l-5 5m-2.5 2.5a5.5 5.5 0 1 1-7.78 7.78 5.5 5.5 0 0 1 7.78-7.78zm0 0L16 7"/><path d="M16 7l3 3 3-3-3-3"/>',
+    save: '<path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/>',
+    arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
+    layers: '<path d="M12 2l10 5.5-10 5.5L2 7.5z"/><path d="M2 13l10 5.5L22 13"/>',
+    folderPlus: '<path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/><path d="M12 11v6M9 14h6"/>'
+  };
+  function icon(name, cls) {
+    return '<svg class="icn ' + (cls || "") + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + (ICONS[name] || "") + "</svg>";
+  }
+
+  // ---------- 文本转义与搜索高亮 ----------
+  function escapeHtml(s) {
+    return String(s || "").replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function highlight(text, q) {
+    var esc = escapeHtml(text);
+    if (!q) return esc;
+    var safe = escapeHtml(q).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    try {
+      return esc.replace(new RegExp("(" + safe + ")", "gi"), "<mark>$1</mark>");
+    } catch (e) { return esc; }
+  }
+
+  // ---------- 主题 ----------
+  function applyTheme(t) {
+    document.documentElement.setAttribute("data-theme", t);
+    var btn = $("#themeBtn");
+    if (btn) {
+      btn.innerHTML = icon(t === "dark" ? "sun" : "moon");
+      btn.title = t === "dark" ? "切换到亮色模式" : "切换到暗色模式";
+    }
+  }
+  function toggleTheme() {
+    var cur = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    localStorage.setItem("asuna_theme", cur);
+    applyTheme(cur);
+  }
+
   function sanitizeSegment(s) {
     s = (s || "").trim();
     if (!s) return "分类名不能为空";
@@ -440,6 +491,8 @@
   // ---------- Star ----------
   function starOf(p) {
     if (p.stars != null) return p.stars;
+    var snap = state.stars[p.url];
+    if (snap != null) return snap;
     var c = state.starCache[p.url];
     if (c && Date.now() - c.t < 86400e3) return c.s;
     return null;
@@ -447,6 +500,7 @@
 
   function fmtStars(n) {
     if (n == null) return "…";
+    if (n >= 1e6) return (n / 1e6).toFixed(2).replace(/\.?0+$/, "") + "M";
     if (n >= 1000) return (n / 1000).toFixed(1).replace(/\.0$/, "") + "k";
     return String(n);
   }
@@ -454,7 +508,7 @@
   function lazyFetchStars() {
     var missing = [];
     document.querySelectorAll(".card-meta .star[data-url]").forEach(function (sp) {
-      if (sp.textContent === "★ …") missing.push(sp);
+      if (sp.textContent.trim() === "…") missing.push(sp);
     });
     missing = missing.slice(0, 10);
     function next() {
@@ -462,13 +516,13 @@
       var sp = missing.shift();
       var url = sp.getAttribute("data-url");
       var m = REPO_URL_RE.exec(url);
-      if (!m) { sp.textContent = "★ -"; return; }
+      if (!m) { sp.innerHTML = icon("star") + " -"; return; }
       state.starFetchBudget--;
       gh("/repos/" + m[1] + "/" + m[2]).then(function (d) {
         state.starCache[url] = { s: d.stargazers_count, t: Date.now() };
         localStorage.setItem("asuna_starcache", JSON.stringify(state.starCache));
-        sp.textContent = "★ " + fmtStars(d.stargazers_count);
-      }).catch(function () { sp.textContent = "★ -"; })
+        sp.innerHTML = icon("star") + " " + fmtStars(d.stargazers_count);
+      }).catch(function () { sp.innerHTML = icon("star") + " -"; })
         .finally(next);
     }
     next();
@@ -477,6 +531,7 @@
   // ---------- 渲染 ----------
   function updateChrome() {
     var loginBtn = $("#loginBtn"), userChip = $("#userChip"), saveBtn = $("#saveBtn");
+    applyTheme(document.documentElement.getAttribute("data-theme") || "light");
     if (state.user) {
       loginBtn.hidden = true;
       userChip.hidden = false;
@@ -484,11 +539,11 @@
       if (state.user.avatar_url) $("#userAvatar").src = state.user.avatar_url + "&s=48";
     } else {
       loginBtn.hidden = false;
-      loginBtn.textContent = state.token ? "重新登录" : "🔑 登录编辑";
+      loginBtn.innerHTML = icon("key") + (state.token ? " 重新登录" : " 登录编辑");
       userChip.hidden = true;
     }
     saveBtn.hidden = !(state.canEdit && state.dirty);
-    saveBtn.textContent = state.dirty ? "💾 保存更改" : "保存";
+    saveBtn.innerHTML = icon("save") + " 保存更改";
   }
 
   function countProjects(n) {
@@ -535,7 +590,7 @@
 
         row.appendChild(el("span", {
           class: "chev" + (isOpen ? " open" : "") + (kids.length ? "" : " hidden-vis"),
-          text: "▶",
+          html: icon("chevron"),
           onclick: (function (k) {
             return function (e) {
               e.stopPropagation();
@@ -545,22 +600,22 @@
             };
           })(key),
         }));
-        row.appendChild(el("span", { class: "ficon", text: isOpen && kids.length ? "📂" : "📁" }));
+        row.appendChild(el("span", { class: "ficon", html: icon(isOpen && kids.length ? "folderOpen" : "folder") }));
         row.appendChild(el("span", { class: "tree-name", text: n.name }));
         row.appendChild(el("span", { class: "count", text: String(countProjects(n)) }));
 
         if (state.canEdit) {
           var ops = el("span", { class: "ops" });
-          ops.appendChild(el("a", { text: "+", title: "添加子分类", onclick: (function (pp) { return function (e) { e.stopPropagation(); addCategory(pp); }; })(p) }));
+          ops.appendChild(el("a", { title: "添加子分类", html: icon("folderPlus"), onclick: (function (pp) { return function (e) { e.stopPropagation(); addCategory(pp); }; })(p) }));
           if (kids.length === 0 && (n.projects || []).length === 0) {
-            ops.appendChild(el("a", { class: "del", text: "删", onclick: (function (pp) { return function (e) { e.stopPropagation(); deleteCategory(pp); }; })(p) }));
+            ops.appendChild(el("a", { class: "del", title: "删除空分类", html: icon("trash"), onclick: (function (pp) { return function (e) { e.stopPropagation(); deleteCategory(pp); }; })(p) }));
           }
           row.appendChild(ops);
         }
         container.appendChild(row);
 
         if (kids.length && isOpen) {
-          var wrap = el("div", { class: "tree-children", style: "margin-left:" + Math.min(level + 1, 3) * 14 + "px" });
+          var wrap = el("div", { class: "tree-children" });
           container.appendChild(wrap);
           drawInto(wrap, kids, p, level + 1);
         }
@@ -569,7 +624,7 @@
     drawInto(box, state.db, [], 0);
 
     if (state.canEdit) {
-      box.appendChild(el("button", { class: "btn ghost sm block", text: "＋ 新增根分类", onclick: function () { addCategory([]); } }));
+      box.appendChild(el("button", { class: "btn ghost sm block", html: icon("plus") + " 新增根分类", onclick: function () { addCategory([]); } }));
     }
   }
 
@@ -580,7 +635,7 @@
     return arr;
   }
 
-  function projectCard(p, pathForCrumb) {
+  function projectCard(p, pathForCrumb, hl) {
     var owner = REPO_URL_RE.exec(p.url);
     var card = el("div", { class: "pcard", style: "animation-delay:" + Math.min((p._i || 0) * 30, 300) + "ms" });
     card.onclick = function () { window.open(p.url, "_blank", "noopener"); };
@@ -593,7 +648,7 @@
       });
       var acts = el("div", { class: "card-actions" });
       acts.appendChild(el("button", {
-        class: "icon-btn del", title: "删除", text: "🗑",
+        class: "icon-btn del", title: "删除", html: icon("trash"),
         onclick: function (e) { e.stopPropagation(); deleteProjectByCard(card, p); },
       }));
       card.appendChild(acts);
@@ -603,12 +658,20 @@
     if (owner) top.appendChild(el("img", { src: "https://github.com/" + owner[1] + ".png?size=64", alt: "", loading: "lazy" }));
     else top.appendChild(el("img", { src: "https://github.com/github.png?size=64", alt: "" }));
     var nameWrap = el("b");
-    nameWrap.appendChild(el("a", { href: p.url, target: "_blank", rel: "noopener", text: p.name, onclick: function (e) { e.stopPropagation(); } }));
+    var nameLink = el("a", { href: p.url, target: "_blank", rel: "noopener", onclick: function (e) { e.stopPropagation(); } });
+    if (hl) nameLink.innerHTML = highlight(p.name, hl);
+    else nameLink.textContent = p.name;
+    nameWrap.appendChild(nameLink);
     top.appendChild(nameWrap);
-    top.appendChild(el("span", { class: "card-go", text: "→" }));
+    top.appendChild(el("span", { class: "card-go", html: icon("arrow") }));
     card.appendChild(top);
 
-    if (p.description) card.appendChild(el("div", { class: "card-desc", text: p.description }));
+    if (p.description) {
+      var desc = el("div", { class: "card-desc" });
+      if (hl) desc.innerHTML = highlight(p.description, hl);
+      else desc.textContent = p.description;
+      card.appendChild(desc);
+    }
 
     var meta = el("div", { class: "card-meta" });
     if (p.language) {
@@ -619,11 +682,11 @@
     }
     var star = el("span", { class: "star" });
     star.setAttribute("data-url", p.url);
-    star.textContent = "★ " + fmtStars(starOf(p));
+    star.innerHTML = icon("star") + " " + escapeHtml(fmtStars(starOf(p)));
     meta.appendChild(star);
     card.appendChild(meta);
 
-    if (pathForCrumb) card.appendChild(el("span", { class: "hit-path", text: "📂 " + pathForCrumb.join(" / ") }));
+    if (pathForCrumb) card.appendChild(el("span", { class: "hit-path", text: pathForCrumb.join(" / ") }));
     return card;
   }
 
@@ -655,13 +718,23 @@
     return hits;
   }
 
-  function cardsGrid(items, withPath) {
+  function cardsGrid(items, withPath, hl) {
     var grid = el("div", { class: "cards" });
     items.forEach(function (it, i) {
       it._i = i;
-      grid.appendChild(projectCard(it.proj || it, withPath ? it.path : null));
+      grid.appendChild(projectCard(it.proj || it, withPath ? it.path : null, hl));
     });
     return grid;
+  }
+
+  function sortSelect() {
+    var sel = el("select", { onchange: function (e) { state.sort = e.target.value; localStorage.setItem("asuna_sort", e.target.value); renderPanel(); } });
+    [["default", "默认排序"], ["stars", "按 Star"], ["name", "按名称"]].forEach(function (o) {
+      var opt = el("option", { value: o[0], text: o[1] });
+      if (state.sort === o[0]) opt.selected = true;
+      sel.appendChild(opt);
+    });
+    return sel;
   }
 
   function renderPanel() {
@@ -674,6 +747,7 @@
       var sc = el("div", { class: "panel-card" });
       var head = el("div", { class: "panel-head" });
       var crumbs = el("div", { class: "crumbs" });
+      crumbs.appendChild(el("span", { class: "head-icn", html: icon("search") }));
       crumbs.appendChild(el("span", { class: "seg", text: "搜索：" + state.query }));
       head.appendChild(crumbs);
       sc.appendChild(head);
@@ -683,7 +757,7 @@
         panel.appendChild(sc);
         return;
       }
-      sc.appendChild(cardsGrid(hits.slice(0, 60), true));
+      sc.appendChild(cardsGrid(hits.slice(0, 60), true, state.query));
       panel.appendChild(sc);
       lazyFetchStars();
       return;
@@ -691,15 +765,6 @@
 
     // 未选择分类：全局概览
     if (!state.selectedPath.length) {
-      var ov = el("div", { class: "panel-card" });
-      var ohead = el("div", { class: "panel-head" });
-      ohead.appendChild(el("div", { class: "crumbs" })).appendChild(el("span", { class: "seg", text: "全部项目" }));
-      if (state.canEdit) {
-        var tools0 = el("div", { class: "panel-tools" });
-        tools0.appendChild(el("button", { class: "btn accent sm", text: "＋ 添加项目", onclick: openAddDialog }));
-        ohead.appendChild(tools0);
-      }
-      ov.appendChild(ohead);
       var all = [];
       (function walk(nodes, path) {
         (nodes || []).forEach(function (n) {
@@ -708,6 +773,18 @@
           walk(n.children, p);
         });
       })(state.db, []);
+
+      var ov = el("div", { class: "panel-card" });
+      var ohead = el("div", { class: "panel-head" });
+      var ocrumbs = el("div", { class: "crumbs" });
+      ocrumbs.appendChild(el("span", { class: "head-icn", html: icon("layers") }));
+      ocrumbs.appendChild(el("span", { class: "seg", text: "全部项目" }));
+      ohead.appendChild(ocrumbs);
+      var tools0 = el("div", { class: "panel-tools" });
+      if (all.length > 1) tools0.appendChild(sortSelect());
+      if (state.canEdit) tools0.appendChild(el("button", { class: "btn accent sm", html: icon("plus") + " 添加项目", onclick: openAddDialog }));
+      if (tools0.childNodes.length) ohead.appendChild(tools0);
+      ov.appendChild(ohead);
       ov.appendChild(el("div", { class: "panel-sub" })).innerHTML =
         "共 <b>" + all.length + "</b> 个项目 · <b>" + getAllPaths(state.db, "").length + "</b> 个分类 · 合计 <b>★ " + fmtStars(all.reduce(function (s, x) { return s + (starOf(x.proj) || 0); }, 0)) + "</b> stars";
       ov.appendChild(cardsGrid(sorted(all.map(function (x) { return x.proj; })).map(function (proj) {
@@ -727,6 +804,7 @@
 
     var head = el("div", { class: "panel-head" });
     var crumbs = el("div", { class: "crumbs" });
+    crumbs.appendChild(el("span", { class: "head-icn", html: icon("folder") }));
     state.selectedPath.forEach(function (seg, i) {
       if (i > 0) crumbs.appendChild(el("span", { class: "sep", text: "/" }));
       crumbs.appendChild(el("span", {
@@ -739,33 +817,48 @@
 
     var tools = el("div", { class: "panel-tools" });
     var projects = node.projects || [];
-    if (projects.length > 1) {
-      var sortSel = el("select", { onchange: function (e) { state.sort = e.target.value; localStorage.setItem("asuna_sort", e.target.value); renderPanel(); } });
-      [["default", "默认排序"], ["stars", "按 Star"], ["name", "按名称"]].forEach(function (o) {
-        var opt = el("option", { value: o[0], text: o[1] });
-        if (state.sort === o[0]) opt.selected = true;
-        sortSel.appendChild(opt);
-      });
-      tools.appendChild(sortSel);
+    // 父分类没有直接项目时，展示子分类下的项目，避免"0 个项目"死胡同
+    var subtree = [];
+    if (!projects.length) {
+      (function walk(nodes, path) {
+        (nodes || []).forEach(function (n) {
+          var p = path.concat([n.name]);
+          (n.projects || []).forEach(function (proj) { subtree.push({ proj: proj, path: p }); });
+          walk(n.children, p);
+        });
+      })(node.children || [], []);
     }
+    if (projects.length > 1 || subtree.length > 1) tools.appendChild(sortSelect());
     if (state.canEdit) {
-      tools.appendChild(el("button", { class: "btn ghost sm", text: "＋ 子分类", onclick: function () { addCategory(state.selectedPath); } }));
-      tools.appendChild(el("button", { class: "btn accent sm", text: "＋ 添加项目", onclick: openAddDialog }));
+      tools.appendChild(el("button", { class: "btn ghost sm", html: icon("folderPlus") + " 子分类", onclick: function () { addCategory(state.selectedPath); } }));
+      tools.appendChild(el("button", { class: "btn accent sm", html: icon("plus") + " 添加项目", onclick: openAddDialog }));
     }
     head.appendChild(tools);
     card.appendChild(head);
 
     var totalStar = projects.reduce(function (s, p) { return s + (starOf(p) || 0); }, 0);
-    card.appendChild(el("div", { class: "panel-sub" })).innerHTML =
-      "<b>" + projects.length + "</b> 个项目" + (totalStar ? " · 合计 ★ " + fmtStars(totalStar) : "");
+    if (projects.length) {
+      card.appendChild(el("div", { class: "panel-sub" })).innerHTML =
+        "<b>" + projects.length + "</b> 个项目" + (totalStar ? " · 合计 ★ " + fmtStars(totalStar) : "");
+    } else if (subtree.length) {
+      card.appendChild(el("div", { class: "panel-sub" })).innerHTML =
+        "本层无直接项目 · 子分类共 <b>" + subtree.length + "</b> 个项目";
+    } else {
+      card.appendChild(el("div", { class: "panel-sub" })).innerHTML = "<b>0</b> 个项目";
+    }
 
-    if (!projects.length) {
+    if (projects.length) {
+      card.appendChild(cardsGrid(sorted(projects)));
+    } else if (subtree.length) {
+      card.appendChild(cardsGrid(sorted(subtree.map(function (x) { return x.proj; })).map(function (proj) {
+        var hit = subtree.find(function (x) { return x.proj === proj; });
+        return { proj: proj, path: hit.path };
+      }), true));
+    } else {
       var empty = el("div", { class: "empty" });
       empty.innerHTML = '<div class="big">📭</div><p>该分类暂无项目</p>';
-      if (state.canEdit) empty.appendChild(el("button", { class: "btn accent", text: "＋ 添加第一个项目", onclick: openAddDialog }));
+      if (state.canEdit) empty.appendChild(el("button", { class: "btn accent", html: icon("plus") + " 添加第一个项目", onclick: openAddDialog }));
       card.appendChild(empty);
-    } else {
-      card.appendChild(cardsGrid(sorted(projects)));
     }
     panel.appendChild(card);
     lazyFetchStars();
@@ -776,6 +869,7 @@
     $("#loginBtn").addEventListener("click", showTokenDialog);
     $("#logoutLink").addEventListener("click", logout);
     $("#saveBtn").addEventListener("click", saveAll);
+    $("#themeBtn").addEventListener("click", toggleTheme);
     $("#fetchMetaBtn").addEventListener("click", fetchMeta);
     $("#addProjectBtn").addEventListener("click", addProject);
     $("#addCancel").addEventListener("click", closeAddDialog);
@@ -783,9 +877,18 @@
     $("#tokenCancel").addEventListener("click", function () { hideTokenDialog(); });
     $("#tokenInput").addEventListener("keydown", function (e) { if (e.key === "Enter") loginWithToken(); });
     $("#inUrl").addEventListener("keydown", function (e) { if (e.key === "Enter") fetchMeta(); });
+    var searchWrap = $("#searchWrap");
     $("#searchInput").addEventListener("input", function (e) {
       state.query = e.target.value.trim();
+      searchWrap.classList.toggle("has-value", !!e.target.value);
       renderPanel();
+    });
+    $("#searchClear").addEventListener("click", function () {
+      $("#searchInput").value = "";
+      state.query = "";
+      searchWrap.classList.remove("has-value");
+      renderPanel();
+      $("#searchInput").focus();
     });
 
     document.addEventListener("keydown", function (e) {
@@ -793,7 +896,15 @@
         e.preventDefault();
         $("#searchInput").focus();
       }
-      if (e.key === "Escape") { closeAddDialog(); hideTokenDialog(); }
+      if (e.key === "Escape") {
+        closeAddDialog(); hideTokenDialog();
+        if (document.activeElement === $("#searchInput") && state.query) {
+          $("#searchInput").value = "";
+          state.query = "";
+          searchWrap.classList.remove("has-value");
+          renderPanel();
+        }
+      }
     });
 
     document.querySelectorAll(".overlay").forEach(function (ov) {
@@ -804,12 +915,17 @@
   function fillCategorySelect() {
     var sel = $("#selCategory");
     sel.textContent = "";
-    getAllPaths(state.db, "").forEach(function (p) {
-      sel.appendChild(el("option", { value: p, text: p }));
+    state.db.forEach(function (n) {
+      var og = el("optgroup", { label: n.name });
+      getAllPaths([n], "").forEach(function (p) {
+        og.appendChild(el("option", { value: p, text: p }));
+      });
+      sel.appendChild(og);
     });
   }
 
   function init() {
+    applyTheme(document.documentElement.getAttribute("data-theme") || "light");
     bindUI();
     fetchFirst(["stars.json", RAW + "/docs/stars.json"]).then(function (r) { return r.json(); })
       .then(function (s) { state.stars = (s && s.stars) || {}; })
