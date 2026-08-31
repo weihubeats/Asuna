@@ -52,8 +52,7 @@
           }
         ]
       }
-    ],
-    "projects": []
+    ]
   },
   {
     "name": "AI",
@@ -118,7 +117,7 @@
         ]
       },
       {
-        "name": "AI 编程助手 & 桌面客户端",
+        "name": "AI 编程助手 \u0026 桌面客户端",
         "projects": [
           {
             "name": "MiMo-Code",
@@ -158,7 +157,7 @@
           {
             "name": "cc-switch",
             "url": "https://github.com/farion1231/cc-switch",
-            "description": "A cross-platform desktop All-in-One assistant tool for Claude Code, Codex, OpenCode, openclaw & Gemini CLI.",
+            "description": "A cross-platform desktop All-in-One assistant tool for Claude Code, Codex, OpenCode, openclaw \u0026 Gemini CLI.",
             "language": "Rust",
             "stars": 130114
           },
@@ -204,15 +203,13 @@
       },
       {
         "name": "视频生成",
-        "children": [],
         "projects": [
           {
             "name": "OpenMontage",
             "url": "https://github.com/calesthio/OpenMontage",
             "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
             "language": "Python",
-            "stars": 54665,
-            "_i": 0
+            "stars": 54665
           }
         ]
       }
@@ -284,7 +281,7 @@
     "name": "文档工具",
     "children": [
       {
-        "name": "知识库&个人笔记",
+        "name": "知识库\u0026个人笔记",
         "projects": [
           {
             "name": "marktext",
@@ -370,7 +367,7 @@
     ]
   },
   {
-    "name": "☁️ 云原生与自动化运维 (Cloud Native & DevOps)",
+    "name": "☁️ 云原生与自动化运维 (Cloud Native \u0026 DevOps)",
     "children": [
       {
         "name": "🐳 容器编排与管理",
