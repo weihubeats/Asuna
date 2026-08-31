@@ -348,6 +348,13 @@
     fetchedMeta = null;
     $("#inUrl").value = "";
     $("#addStep2").hidden = true;
+    var sel = $("#selCategory");
+    fillCategorySelect();
+    if (state.selectedPath.length) {
+      var cur = state.selectedPath.join(" / ");
+      sel.value = cur;
+      state.expanded[cur] = true;
+    }
     $("#addBox").style.display = "flex";
     $("#inUrl").focus();
   }
