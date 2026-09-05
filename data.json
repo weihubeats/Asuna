@@ -17,14 +17,14 @@
             "url": "https://github.com/spring-projects/spring-boot",
             "description": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
             "language": "Java",
-            "stars": 81405
+            "stars": 81411
           },
           {
             "name": "spring-framework",
             "url": "https://github.com/spring-projects/spring-framework",
             "description": "Spring Framework",
             "language": "Java",
-            "stars": 60220
+            "stars": 60223
           }
         ]
       },
@@ -36,7 +36,7 @@
             "url": "https://github.com/mybatis/mybatis-3",
             "description": "MyBatis SQL mapper framework for Java",
             "language": "Java",
-            "stars": 20440
+            "stars": 20439
           }
         ]
       },
@@ -65,21 +65,21 @@
             "url": "https://github.com/yetone/native-feel-skill",
             "description": "An Agent Skill for designing cross-platform desktop apps that feel native — distilled from Raycast's 2.0 deep-dive and reverse engineering of Raycast Beta.app. Eight architectural tenets, four-layer architecture, WebKit/WebView2 survival guide, 75-item ship audit.",
             "language": "",
-            "stars": 1903
+            "stars": 1904
           },
           {
             "name": "skills",
             "url": "https://github.com/mattpocock/skills",
             "description": "Skills for Real Engineers. Straight from my .claude directory.",
             "language": "Shell",
-            "stars": 247929
+            "stars": 250724
           },
           {
             "name": "taste-skill",
             "url": "https://github.com/Leonxlnx/taste-skill",
             "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
             "language": "JavaScript",
-            "stars": 84119
+            "stars": 84407
           }
         ]
       },
@@ -91,21 +91,21 @@
             "url": "https://github.com/shareAI-lab/learn-claude-code",
             "description": "Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1",
             "language": "Python",
-            "stars": 76004
+            "stars": 76082
           },
           {
             "name": "easy-vibe",
             "url": "https://github.com/datawhalechina/easy-vibe",
             "description": "💻 vibe coding 2026 \\| Your first modern Coding course for beginners to master step by step.",
             "language": "JavaScript",
-            "stars": 19258
+            "stars": 19269
           },
           {
             "name": "hello-agents",
             "url": "https://github.com/datawhalechina/hello-agents",
             "description": "📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程",
             "language": "Python",
-            "stars": 76864
+            "stars": 77030
           },
           {
             "name": "learn-opencode",
@@ -119,7 +119,7 @@
             "url": "https://github.com/walkinglabs/hands-on-modern-rl",
             "description": "🚀 An open-source, hands-on curriculum bridging the gap from basic RL concepts to LLM alignment, RLVR, and advanced Agentic systems.",
             "language": "Python",
-            "stars": 4226
+            "stars": 4259
           }
         ]
       },
@@ -131,49 +131,49 @@
             "url": "https://github.com/XiaomiMiMo/MiMo-Code",
             "description": "MiMo Code: Where Models and Agents Co-Evolve",
             "language": "TypeScript",
-            "stars": 12941
+            "stars": 12948
           },
           {
             "name": "OpenMonoAgent.ai",
             "url": "https://github.com/StartupHakk/OpenMonoAgent.ai",
             "description": "(BETA) AI shouldn't have a meter. Unlimited tokens. Forever. Your machine. Your agent. Use it from anywhere. Terminal-native coding agent powered by local LLMs — 100% open source, free forever, and installed with a single command. Proudly built on C#/.NET, because AI tooling should be infrastructure, not a subscription.",
             "language": "C#",
-            "stars": 1816
+            "stars": 1817
           },
           {
             "name": "oh-my-openagent",
             "url": "https://github.com/code-yeongyu/oh-my-openagent",
             "description": "omo; the best agent harness - previously oh-my-opencode",
             "language": "TypeScript",
-            "stars": 68665
+            "stars": 68704
           },
           {
             "name": "OpenSpec",
             "url": "https://github.com/Fission-AI/OpenSpec",
             "description": "Spec-driven development (SDD) for AI coding assistants.",
             "language": "TypeScript",
-            "stars": 67219
+            "stars": 67331
           },
           {
             "name": "spec-kit",
             "url": "https://github.com/github/spec-kit",
             "description": "💫 Toolkit to help you get started with Spec-Driven Development",
             "language": "Python",
-            "stars": 133366
+            "stars": 133524
           },
           {
             "name": "cc-switch",
             "url": "https://github.com/farion1231/cc-switch",
             "description": "A cross-platform desktop All-in-One assistant tool for Claude Code, Codex, OpenCode, openclaw \u0026 Gemini CLI.",
             "language": "Rust",
-            "stars": 130980
+            "stars": 131107
           },
           {
             "name": "DeepSeek-TUI",
             "url": "https://github.com/Hmbown/DeepSeek-TUI",
             "description": "Coding agent for DeepSeek models that runs in your terminal",
             "language": "Rust",
-            "stars": 40916
+            "stars": 40915
           }
         ]
       },
@@ -185,7 +185,7 @@
             "url": "https://github.com/agentscope-ai/agentscope-java",
             "description": "Build distributed, production-grade, long-running agents.",
             "language": "Java",
-            "stars": 5431
+            "stars": 5441
           }
         ]
       },
@@ -197,14 +197,14 @@
             "url": "https://github.com/rtk-ai/rtk",
             "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
             "language": "Rust",
-            "stars": 78482
+            "stars": 78617
           },
           {
             "name": "caveman",
             "url": "https://github.com/JuliusBrussee/caveman",
             "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
             "language": "JavaScript",
-            "stars": 103200
+            "stars": 103636
           }
         ]
       },
@@ -216,7 +216,7 @@
             "url": "https://github.com/calesthio/OpenMontage",
             "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
             "language": "Python",
-            "stars": 56023
+            "stars": 56172
           }
         ]
       }
@@ -233,14 +233,14 @@
             "url": "https://github.com/OtterMind/Chat2DB",
             "description": "🔥🔥🔥 AI-driven database tool and SQL client, The hottest GUI client, supporting MySQL, Oracle, PostgreSQL, DB2, SQL Server, DB2, SQLite, H2, ClickHouse, and more.",
             "language": "Java",
-            "stars": 28072
+            "stars": 28078
           },
           {
             "name": "dbx",
             "url": "https://github.com/t8y2/dbx",
             "description": "15MB, lightweight, cross-platform database client. Supports MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, ClickHouse, SQL Server and more.15MB，轻量级跨平台数据库客户端、数据库管理工具。支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、DuckDB、ClickHouse、SQL Server 等。",
             "language": "Rust",
-            "stars": 17967
+            "stars": 18050
           },
           {
             "name": "dataflare",
@@ -259,14 +259,14 @@
             "url": "https://github.com/Tencent/wcdb",
             "description": "WCDB is a cross-platform database framework developed by WeChat.",
             "language": "C",
-            "stars": 11635
+            "stars": 11636
           },
           {
             "name": "mysql-server",
             "url": "https://github.com/mysql/mysql-server",
             "description": "MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open source transactional database.",
             "language": "C++",
-            "stars": 12416
+            "stars": 12418
           }
         ]
       },
@@ -278,7 +278,7 @@
             "url": "https://github.com/alibaba/zvec",
             "description": "A lightweight, lightning-fast, in-process vector database",
             "language": "C++",
-            "stars": 15745
+            "stars": 15786
           }
         ]
       }
@@ -295,14 +295,14 @@
             "url": "https://github.com/marktext/marktext",
             "description": "📝A simple and elegant markdown editor, available for Linux, macOS and Windows.",
             "language": "TypeScript",
-            "stars": 61000
+            "stars": 61044
           },
           {
             "name": "blinko",
             "url": "https://github.com/blinkospace/blinko",
             "description": "An open-source, self-hosted personal AI note tool prioritizing privacy, built using TypeScript .",
             "language": "TypeScript",
-            "stars": 10986
+            "stars": 10987
           }
         ]
       }
@@ -319,7 +319,7 @@
             "url": "https://github.com/apache/dubbo",
             "description": "The java implementation of Apache Dubbo. An RPC and microservice framework.",
             "language": "Java",
-            "stars": 41565
+            "stars": 41563
           }
         ]
       }
@@ -343,7 +343,7 @@
             "url": "https://github.com/productdevbook/port-killer",
             "description": "A powerful cross-platform port management tool for developers. Monitor ports, manage Kubernetes port forwards, integrate Cloudflare Tunnels, and kill processes with one click.",
             "language": "Swift",
-            "stars": 5046
+            "stars": 5050
           }
         ]
       },
@@ -355,7 +355,7 @@
             "url": "https://github.com/h4ckf0r0day/obscura",
             "description": "The headless browser for AI agents and web scraping",
             "language": "Rust",
-            "stars": 24608
+            "stars": 24983
           }
         ]
       },
@@ -367,7 +367,7 @@
             "url": "https://github.com/refactoringhq/tolaria",
             "description": "Desktop app to manage markdown knowledge bases",
             "language": "TypeScript",
-            "stars": 19684
+            "stars": 19696
           }
         ]
       }
@@ -391,7 +391,7 @@
             "url": "https://github.com/kubernetes/kubernetes",
             "description": "Production-Grade Container Scheduling and Management",
             "language": "Go",
-            "stars": 126330
+            "stars": 126358
           }
         ]
       },
@@ -403,14 +403,14 @@
             "url": "https://github.com/gitleaks/gitleaks",
             "description": "Find secrets with Gitleaks 🔑",
             "language": "Go",
-            "stars": 29092
+            "stars": 29107
           },
           {
             "name": "jj",
             "url": "https://github.com/jj-vcs/jj",
             "description": "A Git-compatible VCS that is both simple and powerful",
             "language": "Rust",
-            "stars": 31373
+            "stars": 31402
           }
         ]
       }
@@ -427,7 +427,7 @@
             "url": "https://github.com/cinar/indicator",
             "description": "Indicator Go delivers a rich set of technical analysis indicators, customizable strategies, and a powerful backtesting framework. No dependencies, just pure simplicity. ✨ See how! 👀",
             "language": "Go",
-            "stars": 1669
+            "stars": 1673
           }
         ]
       }
