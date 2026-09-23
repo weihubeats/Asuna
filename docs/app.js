@@ -474,6 +474,7 @@
     state.selectedPath = (parentPath || []).concat([name]);
     state.expanded[(parentPath || []).join(" / ")] = true;
     renderTree(); renderPanel();
+    saveAll();
   }
 
   function deleteCategory(path) {
@@ -493,6 +494,7 @@
     markDirty();
     state.selectedPath = [];
     renderTree(); renderPanel();
+    saveAll();
   }
 
   // ---------- Star ----------
@@ -876,6 +878,12 @@
     $("#loginBtn").addEventListener("click", showTokenDialog);
     $("#logoutLink").addEventListener("click", logout);
     $("#saveBtn").addEventListener("click", saveAll);
+    window.addEventListener("beforeunload", function (e) {
+      if (state.canEdit && state.dirty) {
+        e.preventDefault();
+        e.returnValue = "";
+      }
+    });
     $("#themeBtn").addEventListener("click", toggleTheme);
     $("#fetchMetaBtn").addEventListener("click", fetchMeta);
     $("#addProjectBtn").addEventListener("click", addProject);
