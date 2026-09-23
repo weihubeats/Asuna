@@ -4,16 +4,20 @@ on:
   issues:
     types: [opened, labeled]
 
-# 串行执行，避免并发提交互相覆盖
+# 串行执行，避免并发提交互相覆盖（与 render.yml 共用组名）
 concurrency:
-  group: asuna-sync
+  group: asuna-push
   cancel-in-progress: false
 
 jobs:
   sync:
-    # 如需限制仅维护者可触发，改用下方条件：
-    # if: contains(github.event.issue.labels.*.name, 'auto-add') && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association) || contains(github.event.issue.labels.*.name, 'auto-delete') && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association)
-    if: contains(github.event.issue.labels.*.name, 'auto-add') || contains(github.event.issue.labels.*.name, 'auto-delete')
+    # 仅维护者可触发：Issue 表单会自动打 auto-add label，不能只靠 label 门控
+    if: >-
+      contains(github.event.issue.labels.*.name, 'auto-add') &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association)
+      ||
+      contains(github.event.issue.labels.*.name, 'auto-delete') &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association)
     runs-on: ubuntu-latest
     permissions:
       contents: write

@@ -123,14 +123,26 @@
     selectedPath: [],
     query: "",
     sort: localStorage.getItem("asuna_sort") || "default",
-    expanded: JSON.parse(localStorage.getItem("asuna_expanded") || "{}"),
+    expanded: readJSON("asuna_expanded", {}),
     stars: {},
-    starCache: JSON.parse(localStorage.getItem("asuna_starcache") || "{}"),
+    starCache: readJSON("asuna_starcache", {}),
     starFetchBudget: 30,
   };
 
+  function readJSON(key, fallback) {
+    try {
+      var v = JSON.parse(localStorage.getItem(key) || "");
+      return v && typeof v === "object" ? v : fallback;
+    } catch (e) { return fallback; }
+  }
+  function writeJSON(key, val) {
+    try { localStorage.setItem(key, JSON.stringify(val)); } catch (e) { /* quota */ }
+  }
+
   var API = "https://api.github.com";
-  var RAW = "https://raw.githubusercontent.com/" + CFG.OWNER + "/" + CFG.REPO + "/" + CFG.BRANCH;
+  var RAW = "";
+
+  function persistExpanded() { writeJSON("asuna_expanded", state.expanded); }
 
   function fetchFirst(urls) {
     return urls.reduce(function (chain, url) {
@@ -170,8 +182,14 @@
     return fetchFirst([RAW + "/data.json"]).then(function (r) { return r.json(); }).then(function (db) {
       state.db = db;
       state.dirty = false;
-      // 默认展开所有根分类
-      state.db.forEach(function (n) { state.expanded[n.name] = true; });
+      // 默认展开所有根分类；清理已删除分类的残留展开键（M1）
+      var valid = {};
+      state.db.forEach(function (n) { state.expanded[n.name] = true; valid[n.name] = 1; });
+      getAllPaths(state.db, "").forEach(function (p) { valid[p] = 1; });
+      Object.keys(state.expanded).forEach(function (k) {
+        if (k && !valid[k]) delete state.expanded[k];
+      });
+      persistExpanded();
       renderTree();
       renderPanel();
     });
@@ -184,8 +202,13 @@
       .catch(function () { state.sha = null; });
   }
 
+  // C2：保存互斥 + 排队，防止并行 refreshSHA 撞同一 SHA 触发 409 自伤
+  var saving = false, saveQueued = false;
+
   function saveAll() {
     if (!state.canEdit || !state.dirty) return;
+    if (saving) { saveQueued = true; return; }
+    saving = true;
     var btn = $("#saveBtn");
     btn.disabled = true;
     btn.textContent = "保存中…";
@@ -203,7 +226,7 @@
     }).then(function (d) {
       state.sha = d.content && d.content.sha;
       state.dirty = false;
-      toast("✅ 已提交，README 将由 CI 自动刷新");
+      toast("✅ 已提交，分类表单将由 CI 自动刷新");
       renderTree(); renderPanel();
     }).catch(function (e) {
       if (e.status === 409 || e.status === 422) {
@@ -215,8 +238,13 @@
         toast("❌ 保存失败：" + e.message, true);
       }
     }).finally(function () {
+      saving = false;
       btn.disabled = false;
       updateChrome();
+      if (saveQueued) {
+        saveQueued = false;
+        if (state.dirty && state.canEdit) saveAll();
+      }
     });
   }
 
@@ -266,9 +294,11 @@
     }).then(function (r) {
       state.canEdit = !!(r.permissions && r.permissions.push);
     }).catch(function () {
+      // H3：失效 token 一并清出 localStorage，避免每次加载白打 API
       state.token = "";
       state.user = null;
       state.canEdit = false;
+      localStorage.removeItem("asuna_token");
     });
   }
 
@@ -354,6 +384,7 @@
       var cur = state.selectedPath.join(" / ");
       sel.value = cur;
       state.expanded[cur] = true;
+    persistExpanded();
     }
     $("#addBox").style.display = "flex";
     $("#inUrl").focus();
@@ -411,7 +442,8 @@
       toast("该项目已收录，请勿重复添加", true);
       return;
     }
-    var node = ensureNode(pathStr.split(" / "));
+    var segs = pathStr.split(" / ");
+    var node = ensureNode(segs);
     node.projects = node.projects || [];
     node.projects.push({
       name: fetchedMeta.name,
@@ -420,22 +452,27 @@
       language: fetchedMeta.language || "",
       stars: fetchedMeta.stargazers_count,
     });
+    // L5：与 Go 端 sortProjects 对齐，按 star 降序稳定排序
+    node.projects.sort(function (a, b) { return (b.stars || 0) - (a.stars || 0); });
     markDirty();
-    state.selectedPath = pathStr.split(" / ");
+    state.selectedPath = segs;
     state.query = "";
     $("#searchInput").value = "";
     state.expanded[pathStr] = true;
+    persistExpanded();
     renderTree(); renderPanel();
     closeAddDialog();
-    toast("已暂存：「" + fetchedMeta.name + "」→ " + pathStr);
+    toast("已加入「" + fetchedMeta.name + "」→ " + pathStr);
+    saveAll(); // H2：与分类操作统一 auto-save
   }
 
   function deleteProject(node, url) {
-    if (!confirm("确认删除该项目？保存后生效。")) return;
+    if (!confirm("确认删除该项目？将立即保存。")) return;
     node.projects = (node.projects || []).filter(function (p) { return p.url !== url; });
     pruneEmpty(state.db);
     markDirty();
     renderTree(); renderPanel();
+    saveAll();
   }
 
   function moveProjectByUrl(url, newPath) {
@@ -457,24 +494,51 @@
     var target = ensureNode(newPath.split(" / "));
     target.projects = target.projects || [];
     target.projects.push(p);
+    target.projects.sort(function (a, b) { return (b.stars || 0) - (a.stars || 0); });
     state.expanded[newPath] = true;
     pruneEmpty(state.db);
     markDirty();
+    persistExpanded();
     renderTree(); renderPanel();
     toast("已移动「" + p.name + "」→ " + newPath);
+    saveAll();
+  }
+
+  // L1：分类名输入用 overlay（替代原生 prompt），支持实时校验
+  var pendingCatPath = null;
+
+  function openCatDialog(parentPath) {
+    pendingCatPath = parentPath || [];
+    $("#catTitle").textContent = pendingCatPath.length
+      ? "添加子分类 · " + pendingCatPath.join(" / ")
+      : "添加根分类";
+    $("#catNameInput").value = "";
+    $("#catBox").style.display = "flex";
+    $("#catNameInput").focus();
+  }
+  function closeCatDialog() {
+    $("#catBox").style.display = "none";
+    pendingCatPath = null;
+  }
+  function confirmCatDialog() {
+    if (!pendingCatPath) return;
+    var name = $("#catNameInput").value;
+    var err = sanitizeSegment(name);
+    if (err) { toast(err, true); return; }
+    name = name.trim();
+    ensureNode(pendingCatPath.concat([name]));
+    markDirty();
+    state.selectedPath = pendingCatPath.concat([name]);
+    var parentKey = pendingCatPath.join(" / ");
+    if (parentKey) state.expanded[parentKey] = true;
+    persistExpanded();
+    renderTree(); renderPanel();
+    closeCatDialog();
+    saveAll();
   }
 
   function addCategory(parentPath) {
-    var name = prompt(parentPath && parentPath.length ? "子分类名称：" : "根分类名称：");
-    if (name === null) return;
-    var err = sanitizeSegment(name);
-    if (err) { toast(err, true); return; }
-    ensureNode((parentPath || []).concat([name]));
-    markDirty();
-    state.selectedPath = (parentPath || []).concat([name]);
-    state.expanded[(parentPath || []).join(" / ")] = true;
-    renderTree(); renderPanel();
-    saveAll();
+    openCatDialog(parentPath);
   }
 
   function deleteCategory(path) {
@@ -515,6 +579,8 @@
   }
 
   function lazyFetchStars() {
+    // H1：每次渲染重置预算，避免会话内累计耗尽后 star 永远 "…"
+    state.starFetchBudget = 30;
     var missing = [];
     document.querySelectorAll(".card-meta .star[data-url]").forEach(function (sp) {
       if (sp.textContent.trim() === "…") missing.push(sp);
@@ -528,13 +594,22 @@
       if (!m) { sp.innerHTML = icon("star") + " -"; return; }
       state.starFetchBudget--;
       gh("/repos/" + m[1] + "/" + m[2]).then(function (d) {
-        state.starCache[url] = { s: d.stargazers_count, t: Date.now() };
-        localStorage.setItem("asuna_starcache", JSON.stringify(state.starCache));
+        putStarCache(url, d.stargazers_count);
         sp.innerHTML = icon("star") + " " + fmtStars(d.stargazers_count);
       }).catch(function () { sp.innerHTML = icon("star") + " -"; })
         .finally(next);
     }
     next();
+  }
+
+  // M4：写入时 GC 超过 24h 的过期缓存
+  function putStarCache(url, stars) {
+    var now = Date.now();
+    state.starCache[url] = { s: stars, t: now };
+    Object.keys(state.starCache).forEach(function (k) {
+      if (!state.starCache[k] || now - state.starCache[k].t > 86400e3) delete state.starCache[k];
+    });
+    writeJSON("asuna_starcache", state.starCache);
   }
 
   // ---------- 渲染 ----------
@@ -584,14 +659,33 @@
             state.selectedPath = p;
             state.query = "";
             $("#searchInput").value = "";
-            if (kids.length) state.expanded[key] = true;
+            if (kids.length) {
+              state.expanded[key] = true;
+              persistExpanded();
+            }
             renderTree(); renderPanel();
           },
-          ondragover: state.canEdit ? function (e) { e.preventDefault(); row.classList.add("drop-target"); } : null,
-          ondragleave: function () { row.classList.remove("drop-target"); },
+          ondragover: state.canEdit ? function (e) {
+            e.preventDefault();
+            row.classList.add("drop-target");
+            // L4：拖拽悬停折叠节点 600ms 自动展开
+            if (kids.length && !state.expanded[key] && !row._expandTimer) {
+              row._expandTimer = setTimeout(function () {
+                row._expandTimer = null;
+                state.expanded[key] = true;
+                persistExpanded();
+                renderTree();
+              }, 600);
+            }
+          } : null,
+          ondragleave: function () {
+            row.classList.remove("drop-target");
+            if (row._expandTimer) { clearTimeout(row._expandTimer); row._expandTimer = null; }
+          },
           ondrop: state.canEdit ? function (e) {
             e.preventDefault();
             row.classList.remove("drop-target");
+            if (row._expandTimer) { clearTimeout(row._expandTimer); row._expandTimer = null; }
             var url = e.dataTransfer.getData("text/plain");
             if (url) moveProjectByUrl(url, key);
           } : null,
@@ -604,7 +698,7 @@
             return function (e) {
               e.stopPropagation();
               state.expanded[k] = !state.expanded[k];
-              localStorage.setItem("asuna_expanded", JSON.stringify(state.expanded));
+              persistExpanded();
               renderTree();
             };
           })(key),
@@ -796,9 +890,11 @@
       ov.appendChild(ohead);
       ov.appendChild(el("div", { class: "panel-sub" })).innerHTML =
         "共 <b>" + all.length + "</b> 个项目 · <b>" + getAllPaths(state.db, "").length + "</b> 个分类 · 合计 <b>★ " + fmtStars(all.reduce(function (s, x) { return s + (starOf(x.proj) || 0); }, 0)) + "</b> stars";
+      // L3：O(1) 反查 path，替代 O(n²) find
+      var pathByProj = new Map();
+      all.forEach(function (x) { if (!pathByProj.has(x.proj)) pathByProj.set(x.proj, x.path); });
       ov.appendChild(cardsGrid(sorted(all.map(function (x) { return x.proj; })).map(function (proj) {
-        var hit = all.find(function (x) { return x.proj === proj; });
-        return { proj: proj, path: hit.path };
+        return { proj: proj, path: pathByProj.get(proj) };
       }), true));
       panel.appendChild(ov);
       lazyFetchStars();
@@ -859,9 +955,10 @@
     if (projects.length) {
       card.appendChild(cardsGrid(sorted(projects)));
     } else if (subtree.length) {
+      var subPathByProj = new Map();
+      subtree.forEach(function (x) { if (!subPathByProj.has(x.proj)) subPathByProj.set(x.proj, x.path); });
       card.appendChild(cardsGrid(sorted(subtree.map(function (x) { return x.proj; })).map(function (proj) {
-        var hit = subtree.find(function (x) { return x.proj === proj; });
-        return { proj: proj, path: hit.path };
+        return { proj: proj, path: subPathByProj.get(proj) };
       }), true));
     } else {
       var empty = el("div", { class: "empty" });
@@ -893,17 +990,32 @@
     $("#tokenInput").addEventListener("keydown", function (e) { if (e.key === "Enter") loginWithToken(); });
     $("#inUrl").addEventListener("keydown", function (e) { if (e.key === "Enter") fetchMeta(); });
     var searchWrap = $("#searchWrap");
+    // L2：150ms 防抖，避免每键全量重渲染
+    var searchTimer = null;
     $("#searchInput").addEventListener("input", function (e) {
-      state.query = e.target.value.trim();
+      var v = e.target.value.trim();
       searchWrap.classList.toggle("has-value", !!e.target.value);
-      renderPanel();
+      clearTimeout(searchTimer);
+      searchTimer = setTimeout(function () {
+        state.query = v;
+        renderPanel();
+      }, 150);
     });
     $("#searchClear").addEventListener("click", function () {
+      clearTimeout(searchTimer);
       $("#searchInput").value = "";
       state.query = "";
       searchWrap.classList.remove("has-value");
       renderPanel();
       $("#searchInput").focus();
+    });
+
+    // L1：分类名弹窗绑定
+    $("#catSave").addEventListener("click", confirmCatDialog);
+    $("#catCancel").addEventListener("click", closeCatDialog);
+    $("#catNameInput").addEventListener("keydown", function (e) {
+      if (e.key === "Enter") confirmCatDialog();
+      if (e.key === "Escape") closeCatDialog();
     });
 
     document.addEventListener("keydown", function (e) {
@@ -912,7 +1024,7 @@
         $("#searchInput").focus();
       }
       if (e.key === "Escape") {
-        closeAddDialog(); hideTokenDialog();
+        closeAddDialog(); hideTokenDialog(); closeCatDialog();
         if (document.activeElement === $("#searchInput") && state.query) {
           $("#searchInput").value = "";
           state.query = "";
@@ -940,6 +1052,8 @@
   }
 
   function init() {
+    // M2：RAW 在 init 构建，保证 index.html 对 CFG.OWNER/REPO 的路径推断先生效
+    RAW = "https://raw.githubusercontent.com/" + CFG.OWNER + "/" + CFG.REPO + "/" + CFG.BRANCH;
     applyTheme(document.documentElement.getAttribute("data-theme") || "light");
     bindUI();
     fetchFirst(["stars.json", RAW + "/docs/stars.json"]).then(function (r) { return r.json(); })

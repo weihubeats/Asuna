@@ -11,6 +11,7 @@ import (
 	"regexp"
 	"sort"
 	"strings"
+	"sync"
 	"time"
 )
 
@@ -96,7 +97,12 @@ func main() {
 
 	db, err := loadDB(dbPath)
 	if err != nil {
-		fatal(err)
+		// 仅 add 首跑允许 data.json 不存在；其余模式缺文件=致命
+		if actionType == "add" && os.IsNotExist(err) {
+			db = nil
+		} else {
+			fatal(err)
+		}
 	}
 
 	repoURL := extractField(issueBody, fieldRepoURL)
@@ -110,11 +116,12 @@ func main() {
 		if err := handleDelete(db, repoURL); err != nil {
 			fatal(err)
 		}
+		// prune 仅在删除动作后执行：清理被删空的分类；
+		// 网页端主动创建的空子分类不得被 CI 吃掉（C1）
+		pruneEmpty(&db)
 	default:
 		fatal(fmt.Sprintf("未知 ACTION_TYPE: %q", actionType))
 	}
-
-	pruneEmpty(&db)
 
 	if err := saveData(dbPath, db); err != nil {
 		fatal(err)
@@ -132,12 +139,12 @@ func fatal(v interface{}) {
 // ======== CI 模式 ========
 
 // renderAll 由 CI 在每次数据变更后调用：同步 Issue 表单分类下拉（README 为静态介绍页，不再生成）
+// 注意：此处禁止 pruneEmpty——网页端新建的空子分类是合法中间态，prune 会在 push 后数秒内删除它
 func renderAll() {
 	db, err := loadDB(dbPath)
 	if err != nil {
 		fatal(err)
 	}
-	pruneEmpty(&db)
 	if err := saveData(dbPath, db); err != nil {
 		fatal(err)
 	}
@@ -153,24 +160,52 @@ func updateStars(token string) error {
 	if err != nil {
 		return err
 	}
-	var updated int
+
+	type job struct {
+		p *Project
+	}
+	var jobs []job
 	var walk func(nodes []*CategoryNode)
 	walk = func(nodes []*CategoryNode) {
 		for _, n := range nodes {
 			for i := range n.Projects {
-				p := &n.Projects[i]
-				s, err := fetchStars(p.URL, token)
-				if err != nil {
-					fmt.Fprintf(os.Stderr, "跳过 %s: %v\n", p.URL, err)
-					continue
-				}
-				p.Stars = s
-				updated++
+				jobs = append(jobs, job{p: &n.Projects[i]})
 			}
 			walk(n.Children)
 		}
 	}
 	walk(db)
+
+	// 并发拉取（限 8），单项目失败跳过不中断
+	const workers = 8
+	var (
+		mu      sync.Mutex
+		updated int
+		wg      sync.WaitGroup
+	)
+	ch := make(chan job)
+	for i := 0; i < workers; i++ {
+		wg.Add(1)
+		go func() {
+			defer wg.Done()
+			for j := range ch {
+				s, err := fetchStars(j.p.URL, token)
+				mu.Lock()
+				if err != nil {
+					fmt.Fprintf(os.Stderr, "跳过 %s: %v\n", j.p.URL, err)
+				} else {
+					j.p.Stars = s
+					updated++
+				}
+				mu.Unlock()
+			}
+		}()
+	}
+	for _, j := range jobs {
+		ch <- j
+	}
+	close(ch)
+	wg.Wait()
 
 	if err := saveData(dbPath, db); err != nil {
 		return err
@@ -361,15 +396,27 @@ func pruneEmpty(nodes *[]*CategoryNode) {
 	*nodes = kept
 }
 
+// getAllPaths 广度优先遍历：截断时保证根分类全部保留在下拉中
 func getAllPaths(nodes []*CategoryNode, prefix string) []string {
 	var paths []string
-	for _, n := range nodes {
-		curr := n.Name
-		if prefix != "" {
-			curr = prefix + " / " + n.Name
+	type item struct {
+		nodes  []*CategoryNode
+		prefix string
+	}
+	queue := []item{{nodes, prefix}}
+	for len(queue) > 0 {
+		cur := queue[0]
+		queue = queue[1:]
+		for _, n := range cur.nodes {
+			curr := n.Name
+			if cur.prefix != "" {
+				curr = cur.prefix + " / " + n.Name
+			}
+			paths = append(paths, curr)
+			if len(n.Children) > 0 {
+				queue = append(queue, item{n.Children, curr})
+			}
 		}
-		paths = append(paths, curr)
-		paths = append(paths, getAllPaths(n.Children, curr)...)
 	}
 	return paths
 }
@@ -500,9 +547,6 @@ func fetchRepoMeta(owner, repo, token string) (*Project, error) {
 func loadDB(path string) ([]*CategoryNode, error) {
 	raw, err := os.ReadFile(path)
 	if err != nil {
-		if os.IsNotExist(err) {
-			return nil, nil
-		}
 		return nil, err
 	}
 	if len(bytes.TrimSpace(raw)) == 0 {
@@ -532,15 +576,16 @@ func buildIssueForm(db []*CategoryNode) string {
 		options = options[:maxDropdownLen]
 		truncated = len(paths) - maxDropdownLen
 	}
-	content := fmt.Sprintf(issueTemplateHeaderFmt, fieldRepoURL, fieldCategory)
+	var b strings.Builder
+	fmt.Fprintf(&b, issueTemplateHeaderFmt, fieldRepoURL, fieldCategory)
 	for _, p := range options {
-		content += fmt.Sprintf("        - \"%s\"\n", p)
+		fmt.Fprintf(&b, "        - %q\n", p)
 	}
-	content += fmt.Sprintf(issueTemplateFooterFmt, fieldNewCategory)
+	fmt.Fprintf(&b, issueTemplateFooterFmt, fieldNewCategory)
 	if truncated > 0 {
-		content += fmt.Sprintf("# ⚠️ 分类超过 GitHub 表单下拉上限 %d 项，已截断 %d 项，请精简分类树\n", maxDropdownLen, truncated)
+		fmt.Fprintf(&b, "# ⚠️ 分类超过 GitHub 表单下拉上限 %d 项，已截断 %d 项，请精简分类树\n", maxDropdownLen, truncated)
 	}
-	return content
+	return b.String()
 }
 
 func updateIssueTemplate(path, content string) error {

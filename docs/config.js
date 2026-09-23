@@ -1,8 +1,6 @@
 window.ASUNA_CONFIG = {
-  // GitHub OAuth App（启用 Device Flow 类型）的 Client ID。
-  // 创建入口：https://github.com/settings/developers → New OAuth App
-  // 填写后页面即可登录编辑；留空则页面只读。
-  CLIENT_ID: "Ov23liFFJROUeaiieUvy",
+  // M3：已移除无引用的 OAuth CLIENT_ID（登录走 PAT 弹窗）。
+  // 若未来恢复 Device Flow 登录，再在此处添加 CLIENT_ID。
 
   OWNER: "weihubeats",
   REPO: "Asuna",

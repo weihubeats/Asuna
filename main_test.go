@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"net/http"
 	"net/http/httptest"
 	"os"
@@ -172,6 +173,58 @@ func TestPruneEmpty(t *testing.T) {
 	}
 }
 
+// getAllPaths 必须 BFS：截断时根分类完整保留（C1/M5）
+func TestGetAllPathsBFSOrder(t *testing.T) {
+	db := []*CategoryNode{
+		{Name: "A", Children: []*CategoryNode{
+			{Name: "A1", Children: []*CategoryNode{{Name: "A1a"}}},
+			{Name: "A2"},
+		}},
+		{Name: "B", Children: []*CategoryNode{{Name: "B1"}}},
+		{Name: "C"},
+	}
+	got := getAllPaths(db, "")
+	want := []string{"A", "B", "C", "A / A1", "A / A2", "B / B1", "A / A1 / A1a"}
+	if len(got) != len(want) {
+		t.Fatalf("paths = %v, want %v", got, want)
+	}
+	for i := range want {
+		if got[i] != want[i] {
+			t.Errorf("paths[%d] = %q, want %q (full: %v)", i, got[i], want[i], got)
+		}
+	}
+}
+
+// buildIssueForm 截断时必须保留全部根分类
+func TestBuildIssueFormTruncationKeepsRoots(t *testing.T) {
+	var db []*CategoryNode
+	for i := 0; i < maxDropdownLen+10; i++ {
+		name := fmt.Sprintf("根%02d", i)
+		db = append(db, &CategoryNode{Name: name, Projects: []Project{{Name: "p", URL: "https://github.com/x/y"}}})
+	}
+	form := buildIssueForm(db)
+	if !strings.Contains(form, "根00\"") && !strings.Contains(form, `- "根00"`) {
+		t.Errorf("根00 应保留:\n%s", form)
+	}
+	if !strings.Contains(form, fmt.Sprintf("已截断 10 项")) {
+		t.Errorf("应包含截断提示:\n%s", form)
+	}
+	// 最后一个根分类（第 51 个）在 BFS 下拉上限外
+	if strings.Contains(form, `"根50"`) {
+		t.Errorf("第 51 项应被截断:\n%s", form)
+	}
+}
+
+func TestFindOrCreateNodeEmptyPath(t *testing.T) {
+	var db []*CategoryNode
+	if n := findOrCreateNode(&db, nil); n != nil {
+		t.Errorf("空 path 应返回 nil, got %+v", n)
+	}
+	if len(db) != 0 {
+		t.Errorf("空 path 不应创建节点: %+v", db)
+	}
+}
+
 func TestSortProjects(t *testing.T) {
 	ps := []Project{
 		{Name: "old-first", Stars: 0},
@@ -197,10 +250,17 @@ func TestLoadDBRejectCorrupt(t *testing.T) {
 		t.Fatal("损坏 JSON 应报错而不是静默清库")
 	}
 
+	// 缺文件必须报错（调用方按 actionType 决定是否容忍，禁止静默 nil）
 	p2 := filepath.Join(dir, "missing.json")
-	db, err := loadDB(p2)
-	if err != nil || db != nil {
-		t.Errorf("缺失文件应返回 nil,nil, got %v,%v", db, err)
+	if _, err := loadDB(p2); err == nil {
+		t.Error("缺失文件应报错，由调用方显式处理")
+	}
+
+	// 空文件拒绝覆盖
+	p3 := filepath.Join(dir, "empty.json")
+	os.WriteFile(p3, []byte("  \n"), 0644)
+	if _, err := loadDB(p3); err == nil {
+		t.Error("空文件应报错")
 	}
 }
 
@@ -270,6 +330,7 @@ func TestRegenerateArtifacts(t *testing.T) {
 		t.Skip("set REGEN=1 to refresh issue form")
 	}
 	db := loadTestDB(t)
+	// render 模式不再 prune；REGEN 走 issue-delete 同源路径，保留 prune 验证
 	pruneEmpty(&db)
 	if err := updateIssueTemplate(issueFormPath, buildIssueForm(db)); err != nil {
 		t.Fatal(err)

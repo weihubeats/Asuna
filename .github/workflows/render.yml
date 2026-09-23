@@ -8,6 +8,11 @@ on:
     - cron: "0 1 * * *" # 每天 UTC 01:00 刷新 star 快照
   workflow_dispatch:
 
+# 与 asuna_sync 共用串行组，避免并发 push 互相覆盖
+concurrency:
+  group: asuna-push
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -37,4 +42,11 @@ jobs:
           git config --local user.name "AsunaBot"
           git add -A
           git diff --cached --quiet || git commit -m "auto: sync issue form & stars snapshot"
-          git push
+          for i in 1 2 3; do
+            if git pull --rebase --autostash origin main && git push; then
+              exit 0
+            fi
+            echo "push 冲突，重试 $i/3"
+            sleep $((i * 5))
+          done
+          exit 1
