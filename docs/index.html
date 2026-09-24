@@ -500,7 +500,7 @@
   <div class="box" style="width:440px">
     <h3>📁 添加分类</h3>
     <div class="panel-sub" id="catTitle" style="margin:0 0 10px"></div>
-    <input type="text" id="catNameInput" placeholder="分类名称（≤60 字，禁 | \" ' ` [ ] { } < > # \\）" autocomplete="off">
+    <input type="text" id="catNameInput" placeholder="分类名称（≤60 字，禁用竖线/引号/括号等符号）" autocomplete="off">
     <div style="display:flex;gap:8px">
       <button class="btn primary" id="catSave" style="flex:1">确定</button>
       <button class="btn ghost" id="catCancel">取消</button>
@@ -510,8 +510,8 @@
 
 <div id="toast"></div>
 
-<script src="config.js?v=6"></script>
-<script src="app.js?v=6"></script>
+<script src="config.js?v=7"></script>
+<script src="app.js?v=7"></script>
 <script>
   (function () {
     var m = location.pathname.match(/^\/([^/]+)\/([^/]+)\/?/);
