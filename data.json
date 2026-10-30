@@ -10,14 +10,14 @@
             "url": "https://github.com/sofastack/sofa-boot",
             "description": "SOFABoot is a framework that enhances Spring Boot and fully compatible with it, provides readiness check, class isolation, etc.",
             "language": "Java",
-            "stars": 5075
+            "stars": 5076
           },
           {
             "name": "spring-boot",
             "url": "https://github.com/spring-projects/spring-boot",
             "description": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
             "language": "Java",
-            "stars": 81777
+            "stars": 81711
           },
           {
             "name": "spring-framework",
@@ -48,7 +48,7 @@
             "url": "https://github.com/YiiGuxing/TranslationPlugin",
             "description": "Translation plugin for IntelliJ-based IDEs/Android Studio.",
             "language": "Kotlin",
-            "stars": 11865
+            "stars": 11866
           }
         ]
       }
@@ -65,21 +65,21 @@
             "url": "https://github.com/yetone/native-feel-skill",
             "description": "An Agent Skill for designing cross-platform desktop apps that feel native — distilled from Raycast's 2.0 deep-dive and reverse engineering of Raycast Beta.app. Eight architectural tenets, four-layer architecture, WebKit/WebView2 survival guide, 75-item ship audit.",
             "language": "",
-            "stars": 1942
+            "stars": 1945
           },
           {
             "name": "skills",
             "url": "https://github.com/mattpocock/skills",
             "description": "Skills for Real Engineers. Straight from my .claude directory.",
             "language": "Shell",
-            "stars": 305962
+            "stars": 306805
           },
           {
             "name": "taste-skill",
             "url": "https://github.com/Leonxlnx/taste-skill",
             "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
             "language": "JavaScript",
-            "stars": 104802
+            "stars": 105758
           }
         ]
       },
@@ -91,35 +91,35 @@
             "url": "https://github.com/shareAI-lab/learn-claude-code",
             "description": "Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1",
             "language": "Python",
-            "stars": 79468
+            "stars": 79546
           },
           {
             "name": "easy-vibe",
             "url": "https://github.com/datawhalechina/easy-vibe",
             "description": "💻 vibe coding 2026 \\| Your first modern Coding course for beginners to master step by step.",
             "language": "JavaScript",
-            "stars": 20242
+            "stars": 20258
           },
           {
             "name": "hello-agents",
             "url": "https://github.com/datawhalechina/hello-agents",
             "description": "📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程",
             "language": "Python",
-            "stars": 85187
+            "stars": 85350
           },
           {
             "name": "learn-opencode",
             "url": "https://github.com/vbgate/learn-opencode",
             "description": "OpenCode 中文实战课源码与内容仓库：一课一页，覆盖入门到实战工作流。",
             "language": "Shell",
-            "stars": 1749
+            "stars": 1751
           },
           {
             "name": "hands-on-modern-rl",
             "url": "https://github.com/walkinglabs/hands-on-modern-rl",
             "description": "🚀 An open-source, hands-on curriculum bridging the gap from basic RL concepts to LLM alignment, RLVR, and advanced Agentic systems.",
             "language": "Python",
-            "stars": 4809
+            "stars": 4823
           }
         ]
       },
@@ -131,49 +131,49 @@
             "url": "https://github.com/XiaomiMiMo/MiMo-Code",
             "description": "MiMo Code: Where Models and Agents Co-Evolve",
             "language": "TypeScript",
-            "stars": 13735
+            "stars": 13736
           },
           {
             "name": "OpenMonoAgent.ai",
             "url": "https://github.com/StartupHakk/OpenMonoAgent.ai",
             "description": "(BETA) AI shouldn't have a meter. Unlimited tokens. Forever. Your machine. Your agent. Use it from anywhere. Terminal-native coding agent powered by local LLMs — 100% open source, free forever, and installed with a single command. Proudly built on C#/.NET, because AI tooling should be infrastructure, not a subscription.",
             "language": "C#",
-            "stars": 1900
+            "stars": 1902
           },
           {
             "name": "oh-my-openagent",
             "url": "https://github.com/code-yeongyu/oh-my-openagent",
             "description": "omo; the best agent harness - previously oh-my-opencode",
             "language": "TypeScript",
-            "stars": 70451
+            "stars": 70492
           },
           {
             "name": "OpenSpec",
             "url": "https://github.com/Fission-AI/OpenSpec",
             "description": "Spec-driven development (SDD) for AI coding assistants.",
             "language": "TypeScript",
-            "stars": 73290
+            "stars": 73396
           },
           {
             "name": "spec-kit",
             "url": "https://github.com/github/spec-kit",
             "description": "💫 Toolkit to help you get started with Spec-Driven Development",
             "language": "Python",
-            "stars": 143741
+            "stars": 143981
           },
           {
             "name": "cc-switch",
             "url": "https://github.com/farion1231/cc-switch",
             "description": "A cross-platform desktop All-in-One assistant tool for Claude Code, Codex, OpenCode, openclaw \u0026 Gemini CLI.",
             "language": "Rust",
-            "stars": 149854
+            "stars": 150177
           },
           {
             "name": "DeepSeek-TUI",
             "url": "https://github.com/Hmbown/DeepSeek-TUI",
             "description": "Coding agent for DeepSeek models that runs in your terminal",
             "language": "Rust",
-            "stars": 41139
+            "stars": 41152
           }
         ]
       },
@@ -185,7 +185,7 @@
             "url": "https://github.com/agentscope-ai/agentscope-java",
             "description": "Build distributed, production-grade, long-running agents.",
             "language": "Java",
-            "stars": 6169
+            "stars": 6191
           }
         ]
       },
@@ -197,14 +197,14 @@
             "url": "https://github.com/rtk-ai/rtk",
             "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
             "language": "Rust",
-            "stars": 84910
+            "stars": 85017
           },
           {
             "name": "caveman",
             "url": "https://github.com/JuliusBrussee/caveman",
             "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
             "language": "JavaScript",
-            "stars": 115877
+            "stars": 116170
           }
         ]
       },
@@ -216,7 +216,7 @@
             "url": "https://github.com/calesthio/OpenMontage",
             "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
             "language": "Python",
-            "stars": 72805
+            "stars": 73104
           }
         ]
       }
@@ -233,21 +233,21 @@
             "url": "https://github.com/OtterMind/Chat2DB",
             "description": "🔥🔥🔥 AI-driven database tool and SQL client, The hottest GUI client, supporting MySQL, Oracle, PostgreSQL, DB2, SQL Server, DB2, SQLite, H2, ClickHouse, and more.",
             "language": "Java",
-            "stars": 28349
+            "stars": 28347
           },
           {
             "name": "dbx",
             "url": "https://github.com/t8y2/dbx",
             "description": "15MB, lightweight, cross-platform database client. Supports MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, ClickHouse, SQL Server and more.15MB，轻量级跨平台数据库客户端、数据库管理工具。支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、DuckDB、ClickHouse、SQL Server 等。",
             "language": "Rust",
-            "stars": 28111
+            "stars": 28217
           },
           {
             "name": "dataflare",
             "url": "https://github.com/DataflareApp/dataflare",
             "description": "Simple, easy-to-use database manager",
             "language": "TypeScript",
-            "stars": 620
+            "stars": 621
           }
         ]
       },
@@ -266,7 +266,7 @@
             "url": "https://github.com/mysql/mysql-server",
             "description": "MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open source transactional database.",
             "language": "C++",
-            "stars": 12486
+            "stars": 12491
           }
         ]
       },
@@ -278,7 +278,7 @@
             "url": "https://github.com/alibaba/zvec",
             "description": "A lightweight, lightning-fast, in-process vector database",
             "language": "C++",
-            "stars": 16161
+            "stars": 16163
           }
         ]
       }
@@ -295,14 +295,14 @@
             "url": "https://github.com/marktext/marktext",
             "description": "📝A simple and elegant markdown editor, available for Linux, macOS and Windows.",
             "language": "TypeScript",
-            "stars": 63248
+            "stars": 63314
           },
           {
             "name": "blinko",
             "url": "https://github.com/blinkospace/blinko",
             "description": "An open-source, self-hosted personal AI note tool prioritizing privacy, built using TypeScript .",
             "language": "TypeScript",
-            "stars": 11126
+            "stars": 11139
           }
         ]
       }
@@ -319,7 +319,7 @@
             "url": "https://github.com/apache/dubbo",
             "description": "The java implementation of Apache Dubbo. An RPC and microservice framework.",
             "language": "Java",
-            "stars": 41578
+            "stars": 41581
           }
         ]
       }
@@ -336,14 +336,14 @@
             "url": "https://github.com/muxy-app/muxy",
             "description": "Lightweight and Memory efficient terminal for Mac built with SwiftUI and libghostty",
             "language": "Swift",
-            "stars": 2324
+            "stars": 2329
           },
           {
             "name": "port-killer",
             "url": "https://github.com/productdevbook/port-killer",
             "description": "A powerful cross-platform port management tool for developers. Monitor ports, manage Kubernetes port forwards, integrate Cloudflare Tunnels, and kill processes with one click.",
             "language": "Swift",
-            "stars": 5144
+            "stars": 5146
           }
         ]
       },
@@ -355,7 +355,7 @@
             "url": "https://github.com/h4ckf0r0day/obscura",
             "description": "The headless browser for AI agents and web scraping",
             "language": "Rust",
-            "stars": 29546
+            "stars": 29624
           }
         ]
       },
@@ -367,7 +367,7 @@
             "url": "https://github.com/refactoringhq/tolaria",
             "description": "Desktop app to manage markdown knowledge bases",
             "language": "TypeScript",
-            "stars": 20381
+            "stars": 20400
           }
         ]
       }
@@ -384,14 +384,14 @@
             "url": "https://github.com/kubernetes-sigs/kubespray",
             "description": "Deploy a Production Ready Kubernetes Cluster",
             "language": "Jinja",
-            "stars": 18805
+            "stars": 18804
           },
           {
             "name": "kubernetes",
             "url": "https://github.com/kubernetes/kubernetes",
             "description": "Production-Grade Container Scheduling and Management",
             "language": "Go",
-            "stars": 128597
+            "stars": 128521
           }
         ]
       },
@@ -403,14 +403,14 @@
             "url": "https://github.com/gitleaks/gitleaks",
             "description": "Find secrets with Gitleaks 🔑",
             "language": "Go",
-            "stars": 30466
+            "stars": 30512
           },
           {
             "name": "jj",
             "url": "https://github.com/jj-vcs/jj",
             "description": "A Git-compatible VCS that is both simple and powerful",
             "language": "Rust",
-            "stars": 32292
+            "stars": 32305
           }
         ]
       }
